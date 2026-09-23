@@ -22,13 +22,8 @@ CONTRACT = {
     },
     "q2_model_facing_interface": {
         "common_fields": [
-            "sample_key",
-            "text_input",
-            "audio",
-            "vision",
-            "validity_info",
-            "label_cls",
-            "label_reg",
+            "sample_key", "text_input", "audio", "vision",
+            "validity_info", "label_cls", "label_reg"
         ],
         "aligned": {
             "status": "READY",
@@ -91,6 +86,26 @@ CONTRACT = {
 }
 
 
+def attachment2_ok(a2):
+    try:
+        for fname in ["aligned_50.pkl", "unaligned_50.pkl"]:
+            rep = a2[fname]
+            if any(v != 0 for v in rep.get("split_id_overlaps", {}).values()):
+                return False, f"{fname} split id overlap is nonzero"
+            expected = {"train": 3395, "valid": 728, "test": 727}
+            for split, n in expected.items():
+                sp = rep["splits"][split]
+                if sp.get("n") != n:
+                    return False, f"{fname}/{split} count mismatch"
+                for field in ["text", "text_bert", "audio", "vision"]:
+                    meta = sp.get(field, {})
+                    if meta.get("nan", 0) or meta.get("inf", 0):
+                        return False, f"{fname}/{split}/{field} contains NaN/Inf"
+        return True, None
+    except Exception as e:
+        return False, f"attachment2 audit parse/check error: {e!r}"
+
+
 def main():
     required = [
         "attachment1_audit.json",
@@ -99,32 +114,62 @@ def main():
         "attachment4_audit.json",
         "cross_attachment_audit.json",
     ]
-    present = {name: (OUT/name).exists() for name in required}
+    present = {name: (OUT / name).exists() for name in required}
     contract = dict(CONTRACT)
     contract["machine_audit_presence"] = present
 
     blockers = []
+    statuses = {}
+
     if not all(present.values()):
         blockers.append("not all attachment/cross audits are present")
+
+    if present["attachment1_audit.json"]:
+        a1 = json.loads((OUT / "attachment1_audit.json").read_text(encoding="utf-8"))
+        statuses["attachment1"] = a1.get("status")
+        if a1.get("status") != "PASS":
+            blockers.append("Attachment1 machine audit is not PASS")
+
+    if present["attachment2_audit.json"]:
+        a2 = json.loads((OUT / "attachment2_audit.json").read_text(encoding="utf-8"))
+        ok, why = attachment2_ok(a2)
+        statuses["attachment2"] = "PASS" if ok else "FAIL"
+        if not ok:
+            blockers.append(why)
+
     if present["attachment3_audit.json"]:
-        a3=json.loads((OUT/"attachment3_audit.json").read_text(encoding="utf-8"))
-        if a3.get("versions",{}).get("aligned",{}).get("text_bert_invalid_files"):
+        a3 = json.loads((OUT / "attachment3_audit.json").read_text(encoding="utf-8"))
+        statuses["attachment3"] = a3.get("status")
+        if not str(a3.get("status", "")).startswith("PASS"):
+            blockers.append("Attachment3 machine audit is not PASS")
+        if a3.get("versions", {}).get("aligned", {}).get("text_bert_invalid_files"):
             blockers.append("Attachment3 aligned text_bert validation failed")
+
+    if present["attachment4_audit.json"]:
+        a4 = json.loads((OUT / "attachment4_audit.json").read_text(encoding="utf-8"))
+        statuses["attachment4"] = a4.get("status")
+        if not str(a4.get("status", "")).startswith("PASS"):
+            blockers.append("Attachment4 machine audit is not PASS")
+
     if present["cross_attachment_audit.json"]:
-        cross=json.loads((OUT/"cross_attachment_audit.json").read_text(encoding="utf-8"))
-        if cross.get("status")!="PASS":
+        cross = json.loads((OUT / "cross_attachment_audit.json").read_text(encoding="utf-8"))
+        statuses["cross_attachment"] = cross.get("status")
+        if cross.get("status") != "PASS":
             blockers.append("cross-attachment baseline/leakage audit failed")
 
+    contract["machine_audit_statuses"] = statuses
     contract["stage1_blockers_after_contract"] = blockers
     contract["stage1_status"] = "STOP" if blockers else "READY_FOR_RED_TEAM"
 
-    (OUT/"stage1_data_contract.json").write_text(
-        json.dumps(contract,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"
+    (OUT / "stage1_data_contract.json").write_text(
+        json.dumps(contract, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    lines=[
-        "E题 Stage 1 数据与接口规范","="*60,
+    lines = [
+        "E题 Stage 1 数据与接口规范",
+        "=" * 60,
         f"stage1_status={contract['stage1_status']}",
         f"machine_audit_presence={present}",
+        f"machine_audit_statuses={statuses}",
         "Q2 aligned=READY; Q2 unaligned=BLOCKED (risk isolation, not final model choice)",
         "masks=validity_mask + synthetic_missing_mask + zero_diagnostic_mask",
         "observed_mask=validity_mask AND NOT synthetic_missing_mask",
@@ -133,8 +178,8 @@ def main():
         "metrics: Accuracy + Macro-F1 + per-class F1; Weighted-F1 optional",
         f"blockers={blockers}",
     ]
-    (OUT/"stage1_data_contract.txt").write_text("\n".join(lines)+"\n",encoding="utf-8")
+    (OUT / "stage1_data_contract.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
