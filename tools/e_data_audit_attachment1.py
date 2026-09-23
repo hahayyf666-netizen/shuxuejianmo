@@ -91,16 +91,19 @@ def main() -> None:
             vstreams = [s for s in streams if s.get("codec_type") == "video"]
             astreams = [s for s in streams if s.get("codec_type") == "audio"]
             fmt = d.get("format", {})
-            duration = None
-            for candidate in [fmt.get("duration")] + [s.get("duration") for s in vstreams]:
+            def safe_float(v):
                 try:
-                    if candidate is not None:
-                        duration = float(candidate)
-                        break
+                    return float(v) if v is not None else None
                 except Exception:
-                    pass
+                    return None
+
+            format_duration = safe_float(fmt.get("duration"))
+            video_stream_duration = safe_float(vstreams[0].get("duration")) if vstreams else None
+            audio_stream_duration = safe_float(astreams[0].get("duration")) if astreams else None
             item.update({
-                "duration_sec": duration,
+                "ffprobe_format_duration_sec": format_duration,
+                "video_stream_duration_sec": video_stream_duration,
+                "audio_stream_duration_sec": audio_stream_duration,
                 "has_audio": bool(astreams),
                 "video_codec": vstreams[0].get("codec_name") if vstreams else None,
                 "width": vstreams[0].get("width") if vstreams else None,
@@ -120,10 +123,16 @@ def main() -> None:
     duplicate_video_keys = [k for k, n in Counter(video_keys).items() if n > 1]
     duplicate_text = [t for t, n in Counter(x["text"] for x in label_rows).items() if n > 1]
     duplicate_video_bytes = [v for v in digest_groups.values() if len(v) > 1]
-    short_videos = [
-        {"key": x["key"], "duration_sec": x.get("duration_sec")}
+    short_presentations = [
+        {
+            "key": x["key"],
+            "ffprobe_format_duration_sec": x.get("ffprobe_format_duration_sec"),
+            "video_stream_duration_sec": x.get("video_stream_duration_sec"),
+            "audio_stream_duration_sec": x.get("audio_stream_duration_sec"),
+        }
         for x in media
-        if x.get("duration_sec") is not None and x["duration_sec"] < SPEC_MIN_DURATION
+        if x.get("ffprobe_format_duration_sec") is not None
+        and x["ffprobe_format_duration_sec"] < SPEC_MIN_DURATION
     ]
 
     report = {
@@ -151,7 +160,7 @@ def main() -> None:
         "videos_without_label": sorted(video_set - label_set),
         "ffprobe_failures": [x for x in media if not x["ffprobe_ok"]],
         "videos_without_audio": [x["key"] for x in media if x.get("ffprobe_ok") and not x.get("has_audio")],
-        "shorter_than_problem_stated_minimum": short_videos,
+        "ffprobe_format_duration_below_problem_stated_minimum": short_presentations,
         "media_summary": {
             "video_codecs": dict(Counter(x.get("video_codec") for x in media if x.get("ffprobe_ok"))),
             "audio_codecs": dict(Counter(x.get("audio_codec") for x in media if x.get("ffprobe_ok"))),
@@ -196,7 +205,7 @@ def main() -> None:
         f"ffprobe_failures={len(report['ffprobe_failures'])} videos_without_audio={len(report['videos_without_audio'])}",
         f"label_distribution={report['label_distribution']}",
         f"continuous_label_range={report['continuous_label_range']}",
-        f"shorter_than_2.648s={short_videos}",
+        f"ffprobe_format_duration_below_2.648s={short_presentations}",
         f"media_summary={report['media_summary']}",
         f"hard_failures={hard_failures}",
     ]

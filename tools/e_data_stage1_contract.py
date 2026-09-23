@@ -55,14 +55,25 @@ CONTRACT = {
             "status": "READY",
             "attachment2_available": ["raw_text", "text", "text_bert", "audio", "vision", "id", "labels"],
             "attachment4_available": ["raw_text", "text", "text_bert", "audio", "vision", "id", "original_video"],
-            "allowed_predictive_dependencies": ["raw_text", "text", "text_bert", "audio", "vision"],
-            "forbidden_predictive_dependencies": ["id", "original_video"],
+            "predictive_modalities": ["text_representation", "audio", "vision"],
+            "text_representation": {
+                "one_of": ["text", "text_bert"],
+                "exactly_one": True,
+                "rule": "text and text_bert are alternative representations of the same text modality and must not be used simultaneously as separate modalities"
+            },
+            "raw_text_role": "evidence/back-tracing and display; not an additional parallel predictive modality under the frozen Stage 1 interface",
+            "forbidden_predictive_dependencies": ["id", "original_video", "simultaneous text and text_bert"],
             "original_video_role": "evidence back-tracing / explanation display only; Attachment2 training has no raw video, so it is not a predictive model input",
         },
         "unaligned": {
             "status": "BLOCKED",
             "attachment2_available": ["raw_text", "text", "text_bert", "audio", "vision", "audio_lengths", "vision_lengths", "id", "labels"],
             "attachment4_available": ["raw_text", "text", "text_bert", "audio", "vision", "audio_lengths", "vision_lengths", "id", "original_video"],
+            "predictive_modalities_if_reopened": ["text_representation", "audio", "vision"],
+            "text_representation_if_reopened": {
+                "one_of": ["text", "text_bert"],
+                "exactly_one": True
+            },
             "block_reasons": [
                 "vision_lengths semantics are not reliably closed in Attachment2/4",
                 "unaligned validity handling must be reopened and validated before model admission",
@@ -73,8 +84,10 @@ CONTRACT = {
     "field_availability_matrix": {
         "Q2_aligned_common_predictive": ["text_bert", "audio", "vision"],
         "Q2_unaligned_common_predictive_if_reopened": ["raw_text", "audio", "vision"],
-        "Q3_aligned_common_predictive": ["raw_text", "text", "text_bert", "audio", "vision"],
-        "Q3_unaligned_common_predictive_if_reopened": ["raw_text", "text", "text_bert", "audio", "vision", "audio_lengths", "vision_lengths"],
+        "Q3_aligned_common_available": ["raw_text", "text", "text_bert", "audio", "vision"],
+        "Q3_aligned_predictive_contract": ["one_of(text,text_bert)", "audio", "vision"],
+        "Q3_unaligned_common_available_if_reopened": ["raw_text", "text", "text_bert", "audio", "vision", "audio_lengths", "vision_lengths"],
+        "Q3_unaligned_predictive_contract_if_reopened": ["one_of(text,text_bert)", "audio", "vision"],
     },
     "mask_contract": {
         "validity_mask": "padding/non-valid sequence-position mask; for aligned text_bert routes use the frozen attention-mask semantics, not feature-zero tests",
@@ -97,19 +110,23 @@ CONTRACT = {
         ],
     },
     "q1_q2q3_leakage_firewall": {
-        "forbid_q1_label_driven_transfer": [
+        "forbid_any_q1_data_fitted_state_transfer": [
             "Q1 labels",
-            "Q1 label-based feature selection",
-            "Q1 label-based model selection",
-            "Q1 label-based hyperparameter choice",
-            "Q1 label-based threshold choice",
+            "Q1 label-based feature/model/hyperparameter/threshold selection",
+            "normalization statistics estimated from Q1 samples",
+            "PCA/dimensionality-reduction parameters fitted on Q1 samples",
+            "clustering/codebook state fitted on Q1 samples",
+            "self-supervised adaptation performed on Q1 videos",
+            "feature extractors fine-tuned or adapted on Q1 samples",
+            "any preprocessing parameter/statistic/model state fitted, estimated, calibrated, adapted, or selected using Q1 samples",
         ],
-        "allow_label_independent_reuse": [
-            "data reading code",
-            "video decoding code",
-            "fixed pretrained tools",
-            "label-independent preprocessing functions",
+        "allow_only_q1_data_independent_reuse": [
+            "stateless data reading code",
+            "stateless video decoding code",
+            "fixed pretrained tools with no Q1 adaptation",
+            "preprocessing functions whose parameters are fixed independently of Q1 data",
         ],
+        "reason": "Attachment1 overlaps Attachment2 train/test; data-derived Q1 state can leak Attachment2 test information even without labels",
     },
 }
 
@@ -202,10 +219,10 @@ def main():
         f"machine_audit_presence={present}",
         f"machine_audit_statuses={statuses}",
         "Q2 aligned=READY; Q2 unaligned=BLOCKED (risk isolation, not final model choice)",
-        "Q3 aligned=READY; Q3 unaligned=BLOCKED; Attachment4 raw video is explanation/back-tracing only",
+        "Q3 aligned=READY; Q3 text representation=exactly one of(text,text_bert); Q3 unaligned=BLOCKED; Attachment4 raw video is explanation/back-tracing only",
         "masks=validity_mask + synthetic_missing_mask + zero_diagnostic_mask",
         "observed_mask=validity_mask AND NOT synthetic_missing_mask",
-        "Q1 label-driven choices -> Q2/Q3: FORBIDDEN",
+        "Any Q1-data-fitted/estimated/calibrated/adapted/selected state -> Q2/Q3: FORBIDDEN",
         "official split: keep; train-internal CV must group by video_id",
         "metrics: Accuracy + Macro-F1 + per-class F1; Weighted-F1 optional",
         f"blockers={blockers}",

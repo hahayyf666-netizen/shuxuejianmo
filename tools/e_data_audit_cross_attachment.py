@@ -88,17 +88,22 @@ def main():
         "leakage_firewall":{
             "forbid_q1_to_q2q3":[
                 "Q1 labels",
-                "Q1 label-based feature selection",
-                "Q1 label-based model selection",
-                "Q1 label-based hyperparameter selection",
-                "Q1 label-based threshold selection"
+                "Q1 label-based feature/model/hyperparameter/threshold selection",
+                "any parameter/statistic/model state fitted, estimated, calibrated, adapted, or selected using Q1 samples",
+                "Q1-fitted normalization mean/std",
+                "Q1-fitted PCA or dimensionality reduction",
+                "Q1-fitted clustering/codebook",
+                "self-supervised adaptation using Q1 videos",
+                "feature extractor fine-tuning using Q1 samples",
+                "any data-driven preprocessing parameter estimated from Q1 samples"
             ],
-            "allow_reuse_if_label_independent":[
-                "data readers",
-                "video decoding code",
-                "fixed pretrained tools",
-                "label-independent preprocessing functions"
-            ]
+            "allow_reuse_only_if_q1_data_independent":[
+                "stateless data readers",
+                "stateless video decoding code",
+                "fixed pretrained tools whose parameters are not adapted on Q1",
+                "preprocessing functions with parameters fixed independently of Q1 data"
+            ],
+            "reason":"Attachment1 overlaps Attachment2 train/test; Q1-derived fitted state could leak Attachment2 test information even without using Q1 labels"
         }
     }
     expected={"overlap_count":18,"train":11,"valid":0,"test":7}
@@ -109,6 +114,7 @@ def main():
         "test":mode_counts.get("test",0)==expected["test"],
         "labels_equal":report["label_mismatch_count"]==0,
         "annotations_equal":report["annotation_mismatch_count"]==0,
+        "texts_equal":report["text_mismatch_count"]==0,
     }
     report["baseline_checks"]=checks
     report["status"]="PASS" if all(checks.values()) else "FAIL"
