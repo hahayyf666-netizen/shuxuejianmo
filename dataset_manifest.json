@@ -1,0 +1,233 @@
+{
+  "format": "raw-byte-parts-v1",
+  "chunk_size": 94371840,
+  "source_directory": "E题数据",
+  "items": [
+    {
+      "original_path": "E题数据/附件2-数据集特征文件/aligned_50.pkl",
+      "original_size": 993842861,
+      "original_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+      "chunk_size": 94371840,
+      "parts": [
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part001",
+          "size": 94371840,
+          "sha256": "4d4642fa95d7d324caea0ebcf7e5a6fae2dad7eb028596b21dade70ca2118e84"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part002",
+          "size": 94371840,
+          "sha256": "f0528d964aaae7b1b57f687f58f26f260f0a8945cbe23b8c03e31830a47834be"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part003",
+          "size": 94371840,
+          "sha256": "97e0c0f31a2878b6623ee6f89fd5bb23c2bce62e80941b02390effbd92495aeb"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part004",
+          "size": 94371840,
+          "sha256": "246d403223bbfc39c9234ea54e1526a28202d7d8bfe9bdd695fcfd76fab40c3d"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part005",
+          "size": 94371840,
+          "sha256": "d33fc5d7875e644bcb1ca1d9aa27e20a329904f73034f4dfd4813a46a5468c56"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part006",
+          "size": 94371840,
+          "sha256": "29860635304ecd24f483bdb56cfcba298df281c64d57ff82571c36c8521f6564"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part007",
+          "size": 94371840,
+          "sha256": "d53bbee428d8a3b9aed8e5b58bb704e93ccb00a321c6c71392f136881d9c1860"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part008",
+          "size": 94371840,
+          "sha256": "5a99cd22ea2546ca3931076225014998c08f375706163d94d9c70cfcea21bf6d"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part009",
+          "size": 94371840,
+          "sha256": "48d8b1317193cac883cb33c4d96011561721d4b9b0ab6334c1cfd9fbc6cfb14f"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part010",
+          "size": 94371840,
+          "sha256": "02988cbcf8a81b9e1fcf36476602c890ef68c66754bfe1975fc6cae61d4ed146"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/aligned_50.pkl.part011",
+          "size": 50124461,
+          "sha256": "07c5ba7b09bea3d0018f631bc7ef86d50d3330ef62862a874327dbb27512a237"
+        }
+      ]
+    },
+    {
+      "original_path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl",
+      "original_size": 2897003035,
+      "original_sha256": "77eda14a06be9749a96c52ae45470c7cffcfa7219011eae391d231a0664c3762",
+      "chunk_size": 94371840,
+      "parts": [
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part001",
+          "size": 94371840,
+          "sha256": "aea0087e6c4c79c59e1fcd45d0bd0f83d6cbbbefbdda41fe49c8c512e13d3f03"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part002",
+          "size": 94371840,
+          "sha256": "9ec47701eb13b5e12a33a8909db592232818e55d0b721794b7d4f832553f5607"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part003",
+          "size": 94371840,
+          "sha256": "20b41371d9b4e781bdec728390b876313b4d4d1697ac34785b42df6fe248a19b"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part004",
+          "size": 94371840,
+          "sha256": "14719209f335815a052144c6c0a8e2226f8b3cf3ffb3069bad4a7c6fa6b52dae"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part005",
+          "size": 94371840,
+          "sha256": "213fc6f8abcd6766fa4b88f5c76d11f24939db123372990e1a6a16f7fb0c575c"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part006",
+          "size": 94371840,
+          "sha256": "44c288a1e0035d5aa8be73c5e761288a24d49fad14c262ac2543583318955705"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part007",
+          "size": 94371840,
+          "sha256": "181af57b901ece07c8486774307f2b0109ccf787e827dd742f045f9e04d024cd"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part008",
+          "size": 94371840,
+          "sha256": "5a96aa8e7e7709a1e38e23ce7cea48b68567d46e144105e0cb4620955da2e4e4"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part009",
+          "size": 94371840,
+          "sha256": "91284cd2bff0eb78d821dc57a722269feff8df01111d7371b66cc33832751a0b"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part010",
+          "size": 94371840,
+          "sha256": "383563d8f878a34b16caa6850eead64905daacb7a2aec36afde831999d5be3e0"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part011",
+          "size": 94371840,
+          "sha256": "e08b7720e15c3db015407cd635adf6e03327877c8184368fbfdb99c600a28859"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part012",
+          "size": 94371840,
+          "sha256": "49ebbb12608bba7cd7896e654aa7fff551a6591026e7b2bfe4fb667080c5b54f"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part013",
+          "size": 94371840,
+          "sha256": "09fb26c19d5ccb8f79bc744d620ad4769e6270f667df061d462f46d5b6180c6b"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part014",
+          "size": 94371840,
+          "sha256": "b743c150a523da95c9bf5843e797f2bf0d383188a2bbc9821decfd63113927fa"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part015",
+          "size": 94371840,
+          "sha256": "aaee7a67676e260dc09cf47ec96c4b85230ca3d8a812bf4af124fc5fbe87b810"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part016",
+          "size": 94371840,
+          "sha256": "874d350d839751213f57bedf25804954ba89a58a22ba44087cf229a5265f1a14"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part017",
+          "size": 94371840,
+          "sha256": "1ecfed63a01947d8cff87856ca5cf265bc9d4f9463635d9b4bf0a2b48e4aa52f"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part018",
+          "size": 94371840,
+          "sha256": "b1c5c0df2bbbd28489966301929e97210d1f9404a93dc435f35b1db04f370ef5"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part019",
+          "size": 94371840,
+          "sha256": "64e46b6f2ff89b21276423749e503d7dc2e7ec8683d3ac9663c93c421b719b2d"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part020",
+          "size": 94371840,
+          "sha256": "47c0d6a75df819e52662c30c65b799d7b8ba2acdfce22ece7f64c44464e2f3a6"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part021",
+          "size": 94371840,
+          "sha256": "63893ae83da3e91541292fa47144858c684e1072045f5e69db22b7eea07edcf1"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part022",
+          "size": 94371840,
+          "sha256": "f050e9de9c99d23c4db03016a48866a76ed4fa85ffa79635feff8b306a26480f"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part023",
+          "size": 94371840,
+          "sha256": "4842d524b562b6c268e78cd714a971241ba815c0871d5411335497abe80d2ecd"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part024",
+          "size": 94371840,
+          "sha256": "478858c7a2e31ff6aada4b7dc6894989a1afd5b696e36bcbed16ba4777addf77"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part025",
+          "size": 94371840,
+          "sha256": "5fee533b2a02c14019b86757de23932e57e016064961c0c585dd13684def89f9"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part026",
+          "size": 94371840,
+          "sha256": "a8276a78bf11922515cf5a4dd2be3bfed9e74ed429ea821587963eb07813718d"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part027",
+          "size": 94371840,
+          "sha256": "d2e2112ee37cc5025ce5ce07c3fa61eed0d078ad1f4cbfd1b693ceb28f84ccbb"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part028",
+          "size": 94371840,
+          "sha256": "171fd8ad89353e870d497b755e276b2545d9ec03d66835705aa2a84e95754278"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part029",
+          "size": 94371840,
+          "sha256": "00f7c74f573f44870b9fda38dfbae5a8c0e3cd4af7c43f22bec2dc5b69a50a1e"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part030",
+          "size": 94371840,
+          "sha256": "15b5556ef1d5ee455a15b5c90651a51720a97dc3af56ff32256a7d73c815222d"
+        },
+        {
+          "path": "E题数据/附件2-数据集特征文件/unaligned_50.pkl.part031",
+          "size": 65847835,
+          "sha256": "537bea11a176e21456510c8177bee903b0f3179960a24b14eda37c8d6ffb341a"
+        }
+      ]
+    }
+  ]
+}
