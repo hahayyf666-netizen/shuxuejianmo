@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import pickle
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -27,6 +28,11 @@ def version_of(path: Path) -> str:
     if "对齐" in s or "aligned" in s:
         return "aligned"
     return "unknown"
+
+
+def sample_no(path: Path):
+    m = re.search(r"(\d+)(?=\.(?:pkl|mp4)$)", path.name, flags=re.I)
+    return int(m.group(1)) if m else None
 
 
 def sha256_file(path: Path) -> str:
@@ -65,12 +71,15 @@ def main():
     pkls = sorted(root.rglob("*.pkl"))
     videos = sorted(root.rglob("*.mp4"))
     by_version = {"aligned": [], "unaligned": [], "unknown": []}
+    video_by_version = {"aligned": [], "unaligned": [], "unknown": []}
     for p in pkls:
         by_version[version_of(p)].append(p)
+    for p in videos:
+        video_by_version[version_of(p)].append(p)
 
     video_by_stem = defaultdict(list)
     for p in videos:
-        video_by_stem[p.stem].append({"path": p.as_posix(), "sha256": sha256_file(p)})
+        video_by_stem[p.stem].append({"path": p.as_posix(), "sha256": sha256_file(p), "version": version_of(p)})
 
     report = {
         "attachment": "attachment4",
@@ -88,6 +97,43 @@ def main():
 
     hard_failures = []
     anomalies = []
+
+    expected_ids = set(range(1, 21))
+    pairing = {}
+    for ver in ["aligned", "unaligned"]:
+        pkl_ids = [sample_no(p) for p in by_version[ver]]
+        vid_ids = [sample_no(p) for p in video_by_version[ver]]
+        pairing[ver] = {
+            "pkl_ids": sorted(x for x in pkl_ids if x is not None),
+            "video_ids": sorted(x for x in vid_ids if x is not None),
+            "missing_pkl_ids": sorted(expected_ids - set(x for x in pkl_ids if x is not None)),
+            "missing_video_ids": sorted(expected_ids - set(x for x in vid_ids if x is not None)),
+            "duplicate_pkl_ids": sorted(k for k, v in Counter(pkl_ids).items() if k is not None and v > 1),
+            "duplicate_video_ids": sorted(k for k, v in Counter(vid_ids).items() if k is not None and v > 1),
+            "unparseable_pkl_count": sum(x is None for x in pkl_ids),
+            "unparseable_video_count": sum(x is None for x in vid_ids),
+        }
+        q = pairing[ver]
+        if (
+            q["missing_pkl_ids"] or q["missing_video_ids"]
+            or q["duplicate_pkl_ids"] or q["duplicate_video_ids"]
+            or q["unparseable_pkl_count"] or q["unparseable_video_count"]
+        ):
+            hard_failures.append(f"{ver} PKL/video sample pairing failed")
+
+    paired_video_sha_mismatches = []
+    for sid in sorted(expected_ids):
+        hashes = {}
+        for ver in ["aligned", "unaligned"]:
+            matches = [p for p in video_by_version[ver] if sample_no(p) == sid]
+            if len(matches) == 1:
+                hashes[ver] = sha256_file(matches[0])
+        if len(hashes) == 2 and hashes["aligned"] != hashes["unaligned"]:
+            paired_video_sha_mismatches.append(sid)
+    if paired_video_sha_mismatches:
+        hard_failures.append("paired aligned/unaligned videos differ by bytes")
+    report["sample_pairing"] = pairing
+    report["paired_video_sha_mismatches"] = paired_video_sha_mismatches
 
     for ver in ["aligned", "unaligned"]:
         rows = []
@@ -232,6 +278,8 @@ def main():
         f"status={report['status']}",
         f"aligned_count={report['versions']['aligned']['count']} unaligned_count={report['versions']['unaligned']['count']}",
         f"video_files={len(videos)} unique_video_content_count={report['unique_video_content_count']}",
+        f"sample_pairing={report['sample_pairing']}",
+        f"paired_video_sha_mismatches={report['paired_video_sha_mismatches']}",
         f"aligned_nonfinite={len(report['versions']['aligned']['nonfinite_files'])}",
         f"unaligned_nonfinite={len(report['versions']['unaligned']['nonfinite_files'])}",
         f"aligned_vision_all_zero={sum(1 for x in anomalies if x.get('type') == 'vision_all_zero')}",

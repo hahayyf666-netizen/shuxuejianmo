@@ -298,6 +298,22 @@ for col in ldf.columns:
 for c in ["label","regression_labels","sentiment"]:
     if c in ldf.columns and pd.api.types.is_numeric_dtype(ldf[c]):
         label_report[c+"_stats"] = {k:float(v) for k,v in ldf[c].describe().items()}
+# official split isolation at original-video level
+if {"video_id", "mode"}.issubset(ldf.columns):
+    video_sets = {
+        str(mode): set(map(str, g["video_id"].tolist()))
+        for mode, g in ldf.groupby("mode")
+    }
+    names = sorted(video_sets)
+    video_ov = {}
+    for i in range(len(names)):
+        for j in range(i + 1, len(names)):
+            video_ov[names[i] + "__" + names[j]] = len(video_sets[names[i]] & video_sets[names[j]])
+    label_report["unique_video_ids_by_split"] = {k: len(v) for k, v in video_sets.items()}
+    label_report["video_id_split_overlaps"] = video_ov
+else:
+    label_report["video_id_split_overlaps"] = {"ERROR": "video_id/mode columns missing"}
+
 summary["label_xlsx"] = label_report
 ldf.to_csv(OUT/"attachment2_label.csv", index=False)
 
@@ -356,6 +372,7 @@ lines=[]
 lines.append("E题附件2数据审计")
 lines.append("="*60)
 lines.append(f"label.xlsx rows={label_report['rows']} columns={label_report['columns']}")
+lines.append(f"video_id split overlaps={label_report.get('video_id_split_overlaps')} unique_video_ids_by_split={label_report.get('unique_video_ids_by_split')}")
 for fname in ["aligned_50.pkl","unaligned_50.pkl"]:
     r=summary[fname]
     lines.append(f"\n{fname}: size={r['merge']['size']} sha256={r['merge']['sha256']}")

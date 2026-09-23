@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import pickle
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -26,6 +27,11 @@ def version_of(path: Path) -> str:
     if "对齐" in s or "aligned" in s:
         return "aligned"
     return "unknown"
+
+
+def sample_no(path: Path):
+    m = re.search(r"(\d+)(?=\.pkl$)", path.name)
+    return int(m.group(1)) if m else None
 
 
 def unwrap_sample(d):
@@ -60,6 +66,27 @@ def main():
 
     report = {"attachment": "attachment3", "root": root.as_posix(), "versions": {}}
     hard_failures = []
+
+    expected_ids = set(range(1, 31))
+    ids_by_version = {
+        ver: [sample_no(p) for p in by_version[ver]]
+        for ver in ["aligned", "unaligned"]
+    }
+    report["sample_ids"] = {
+        ver: {
+            "ids": sorted(x for x in ids_by_version[ver] if x is not None),
+            "missing": sorted(expected_ids - set(x for x in ids_by_version[ver] if x is not None)),
+            "duplicates": sorted(k for k, v in Counter(ids_by_version[ver]).items() if k is not None and v > 1),
+            "unparseable_count": sum(x is None for x in ids_by_version[ver]),
+        }
+        for ver in ["aligned", "unaligned"]
+    }
+    for ver in ["aligned", "unaligned"]:
+        m = report["sample_ids"][ver]
+        if m["missing"] or m["duplicates"] or m["unparseable_count"]:
+            hard_failures.append(f"{ver} sample-number completeness/pairing failed")
+    if set(ids_by_version["aligned"]) != set(ids_by_version["unaligned"]):
+        hard_failures.append("aligned/unaligned sample-number sets differ")
 
     for ver in ["aligned", "unaligned"]:
         rows = []
@@ -173,6 +200,7 @@ def main():
         "=" * 60,
         f"status={report['status']}",
         f"aligned_count={report['versions']['aligned']['count']} unaligned_count={report['versions']['unaligned']['count']}",
+        f"sample_ids={report['sample_ids']}",
         f"aligned_text_bert_invalid={len(report['versions']['aligned']['text_bert_invalid_files'])}",
         f"aligned_unexpected_keys={len(report['versions']['aligned']['unexpected_key_files'])}",
         f"aligned_nonfinite={len(report['versions']['aligned']['nonfinite_files'])}",
