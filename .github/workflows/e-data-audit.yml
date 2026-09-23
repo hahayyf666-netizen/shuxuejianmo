@@ -5,10 +5,11 @@ on:
     branches:
       - audit/e-data-20260923
     paths:
-      - 'tools/e_data_audit_attachment2.py'
+      - 'tools/e_data_*.py'
       - 'dataset_manifest.json'
-      - 'E题数据/附件2-数据集特征文件/**'
+      - 'E题数据/**'
       - '.github/workflows/e-data-audit.yml'
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -16,7 +17,7 @@ permissions:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,12 +26,28 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install --upgrade pip && pip install numpy pandas openpyxl
-      - run: python tools/e_data_audit_attachment2.py
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --upgrade pip
+          pip install numpy pandas openpyxl
+      - name: Audit attachment 1
+        run: python tools/e_data_audit_attachment1.py
+      - name: Audit attachment 2
+        run: python tools/e_data_audit_attachment2.py
+      - name: Audit attachment 3
+        run: python tools/e_data_audit_attachment3.py
+      - name: Audit attachment 4
+        run: python tools/e_data_audit_attachment4.py
+      - name: Audit cross-attachment leakage
+        run: python tools/e_data_audit_cross_attachment.py
+      - name: Build Stage 1 data contract
+        run: python tools/e_data_stage1_contract.py
       - name: Commit audit outputs
         run: |
           git config user.name "e-data-audit"
           git config user.email "actions@users.noreply.github.com"
-          git add _e_data_audit_out/attachment2_audit.json _e_data_audit_out/attachment2_audit.txt _e_data_audit_out/attachment2_label.csv
-          git diff --cached --quiet || git commit -m "Add attachment 2 audit results"
+          git add _e_data_audit_out/
+          git diff --cached --quiet || git commit -m "Update Stage 1 E-data audit results"
           git push origin HEAD:audit/e-data-20260923
