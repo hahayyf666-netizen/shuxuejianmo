@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+# Stage 1 contract: machine gate is intentionally fail-closed.
+
 import json
 from pathlib import Path
 
