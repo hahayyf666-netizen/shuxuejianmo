@@ -206,66 +206,2948 @@
   },
   "versions": {
     "aligned": {
-      "count": 0,
-      "keysets": {},
-      "samples": [],
-      "unexpected_shape_files": []
+      "count": 20,
+      "keysets": {
+        "('audio', 'id', 'raw_text', 'text', 'text_bert', 'vision')": 20
+      },
+      "samples": [
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/01.pkl",
+          "stem": "01",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U137"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 23,
+          "vision_nonzero_count": 22,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 23,
+          "audio_nonzero_count": 22
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/02.pkl",
+          "stem": "02",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U71"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 20,
+          "vision_nonzero_count": 19,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 20,
+          "audio_nonzero_count": 19
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/03.pkl",
+          "stem": "03",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U143"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 34,
+          "vision_nonzero_count": 33,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 34,
+          "audio_nonzero_count": 33
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/04.pkl",
+          "stem": "04",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U107"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 27,
+          "vision_nonzero_count": 26,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 27,
+          "audio_nonzero_count": 26
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/05.pkl",
+          "stem": "05",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U61"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 16,
+          "vision_nonzero_count": 15,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 16,
+          "audio_nonzero_count": 15
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/06.pkl",
+          "stem": "06",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U161"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 36,
+          "vision_nonzero_count": 35,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 36,
+          "audio_nonzero_count": 35
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/07.pkl",
+          "stem": "07",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U330"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 49,
+          "vision_nonzero_count": 48,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 49,
+          "audio_nonzero_count": 48
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/08.pkl",
+          "stem": "08",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U63"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 12,
+          "vision_nonzero_count": 11,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 12,
+          "audio_nonzero_count": 11
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/09.pkl",
+          "stem": "09",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U64"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 19,
+          "vision_nonzero_count": 18,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 19,
+          "audio_nonzero_count": 18
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/10.pkl",
+          "stem": "10",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U129"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 31,
+          "vision_nonzero_count": 30,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 31,
+          "audio_nonzero_count": 30
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/11.pkl",
+          "stem": "11",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U61"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 15,
+          "vision_nonzero_count": 14,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 15,
+          "audio_nonzero_count": 14
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/12.pkl",
+          "stem": "12",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U186"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 43,
+          "vision_nonzero_count": 42,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 43,
+          "audio_nonzero_count": 42
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/13.pkl",
+          "stem": "13",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U131"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 0,
+          "vision_nonzero_count": 0,
+          "vision_all_zero": true,
+          "audio_nonzero_span": 31,
+          "audio_nonzero_count": 30
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/14.pkl",
+          "stem": "14",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U157"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 36,
+          "vision_nonzero_count": 35,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 36,
+          "audio_nonzero_count": 35
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/15.pkl",
+          "stem": "15",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U117"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 22,
+          "vision_nonzero_count": 21,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 22,
+          "audio_nonzero_count": 21
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/16.pkl",
+          "stem": "16",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U41"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 12,
+          "vision_nonzero_count": 11,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 12,
+          "audio_nonzero_count": 11
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/17.pkl",
+          "stem": "17",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U131"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 25,
+          "vision_nonzero_count": 24,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 25,
+          "audio_nonzero_count": 24
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/18.pkl",
+          "stem": "18",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U270"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 49,
+          "vision_nonzero_count": 48,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 49,
+          "audio_nonzero_count": 48
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/19.pkl",
+          "stem": "19",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U206"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 40,
+          "vision_nonzero_count": 39,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 40,
+          "audio_nonzero_count": 39
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/20.pkl",
+          "stem": "20",
+          "keys": [
+            "audio",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U172"
+            },
+            "audio": {
+              "shape": [
+                50,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                50,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 44,
+          "vision_nonzero_count": 43,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 44,
+          "audio_nonzero_count": 43
+        }
+      ],
+      "nonfinite_files": [],
+      "unexpected_key_files": [],
+      "unexpected_shape_files": [],
+      "unexpected_text_bert_dtype_files": []
     },
     "unaligned": {
-      "count": 0,
-      "keysets": {},
-      "samples": [],
-      "vision_length_vs_nonzero_span_mismatches": []
+      "count": 20,
+      "keysets": {
+        "('audio', 'audio_lengths', 'id', 'raw_text', 'text', 'text_bert', 'vision', 'vision_lengths')": 20
+      },
+      "samples": [
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/01.pkl",
+          "stem": "01",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U137"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 135,
+          "vision_nonzero_count": 135,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 179,
+          "audio_nonzero_count": 179,
+          "vision_length_value": 135,
+          "audio_length_value": 179
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/02.pkl",
+          "stem": "02",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U71"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 50,
+          "vision_nonzero_count": 50,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 66,
+          "audio_nonzero_count": 66,
+          "vision_length_value": 50,
+          "audio_length_value": 66
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/03.pkl",
+          "stem": "03",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U143"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 144,
+          "vision_nonzero_count": 144,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 191,
+          "audio_nonzero_count": 191,
+          "vision_length_value": 144,
+          "audio_length_value": 191
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/04.pkl",
+          "stem": "04",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U107"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 103,
+          "vision_nonzero_count": 103,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 137,
+          "audio_nonzero_count": 137,
+          "vision_length_value": 103,
+          "audio_length_value": 137
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/05.pkl",
+          "stem": "05",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U61"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 90,
+          "vision_nonzero_count": 90,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 120,
+          "audio_nonzero_count": 120,
+          "vision_length_value": 90,
+          "audio_length_value": 120
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/06.pkl",
+          "stem": "06",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U161"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 123,
+          "vision_nonzero_count": 123,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 163,
+          "audio_nonzero_count": 163,
+          "vision_length_value": 123,
+          "audio_length_value": 163
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/07.pkl",
+          "stem": "07",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U330"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 319,
+          "vision_nonzero_count": 319,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 425,
+          "audio_nonzero_count": 425,
+          "vision_length_value": 319,
+          "audio_length_value": 425
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/08.pkl",
+          "stem": "08",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U63"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 74,
+          "vision_nonzero_count": 74,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 98,
+          "audio_nonzero_count": 98,
+          "vision_length_value": 74,
+          "audio_length_value": 98
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/09.pkl",
+          "stem": "09",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U64"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 75,
+          "vision_nonzero_count": 75,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 99,
+          "audio_nonzero_count": 99,
+          "vision_length_value": 75,
+          "audio_length_value": 99
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/10.pkl",
+          "stem": "10",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U129"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 147,
+          "vision_nonzero_count": 147,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 195,
+          "audio_nonzero_count": 195,
+          "vision_length_value": 147,
+          "audio_length_value": 195
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/11.pkl",
+          "stem": "11",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U61"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 86,
+          "vision_nonzero_count": 86,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 114,
+          "audio_nonzero_count": 114,
+          "vision_length_value": 86,
+          "audio_length_value": 114
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/12.pkl",
+          "stem": "12",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U186"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 193,
+          "vision_nonzero_count": 193,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 257,
+          "audio_nonzero_count": 257,
+          "vision_length_value": 193,
+          "audio_length_value": 257
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/13.pkl",
+          "stem": "13",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U131"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 18,
+          "vision_nonzero_count": 17,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 173,
+          "audio_nonzero_count": 173,
+          "vision_length_value": 1,
+          "audio_length_value": 173
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/14.pkl",
+          "stem": "14",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U157"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 153,
+          "vision_nonzero_count": 153,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 204,
+          "audio_nonzero_count": 204,
+          "vision_length_value": 153,
+          "audio_length_value": 204
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/15.pkl",
+          "stem": "15",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U117"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 110,
+          "vision_nonzero_count": 110,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 145,
+          "audio_nonzero_count": 145,
+          "vision_length_value": 110,
+          "audio_length_value": 145
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/16.pkl",
+          "stem": "16",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U41"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 44,
+          "vision_nonzero_count": 40,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 60,
+          "audio_nonzero_count": 60,
+          "vision_length_value": 1,
+          "audio_length_value": 60
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/17.pkl",
+          "stem": "17",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U131"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 143,
+          "vision_nonzero_count": 143,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 191,
+          "audio_nonzero_count": 191,
+          "vision_length_value": 143,
+          "audio_length_value": 191
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/18.pkl",
+          "stem": "18",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U270"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 280,
+          "vision_nonzero_count": 280,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 372,
+          "audio_nonzero_count": 372,
+          "vision_length_value": 280,
+          "audio_length_value": 372
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/19.pkl",
+          "stem": "19",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U206"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 204,
+          "vision_nonzero_count": 204,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 272,
+          "audio_nonzero_count": 272,
+          "vision_length_value": 204,
+          "audio_length_value": 272
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/20.pkl",
+          "stem": "20",
+          "keys": [
+            "audio",
+            "audio_lengths",
+            "id",
+            "raw_text",
+            "text",
+            "text_bert",
+            "vision",
+            "vision_lengths"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [],
+              "dtype": "<U172"
+            },
+            "audio": {
+              "shape": [
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "id": {
+              "shape": [],
+              "dtype": "<U2"
+            },
+            "text": {
+              "shape": [
+                50,
+                768
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "text_bert": {
+              "shape": [
+                3,
+                50
+              ],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision_lengths": {
+              "shape": [],
+              "dtype": "int64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "vision_nonzero_span": 162,
+          "vision_nonzero_count": 162,
+          "vision_all_zero": false,
+          "audio_nonzero_span": 216,
+          "audio_nonzero_count": 216,
+          "vision_length_value": 162,
+          "audio_length_value": 216
+        }
+      ],
+      "nonfinite_files": [],
+      "unexpected_key_files": [],
+      "unexpected_shape_files": [],
+      "vision_length_vs_nonzero_span_mismatches": [
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/13.pkl",
+          "vision_lengths": 1,
+          "vision_nonzero_span": 18,
+          "vision_nonzero_count": 17
+        },
+        {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/16.pkl",
+          "vision_lengths": 1,
+          "vision_nonzero_span": 44,
+          "vision_nonzero_count": 40
+        }
+      ]
     }
   },
-  "unknown_version_pkls": [
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/01.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/02.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/03.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/04.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/05.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/06.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/07.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/08.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/09.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/10.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/11.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/12.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/13.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/14.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/15.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/16.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/17.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/18.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/19.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/20.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/01.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/02.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/03.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/04.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/05.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/06.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/07.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/08.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/09.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/10.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/11.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/12.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/13.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/14.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/15.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/16.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/17.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/18.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/19.pkl",
-    "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/20.pkl"
-  ],
+  "unknown_version_pkls": [],
   "unique_video_content_count": 20,
-  "anomalies": [],
-  "hard_failures": [
-    "aligned_pkl_count=0 expected=20",
-    "unaligned_pkl_count=0 expected=20",
-    "unknown-version pkl files exist"
+  "anomalies": [
+    {
+      "version": "aligned",
+      "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/13.pkl",
+      "type": "vision_all_zero"
+    },
+    {
+      "version": "unaligned",
+      "type": "vision_length_vs_nonzero_span",
+      "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/13.pkl",
+      "vision_lengths": 1,
+      "vision_nonzero_span": 18,
+      "vision_nonzero_count": 17
+    },
+    {
+      "version": "unaligned",
+      "type": "vision_length_vs_nonzero_span",
+      "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/16.pkl",
+      "vision_lengths": 1,
+      "vision_nonzero_span": 44,
+      "vision_nonzero_count": 40
+    }
   ],
-  "status": "FAIL"
+  "hard_failures": [],
+  "status": "PASS_WITH_KNOWN_ANOMALIES"
 }

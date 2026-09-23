@@ -1,9 +1,11 @@
 E题附件3数据审计
 ============================================================
-status=FAIL
-aligned_count=0 unaligned_count=0
+status=PASS_WITH_INTERFACE_RISK
+aligned_count=30 unaligned_count=30
 aligned_text_bert_invalid=0
 aligned_unexpected_keys=0
+aligned_nonfinite=0
 unaligned_unexpected_keys=0
+unaligned_nonfinite=0
 unaligned_missing_fields=text,text_bert,id,audio_lengths,vision_lengths
-hard_failures=['aligned_count=0 expected=30', 'unaligned_count=0 expected=30', 'unknown-version pkl files exist']
+hard_failures=[]

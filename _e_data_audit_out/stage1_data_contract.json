@@ -110,6 +110,13 @@
     "attachment4_audit.json": true,
     "cross_attachment_audit.json": true
   },
+  "machine_audit_statuses": {
+    "attachment1": "PASS",
+    "attachment2": "PASS",
+    "attachment3": "PASS_WITH_INTERFACE_RISK",
+    "attachment4": "PASS_WITH_KNOWN_ANOMALIES",
+    "cross_attachment": "PASS"
+  },
   "stage1_blockers_after_contract": [],
   "stage1_status": "READY_FOR_RED_TEAM"
 }

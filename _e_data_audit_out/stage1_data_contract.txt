@@ -2,6 +2,7 @@ E题 Stage 1 数据与接口规范
 ============================================================
 stage1_status=READY_FOR_RED_TEAM
 machine_audit_presence={'attachment1_audit.json': True, 'attachment2_audit.json': True, 'attachment3_audit.json': True, 'attachment4_audit.json': True, 'cross_attachment_audit.json': True}
+machine_audit_statuses={'attachment1': 'PASS', 'attachment2': 'PASS', 'attachment3': 'PASS_WITH_INTERFACE_RISK', 'attachment4': 'PASS_WITH_KNOWN_ANOMALIES', 'cross_attachment': 'PASS'}
 Q2 aligned=READY; Q2 unaligned=BLOCKED (risk isolation, not final model choice)
 masks=validity_mask + synthetic_missing_mask + zero_diagnostic_mask
 observed_mask=validity_mask AND NOT synthetic_missing_mask

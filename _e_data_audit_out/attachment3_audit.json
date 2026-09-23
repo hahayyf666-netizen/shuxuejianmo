@@ -3,17 +3,2816 @@
   "root": "E题数据/附件3-模态缺失特征样本",
   "versions": {
     "aligned": {
-      "count": 0,
-      "keysets": {},
-      "samples": [],
+      "count": 30,
+      "keysets": {
+        "('audio', 'text_bert', 'vision')": 30
+      },
+      "samples": [
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_01.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 3340.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_02.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 19422.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_03.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 26114.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_04.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 18868.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_05.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 3427.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_06.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 27572.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_07.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 28428.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_08.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 17704.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_09.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 9650.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_10.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 4617.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_11.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 7840.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_12.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 7312.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_13.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 27612.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_14.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 21892.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_15.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 7705.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_16.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 26653.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_17.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 11360.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_18.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 14396.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_19.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 18704.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_20.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 100.0,
+            "token_max": 26114.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_21.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 4553.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_22.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 4695.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_23.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 20338.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_24.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 2428.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_25.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 9994.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_26.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 3632.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_27.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 18402.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_28.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 25703.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_29.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 5544.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_30.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "text_bert",
+            "vision"
+          ],
+          "fields": {
+            "text_bert": {
+              "shape": [
+                1,
+                3,
+                50
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "vision": {
+              "shape": [
+                1,
+                50,
+                35
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                50,
+                74
+              ],
+              "dtype": "float32",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": [],
+          "text_bert_checks": {
+            "integer_valued": true,
+            "token_min": 0.0,
+            "token_max": 4357.0,
+            "attention_mask_binary": true,
+            "segment_integer_valued": true
+          }
+        }
+      ],
+      "nonfinite_files": [],
       "unexpected_key_files": [],
       "unexpected_shape_files": [],
+      "unexpected_text_bert_dtype_files": [],
       "text_bert_invalid_files": []
     },
     "unaligned": {
-      "count": 0,
-      "keysets": {},
-      "samples": [],
+      "count": 30,
+      "keysets": {
+        "('audio', 'raw_text', 'vision')": 30
+      },
+      "samples": [
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_01.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_02.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_03.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_04.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_05.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_06.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_07.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_08.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_09.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_10.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_11.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_12.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_13.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_14.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_15.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_16.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_17.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_18.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_19.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_20.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_21.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_22.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_23.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_24.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_25.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_26.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_27.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_28.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_29.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        },
+        {
+          "path": "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_30.pkl",
+          "top_level_keys": [
+            "test"
+          ],
+          "wrapped_test_dict": true,
+          "keys": [
+            "audio",
+            "raw_text",
+            "vision"
+          ],
+          "fields": {
+            "raw_text": {
+              "shape": [
+                1
+              ],
+              "dtype": "<U1479"
+            },
+            "vision": {
+              "shape": [
+                1,
+                500,
+                35
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            },
+            "audio": {
+              "shape": [
+                1,
+                500,
+                74
+              ],
+              "dtype": "float64",
+              "nan": 0,
+              "inf": 0
+            }
+          },
+          "nonfinite_fields": []
+        }
+      ],
+      "nonfinite_files": [],
       "unexpected_key_files": [],
       "unexpected_shape_files": [],
       "missing_required_for_attachment2_style_unaligned": [
@@ -25,72 +2824,7 @@
       ]
     }
   },
-  "unknown_version_files": [
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_01.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_02.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_03.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_04.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_05.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_06.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_07.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_08.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_09.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_10.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_11.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_12.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_13.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_14.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_15.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_16.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_17.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_18.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_19.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_20.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_21.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_22.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_23.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_24.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_25.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_26.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_27.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_28.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_29.pkl",
-    "E题数据/附件3-模态缺失特征样本/对齐版本/附件3_30.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_01.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_02.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_03.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_04.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_05.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_06.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_07.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_08.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_09.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_10.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_11.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_12.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_13.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_14.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_15.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_16.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_17.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_18.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_19.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_20.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_21.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_22.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_23.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_24.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_25.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_26.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_27.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_28.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_29.pkl",
-    "E题数据/附件3-模态缺失特征样本/未对齐版本/附件3_未对齐版本_30.pkl"
-  ],
-  "hard_failures": [
-    "aligned_count=0 expected=30",
-    "unaligned_count=0 expected=30",
-    "unknown-version pkl files exist"
-  ],
-  "status": "FAIL"
+  "unknown_version_files": [],
+  "hard_failures": [],
+  "status": "PASS_WITH_INTERFACE_RISK"
 }
