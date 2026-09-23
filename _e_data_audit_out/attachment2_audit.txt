@@ -1,6 +1,7 @@
 E题附件2数据审计
 ============================================================
 label.xlsx rows=4850 columns=['video_id', 'clip_id', 'text', 'label', 'annotation', 'mode']
+video_id split overlaps={'test__train': 0, 'test__valid': 0, 'train__valid': 0} unique_video_ids_by_split={'test': 381, 'train': 1528, 'valid': 239}
 
 aligned_50.pkl: size=993842861 sha256=66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd
 top_keys=['train', 'valid', 'test'] split overlaps={'test__train': 0, 'test__valid': 0, 'train__valid': 0}

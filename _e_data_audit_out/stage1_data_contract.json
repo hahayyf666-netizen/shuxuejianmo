@@ -68,6 +68,99 @@
     },
     "hard_rule": "No Q2 model may depend on a field unavailable at Attachment3 final inference. The same-input-interface requirement is evaluated at the normalized model-facing interface, not raw PKL key equality."
   },
+  "q3_model_facing_interface": {
+    "aligned": {
+      "status": "READY",
+      "attachment2_available": [
+        "raw_text",
+        "text",
+        "text_bert",
+        "audio",
+        "vision",
+        "id",
+        "labels"
+      ],
+      "attachment4_available": [
+        "raw_text",
+        "text",
+        "text_bert",
+        "audio",
+        "vision",
+        "id",
+        "original_video"
+      ],
+      "allowed_predictive_dependencies": [
+        "raw_text",
+        "text",
+        "text_bert",
+        "audio",
+        "vision"
+      ],
+      "forbidden_predictive_dependencies": [
+        "id",
+        "original_video"
+      ],
+      "original_video_role": "evidence back-tracing / explanation display only; Attachment2 training has no raw video, so it is not a predictive model input"
+    },
+    "unaligned": {
+      "status": "BLOCKED",
+      "attachment2_available": [
+        "raw_text",
+        "text",
+        "text_bert",
+        "audio",
+        "vision",
+        "audio_lengths",
+        "vision_lengths",
+        "id",
+        "labels"
+      ],
+      "attachment4_available": [
+        "raw_text",
+        "text",
+        "text_bert",
+        "audio",
+        "vision",
+        "audio_lengths",
+        "vision_lengths",
+        "id",
+        "original_video"
+      ],
+      "block_reasons": [
+        "vision_lengths semantics are not reliably closed in Attachment2/4",
+        "unaligned validity handling must be reopened and validated before model admission"
+      ]
+    },
+    "hard_rule": "Q3 predictive inputs must be available in both Attachment2 training/validation and Attachment4 final inference. Raw Attachment4 video is reserved for evidence back-tracing, not predictive training."
+  },
+  "field_availability_matrix": {
+    "Q2_aligned_common_predictive": [
+      "text_bert",
+      "audio",
+      "vision"
+    ],
+    "Q2_unaligned_common_predictive_if_reopened": [
+      "raw_text",
+      "audio",
+      "vision"
+    ],
+    "Q3_aligned_common_predictive": [
+      "raw_text",
+      "text",
+      "text_bert",
+      "audio",
+      "vision"
+    ],
+    "Q3_unaligned_common_predictive_if_reopened": [
+      "raw_text",
+      "text",
+      "text_bert",
+      "audio",
+      "vision",
+      "audio_lengths",
+      "vision_lengths"
+    ]
+  },
   "mask_contract": {
     "validity_mask": "padding/non-valid sequence-position mask; for aligned text_bert routes use the frozen attention-mask semantics, not feature-zero tests",
     "synthetic_missing_mask": "only positions deliberately masked by our training/robustness experiment; generated and stored explicitly",

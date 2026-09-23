@@ -89,6 +89,16 @@
       "50%": 0.0,
       "75%": 1.0,
       "max": 3.0
+    },
+    "unique_video_ids_by_split": {
+      "test": 381,
+      "train": 1528,
+      "valid": 239
+    },
+    "video_id_split_overlaps": {
+      "test__train": 0,
+      "test__valid": 0,
+      "train__valid": 0
     }
   },
   "aligned_50.pkl": {
