@@ -1,0 +1,8 @@
+E题附件4数据审计
+============================================================
+status=FAIL
+aligned_count=0 unaligned_count=0
+video_files=40 unique_video_content_count=20
+aligned_vision_all_zero=0
+unaligned_vision_length_mismatches=0
+hard_failures=['aligned_pkl_count=0 expected=20', 'unaligned_pkl_count=0 expected=20', 'unknown-version pkl files exist']

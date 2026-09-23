@@ -1,0 +1,200 @@
+{
+  "attachment1_rows": 100,
+  "attachment2_rows": 4850,
+  "overlap_count": 18,
+  "overlap_by_split": {
+    "test": 7,
+    "train": 11
+  },
+  "label_mismatch_count": 0,
+  "annotation_mismatch_count": 0,
+  "text_mismatch_count": 0,
+  "overlap": [
+    {
+      "key": "-AUZQgSxyPQ$_$2",
+      "mode": "test",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.6666666865348816,
+      "attachment2_label": 0.6666666865348816
+    },
+    {
+      "key": "-HeZS2-Prhc$_$2",
+      "mode": "test",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.6666666865348816,
+      "attachment2_label": 0.6666666865348816
+    },
+    {
+      "key": "-HwX2H8Z4hY$_$9",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": -0.3333333432674408,
+      "attachment2_label": -0.3333333432674408
+    },
+    {
+      "key": "-MeTTeMJBNc$_$0",
+      "mode": "test",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.3333333432674408,
+      "attachment2_label": 0.3333333432674408
+    },
+    {
+      "key": "-RfYyzHpjk4$_$2",
+      "mode": "test",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.3333333432674408,
+      "attachment2_label": 0.3333333432674408
+    },
+    {
+      "key": "-THoVjtIkeU$_$2",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 1.3333333730697632,
+      "attachment2_label": 1.3333333730697632
+    },
+    {
+      "key": "-a55Q6RWvTA$_$3",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.6666666865348816,
+      "attachment2_label": 0.6666666865348816
+    },
+    {
+      "key": "-aqamKhZ1Ec$_$0",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": -2.0,
+      "attachment2_label": -2.0
+    },
+    {
+      "key": "-dxfTGcXJoc$_$0",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 1.0,
+      "attachment2_label": 1.0
+    },
+    {
+      "key": "-dxfTGcXJoc$_$6",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.6666666865348816,
+      "attachment2_label": 0.6666666865348816
+    },
+    {
+      "key": "-lzEya4AM_4$_$6",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": -0.3333333432674408,
+      "attachment2_label": -0.3333333432674408
+    },
+    {
+      "key": "-mJ2ud6oKI8$_$9",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.0,
+      "attachment2_label": 0.0
+    },
+    {
+      "key": "-s9qJ7ATP7w$_$5",
+      "mode": "test",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": -2.0,
+      "attachment2_label": -2.0
+    },
+    {
+      "key": "-s9qJ7ATP7w$_$6",
+      "mode": "test",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.0,
+      "attachment2_label": 0.0
+    },
+    {
+      "key": "-tPCytz4rww$_$16",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.0,
+      "attachment2_label": 0.0
+    },
+    {
+      "key": "-wny0OAz3g8$_$0",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.3333333432674408,
+      "attachment2_label": 0.3333333432674408
+    },
+    {
+      "key": "-wny0OAz3g8$_$5",
+      "mode": "train",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 1.0,
+      "attachment2_label": 1.0
+    },
+    {
+      "key": "-yRb-Jum7EQ$_$1",
+      "mode": "test",
+      "label_equal": true,
+      "annotation_equal": true,
+      "text_equal": true,
+      "attachment1_label": 0.0,
+      "attachment2_label": 0.0
+    }
+  ],
+  "leakage_firewall": {
+    "forbid_q1_to_q2q3": [
+      "Q1 labels",
+      "Q1 label-based feature selection",
+      "Q1 label-based model selection",
+      "Q1 label-based hyperparameter selection",
+      "Q1 label-based threshold selection"
+    ],
+    "allow_reuse_if_label_independent": [
+      "data readers",
+      "video decoding code",
+      "fixed pretrained tools",
+      "label-independent preprocessing functions"
+    ]
+  },
+  "baseline_checks": {
+    "overlap_count": true,
+    "train": true,
+    "valid": true,
+    "test": true,
+    "labels_equal": true,
+    "annotations_equal": true
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,11 @@
+E题 Stage 1 数据与接口规范
+============================================================
+stage1_status=READY_FOR_RED_TEAM
+machine_audit_presence={'attachment1_audit.json': True, 'attachment2_audit.json': True, 'attachment3_audit.json': True, 'attachment4_audit.json': True, 'cross_attachment_audit.json': True}
+Q2 aligned=READY; Q2 unaligned=BLOCKED (risk isolation, not final model choice)
+masks=validity_mask + synthetic_missing_mask + zero_diagnostic_mask
+observed_mask=validity_mask AND NOT synthetic_missing_mask
+Q1 label-driven choices -> Q2/Q3: FORBIDDEN
+official split: keep; train-internal CV must group by video_id
+metrics: Accuracy + Macro-F1 + per-class F1; Weighted-F1 optional
+blockers=[]

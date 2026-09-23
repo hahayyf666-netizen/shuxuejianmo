@@ -1,0 +1,7 @@
+E题跨附件审计
+============================================================
+status=PASS
+attachment1_rows=100 attachment2_rows=4850
+overlap=18 split_counts={'test': 7, 'train': 11}
+label_mismatch=0 annotation_mismatch=0 text_mismatch=0
+baseline_checks={'overlap_count': True, 'train': True, 'valid': True, 'test': True, 'labels_equal': True, 'annotations_equal': True}

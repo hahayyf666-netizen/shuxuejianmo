@@ -1,0 +1,85 @@
+{
+  "attachment": "attachment1",
+  "root": "E题数据/附件1-数据集原始多模态样本",
+  "label_file": "E题数据/附件1-数据集原始多模态样本/MOSEI数据集部分原始视频-100条/label-100.xlsx",
+  "counts": {
+    "videos": 100,
+    "label_rows": 100,
+    "unique_video_ids": 37
+  },
+  "columns": [
+    "video_id",
+    "clip_id",
+    "text",
+    "label",
+    "annotation"
+  ],
+  "missing_required_columns": [],
+  "label_nulls": {
+    "video_id": 0,
+    "clip_id": 0,
+    "text": 0,
+    "label": 0,
+    "annotation": 0
+  },
+  "label_distribution": {
+    "Positive": 57,
+    "Neutral": 25,
+    "Negative": 18
+  },
+  "continuous_label_range": [
+    -2.0,
+    2.6666667461395264
+  ],
+  "duplicate_label_keys": [],
+  "duplicate_video_keys": [],
+  "duplicate_text_count": 0,
+  "duplicate_video_byte_groups": [],
+  "labels_without_video": [],
+  "videos_without_label": [],
+  "ffprobe_failures": [],
+  "videos_without_audio": [],
+  "shorter_than_problem_stated_minimum": [
+    {
+      "key": "-mJ2ud6oKI8$_$6",
+      "duration_sec": 2.257
+    },
+    {
+      "key": "-s9qJ7ATP7w$_$6",
+      "duration_sec": 2.475
+    }
+  ],
+  "media_summary": {
+    "video_codecs": {
+      "h264": 100
+    },
+    "audio_codecs": {
+      "aac": 100
+    },
+    "resolutions": {
+      "1280x720": 56,
+      "320x240": 5,
+      "486x360": 2,
+      "480x270": 10,
+      "360x360": 2,
+      "640x360": 14,
+      "470x360": 8,
+      "480x360": 3
+    },
+    "frame_rates": {
+      "30/1": 83,
+      "25/1": 2,
+      "24000/1001": 5,
+      "30000/1001": 10
+    },
+    "audio_sample_rates": {
+      "44100": 100
+    },
+    "audio_channels": {
+      "2": 97,
+      "1": 3
+    }
+  },
+  "hard_failures": [],
+  "status": "PASS"
+}

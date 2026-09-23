@@ -1,0 +1,115 @@
+{
+  "scope": "Stage 1 public data/interface contract; does not choose the final Q2/Q3 model.",
+  "official_split_policy": {
+    "train": "parameter learning",
+    "valid": "model structure / hyperparameter / decision-threshold selection",
+    "test": "never used for selection; optional one-shot holdout after model freeze",
+    "resplitting": "keep official splits; if train-internal CV is needed, group by video_id, never random clip-level CV"
+  },
+  "classification_metrics": {
+    "primary": [
+      "Accuracy",
+      "Macro-F1",
+      "per-class F1"
+    ],
+    "optional": [
+      "Weighted-F1"
+    ],
+    "rule": "metric variant must be fixed before viewing model-comparison results"
+  },
+  "q2_model_facing_interface": {
+    "common_fields": [
+      "sample_key",
+      "text_input",
+      "audio",
+      "vision",
+      "validity_info",
+      "label_cls",
+      "label_reg"
+    ],
+    "aligned": {
+      "status": "READY",
+      "allowed_dependencies": [
+        "text_bert",
+        "audio",
+        "vision"
+      ],
+      "forbidden_dependencies": [
+        "text",
+        "raw_text",
+        "id"
+      ],
+      "adapter": [
+        "assert text_bert is integer-valued",
+        "assert attention mask is binary",
+        "cast text_bert to int64",
+        "cast audio and vision to float32",
+        "derive sample_key from source metadata/file identity rather than model input"
+      ]
+    },
+    "unaligned": {
+      "status": "BLOCKED",
+      "allowed_if_reopened": [
+        "raw_text",
+        "audio",
+        "vision"
+      ],
+      "forbidden_dependencies": [
+        "text",
+        "text_bert",
+        "id",
+        "audio_lengths",
+        "vision_lengths"
+      ],
+      "block_reasons": [
+        "Attachment3 unaligned lacks audio_lengths and vision_lengths",
+        "Attachment2/4 vision_lengths semantics are not reliably closed"
+      ]
+    },
+    "hard_rule": "No Q2 model may depend on a field unavailable at Attachment3 final inference. The same-input-interface requirement is evaluated at the normalized model-facing interface, not raw PKL key equality."
+  },
+  "mask_contract": {
+    "validity_mask": "padding/non-valid sequence-position mask; for aligned text_bert routes use the frozen attention-mask semantics, not feature-zero tests",
+    "synthetic_missing_mask": "only positions deliberately masked by our training/robustness experiment; generated and stored explicitly",
+    "zero_diagnostic_mask": "records whether an input feature row is all-zero for diagnostics only; never treated as missing ground truth",
+    "observed_mask": "validity_mask AND NOT synthetic_missing_mask",
+    "final_attachment3_rule": "Do not assume a ground-truth artificial-missing mask exists. A model may use a missing indicator only if it is deterministically derivable from Attachment3 inputs by a pre-frozen, prediction-independent rule; otherwise it must not depend on such a mask.",
+    "forbidden": [
+      "missing_mask = (feature == 0) as ground truth",
+      "using model outputs to choose or repair masks"
+    ]
+  },
+  "risk_isolation": {
+    "aligned": "READY for later model comparison/selection; this is not a final choice of aligned",
+    "unaligned": "BLOCKED until its STOP is explicitly reopened and resolved",
+    "unaligned_forbidden_repairs": [
+      "vision_length = last_nonzero",
+      "blind truncation to vision_lengths",
+      "choosing a repair rule after inspecting prediction performance"
+    ]
+  },
+  "q1_q2q3_leakage_firewall": {
+    "forbid_q1_label_driven_transfer": [
+      "Q1 labels",
+      "Q1 label-based feature selection",
+      "Q1 label-based model selection",
+      "Q1 label-based hyperparameter choice",
+      "Q1 label-based threshold choice"
+    ],
+    "allow_label_independent_reuse": [
+      "data reading code",
+      "video decoding code",
+      "fixed pretrained tools",
+      "label-independent preprocessing functions"
+    ]
+  },
+  "machine_audit_presence": {
+    "attachment1_audit.json": true,
+    "attachment2_audit.json": true,
+    "attachment3_audit.json": true,
+    "attachment4_audit.json": true,
+    "cross_attachment_audit.json": true
+  },
+  "stage1_blockers_after_contract": [],
+  "stage1_status": "READY_FOR_RED_TEAM"
+}
