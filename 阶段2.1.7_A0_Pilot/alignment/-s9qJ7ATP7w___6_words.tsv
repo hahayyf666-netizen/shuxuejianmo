@@ -1,0 +1,6 @@
+word_index	word_text	char_start	char_end	start_sec	end_sec	probability	alignment_valid	aligner_items
+0	But	0	3	0.06	0.62	0.1329798698425293	1	 But
+1	I	4	5	0.62	0.96	0.8382200598716736	1	 I
+2	just	6	10	0.96	1.36	0.8633596897125244	1	 just
+3	kept	11	15	1.36	1.54	0.8932662606239319	1	 kept
+4	going	16	21	1.54	1.66	0.9920663833618164	1	 going

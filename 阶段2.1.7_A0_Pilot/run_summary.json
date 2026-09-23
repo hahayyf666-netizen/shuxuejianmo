@@ -1,0 +1,45 @@
+{
+  "stage": "2.1 frozen three-sample A0 pilot",
+  "status": "REVIEW GATE",
+  "hard_stop_reason": null,
+  "samples_requested": [
+    "-s9qJ7ATP7w$_$0",
+    "-mJ2ud6oKI8$_$6",
+    "-s9qJ7ATP7w$_$6"
+  ],
+  "samples_completed": [
+    "-s9qJ7ATP7w$_$0",
+    "-mJ2ud6oKI8$_$6",
+    "-s9qJ7ATP7w$_$6"
+  ],
+  "sample_statuses": [
+    {
+      "sample_key": "-s9qJ7ATP7w$_$0",
+      "status": "SAMPLE FAIL",
+      "sample_fail_reasons": [
+        "one_or_more_output_words_not_legally_aligned",
+        "zero_or_negative_duration_word:3"
+      ]
+    },
+    {
+      "sample_key": "-mJ2ud6oKI8$_$6",
+      "status": "COMPLETED",
+      "sample_fail_reasons": []
+    },
+    {
+      "sample_key": "-s9qJ7ATP7w$_$6",
+      "status": "COMPLETED",
+      "sample_fail_reasons": []
+    }
+  ],
+  "no_full_dataset_or_q2_q3": true,
+  "manual_content_review_required_at_gate": true,
+  "transcribe_or_asr_called": false,
+  "runtime_sec": 20.73027259996161,
+  "output_bytes": 1221677,
+  "reports": [
+    "./logs\\-s9qJ7ATP7w___0.report.json",
+    "./logs\\-mJ2ud6oKI8___6.report.json",
+    "./logs\\-s9qJ7ATP7w___6.report.json"
+  ]
+}

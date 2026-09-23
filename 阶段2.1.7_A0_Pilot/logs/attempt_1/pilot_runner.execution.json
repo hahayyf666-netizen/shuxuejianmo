@@ -1,0 +1,15 @@
+{
+  "command": [
+    "<USER_HOME>\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\work\\.venv_q1\\Scripts\\python.exe",
+    "<USER_HOME>\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\work\\run_a0_pilot_worker.py"
+  ],
+  "cwd": "<USER_HOME>\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo",
+  "started_unix_sec": 1790178223.240258,
+  "finished_unix_sec": 1790178301.8060558,
+  "runtime_sec": 78.56579780578613,
+  "exit_code": 0,
+  "timeout_sec": 1800,
+  "timed_out": false,
+  "stdout_path": "./logs\\pilot_runner.stdout.log",
+  "stderr_path": "./logs\\pilot_runner.stderr.log"
+}

@@ -1,0 +1,6 @@
+word_index	word_text	char_start	char_end	start_sec	end_sec	probability	alignment_valid	aligner_items
+0	They	0	4	0.0	0.1	0.00043593437294475734	1	 They
+1	are	5	8	0.1	0.52	0.062019892036914825	1	 are
+2	all	9	12	0.52	0.6	0.07771730422973633	1	 all
+3	very	13	17	0.88	0.98	0.006236241664737463	1	 very
+4	safe	18	22	0.98	2.2	0.00298033794388175	1	 safe

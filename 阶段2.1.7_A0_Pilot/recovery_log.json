@@ -1,0 +1,30 @@
+{
+  "attempt": 1,
+  "classification": "RECOVERABLE / CONTINUE",
+  "incident": "MediaPipe VIDEO timestamps reset to zero between independent sample timelines while one FaceLandmarker instance was reused.",
+  "evidence": [
+    {
+      "sample_key": "-s9qJ7ATP7w$_$0",
+      "outcome": "MediaPipe VIDEO processing completed; 204 frames decoded."
+    },
+    {
+      "sample_key": "-mJ2ud6oKI8$_$6",
+      "outcome": "ValueError: Input timestamp must be monotonically increasing."
+    },
+    {
+      "sample_key": "-s9qJ7ATP7w$_$6",
+      "outcome": "ValueError: Input timestamp must be monotonically increasing."
+    }
+  ],
+  "cause": "The VIDEO-mode task preserves timestamp monotonicity state for the lifetime of a FaceLandmarker instance. Each sample has its own frozen presentation timeline beginning at t0=0, so reusing one instance across samples is invalid.",
+  "repair": "Create and close one FaceLandmarker instance per frozen sample. Keep MediaPipe 0.10.35, the same official task model/hash, VIDEO mode, num_faces=1, blendshape output, and actual presentation PTS in milliseconds unchanged.",
+  "selection_changed": false,
+  "feature_semantics_changed": false,
+  "tool_version_or_backend_changed": false,
+  "retry_scope": "Rerun only the exact three frozen A0 samples to produce a coherent complete artifact set.",
+  "nonblocking_warning": {
+    "message": "stable-ts emitted a Whisper compatibility warning because openai-whisper has a direct_url.json entry.",
+    "evidence": "whisper.__version__ and installed distribution are 20250625; direct_url.json records the hash-verified openai_whisper-20250625.tar.gz installed from the project-local package archive. stable-ts checks only whether direct_url.json is nonempty before describing it as a repository installation.",
+    "interpretation": "The warning's installation-source heuristic does not establish a version mismatch. The frozen official PyPI sdist SHA-256 and the 2.19.1 interface qualification already match. The frozen align call was not changed or suppressed."
+  }
+}

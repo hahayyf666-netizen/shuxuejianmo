@@ -1,0 +1,182 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at <USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\model_assets_a0\roberta-base\e2da8e2f811d1448a5b465c236feacd80ffbac7b and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+W0000 00:00:1790178286.894154   50060 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+W0000 00:00:1790178286.901016   40552 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+W0000 00:00:1790178286.910617   47032 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\stable_whisper\whisper_compatibility.py:273: UserWarning: The installed version of Whisper might be incompatible.
+
+The detected version appears to be installed from the repository which can have compatibility issues due to multiple commits sharing the same version number. It is recommended to install version 20250625 from PyPI.
+
+To prevent errors and performance issues, install the latest compatible version: `pip install openai-whisper==20250625`
+
+Use `ignore_compatibility=True` to ignore this warning.
+
+  warnings.warn(compatibility_warning)
+
+
+Align:   0%|          | 0/6.71 [00:00<?, ?sec/s]
+Align:  90%|######### | 6.06/6.71 [00:03<00:00,  1.74sec/s]
+Align: 100%|##########| 6.71/6.71 [00:03<00:00,  1.93sec/s]
+
+
+Adjustment:   0%|          | 0/6.06 [00:00<?, ?sec/s]
+Adjustment: 100%|##########| 6.06/6.06 [00:00<00:00, 4016.67sec/s]
+
+<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\stable_whisper\whisper_compatibility.py:273: UserWarning: The installed version of Whisper might be incompatible.
+
+The detected version appears to be installed from the repository which can have compatibility issues due to multiple commits sharing the same version number. It is recommended to install version 20250625 from PyPI.
+
+To prevent errors and performance issues, install the latest compatible version: `pip install openai-whisper==20250625`
+
+Use `ignore_compatibility=True` to ignore this warning.
+
+  warnings.warn(compatibility_warning)
+
+
+Align:   0%|          | 0/2.23 [00:00<?, ?sec/s]
+Align:  99%|#########8| 2.2/2.23 [00:00<00:00,  5.22sec/s]
+Align: 100%|##########| 2.23/2.23 [00:00<00:00,  5.29sec/s]
+
+
+Adjustment:   0%|          | 0/2.2 [00:00<?, ?sec/s]
+Adjustment: 100%|##########| 2.2/2.2 [00:00<?, ?sec/s]
+
+Traceback (most recent call last):
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\run_a0_pilot_worker.py", line 784, in main
+
+    video_info, video_pts, video_support_start, video_support_end, blend, face_valid = decode_video_blendshapes(video_path, shared_t0, face_landmarker)
+
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\run_a0_pilot_worker.py", line 326, in decode_video_blendshapes
+
+    result = face_landmarker.detect_for_video(image, relative_ms)
+
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\vision\face_landmarker.py", line 3261, in detect_for_video
+
+    self._lib.MpFaceLandmarkerDetectForVideo(
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\core\serial_dispatcher.py", line 74, in shutdown_aware_handler
+
+    return handler(*args, **kwargs)
+
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\core\mediapipe_c_utils.py", line 142, in dispatcher_wrapper
+
+    executor.submit(dispatch_and_free).result()
+
+  File "<USER_HOME>\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 456, in result
+
+    return self.__get_result()
+
+           ^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+
+    raise self._exception
+
+  File "<USER_HOME>\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 59, in run
+
+    result = self.fn(*self.args, **self.kwargs)
+
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\core\mediapipe_c_utils.py", line 137, in dispatch_and_free
+
+    handle_status(status, error_msg)
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\core\mediapipe_c_utils.py", line 232, in handle_status
+
+    raise exception
+
+ValueError: Input timestamp must be monotonically increasing.
+
+<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\stable_whisper\whisper_compatibility.py:273: UserWarning: The installed version of Whisper might be incompatible.
+
+The detected version appears to be installed from the repository which can have compatibility issues due to multiple commits sharing the same version number. It is recommended to install version 20250625 from PyPI.
+
+To prevent errors and performance issues, install the latest compatible version: `pip install openai-whisper==20250625`
+
+Use `ignore_compatibility=True` to ignore this warning.
+
+  warnings.warn(compatibility_warning)
+
+
+Align:   0%|          | 0/2.31 [00:00<?, ?sec/s]
+Align:  75%|#######5  | 1.74/2.31 [00:00<00:00,  4.60sec/s]
+Align: 100%|##########| 2.31/2.31 [00:00<00:00,  6.10sec/s]
+
+
+Adjustment:   0%|          | 0/1.74 [00:00<?, ?sec/s]
+Adjustment: 100%|##########| 1.74/1.74 [00:00<00:00, 1735.99sec/s]
+
+Traceback (most recent call last):
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\run_a0_pilot_worker.py", line 784, in main
+
+    video_info, video_pts, video_support_start, video_support_end, blend, face_valid = decode_video_blendshapes(video_path, shared_t0, face_landmarker)
+
+                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\run_a0_pilot_worker.py", line 326, in decode_video_blendshapes
+
+    result = face_landmarker.detect_for_video(image, relative_ms)
+
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\vision\face_landmarker.py", line 3261, in detect_for_video
+
+    self._lib.MpFaceLandmarkerDetectForVideo(
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\core\serial_dispatcher.py", line 74, in shutdown_aware_handler
+
+    return handler(*args, **kwargs)
+
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\core\mediapipe_c_utils.py", line 142, in dispatcher_wrapper
+
+    executor.submit(dispatch_and_free).result()
+
+  File "<USER_HOME>\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 456, in result
+
+    return self.__get_result()
+
+           ^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+
+    raise self._exception
+
+  File "<USER_HOME>\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 59, in run
+
+    result = self.fn(*self.args, **self.kwargs)
+
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\core\mediapipe_c_utils.py", line 137, in dispatch_and_free
+
+    handle_status(status, error_msg)
+
+  File "<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\mediapipe\tasks\python\core\mediapipe_c_utils.py", line 232, in handle_status
+
+    raise exception
+
+ValueError: Input timestamp must be monotonically increasing.
+
+E0000 00:00:1790178300.252370    5080 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 1, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+
+=== Source Location Trace: ===
+
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44

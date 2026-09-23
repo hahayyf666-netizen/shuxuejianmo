@@ -1,0 +1,12 @@
+<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\stable_whisper\whisper_compatibility.py:273: UserWarning: The installed version of Whisper might be incompatible.
+The detected version appears to be installed from the repository which can have compatibility issues due to multiple commits sharing the same version number. It is recommended to install version 20250625 from PyPI.
+To prevent errors and performance issues, install the latest compatible version: `pip install openai-whisper==20250625`
+Use `ignore_compatibility=True` to ignore this warning.
+  warnings.warn(compatibility_warning)
+
+Align:   0%|          | 0/2.23 [00:00<?, ?sec/s]
+Align:  99%|#########8| 2.2/2.23 [00:00<00:00,  5.22sec/s]
+Align: 100%|##########| 2.23/2.23 [00:00<00:00,  5.29sec/s]
+
+Adjustment:   0%|          | 0/2.2 [00:00<?, ?sec/s]
+Adjustment: 100%|##########| 2.2/2.2 [00:00<?, ?sec/s]

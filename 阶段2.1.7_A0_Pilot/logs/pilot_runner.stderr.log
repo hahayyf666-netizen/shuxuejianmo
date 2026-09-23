@@ -1,0 +1,110 @@
+Some weights of RobertaModel were not initialized from the model checkpoint at <USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\model_assets_a0\roberta-base\e2da8e2f811d1448a5b465c236feacd80ffbac7b and are newly initialized: ['pooler.dense.bias', 'pooler.dense.weight']
+
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+W0000 00:00:1790178572.850772   50280 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+W0000 00:00:1790178572.868054   49380 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+W0000 00:00:1790178572.877814   50208 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+E0000 00:00:1790178572.962987   26316 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 1, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+
+=== Source Location Trace: ===
+
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+
+<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\stable_whisper\whisper_compatibility.py:273: UserWarning: The installed version of Whisper might be incompatible.
+
+The detected version appears to be installed from the repository which can have compatibility issues due to multiple commits sharing the same version number. It is recommended to install version 20250625 from PyPI.
+
+To prevent errors and performance issues, install the latest compatible version: `pip install openai-whisper==20250625`
+
+Use `ignore_compatibility=True` to ignore this warning.
+
+  warnings.warn(compatibility_warning)
+
+
+Align:   0%|          | 0/6.71 [00:00<?, ?sec/s]
+Align:  90%|######### | 6.06/6.71 [00:02<00:00,  2.18sec/s]
+Align: 100%|##########| 6.71/6.71 [00:02<00:00,  2.41sec/s]
+
+
+Adjustment:   0%|          | 0/6.06 [00:00<?, ?sec/s]
+Adjustment: 100%|##########| 6.06/6.06 [00:00<00:00, 3896.59sec/s]
+
+W0000 00:00:1790178583.036655   50328 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+
+W0000 00:00:1790178583.040779   48336 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+W0000 00:00:1790178583.050804   41252 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+E0000 00:00:1790178586.371035   43476 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 2, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+
+=== Source Location Trace: ===
+
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+
+<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\stable_whisper\whisper_compatibility.py:273: UserWarning: The installed version of Whisper might be incompatible.
+
+The detected version appears to be installed from the repository which can have compatibility issues due to multiple commits sharing the same version number. It is recommended to install version 20250625 from PyPI.
+
+To prevent errors and performance issues, install the latest compatible version: `pip install openai-whisper==20250625`
+
+Use `ignore_compatibility=True` to ignore this warning.
+
+  warnings.warn(compatibility_warning)
+
+
+Align:   0%|          | 0/2.23 [00:00<?, ?sec/s]
+Align:  99%|#########8| 2.2/2.23 [00:00<00:00,  6.81sec/s]
+Align: 100%|##########| 2.23/2.23 [00:00<00:00,  6.90sec/s]
+
+
+Adjustment:   0%|          | 0/2.2 [00:00<?, ?sec/s]
+Adjustment: 100%|##########| 2.2/2.2 [00:00<?, ?sec/s]
+
+W0000 00:00:1790178586.842116   48676 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+
+W0000 00:00:1790178586.847937   44072 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+W0000 00:00:1790178586.857631   34520 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+E0000 00:00:1790178587.985271   50376 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 3, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+
+=== Source Location Trace: ===
+
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+
+<USER_HOME>\Documents\Codex\2026-09-23\https-github-com-hahayyf666-netizen-shuxuejianmo\work\.venv_q1\Lib\site-packages\stable_whisper\whisper_compatibility.py:273: UserWarning: The installed version of Whisper might be incompatible.
+
+The detected version appears to be installed from the repository which can have compatibility issues due to multiple commits sharing the same version number. It is recommended to install version 20250625 from PyPI.
+
+To prevent errors and performance issues, install the latest compatible version: `pip install openai-whisper==20250625`
+
+Use `ignore_compatibility=True` to ignore this warning.
+
+  warnings.warn(compatibility_warning)
+
+
+Align:   0%|          | 0/2.31 [00:00<?, ?sec/s]
+Align:  75%|#######5  | 1.74/2.31 [00:00<00:00,  5.53sec/s]
+Align: 100%|##########| 2.31/2.31 [00:00<00:00,  7.34sec/s]
+
+
+Adjustment:   0%|          | 0/1.74 [00:00<?, ?sec/s]
+Adjustment: 100%|##########| 1.74/1.74 [00:00<?, ?sec/s]
+
+W0000 00:00:1790178588.428560   43864 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+
+W0000 00:00:1790178588.433178   50128 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+W0000 00:00:1790178588.444404   35224 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+
+E0000 00:00:1790178589.709929   42668 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 4, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+
+=== Source Location Trace: ===
+
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44

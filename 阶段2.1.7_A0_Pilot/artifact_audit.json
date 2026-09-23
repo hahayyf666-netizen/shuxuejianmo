@@ -1,0 +1,94 @@
+{
+  "audit_status": "PASS",
+  "problems": [],
+  "pilot_status": "REVIEW GATE",
+  "sample_order": [
+    "-s9qJ7ATP7w$_$0",
+    "-mJ2ud6oKI8$_$6",
+    "-s9qJ7ATP7w$_$6"
+  ],
+  "samples": [
+    {
+      "sample_key": "-s9qJ7ATP7w$_$0",
+      "status": "SAMPLE FAIL",
+      "sequence_length": 24,
+      "alignment_valid_words": 23,
+      "text_valid_words": 24,
+      "audio_valid_words": 23,
+      "vision_valid_words": 23,
+      "face_valid_ratio": 1.0,
+      "raw_audio_lld_shape": [
+        667,
+        25
+      ],
+      "raw_video_blendshape_shape": [
+        204,
+        52
+      ],
+      "npz_bytes": 194064,
+      "cache_bytes": 194064,
+      "wav_bytes": 214782,
+      "runtime_sec": 13.425919800065458,
+      "rss_at_sample_end_bytes": 1839976448,
+      "word_zero_duration_or_mapping_failures": [
+        "one_or_more_output_words_not_legally_aligned",
+        "zero_or_negative_duration_word:3"
+      ]
+    },
+    {
+      "sample_key": "-mJ2ud6oKI8$_$6",
+      "status": "COMPLETED",
+      "sequence_length": 5,
+      "alignment_valid_words": 5,
+      "text_valid_words": 5,
+      "audio_valid_words": 5,
+      "vision_valid_words": 5,
+      "face_valid_ratio": 1.0,
+      "raw_audio_lld_shape": [
+        218,
+        25
+      ],
+      "raw_video_blendshape_shape": [
+        67,
+        52
+      ],
+      "npz_bytes": 62521,
+      "cache_bytes": 62521,
+      "wav_bytes": 71344,
+      "runtime_sec": 1.6002411999506876,
+      "rss_at_sample_end_bytes": 1825603584,
+      "word_zero_duration_or_mapping_failures": []
+    },
+    {
+      "sample_key": "-s9qJ7ATP7w$_$6",
+      "status": "COMPLETED",
+      "sequence_length": 5,
+      "alignment_valid_words": 5,
+      "text_valid_words": 5,
+      "audio_valid_words": 5,
+      "vision_valid_words": 5,
+      "face_valid_ratio": 0.8309859037399292,
+      "raw_audio_lld_shape": [
+        227,
+        25
+      ],
+      "raw_video_blendshape_shape": [
+        71,
+        52
+      ],
+      "npz_bytes": 59263,
+      "cache_bytes": 59263,
+      "wav_bytes": 74118,
+      "runtime_sec": 1.722795300069265,
+      "rss_at_sample_end_bytes": 1825869824,
+      "word_zero_duration_or_mapping_failures": []
+    }
+  ],
+  "runner_exit_code": 0,
+  "runner_runtime_sec": 46.14653205871582,
+  "output_directory_bytes_including_attempt_1_logs": 1230552,
+  "all_npz_are_loadable_without_pickle": true,
+  "no_labels_in_npz": true,
+  "only_three_frozen_samples": true,
+  "manual_content_review_remains_at_review_gate": true
+}

@@ -1,0 +1,39 @@
+{
+  "selector_rule": "notion_2.1.7_ordinary_sample_v2",
+  "frozen_before_any_a0_feature_extraction": true,
+  "selection_metadata_file": "pilot_selection_metadata.json",
+  "candidate_count": 98,
+  "excluded_keys": [
+    "-mJ2ud6oKI8$_$6",
+    "-s9qJ7ATP7w$_$6"
+  ],
+  "duration_proxy_median_sec": 6.7790040000000005,
+  "word_count_proxy_median": 18.0,
+  "ordinary_sample_key": "-s9qJ7ATP7w$_$0",
+  "samples": [
+    {
+      "sample_key": "-s9qJ7ATP7w$_$0",
+      "video_id": "-s9qJ7ATP7w",
+      "clip_id": "0",
+      "role": "ordinary_median_duration_proxy",
+      "selection_duration_proxy_sec": 6.8,
+      "word_count_proxy": 24
+    },
+    {
+      "sample_key": "-mJ2ud6oKI8$_$6",
+      "video_id": "-mJ2ud6oKI8",
+      "clip_id": "6",
+      "role": "mandatory_edit_list_sample",
+      "selection_duration_proxy_sec": 2.257,
+      "word_count_proxy": 5
+    },
+    {
+      "sample_key": "-s9qJ7ATP7w$_$6",
+      "video_id": "-s9qJ7ATP7w",
+      "clip_id": "6",
+      "role": "mandatory_edit_list_sample",
+      "selection_duration_proxy_sec": 2.475,
+      "word_count_proxy": 5
+    }
+  ]
+}

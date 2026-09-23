@@ -1,0 +1,301 @@
+{
+  "source_xlsx": "<DATA_WORKSPACE>\\E题数据\\附件1-数据集原始多模态样本\\MOSEI数据集部分原始视频-100条\\label-100.xlsx",
+  "source_xlsx_sha256": "827334f782b1f242c84ad944a657bc7f7c63643f71ae9c977811a3eecdd3ab33",
+  "sheet": "label",
+  "header": [
+    "video_id",
+    "clip_id",
+    "text",
+    "label",
+    "annotation"
+  ],
+  "samples": [
+    {
+      "sample_key": "-s9qJ7ATP7w$_$0",
+      "video_path": "<DATA_WORKSPACE>\\E题数据\\附件1-数据集原始多模态样本\\MOSEI数据集部分原始视频-100条\\-s9qJ7ATP7w\\0.mp4",
+      "video_bytes": 890272,
+      "video_sha256": "f2324dbc6debe0d1e4254e6f943523373e3cbb30d8d0555413ce3a7b370a4af5",
+      "official_transcript_candidates": {
+        "text": "they have doubt, they have fear, they lose in a Ferrari race, or they lose in a race, and then they just give up"
+      },
+      "all_row_cells": {
+        "video_id": "-s9qJ7ATP7w",
+        "clip_id": "0",
+        "text": "they have doubt, they have fear, they lose in a Ferrari race, or they lose in a race, and then they just give up",
+        "label": "-0.3333333432674408",
+        "annotation": "Negative"
+      },
+      "video_timeline": {
+        "container_duration_sec": 6.8,
+        "codec": "h264",
+        "stream_time_base": "1/15360",
+        "stream_start_time": 0,
+        "stream_start_sec": 0.0,
+        "stream_duration_ticks": 104448,
+        "stream_duration_sec": 6.8,
+        "average_rate": "30",
+        "base_rate": "30",
+        "frames_decoded": 204,
+        "pts_none_count": 0,
+        "first_pts_sec": 0.0,
+        "last_pts_sec": 6.833333333333333,
+        "first_pts_sec_list": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333
+        ],
+        "last_pts_sec_list": [
+          6.633333333333334,
+          6.666666666666667,
+          6.7,
+          6.766666666666667,
+          6.833333333333333
+        ],
+        "median_pts_delta_sec": 0.033333333333333215,
+        "min_pts_delta_sec": 0.033333333333333215,
+        "max_pts_delta_sec": 0.06666666666666643,
+        "pts_gap_count_over_1_5x_median": 2,
+        "pts_gaps": [
+          {
+            "left_pts_sec": 6.7,
+            "right_pts_sec": 6.766666666666667,
+            "delta_sec": 0.06666666666666643
+          },
+          {
+            "left_pts_sec": 6.766666666666667,
+            "right_pts_sec": 6.833333333333333,
+            "delta_sec": 0.06666666666666643
+          }
+        ],
+        "nonmonotonic_pts_count": 0,
+        "first_frame_duration_sec": 0.03333333333333333,
+        "last_frame_duration_sec": 0.03333333333333333,
+        "decoded_last_frame_end_sec": 6.866666666666666,
+        "decoded_last_frame_end_minus_stream_duration_sec": 0.06666666666666643
+      },
+      "audio_timeline": {
+        "container_duration_sec": 6.8,
+        "codec": "aac",
+        "stream_time_base": "1/44100",
+        "stream_start_time": 0,
+        "stream_start_sec": 0.0,
+        "stream_duration_ticks": 295911,
+        "stream_duration_sec": 6.71,
+        "sample_rate": 44100,
+        "channels": 2,
+        "frames_decoded": 289,
+        "total_decoded_samples": 295936,
+        "decoded_duration_sec": 6.710566893424036,
+        "first_pts_sec": 0.0,
+        "last_frame_end_sec": 6.710566893424036,
+        "first_pts_sec_list": [
+          0.0,
+          0.023219954648526078,
+          0.046439909297052155,
+          0.06965986394557823,
+          0.09287981859410431
+        ],
+        "last_pts_sec_list": [
+          6.594467120181406,
+          6.617687074829932,
+          6.640907029478458,
+          6.664126984126984,
+          6.6873469387755105
+        ],
+        "median_pts_delta_sec": 0.02321995464852611,
+        "max_abs_frame_contiguity_residual_sec": 8.881784197001252e-16,
+        "max_positive_frame_gap_sec": 8.881784197001252e-16,
+        "max_negative_frame_overlap_sec": -4.440892098500626e-16,
+        "nonmonotonic_pts_count": 0
+      }
+    },
+    {
+      "sample_key": "-mJ2ud6oKI8$_$6",
+      "video_path": "<DATA_WORKSPACE>\\E题数据\\附件1-数据集原始多模态样本\\MOSEI数据集部分原始视频-100条\\-mJ2ud6oKI8\\6.mp4",
+      "video_bytes": 562692,
+      "video_sha256": "134a3a4ebbc423760133b0da0e90cfe84d75ea85df3968000afd84153c5d828d",
+      "official_transcript_candidates": {
+        "text": "They are all very safe"
+      },
+      "all_row_cells": {
+        "video_id": "-mJ2ud6oKI8",
+        "clip_id": "6",
+        "text": "They are all very safe",
+        "label": "0.3333333432674408",
+        "annotation": "Positive"
+      },
+      "video_timeline": {
+        "container_duration_sec": 2.257,
+        "codec": "h264",
+        "stream_time_base": "1/90000",
+        "stream_start_time": 0,
+        "stream_start_sec": 0.0,
+        "stream_duration_ticks": 203130,
+        "stream_duration_sec": 2.257,
+        "average_rate": "30000/1001",
+        "base_rate": "30000/1001",
+        "frames_decoded": 67,
+        "pts_none_count": 0,
+        "first_pts_sec": 0.0,
+        "last_pts_sec": 2.2022,
+        "first_pts_sec_list": [
+          0.0,
+          0.03336666666666667,
+          0.06673333333333334,
+          0.1001,
+          0.13346666666666668
+        ],
+        "last_pts_sec_list": [
+          2.0687333333333333,
+          2.1021,
+          2.135466666666667,
+          2.168833333333333,
+          2.2022
+        ],
+        "median_pts_delta_sec": 0.033366666666666656,
+        "min_pts_delta_sec": 0.03336666666666632,
+        "max_pts_delta_sec": 0.03336666666666677,
+        "pts_gap_count_over_1_5x_median": 0,
+        "pts_gaps": [],
+        "nonmonotonic_pts_count": 0,
+        "first_frame_duration_sec": 0.03336666666666667,
+        "last_frame_duration_sec": 0.03336666666666667,
+        "decoded_last_frame_end_sec": 2.2355666666666667,
+        "decoded_last_frame_end_minus_stream_duration_sec": -0.021433333333333415
+      },
+      "audio_timeline": {
+        "container_duration_sec": 2.257,
+        "codec": "aac",
+        "stream_time_base": "1/44100",
+        "stream_start_time": 0,
+        "stream_start_sec": 0.0,
+        "stream_duration_ticks": 98299,
+        "stream_duration_sec": 2.229002267573696,
+        "sample_rate": 44100,
+        "channels": 2,
+        "frames_decoded": 96,
+        "total_decoded_samples": 98260,
+        "decoded_duration_sec": 2.2281179138321994,
+        "first_pts_sec": 0.0,
+        "last_frame_end_sec": 2.2281179138321994,
+        "first_pts_sec_list": [
+          0.0,
+          0.022222222222222223,
+          0.0454421768707483,
+          0.06866213151927437,
+          0.09188208616780046
+        ],
+        "last_pts_sec_list": [
+          2.1120181405895693,
+          2.1352380952380954,
+          2.1584580498866215,
+          2.1816780045351476,
+          2.2048979591836733
+        ],
+        "median_pts_delta_sec": 0.02321995464852611,
+        "max_abs_frame_contiguity_residual_sec": 4.440892098500626e-16,
+        "max_positive_frame_gap_sec": 5.551115123125783e-17,
+        "max_negative_frame_overlap_sec": -4.440892098500626e-16,
+        "nonmonotonic_pts_count": 0
+      }
+    },
+    {
+      "sample_key": "-s9qJ7ATP7w$_$6",
+      "video_path": "<DATA_WORKSPACE>\\E题数据\\附件1-数据集原始多模态样本\\MOSEI数据集部分原始视频-100条\\-s9qJ7ATP7w\\6.mp4",
+      "video_bytes": 839808,
+      "video_sha256": "40b684fd1b4559f0f82e72f9b47f4ce7c5e15059fe8d0d8ab112637cd3386451",
+      "official_transcript_candidates": {
+        "text": "But I just kept going"
+      },
+      "all_row_cells": {
+        "video_id": "-s9qJ7ATP7w",
+        "clip_id": "6",
+        "text": "But I just kept going",
+        "label": "0.0",
+        "annotation": "Neutral"
+      },
+      "video_timeline": {
+        "container_duration_sec": 2.475,
+        "codec": "h264",
+        "stream_time_base": "1/15360",
+        "stream_start_time": 0,
+        "stream_start_sec": 0.0,
+        "stream_duration_ticks": 38016,
+        "stream_duration_sec": 2.475,
+        "average_rate": "30",
+        "base_rate": "30",
+        "frames_decoded": 71,
+        "pts_none_count": 0,
+        "first_pts_sec": 0.0,
+        "last_pts_sec": 2.433333333333333,
+        "first_pts_sec_list": [
+          0.0,
+          0.03333333333333333,
+          0.06666666666666667,
+          0.1,
+          0.13333333333333333
+        ],
+        "last_pts_sec_list": [
+          2.2,
+          2.2333333333333334,
+          2.2666666666666666,
+          2.3,
+          2.433333333333333
+        ],
+        "median_pts_delta_sec": 0.033333333333333326,
+        "min_pts_delta_sec": 0.033333333333333215,
+        "max_pts_delta_sec": 0.1333333333333333,
+        "pts_gap_count_over_1_5x_median": 1,
+        "pts_gaps": [
+          {
+            "left_pts_sec": 2.3,
+            "right_pts_sec": 2.433333333333333,
+            "delta_sec": 0.1333333333333333
+          }
+        ],
+        "nonmonotonic_pts_count": 0,
+        "first_frame_duration_sec": 0.03333333333333333,
+        "last_frame_duration_sec": 0.03333333333333333,
+        "decoded_last_frame_end_sec": 2.4666666666666663,
+        "decoded_last_frame_end_minus_stream_duration_sec": -0.008333333333333748
+      },
+      "audio_timeline": {
+        "container_duration_sec": 2.475,
+        "codec": "aac",
+        "stream_time_base": "1/44100",
+        "stream_start_time": 0,
+        "stream_start_sec": 0.0,
+        "stream_duration_ticks": 102092,
+        "stream_duration_sec": 2.315011337868481,
+        "sample_rate": 44100,
+        "channels": 2,
+        "frames_decoded": 100,
+        "total_decoded_samples": 102083,
+        "decoded_duration_sec": 2.3148072562358277,
+        "first_pts_sec": 0.0,
+        "last_frame_end_sec": 2.3148072562358277,
+        "first_pts_sec_list": [
+          0.0,
+          0.016031746031746032,
+          0.03925170068027211,
+          0.062471655328798184,
+          0.08569160997732427
+        ],
+        "last_pts_sec_list": [
+          2.198707482993197,
+          2.2219274376417233,
+          2.2451473922902494,
+          2.2683673469387755,
+          2.2915873015873016
+        ],
+        "median_pts_delta_sec": 0.02321995464852611,
+        "max_abs_frame_contiguity_residual_sec": 4.440892098500626e-16,
+        "max_positive_frame_gap_sec": 5.551115123125783e-17,
+        "max_negative_frame_overlap_sec": -4.440892098500626e-16,
+        "nonmonotonic_pts_count": 0
+      }
+    }
+  ]
+}

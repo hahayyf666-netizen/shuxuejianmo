@@ -1,0 +1,163 @@
+{
+  "sample_key": "-s9qJ7ATP7w$_$6",
+  "official_transcript": "But I just kept going",
+  "source_words": [
+    {
+      "char_start": 0,
+      "char_end": 3,
+      "text": "But"
+    },
+    {
+      "char_start": 4,
+      "char_end": 5,
+      "text": "I"
+    },
+    {
+      "char_start": 6,
+      "char_end": 10,
+      "text": "just"
+    },
+    {
+      "char_start": 11,
+      "char_end": 15,
+      "text": "kept"
+    },
+    {
+      "char_start": 16,
+      "char_end": 21,
+      "text": "going"
+    }
+  ],
+  "raw_aligner_words": [
+    {
+      "raw_word": " But",
+      "start_sec": 0.06,
+      "end_sec": 0.62,
+      "probability": 0.1329798698425293
+    },
+    {
+      "raw_word": " I",
+      "start_sec": 0.62,
+      "end_sec": 0.96,
+      "probability": 0.8382200598716736
+    },
+    {
+      "raw_word": " just",
+      "start_sec": 0.96,
+      "end_sec": 1.36,
+      "probability": 0.8633596897125244
+    },
+    {
+      "raw_word": " kept",
+      "start_sec": 1.36,
+      "end_sec": 1.54,
+      "probability": 0.8932662606239319
+    },
+    {
+      "raw_word": " going",
+      "start_sec": 1.54,
+      "end_sec": 1.66,
+      "probability": 0.9920663833618164
+    }
+  ],
+  "mapped_words": [
+    {
+      "word_index": 0,
+      "word_text": "But",
+      "char_start": 0,
+      "char_end": 3,
+      "start_sec": 0.06,
+      "end_sec": 0.62,
+      "probability": 0.1329798698425293,
+      "alignment_valid": 1,
+      "aligner_items": [
+        " But"
+      ]
+    },
+    {
+      "word_index": 1,
+      "word_text": "I",
+      "char_start": 4,
+      "char_end": 5,
+      "start_sec": 0.62,
+      "end_sec": 0.96,
+      "probability": 0.8382200598716736,
+      "alignment_valid": 1,
+      "aligner_items": [
+        " I"
+      ]
+    },
+    {
+      "word_index": 2,
+      "word_text": "just",
+      "char_start": 6,
+      "char_end": 10,
+      "start_sec": 0.96,
+      "end_sec": 1.36,
+      "probability": 0.8633596897125244,
+      "alignment_valid": 1,
+      "aligner_items": [
+        " just"
+      ]
+    },
+    {
+      "word_index": 3,
+      "word_text": "kept",
+      "char_start": 11,
+      "char_end": 15,
+      "start_sec": 1.36,
+      "end_sec": 1.54,
+      "probability": 0.8932662606239319,
+      "alignment_valid": 1,
+      "aligner_items": [
+        " kept"
+      ]
+    },
+    {
+      "word_index": 4,
+      "word_text": "going",
+      "char_start": 16,
+      "char_end": 21,
+      "start_sec": 1.54,
+      "end_sec": 1.66,
+      "probability": 0.9920663833618164,
+      "alignment_valid": 1,
+      "aligner_items": [
+        " going"
+      ]
+    }
+  ],
+  "alignment_mapping_failures": [],
+  "text_tokenizer_failures": [],
+  "audio_local_issues": [],
+  "visual_local_issues": [],
+  "word_interval_union": [
+    [
+      0.06,
+      1.66
+    ]
+  ],
+  "word_gaps": [
+    [
+      0.0,
+      0.06
+    ],
+    [
+      1.66,
+      2.475
+    ]
+  ],
+  "word_union_coverage_sec": 1.5999999999999999,
+  "word_union_coverage_ratio": 0.6464646464646464,
+  "audio_coverage_sec": [
+    0.0,
+    2.3148125
+  ],
+  "video_coverage_sec": [
+    0.0,
+    2.475
+  ],
+  "actual_effective_duration_sec": 2.475,
+  "alignment_call": "model.align(audio_16k_mono, official_text, language='en', remove_instant_words=False, failure_threshold=None, regroup=False, stream=False)",
+  "candidate_words_are_official_transcript_chunks": true
+}
