@@ -39,14 +39,18 @@
   "videos_without_label": [],
   "ffprobe_failures": [],
   "videos_without_audio": [],
-  "shorter_than_problem_stated_minimum": [
+  "ffprobe_format_duration_below_problem_stated_minimum": [
     {
       "key": "-mJ2ud6oKI8$_$6",
-      "duration_sec": 2.257
+      "ffprobe_format_duration_sec": 2.257,
+      "video_stream_duration_sec": 2.257,
+      "audio_stream_duration_sec": 2.229002
     },
     {
       "key": "-s9qJ7ATP7w$_$6",
-      "duration_sec": 2.475
+      "ffprobe_format_duration_sec": 2.475,
+      "video_stream_duration_sec": 2.475,
+      "audio_stream_duration_sec": 2.315011
     }
   ],
   "media_summary": {
