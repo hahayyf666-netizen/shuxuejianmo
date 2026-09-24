@@ -1,0 +1,9 @@
+{
+  "archive": "outputs/q1/v1_delivery/package/q1_v1_candidate_q1_closed_2026-09-24.zip",
+  "archive_bytes": 27934733,
+  "archive_decimal_MB": 27.934733,
+  "archive_MiB": 26.640637397766113,
+  "budget_bytes": 50000000,
+  "remaining_budget_bytes": 22065267,
+  "scope": "Q1 package only; final combined competition package requires a later total-size check."
+}

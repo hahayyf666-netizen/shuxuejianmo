@@ -1,0 +1,69 @@
+{
+  "scope": "Final Q1 v1 candidate package verification; no new feature extraction, no entry into 2.2",
+  "archive": "outputs/q1/v1_delivery/package/q1_v1_candidate_q1_closed_2026-09-24.zip",
+  "archive_sha256": "ba0e0c52057cb810441909cdfd0c23330e8bb4ad0e0d7b3e27ed2c9bd3e70ca0",
+  "archive_bytes": 27934733,
+  "member_count": 1824,
+  "budget_bytes": 50000000,
+  "remaining_q1_package_budget_bytes": 22065267,
+  "package_crc_pass": true,
+  "archive_sha_matches_sidecar": true,
+  "full100_structural_validator_exit_code": 0,
+  "full100_requirement_audit_exit_code": 0,
+  "official_label_sha256": "827334f782b1f242c84ad944a657bc7f7c63643f71ae9c977811a3eecdd3ab33",
+  "sample_count": 100,
+  "sample_checks_pass_count": 100,
+  "failures": [],
+  "manifest_results_identical": true,
+  "protected_files": 131,
+  "protected_files_changed": [],
+  "package_member_set_matches": true,
+  "all_member_hashes_match": true,
+  "archive_sha256_matches_embedded_manifest": true,
+  "alignment_modes": {
+    "UNCERTAIN_REVIEW": 88,
+    "TRI_MODAL_WORD_VALID": 5,
+    "AV_VALID_TEXT_UNALIGNED": 5,
+    "TRI_MODAL_WITH_AUDIO_CONTENT_INVALID": 2
+  },
+  "no_face_samples": 24,
+  "decoded_digital_silence_samples": [
+    "-mJ2ud6oKI8$_$1",
+    "-mJ2ud6oKI8$_$2"
+  ],
+  "reproduction_checks": {
+    "archive_used": "immediate predecessor of final package",
+    "archive_sha256": "d3c82f92a214375736fe6c4eb6ba0e6c99b508508a054b9f808c16ceef224146",
+    "nine_fixed_branch_replay": {
+      "passed": 9,
+      "failed": 0,
+      "all_pass": true,
+      "rtol": 1e-06,
+      "atol": 1e-06,
+      "first_attempt": "PAUSED_RESOURCE before sample execution: available RAM 917569536 bytes, below the frozen 1 GiB preflight threshold",
+      "retry": "PASS after resources recovered, same frozen samples/code/parameters"
+    },
+    "five_frozen_word_trace_replay": {
+      "status": "PASS",
+      "sample_count": 5,
+      "pass_count": 5,
+      "archive_sha256": "d3c82f92a214375736fe6c4eb6ba0e6c99b508508a054b9f808c16ceef224146"
+    },
+    "replay_relevant_members_unchanged_in_final_archive": true,
+    "archive_member_diff": {
+      "added": 28,
+      "removed": 0,
+      "changed": 2,
+      "all_changes_are_reports_or_documentation": true
+    }
+  },
+  "portable_clean_cpu_install": "PASS; detailed provenance and pip check in Q1复现闭合修复_2026-09-24/reports/portable_env_clean/",
+  "p2_independent_review": {
+    "reviewed_archive_sha256": "458ab0036d6160c6c0f6c17bb96f27ea9f144a7ed676929ba2e4390b5888d929",
+    "conclusion": "PASS; no Q1 v1 closure-blocking gap found",
+    "final_rebuilt_archive_identity_recheck": "PASS; final SHA verified; relative to the reviewed archive, 1 P2 receipt was added, 2 documentation reports changed, 0 members removed, remaining 1823 member hashes identical",
+    "final_rebuilt_archive_sha256": "ba0e0c52057cb810441909cdfd0c23330e8bb4ad0e0d7b3e27ed2c9bd3e70ca0"
+  },
+  "status": "Q1_V1_CLOSED; P2_PASS; final archive identity and 100/100 audit PASS",
+  "stage_boundary": "Remain at 2.1.7 REVIEW GATE; do not start 2.2 until user authorizes the transition"
+}
