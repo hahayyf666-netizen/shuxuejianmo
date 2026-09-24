@@ -10,6 +10,8 @@
 - 字节数：27,934,733；Q1 ZIP 单独距 50,000,000 bytes 还有 22,065,267 bytes。该数不是最终全题附件预算。
 - SHA、大小与成员清单 sidecar：`package/q1_closed_archive.sha256`、`package/q1_closed_size_report.json`、`package/q1_closed_package_manifest.json`。
 
+候选ZIP自包含全部代码、环境说明、100条特征、manifest和复现日志。下文中提到的`reports/portable_env_clean/`与`reports/final_archive_recheck_2026-09-24/`是**解压候选ZIP后的内部路径**；本目录直接可浏览的最终归档核验材料位于`reports/final_package_recheck_2026-09-24/`。
+
 ## 审计结论
 
 - 全部100条样本、100个NPZ、manifest/results一一对应；最终归档全量结构及题目需求复审100/100通过，ZIP CRC及成员SHA/集合均通过。
