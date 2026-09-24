@@ -1,0 +1,114 @@
+{
+  "purpose": "Auxiliary manuscript validation of word-position feature organization; not a performance or emotion-intensity result",
+  "sample_key": "-s9qJ7ATP7w$_$6",
+  "official_text": "But I just kept going",
+  "alignment_mode": "TRI_MODAL_WORD_VALID",
+  "text_av_time_mapping_status": "word_valid",
+  "source_npz": "outputs/q1/v1_delivery/features/-s9qJ7ATP7w___6.npz",
+  "source_npz_sha256": "ec142e3a82796729b2cd8526cb7becff2daeeebe288b696e5f1443abee71eb12",
+  "transformation": {
+    "formula": "z[d,w] = (x[d,w] - mean_w x[d,w]) / std_w x[d,w], population std (ddof=0)",
+    "constant_dimension_policy": "z=0 when std across the five words is below 1e-12",
+    "selection": "all formal dimensions retained; no feature selection",
+    "color_limits": [
+      -2.0,
+      2.0
+    ],
+    "interpretation_boundary": "within-dimension relative variation only; no cross-modality raw-value comparison and no emotion-intensity meaning"
+  },
+  "dimensions": {
+    "text": [
+      5,
+      768
+    ],
+    "audio": [
+      5,
+      50
+    ],
+    "vision": [
+      5,
+      104
+    ]
+  },
+  "constant_dimensions": {
+    "text": 0,
+    "audio": 0,
+    "vision": 0
+  },
+  "word_intervals_sec": [
+    {
+      "word": "But",
+      "start": 0.06,
+      "end": 0.62
+    },
+    {
+      "word": "I",
+      "start": 0.62,
+      "end": 0.96
+    },
+    {
+      "word": "just",
+      "start": 0.96,
+      "end": 1.36
+    },
+    {
+      "word": "kept",
+      "start": 1.36,
+      "end": 1.54
+    },
+    {
+      "word": "going",
+      "start": 1.54,
+      "end": 1.66
+    }
+  ],
+  "checks": {
+    "selected_sample_is_word_valid": true,
+    "mapping_status_is_word_valid": true,
+    "all_text_words_valid": true,
+    "all_audio_words_valid": true,
+    "all_vision_words_valid": true,
+    "word_intervals_finite_monotone": true,
+    "all_transformed_values_finite": true,
+    "formal_dimensions_match": true
+  },
+  "all_checks_pass": true,
+  "software": {
+    "python": "3.12.10",
+    "numpy": "2.5.0",
+    "matplotlib": "3.11.0",
+    "font": "Microsoft YaHei"
+  },
+  "outputs": {
+    "png": {
+      "path": "outputs/q1/paper_figures_2026-09-25/q1_trimodal_feature_heatmap_s9qJ7ATP7w_clip6.png",
+      "bytes": 455955,
+      "sha256": "0cf6de1a596a69bb8bb5bad96cc52ce45faff1f3e359f4e81f702ca3c727e33e"
+    },
+    "svg": {
+      "path": "outputs/q1/paper_figures_2026-09-25/q1_trimodal_feature_heatmap_s9qJ7ATP7w_clip6.svg",
+      "bytes": 37383,
+      "sha256": "d09f8f923faf006b11117e74256674af9e14d972eb67824fd8801d774ca32d9d"
+    },
+    "pdf": {
+      "path": "outputs/q1/paper_figures_2026-09-25/q1_trimodal_feature_heatmap_s9qJ7ATP7w_clip6.pdf",
+      "bytes": 117357,
+      "sha256": "242c323578cb4c8ef3918cfabf12467bfa466c2622f5e8f036efcd5432b88084"
+    }
+  },
+  "data_csv": {
+    "path": "outputs/q1/paper_figures_2026-09-25/q1_trimodal_feature_heatmap_s9qJ7ATP7w_clip6_data.csv",
+    "bytes": 380495,
+    "sha256": "593f5b3de993228f0c4b1a0aac4be80806894db2039fc714a95dbcae15cde6ab",
+    "rows": 4610
+  },
+  "png_metadata": {
+    "width_px": 4251,
+    "height_px": 3661,
+    "mode": "RGBA",
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  }
+}
