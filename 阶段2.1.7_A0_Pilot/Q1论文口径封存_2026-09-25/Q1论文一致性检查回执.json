@@ -1,0 +1,44 @@
+{
+  "scope": "Q1 manuscript wording, route counts, table and figure-caption consistency; no algorithm or feature modification",
+  "manifest": "outputs/q1/v1_delivery/manifest.csv",
+  "manifest_sha256": "04fd5d5e17b2c31e35916badbe65a64e539fd7a0ef11344474fe8511e7118091",
+  "paper_draft": "outputs/q1/paper_freeze_2026-09-25/Q1论文正文建议稿.md",
+  "paper_draft_sha256": "24d6d8baef5be05016d9c1ebbad5887387e97f4680da4b0a485e0ad4cc129ac2",
+  "summary_table": "outputs/q1/paper_freeze_2026-09-25/Q1论文附表_100条汇总.csv",
+  "summary_table_sha256": "3fc453b22e53b66cb9288b9b053106da81b54e7761ffe15b9a3c3c4ad8c285d0",
+  "route_counts": {
+    "UNCERTAIN_REVIEW": 88,
+    "TRI_MODAL_WORD_VALID": 5,
+    "AV_VALID_TEXT_UNALIGNED": 5,
+    "TRI_MODAL_WITH_AUDIO_CONTENT_INVALID": 2
+  },
+  "mapping_counts": {
+    "clip_only": 90,
+    "word_valid": 5,
+    "unavailable": 5
+  },
+  "forbidden_hits": {
+    "claims_all_100_word_aligned": [],
+    "claims_heatmap_emotion_intensity": [],
+    "claims_heatmap_modality_importance": []
+  },
+  "checks": {
+    "manifest_has_100_rows": true,
+    "manifest_sample_keys_unique": true,
+    "route_counts_match_5_88_2_5": true,
+    "mapping_counts_match_5_90_5": true,
+    "paper_contains_all_required_phrases": true,
+    "paper_has_no_forbidden_positive_claim": true,
+    "paper_numbers_match_manifest": true,
+    "summary_has_100_rows": true,
+    "summary_keys_match_manifest": true,
+    "time_figure_exists": true,
+    "heatmap_figure_exists": true,
+    "heatmap_is_trusted_word_sample": true,
+    "heatmap_checks_pass": true,
+    "heatmap_dimensions_match_paper": true
+  },
+  "all_checks_pass": true,
+  "decision": "Q1_PAPER_WORDING_FROZEN",
+  "boundary": "The full competition manuscript does not yet exist; this receipt freezes the canonical Q1 section and its evidence, not Q2/Q3 or final-paper layout."
+}
