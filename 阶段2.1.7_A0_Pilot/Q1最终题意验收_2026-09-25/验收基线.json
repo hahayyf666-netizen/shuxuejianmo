@@ -1,0 +1,48 @@
+{
+  "created_at": "2026-09-25T00:00:00+08:00",
+  "scope": "Q1 final requirement inspection baseline; read-only feature package",
+  "github_main_at_lock": "141b98dbf986d78e810c361b453d484d3ce1b12f",
+  "feature_schema": "q1-feature-v1.0",
+  "manifest_rows": 100,
+  "manifest_sha256": "04fd5d5e17b2c31e35916badbe65a64e539fd7a0ef11344474fe8511e7118091",
+  "results_rows": 100,
+  "results_sha256": "04fd5d5e17b2c31e35916badbe65a64e539fd7a0ef11344474fe8511e7118091",
+  "manifest_results_bytes_identical": true,
+  "formal_npz_count": 100,
+  "alignment_modes": {
+    "UNCERTAIN_REVIEW": 88,
+    "TRI_MODAL_WORD_VALID": 5,
+    "AV_VALID_TEXT_UNALIGNED": 5,
+    "TRI_MODAL_WITH_AUDIO_CONTENT_INVALID": 2
+  },
+  "alignment_granularity": {
+    "clip": 95,
+    "word": 5
+  },
+  "text_av_time_mapping_status": {
+    "clip_only": 90,
+    "word_valid": 5,
+    "unavailable": 5
+  },
+  "official_label_sha256": "827334f782b1f242c84ad944a657bc7f7c63643f71ae9c977811a3eecdd3ab33",
+  "candidate_zip": "outputs/q1/v1_delivery/package/q1_v1_candidate_q1_closed_2026-09-24.zip",
+  "candidate_zip_bytes": 27934733,
+  "candidate_zip_sha256": "ba0e0c52057cb810441909cdfd0c23330e8bb4ad0e0d7b3e27ed2c9bd3e70ca0",
+  "final_receipt_sha256": "1b3a6f56f5329f55dbbabd5ec9b448b382c952427fbb78a2e8482a8e48ee6c9a",
+  "contract_sha256": "193ab292fe53e2a993ac2d672448dd40b21ff7bc14cc7e1ea895d20ba1eb2997",
+  "field_dictionary_sha256": "945a0784b8e461f3295f7b51a8783570e3363e78444f4fc892c55c07e0513afb",
+  "method_report_sha256": "b0fd1050e5176a21f61288c4b032bf74ddeb4e6d3f739c97fecc1f159ca40191",
+  "typical_validation_sha256": "51a044c6aee7a316b84b1c2661fad903d3a6131acb5629e740c60f00e6410c18",
+  "code_files": {
+    "build_q1_v1_reports.py": "7a6349db7498033c872b7ace22d61dfeb3161941ffa00dcad4e487fbef47ac90",
+    "compare_q1_reproduction.py": "2610cc6be2ff8aeb777ae2f1af77f01aaab53b025042fe152e0e7240cf226445",
+    "feature_reader.py": "f47991c3133fd92ecf94f63e966c0773155dbf5fbfe23ee9b7deda61b516443d",
+    "make_typical_correspondence.py": "b7534a13e15704df9dc7cf7e76982e118e81677c938b49f3c9de7ea8256ceb81",
+    "q1_feature_core.py": "4153194e048a5fae4b060840c093a47dd38934b89600ae0a76003bddf5f08685",
+    "read_q1_sample.py": "6dc4b93ec6e05faac760253e9712b0afb5ed72259f29f031bf7fd173623deacd",
+    "run_q1_v1.py": "5d32ef67c09a4ac1a65a4d99da0c7aef55b5f2d39df5fbdf5e16f37952171dc7",
+    "select_branch_check_samples.py": "265d1cf949c3abc460f8387c09906c787bb1bbd11984828250aa6a604475a35c",
+    "validate_q1_v1.py": "5749a625bdbedba8c8a223b71355419b21f6ad86e7e3f5e79622e4099355890d"
+  }
+}
+

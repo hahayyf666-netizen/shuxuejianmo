@@ -1,0 +1,35 @@
+{
+  "scope": "Read-only source-to-artifact requirement re-audit; no new feature extraction or alignment",
+  "audit_exit_code": 0,
+  "official_label_sha256": "827334f782b1f242c84ad944a657bc7f7c63643f71ae9c977811a3eecdd3ab33",
+  "official_label_count": 100,
+  "manifest_count": 100,
+  "npz_count": 100,
+  "all_sample_keys_match": true,
+  "manifest_results_bytes_identical": true,
+  "sample_checks_pass_count": 100,
+  "failures": [],
+  "counts": {
+    "words": 1926,
+    "audio_windows": 77261,
+    "video_frames": 23241,
+    "face_frames": 16806,
+    "valid_word_times": 71,
+    "audio_word_count": 71,
+    "vision_word_count": 68
+  },
+  "modes": {
+    "UNCERTAIN_REVIEW": 88,
+    "TRI_MODAL_WORD_VALID": 5,
+    "AV_VALID_TEXT_UNALIGNED": 5,
+    "TRI_MODAL_WITH_AUDIO_CONTENT_INVALID": 2
+  },
+  "no_face_samples": 24,
+  "decoded_digital_silence_samples": [
+    "-mJ2ud6oKI8$_$1",
+    "-mJ2ud6oKI8$_$2"
+  ],
+  "protected_files_changed": [],
+  "full_local_evidence": "machine_checks.json retained locally; repository receives this non-sensitive summary plus sample_checks_100.csv and input_snapshot_sha256.json"
+}
+
