@@ -1,0 +1,139 @@
+{
+  "scope": "Read-only static requirement/package review; no feature extraction and no original artifact edits",
+  "snapshot": {
+    "outputs/q1/v1_delivery/01_全量特征合同.md": "141569077a7daba9f2b9098de9088753ca76f95650b6107ab7634bcac4d911ff",
+    "outputs/q1/v1_delivery/02_字段与文件规范.md": "13079e006215991ea08fdb25c8798111ca28ccfd3b9fe4c68a3857ac1f7ce5a7",
+    "outputs/q1/v1_delivery/README.md": "3d450bb7106b0d5dd2b877c5ef9dca004b86eadaf5cd3dcdf313e2f2403386bf",
+    "outputs/q1/v1_delivery/requirements-lock.txt": "6709e8408eaf84fc157b674bfce8e8581be5306eefae4ed9c1b2a5b87daa2ae2",
+    "outputs/q1/v1_delivery/reports/step09_q1_v1_closure_review.md": "60b891702ebc1d21b51128c7d64d2c1c5490b0223b582328f3ee5eba7e2d5981",
+    "outputs/q1/v1_delivery/reports/step09_requirement_traceability.md": "b228063e1aad9803d079d2c62dc3d8613a68af1d23f8aa417cb1e0fdc9be645d",
+    "outputs/q1/v1_delivery/reports/step08_package_copy_validation.json": "6d2c9561218a755dfb7b164f698b48c3fa2214b6c73c6f42f8c89e2138fac599",
+    "outputs/q1/v1_delivery/code/build_q1_v1_reports.py": "7a6349db7498033c872b7ace22d61dfeb3161941ffa00dcad4e487fbef47ac90",
+    "outputs/q1/v1_delivery/code/compare_q1_reproduction.py": "2610cc6be2ff8aeb777ae2f1af77f01aaab53b025042fe152e0e7240cf226445",
+    "outputs/q1/v1_delivery/code/feature_reader.py": "f47991c3133fd92ecf94f63e966c0773155dbf5fbfe23ee9b7deda61b516443d",
+    "outputs/q1/v1_delivery/code/make_typical_correspondence.py": "b7534a13e15704df9dc7cf7e76982e118e81677c938b49f3c9de7ea8256ceb81",
+    "outputs/q1/v1_delivery/code/q1_feature_core.py": "4153194e048a5fae4b060840c093a47dd38934b89600ae0a76003bddf5f08685",
+    "outputs/q1/v1_delivery/code/read_q1_sample.py": "6dc4b93ec6e05faac760253e9712b0afb5ed72259f29f031bf7fd173623deacd",
+    "outputs/q1/v1_delivery/code/run_q1_v1.py": "5af2e8d0c4a405125c457b099e670a2f75ee98f24990be96cea41de53ce7b53e",
+    "outputs/q1/v1_delivery/code/select_branch_check_samples.py": "265d1cf949c3abc460f8387c09906c787bb1bbd11984828250aa6a604475a35c",
+    "outputs/q1/v1_delivery/code/validate_q1_v1.py": "5749a625bdbedba8c8a223b71355419b21f6ad86e7e3f5e79622e4099355890d"
+  },
+  "zip_sha256": "d1b3bb587bd96b4094b555eeab1add4eed048c316ee84fbb6d8a3456fa39d7a2",
+  "zip_member_count": 1501,
+  "zip_crc_first_bad_member": null,
+  "alignment_summary_count": 100,
+  "trace_present_count": 100,
+  "trace_hash_match_count": 100,
+  "trace_parent_counts": {
+    "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces": 81,
+    "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment": 8,
+    "outputs/q1/diagnostics/additional_controls_2026-09-24/alignment": 8,
+    "outputs/q1/pilot/alignment": 3
+  },
+  "trace_failures": [],
+  "word_mode_trace_origins": [
+    {
+      "sample_key": "-3g5yACwYnA$_$3",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-3g5yACwYnA___3.json"
+    },
+    {
+      "sample_key": "-UuX1xuaiiE$_$0",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-UuX1xuaiiE___0.json"
+    },
+    {
+      "sample_key": "-aNfi7CP8vM$_$7",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-aNfi7CP8vM___7.json"
+    },
+    {
+      "sample_key": "-egA8-b7-3M$_$9",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-egA8-b7-3M___9.json"
+    },
+    {
+      "sample_key": "-s9qJ7ATP7w$_$6",
+      "trace": "outputs/q1/pilot/alignment/-s9qJ7ATP7w___6_trace.json"
+    }
+  ],
+  "local_file_requirements": [
+    {
+      "line": 128,
+      "requirement": "openai-whisper @ file:///C:/Users/Fine/Documents/Codex/2026-09-23/https-github-com-hahayyf666-netizen-shuxuejianmo/outputs/q1/diagnostics/aligner_qualification_2_19_1/packages/openai_whisper-20250625.tar.gz#sha256=37a91a3921809d9f44748ffc73c0a55c9f366c85a3ef5c2ae0cc09540432eb96",
+      "archive_has_distribution_basename": false
+    },
+    {
+      "line": 209,
+      "requirement": "stable-ts @ file:///C:/Users/Fine/Documents/Codex/2026-09-23/https-github-com-hahayyf666-netizen-shuxuejianmo/outputs/q1/diagnostics/aligner_qualification_2_19_1/packages/stable_ts-2.19.1.tar.gz#sha256=0ecaf1ed93e029839569618d2da9a57b883ad04db21f0680146e0650caaf4f52",
+      "archive_has_distribution_basename": false
+    }
+  ],
+  "python_members": [
+    "outputs/q1/v1_delivery/code/build_q1_v1_reports.py",
+    "outputs/q1/v1_delivery/code/compare_q1_reproduction.py",
+    "outputs/q1/v1_delivery/code/feature_reader.py",
+    "outputs/q1/v1_delivery/code/make_typical_correspondence.py",
+    "outputs/q1/v1_delivery/code/q1_feature_core.py",
+    "outputs/q1/v1_delivery/code/read_q1_sample.py",
+    "outputs/q1/v1_delivery/code/run_q1_v1.py",
+    "outputs/q1/v1_delivery/code/select_branch_check_samples.py",
+    "outputs/q1/v1_delivery/code/validate_q1_v1.py"
+  ],
+  "upstream_alignment_script_inventory": [
+    {
+      "path": "work/run_a0_pilot_worker.py",
+      "in_zip": false,
+      "exists_workspace": true,
+      "workspace_sha256": "afbc3216c675bd2004b0f014a0340e45ad97d89e83bfaad83f5fe2c53e7f159e"
+    },
+    {
+      "path": "work/run_prefreeze_audio_alignment.py",
+      "in_zip": false,
+      "exists_workspace": true,
+      "workspace_sha256": "7dcc6d5e2a9dbcf710e7ee478888409fdf79d5ca5c28a960e6084966e72137e2"
+    },
+    {
+      "path": "work/run_additional_controls.py",
+      "in_zip": false,
+      "exists_workspace": true,
+      "workspace_sha256": "88b6c4a0c396a0c4a50ed0d5e9763218bfb5885efbc29e2f691e54cb0681f42b"
+    },
+    {
+      "path": "work/run_full100_alignment_audit.py",
+      "in_zip": false,
+      "exists_workspace": true,
+      "workspace_sha256": "f97437c2976160163dc30516e2e646fed64760c143bbac5666b8425ddc4d9c31"
+    }
+  ],
+  "raw_feature_generator_dependencies_in_zip": {
+    "stage1_selection": true,
+    "pilot_samples": true,
+    "asset_manifest": true
+  },
+  "prefreeze_upstream_contract": {
+    "script": "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\work\\run_prefreeze_audio_alignment.py",
+    "script_sha256": "7dcc6d5e2a9dbcf710e7ee478888409fdf79d5ca5c28a960e6084966e72137e2",
+    "model_load_call": "stable_whisper.load_model('base.en', device='cpu', download_root='C:\\\\Users\\\\Fine\\\\Documents\\\\Codex\\\\2026-09-23\\\\https-github-com-hahayyf666-netizen-shuxuejianmo\\\\work\\\\whisper_cache_2_19_1', in_memory=False)",
+    "align_call": "model.align(audio16, official_text, language='en', remove_instant_words=False, failure_threshold=None, regroup=False, stream=False)",
+    "audio_decode_call": "run_a0_pilot_worker.decode_audio_16k(video_path, shared_t0)",
+    "model_file_sha256": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "stable_whisper_version": "2.19.1",
+    "openai_whisper_version": "20250625"
+  },
+  "additional_controls_upstream_contract": {
+    "script": "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\work\\run_additional_controls.py",
+    "script_sha256": "88b6c4a0c396a0c4a50ed0d5e9763218bfb5885efbc29e2f691e54cb0681f42b",
+    "model_load_call": "stable_whisper.load_model('base.en', device='cpu', download_root=work/whisper_cache_2_19_1, in_memory=False)",
+    "align_call": "model.align(audio16, official_text, language='en', remove_instant_words=False, failure_threshold=None, regroup=False, stream=False)",
+    "decode_call": "run_a0_pilot_worker.decode_audio_16k(video_path, shared_t0)",
+    "model_file_sha256": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "stable_whisper_version": "2.19.1",
+    "openai_whisper_version": "20250625"
+  },
+  "full100_upstream_contract": {
+    "script_sha256": "f97437c2976160163dc30516e2e646fed64760c143bbac5666b8425ddc4d9c31",
+    "model_file_sha256": "25a8566e1d0c1e2231d1c762132cd20e0f96a85d16145c3a00adf5d1ac670ead",
+    "stable_whisper_version": "2.19.1",
+    "openai_whisper_version": "20250625",
+    "alignment_call": "model.align(audio16, official_text, language='en', remove_instant_words=False, failure_threshold=None, regroup=False, stream=False)"
+  },
+  "status": "FAIL",
+  "status_basis": "P1: documented environment install file contains two original-machine absolute file references absent from candidate archive; installation from relocated archive is not reproducible as written."
+}

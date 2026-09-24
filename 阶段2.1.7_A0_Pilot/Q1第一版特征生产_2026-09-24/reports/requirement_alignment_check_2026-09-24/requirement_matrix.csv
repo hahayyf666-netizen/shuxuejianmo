@@ -1,0 +1,15 @@
+﻿requirement_id,requirement,status,observed_implementation,evidence,boundary_or_action
+R01,原始样本处理流程,PASS_WITH_REPRO_GAP,label与MP4身份→审计路由→三模态提取→条件词级聚合→NPZ/manifest,code/run_q1_v1.py;01_全量特征合同.md,P1-02针对上游对齐生产程序交付
+R02,文本特征定义与提取,PASS,固定RoBERTa-base最后隐层子词均值768维；官方原文保留,code/q1_feature_core.py;machine_checks.json,1926词单元；最长输入80tokens；不宣称情感类别概率
+R03,语音特征定义与提取,PASS_WITH_DOC_NOTE,eGeMAPSv02 LLD25维；词级均值+总体标准差50维,code/q1_feature_core.py;reproduction_and_semantics_checks.json,P2-01区分API时间标签和各维物理感受野
+R04,视觉特征定义与提取,PASS_WITH_DOC_NOTE,VIDEO模式FaceLandmarker52维；词级104维,code/q1_feature_core.py;machine_checks.json,24条无脸仍保留实际帧；不保证说话人身份
+R05,跨模态时序对齐规则,PASS_WITH_REPRO_GAP,真实PTS与共同presentation时间；半开词区间center归词；不可信词对应退为clip-only,code/q1_feature_core.py;machine_checks.json,5条词级；其余分支不伪造词时间；P1-02
+R06,原始样本覆盖完整性,PASS,官方100键=输入100=输出100=manifest100,machine_checks.json;sample_checks_100.csv,无漏项或额外NPZ
+R07,模态源文件与输出一一对应,PASS,官方原文、源MP4/标签表/输出SHA、日志身份相符,machine_checks.json,不是所有官方句子与音频语义匹配声明
+R08,序列位置可核验,PASS,字符跨度、subword索引、原生LLD时间标签、视频PTS及CSR来源索引,machine_checks.json,全部既有聚合重算通过
+R09,有效长度与填充规则,PASS,变长分模态；无全局padding；NaN时间及零占位配mask,machine_checks.json;02_字段与文件规范.md,静音不等于无音频观测；无脸不等于无视频
+R10,原始素材对应记录,PASS,重新解码核对100条A/V覆盖和23241个视频PTS,machine_checks.json;sample_checks_100.csv,未测量人工词边界误差
+R11,工具和关键参数,PASS_WITH_DOC_NOTE,版本与模型SHA相符；核心参数在代码/配置中,reproduction_and_semantics_checks.json,补明默认阈值0.5及时间标签术语
+R12,处理日志,PASS,100条文本和100条媒体日志身份/状态/输出SHA一致,machine_checks.json;reproduction_and_semantics_checks.json,200份日志均在被审ZIP
+R13,环境可迁移安装,NEEDS_REVISION,两项锁文件依赖指向未打包的原电脑绝对路径tar.gz,"requirements-lock.txt:128,209;reproduction_and_semantics_checks.json",P1-01；未运行干净环境安装
+R14,完整方法复现说明,NEEDS_REVISION,100份trace存在，但上游词trace自定义生成脚本缺交付,independent_static_review.json;reproduction_and_semantics_checks.json,P1-02；已有9条固定trace复现有效但范围有限

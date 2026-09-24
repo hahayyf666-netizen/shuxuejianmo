@@ -1,0 +1,834 @@
+{
+  "scope": "Read-only environment/package/upstream implementation audit; no dependency installation or inference",
+  "model_hash_checks": {
+    "config.json": true,
+    "merges.txt": true,
+    "model.safetensors": true,
+    "tokenizer.json": true,
+    "tokenizer_config.json": true,
+    "vocab.json": true,
+    "mediapipe": true
+  },
+  "a0_protected_count": 48,
+  "a0_hash_failures": [],
+  "package_versions": {
+    "numpy": {
+      "recorded": "2.5.0",
+      "installed": "2.5.0"
+    },
+    "torch": {
+      "recorded": "2.8.0",
+      "installed": "2.8.0"
+    },
+    "stable-ts": {
+      "recorded": "2.19.1",
+      "installed": "2.19.1"
+    },
+    "openai-whisper": {
+      "recorded": "20250625",
+      "installed": "20250625"
+    },
+    "opensmile": {
+      "recorded": "2.6.0",
+      "installed": "2.6.0"
+    },
+    "mediapipe": {
+      "recorded": "0.10.35",
+      "installed": "0.10.35"
+    },
+    "transformers": {
+      "recorded": "4.57.6",
+      "installed": "4.57.6"
+    },
+    "av": {
+      "recorded": "18.0.0",
+      "installed": "18.0.0"
+    },
+    "pandas": {
+      "recorded": "3.0.3",
+      "installed": "3.0.3"
+    },
+    "openpyxl": {
+      "recorded": "3.1.5",
+      "installed": "3.1.5"
+    }
+  },
+  "package_versions_match": true,
+  "openSMILE_root_config_hash_matches": true,
+  "pip_absolute_file_references": [
+    {
+      "line": 128,
+      "requirement": "openai-whisper @ file:///C:/Users/Fine/Documents/Codex/2026-09-23/https-github-com-hahayyf666-netizen-shuxuejianmo/outputs/q1/diagnostics/aligner_qualification_2_19_1/packages/openai_whisper-20250625.tar.gz#sha256=37a91a3921809d9f44748ffc73c0a55c9f366c85a3ef5c2ae0cc09540432eb96",
+      "distribution_in_zip": false
+    },
+    {
+      "line": 209,
+      "requirement": "stable-ts @ file:///C:/Users/Fine/Documents/Codex/2026-09-23/https-github-com-hahayyf666-netizen-shuxuejianmo/outputs/q1/diagnostics/aligner_qualification_2_19_1/packages/stable_ts-2.19.1.tar.gz#sha256=0ecaf1ed93e029839569618d2da9a57b883ad04db21f0680146e0650caaf4f52",
+      "distribution_in_zip": false
+    }
+  ],
+  "upstream_alignment_generators": [
+    {
+      "path": "work/run_a0_pilot_worker.py",
+      "in_zip": false,
+      "exists_in_workspace": true,
+      "sha256": "afbc3216c675bd2004b0f014a0340e45ad97d89e83bfaad83f5fe2c53e7f159e"
+    },
+    {
+      "path": "work/run_prefreeze_audio_alignment.py",
+      "in_zip": false,
+      "exists_in_workspace": true,
+      "sha256": "7dcc6d5e2a9dbcf710e7ee478888409fdf79d5ca5c28a960e6084966e72137e2"
+    },
+    {
+      "path": "work/run_additional_controls.py",
+      "in_zip": false,
+      "exists_in_workspace": true,
+      "sha256": "88b6c4a0c396a0c4a50ed0d5e9763218bfb5885efbc29e2f691e54cb0681f42b"
+    },
+    {
+      "path": "work/run_full100_alignment_audit.py",
+      "in_zip": false,
+      "exists_in_workspace": true,
+      "sha256": "f97437c2976160163dc30516e2e646fed64760c143bbac5666b8425ddc4d9c31"
+    }
+  ],
+  "alignment_summary_count": 100,
+  "all_alignment_trace_files_present_and_hash_match": true,
+  "alignment_traces": [
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-3g5yACwYnA___13.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-3g5yACwYnA___13.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-3g5yACwYnA___2.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-3g5yACwYnA___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-3g5yACwYnA___3.json",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-3g5yACwYnA___3.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-3g5yACwYnA___9.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-3g5yACwYnA___9.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-3nNcZdcdvU___5.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-3nNcZdcdvU___5.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-571d8cVauQ___0.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-571d8cVauQ___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-571d8cVauQ___5.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-571d8cVauQ___5.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-6rXp3zJ3kc___8.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-6rXp3zJ3kc___8.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-9y-fZ3swSY___0.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-9y-fZ3swSY___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-9y-fZ3swSY___4.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-9y-fZ3swSY___4.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-9y-fZ3swSY___8.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-9y-fZ3swSY___8.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-AUZQgSxyPQ___2.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-AUZQgSxyPQ___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-HeZS2-Prhc___2.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-HeZS2-Prhc___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-HwX2H8Z4hY___2.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-HwX2H8Z4hY___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-HwX2H8Z4hY___5.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-HwX2H8Z4hY___5.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-HwX2H8Z4hY___6.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-HwX2H8Z4hY___6.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-HwX2H8Z4hY___9.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-HwX2H8Z4hY___9.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-I_e4mIh0yE___1.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-I_e4mIh0yE___1.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-I_e4mIh0yE___3.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-I_e4mIh0yE___3.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-MeTTeMJBNc___0.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-MeTTeMJBNc___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-MeTTeMJBNc___13.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-MeTTeMJBNc___13.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-MeTTeMJBNc___7.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-MeTTeMJBNc___7.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-NFrJFQijFE___1.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-NFrJFQijFE___1.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-NFrJFQijFE___2.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-NFrJFQijFE___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-RfYyzHpjk4___11.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-RfYyzHpjk4___11.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-RfYyzHpjk4___2.json",
+      "trace": "outputs/q1/diagnostics/additional_controls_2026-09-24/alignment/-RfYyzHpjk4___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-RfYyzHpjk4___8.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-RfYyzHpjk4___8.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-THoVjtIkeU___12.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-THoVjtIkeU___12.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-THoVjtIkeU___2.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-THoVjtIkeU___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-THoVjtIkeU___6.json",
+      "trace": "outputs/q1/diagnostics/additional_controls_2026-09-24/alignment/-THoVjtIkeU___6.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-UUCSKoHeMA___0.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-UUCSKoHeMA___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-UacrmKiTn4___10.json",
+      "trace": "outputs/q1/diagnostics/additional_controls_2026-09-24/alignment/-UacrmKiTn4___10.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-UacrmKiTn4___4.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-UacrmKiTn4___4.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-UuX1xuaiiE___0.json",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-UuX1xuaiiE___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-UuX1xuaiiE___1.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-UuX1xuaiiE___1.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-UuX1xuaiiE___3.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-UuX1xuaiiE___3.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-UuX1xuaiiE___6.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-UuX1xuaiiE___6.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-a55Q6RWvTA___3.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-a55Q6RWvTA___3.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-aNfi7CP8vM___7.json",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-aNfi7CP8vM___7.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-aqamKhZ1Ec___0.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-aqamKhZ1Ec___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-dxfTGcXJoc___0.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-dxfTGcXJoc___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-dxfTGcXJoc___1.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-dxfTGcXJoc___1.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-dxfTGcXJoc___2.json",
+      "trace": "outputs/q1/diagnostics/additional_controls_2026-09-24/alignment/-dxfTGcXJoc___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-dxfTGcXJoc___6.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-dxfTGcXJoc___6.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-egA8-b7-3M___1.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-egA8-b7-3M___1.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-egA8-b7-3M___13.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-egA8-b7-3M___13.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-egA8-b7-3M___16.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-egA8-b7-3M___16.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-egA8-b7-3M___17.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-egA8-b7-3M___17.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-egA8-b7-3M___18.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-egA8-b7-3M___18.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-egA8-b7-3M___20.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-egA8-b7-3M___20.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-egA8-b7-3M___26.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-egA8-b7-3M___26.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-egA8-b7-3M___6.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-egA8-b7-3M___6.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-egA8-b7-3M___9.json",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-egA8-b7-3M___9.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-hnBHBN8p5A___6.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-hnBHBN8p5A___6.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-hnBHBN8p5A___7.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-hnBHBN8p5A___7.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-iRBcNs9oI8___3.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-iRBcNs9oI8___3.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-iRBcNs9oI8___6.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-iRBcNs9oI8___6.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-iRBcNs9oI8___7.json",
+      "trace": "outputs/q1/diagnostics/additional_controls_2026-09-24/alignment/-iRBcNs9oI8___7.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-iRBcNs9oI8___8.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-iRBcNs9oI8___8.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-iRBcNs9oI8___9.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-iRBcNs9oI8___9.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-lzEya4AM_4___5.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-lzEya4AM_4___5.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-lzEya4AM_4___6.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-lzEya4AM_4___6.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-mJ2ud6oKI8___1.json",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-mJ2ud6oKI8___1.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-mJ2ud6oKI8___2.json",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-mJ2ud6oKI8___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-mJ2ud6oKI8___6.json",
+      "trace": "outputs/q1/pilot/alignment/-mJ2ud6oKI8___6_trace.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-mJ2ud6oKI8___8.json",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-mJ2ud6oKI8___8.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-mJ2ud6oKI8___9.json",
+      "trace": "outputs/q1/diagnostics/prefreeze_transcript_audio_2026-09-24/alignment/-mJ2ud6oKI8___9.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-mqbVkbCndg___0.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-mqbVkbCndg___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-qDkUB0GgYY___6.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-qDkUB0GgYY___6.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-ri04Z7vwnc___0.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-ri04Z7vwnc___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-ri04Z7vwnc___2.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-ri04Z7vwnc___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-ri04Z7vwnc___5.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-ri04Z7vwnc___5.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-s9qJ7ATP7w___0.json",
+      "trace": "outputs/q1/pilot/alignment/-s9qJ7ATP7w___0_trace.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-s9qJ7ATP7w___1.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-s9qJ7ATP7w___1.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-s9qJ7ATP7w___4.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-s9qJ7ATP7w___4.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-s9qJ7ATP7w___5.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-s9qJ7ATP7w___5.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-s9qJ7ATP7w___6.json",
+      "trace": "outputs/q1/pilot/alignment/-s9qJ7ATP7w___6_trace.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-s9qJ7ATP7w___7.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-s9qJ7ATP7w___7.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-s9qJ7ATP7w___8.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-s9qJ7ATP7w___8.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-t217m2on-s___2.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-t217m2on-s___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-t217m2on-s___7.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-t217m2on-s___7.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-tANM6ETl_M___3.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-tANM6ETl_M___3.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-tPCytz4rww___10.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-tPCytz4rww___10.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-tPCytz4rww___11.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-tPCytz4rww___11.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-tPCytz4rww___12.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-tPCytz4rww___12.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-tPCytz4rww___16.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-tPCytz4rww___16.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-tPCytz4rww___18.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-tPCytz4rww___18.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-uywlfIYOS8___4.json",
+      "trace": "outputs/q1/diagnostics/additional_controls_2026-09-24/alignment/-uywlfIYOS8___4.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-vxjVxOeScU___4.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-vxjVxOeScU___4.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-wMB_hJL-3o___7.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-wMB_hJL-3o___7.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-wny0OAz3g8___0.json",
+      "trace": "outputs/q1/diagnostics/additional_controls_2026-09-24/alignment/-wny0OAz3g8___0.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-wny0OAz3g8___1.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-wny0OAz3g8___1.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-wny0OAz3g8___2.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-wny0OAz3g8___2.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-wny0OAz3g8___3.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-wny0OAz3g8___3.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-wny0OAz3g8___5.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-wny0OAz3g8___5.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-wny0OAz3g8___7.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-wny0OAz3g8___7.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-wny0OAz3g8___9.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-wny0OAz3g8___9.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-yRb-Jum7EQ___1.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-yRb-Jum7EQ___1.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-yRb-Jum7EQ___5.json",
+      "trace": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/traces/-yRb-Jum7EQ___5.json",
+      "exists": true,
+      "sha_matches": true
+    },
+    {
+      "record": "outputs/q1/diagnostics/full100_correspondence_audit/alignment/-yRb-Jum7EQ___6.json",
+      "trace": "outputs/q1/diagnostics/additional_controls_2026-09-24/alignment/-yRb-Jum7EQ___6.json",
+      "exists": true,
+      "sha_matches": true
+    }
+  ],
+  "per_sample_text_and_media_logs_in_zip": 200,
+  "expected_sample_log_count": 200,
+  "raw_media_and_large_model_assets_excluded_as_declared": true,
+  "time_coordinate_semantics": {
+    "work\\.venv_q1\\Lib\\site-packages\\opensmile\\core\\config\\egemaps\\v02\\eGeMAPSv02.conf": {
+      "sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e",
+      "snippets": [
+        {
+          "line": 17,
+          "text": "\\{../../gemaps/v01b/GeMAPSv01b_core.lld.conf.inc}"
+        },
+        {
+          "line": 18,
+          "text": "\\{eGeMAPSv02_core.lld.conf.inc}"
+        }
+      ]
+    },
+    "work\\.venv_q1\\Lib\\site-packages\\opensmile\\core\\config\\gemaps\\v01b\\GeMAPSv01b_core.lld.conf.inc": {
+      "sha256": "ab6bb6981305af2e758f4f084b206755d7207728d50e1980e07cfdc35d487421",
+      "snippets": [
+        {
+          "line": 20,
+          "text": "frameSize = 0.060"
+        },
+        {
+          "line": 53,
+          "text": "frameSize = 0.020"
+        },
+        {
+          "line": 21,
+          "text": "frameStep = 0.010"
+        },
+        {
+          "line": 54,
+          "text": "frameStep = 0.010"
+        },
+        {
+          "line": 22,
+          "text": "frameCenterSpecial = left"
+        },
+        {
+          "line": 55,
+          "text": "frameCenterSpecial = left"
+        }
+      ]
+    },
+    "work\\.venv_q1\\Lib\\site-packages\\opensmile\\core\\config\\egemaps\\v02\\eGeMAPSv02_core.lld.conf.inc": {
+      "sha256": "ad96301a35ea97e14370bb6f5275826ffbf96bad47e80816e5130df072686309",
+      "snippets": [
+        {
+          "line": 186,
+          "text": "smaWin = 3"
+        },
+        {
+          "line": 195,
+          "text": "smaWin = 3"
+        },
+        {
+          "line": 205,
+          "text": "smaWin = 3"
+        },
+        {
+          "line": 215,
+          "text": "smaWin = 3"
+        },
+        {
+          "line": 225,
+          "text": "smaWin = 3"
+        },
+        {
+          "line": 236,
+          "text": "smaWin = 3"
+        }
+      ]
+    },
+    "work\\.venv_q1\\Lib\\site-packages\\opensmile\\core\\smile.py": {
+      "sha256": "f6203bce976d54ab76d5d71a17577dbf1251996a9202a370bdcff71ae163c661",
+      "snippets": [
+        {
+          "line": 430,
+          "text": "            starts.append(meta.time)"
+        },
+        {
+          "line": 431,
+          "text": "            ends.append(meta.time + meta.lengthSec)"
+        }
+      ]
+    },
+    "work\\.venv_q1\\Lib\\site-packages\\mediapipe\\tasks\\python\\vision\\face_landmarker.py": {
+      "sha256": "c88fd3d4c8980bcc5502da434b07853654a31872357c0982d842ddb7e616f43a",
+      "snippets": [
+        {
+          "line": 2955,
+          "text": "      min_face_detection_confidence: float,"
+        },
+        {
+          "line": 2991,
+          "text": "    min_face_detection_confidence: The minimum confidence score for the face"
+        },
+        {
+          "line": 3011,
+          "text": "  min_face_detection_confidence: float = 0.5"
+        },
+        {
+          "line": 2956,
+          "text": "      min_face_presence_confidence: float,"
+        },
+        {
+          "line": 2993,
+          "text": "    min_face_presence_confidence: The minimum confidence score of face presence"
+        },
+        {
+          "line": 3012,
+          "text": "  min_face_presence_confidence: float = 0.5"
+        },
+        {
+          "line": 2957,
+          "text": "      min_tracking_confidence: float,"
+        },
+        {
+          "line": 2995,
+          "text": "    min_tracking_confidence: The minimum confidence score for the face tracking"
+        },
+        {
+          "line": 3013,
+          "text": "  min_tracking_confidence: float = 0.5"
+        }
+      ]
+    }
+  },
+  "source_only_command": "python work/q1_repro_contract_audit.py --project-root . --report-root outputs/q1/v1_delivery/reports/requirement_alignment_check_2026-09-24",
+  "fresh_environment_install_run": false,
+  "failing_requirement": "Portable complete reproduction instructions",
+  "overall_requirement_status": "NEEDS_REVISION"
+}

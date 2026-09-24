@@ -1,0 +1,68 @@
+{
+  "assembled_at_utc": "2026-09-24T09:32:58.699886+00:00",
+  "scope": "Original Q1 requirement review; retain REVIEW GATE; no new model inference, alignment or production feature edits",
+  "overall_status": "NEEDS_REVISION",
+  "production_machine_check_status": "PASS",
+  "p1_findings": [
+    "P1-01 portable dependency installation is incomplete",
+    "P1-02 upstream custom word-alignment generation code absent from delivery"
+  ],
+  "commands": [
+    {
+      "command": "work/.venv_q1/Scripts/python.exe work/q1_requirement_alignment_audit.py --project-root . --report-root outputs/q1/v1_delivery/reports/requirement_alignment_check_2026-09-24",
+      "exit_code": 0,
+      "stdout": "machine_checks.stdout.log",
+      "stderr": "machine_checks.stderr.log",
+      "result": "machine_checks.json",
+      "script_sha256": "0e5435ec6c68a74bd4f86b85c86f20c3d6e119f5928fa2a886df717c9a0be9ac"
+    },
+    {
+      "command": "work/.venv_q1/Scripts/python.exe work/q1_repro_contract_audit.py --project-root . --report-root outputs/q1/v1_delivery/reports/requirement_alignment_check_2026-09-24",
+      "exit_code": 0,
+      "stdout": "reproduction_and_semantics.stdout.log",
+      "stderr": "reproduction_and_semantics.stderr.log",
+      "result": "reproduction_and_semantics_checks.json",
+      "script_sha256": "9fdead16f3b65da0158831fecde68a20f4f777e007a65a01a4f57b2b8fc3789a"
+    }
+  ],
+  "checker_correction": {
+    "first_attempt_snapshot": "attempt1_before_state_mapping_fix/",
+    "cause": "Checker directly equated legacy unknown with v1 not_asserted",
+    "fix": "Map frozen state conversion unknown -> not_asserted in audit checker only",
+    "affected_samples": 88,
+    "production_modified": false,
+    "final_check_pass_count": 100
+  },
+  "independent_review": {
+    "agent": "/root/q1_requirement_review",
+    "scope": "Read-only static code/package review",
+    "evidence": "independent_static_review.json",
+    "recorded_status": "FAIL",
+    "final_consolidated_receipt": "NOT_COMPLETED_SERVICE_CREDIT_ERROR",
+    "main_reviewer_rechecked_findings": true,
+    "claimed_independent_pass": false
+  },
+  "source_human_content_review_added": false,
+  "fresh_environment_install_run": false,
+  "new_features_generated": false,
+  "new_alignment_run": false,
+  "documentation_status_correction": {
+    "files": [
+      "outputs/q1/v1_delivery/README.md",
+      "outputs/q1/v1_delivery/reports/step09_q1_v1_closure_review.md"
+    ],
+    "before_snapshots": "documents_before_status_correction/",
+    "timing": "After read-only machine audit snapshots; amend unsupported overall PASS conclusion only"
+  },
+  "historical_zip_unchanged": true,
+  "note": "The two command exit codes indicate successful execution of checks, not full original requirement acceptance. Model weights, source data, NPZ and A0 remain unchanged.",
+  "post_report_protection_check": {
+    "only_documentation_status_files_changed": [
+      "outputs/q1/v1_delivery/README.md",
+      "outputs/q1/v1_delivery/reports/step09_q1_v1_closure_review.md"
+    ],
+    "feature_code_and_data_unchanged": true,
+    "candidate_zip_unchanged": true,
+    "a0_sha_match_count": 48
+  }
+}

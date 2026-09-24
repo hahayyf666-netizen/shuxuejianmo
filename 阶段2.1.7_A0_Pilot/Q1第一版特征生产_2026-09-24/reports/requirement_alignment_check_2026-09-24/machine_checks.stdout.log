@@ -1,0 +1,11 @@
+Audited 10/100; sample check failures=0
+Audited 20/100; sample check failures=0
+Audited 30/100; sample check failures=0
+Audited 40/100; sample check failures=0
+Audited 50/100; sample check failures=0
+Audited 60/100; sample check failures=0
+Audited 70/100; sample check failures=0
+Audited 80/100; sample check failures=0
+Audited 90/100; sample check failures=0
+Audited 100/100; sample check failures=0
+{"scope": "Read-only source-to-artifact requirement re-audit; no new feature extraction or alignment", "official_label_sha256": "827334f782b1f242c84ad944a657bc7f7c63643f71ae9c977811a3eecdd3ab33", "av_version": "18.0.0", "official_label_count": 100, "manifest_count": 100, "npz_count": 100, "all_sample_keys_match": true, "manifest_results_bytes_identical": true, "sample_checks_pass_count": 100, "failures": [], "counts": {"words": 1926, "audio_windows": 77261, "video_frames": 23241, "face_frames": 16806, "valid_word_times": 71, "audio_word_count": 71, "vision_word_count": 68}, "modes": {"UNCERTAIN_REVIEW": 88, "TRI_MODAL_WORD_VALID": 5, "AV_VALID_TEXT_UNALIGNED": 5, "TRI_MODAL_WITH_AUDIO_CONTENT_INVALID": 2}, "no_face_samples": 24, "max_roberta_tokens": 80, "decoded_digital_silence_samples": ["-mJ2ud6oKI8$_$1", "-mJ2ud6oKI8$_$2"], "package_checks": {"archive_sha256_matches": true, "crc_pass": true, "member_set_matches": true, "all_member_hashes_match": true}, "package_members": 1501, "archive_sha256": "d1b3bb587bd96b4094b555eeab1add4eed048c316ee84fbb6d8a3456fa39d7a2", "protected_file_count": 139, "protected_files_changed": [], "elapsed_seconds": 28.524974899948575}
