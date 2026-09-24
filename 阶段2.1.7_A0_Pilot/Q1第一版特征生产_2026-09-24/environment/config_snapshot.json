@@ -1,0 +1,77 @@
+{
+  "schema_version": "q1-feature-v1.0",
+  "audio": {
+    "decode": "PyAV decoded source audio with presentation PTS",
+    "sample_rate_hz": 16000,
+    "channels": 1,
+    "feature_set": "eGeMAPSv02",
+    "feature_level": "LowLevelDescriptors",
+    "feature_dim": 25,
+    "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e",
+    "feature_names": [
+      "Loudness_sma3",
+      "alphaRatio_sma3",
+      "hammarbergIndex_sma3",
+      "slope0-500_sma3",
+      "slope500-1500_sma3",
+      "spectralFlux_sma3",
+      "mfcc1_sma3",
+      "mfcc2_sma3",
+      "mfcc3_sma3",
+      "mfcc4_sma3",
+      "F0semitoneFrom27.5Hz_sma3nz",
+      "jitterLocal_sma3nz",
+      "shimmerLocaldB_sma3nz",
+      "HNRdBACF_sma3nz",
+      "logRelF0-H1-H2_sma3nz",
+      "logRelF0-H1-A3_sma3nz",
+      "F1frequency_sma3nz",
+      "F1bandwidth_sma3nz",
+      "F1amplitudeLogRelF0_sma3nz",
+      "F2frequency_sma3nz",
+      "F2bandwidth_sma3nz",
+      "F2amplitudeLogRelF0_sma3nz",
+      "F3frequency_sma3nz",
+      "F3bandwidth_sma3nz",
+      "F3amplitudeLogRelF0_sma3nz"
+    ]
+  },
+  "video": {
+    "decode": "PyAV decoded frame presentation PTS",
+    "feature_extractor": "MediaPipe FaceLandmarker",
+    "mode": "VIDEO",
+    "num_faces": 1,
+    "blendshape_dim": 52,
+    "create_fresh_instance_per_sample": true
+  },
+  "text": {
+    "source": "label-100.xlsx / text",
+    "encoder": "FacebookAI/roberta-base",
+    "revision": "e2da8e2f811d1448a5b465c236feacd80ffbac7b",
+    "asset_identity_sha256": "4066801753f5b2a2402a46e231cc1f85fd52a5970e937644b99fc1cbb3bfeb5b",
+    "pool": "mean of non-special subword last-hidden-state vectors within exact official-word character span",
+    "hidden_dim": 768,
+    "truncate": false
+  },
+  "alignment": {
+    "timebase": "shared presentation timeline",
+    "word_interval": "half-open [start,end)",
+    "reuse": "existing stable-ts 2.19.1 diagnostic only when source/text hashes and confirmed-match evidence agree",
+    "aggregation_query": "feature center >= word start and < word end",
+    "std_ddof": 0
+  },
+  "missingness": {
+    "unavailable_word_times": "NaN with word_time_valid=0",
+    "no_face": "preserve frame with zero placeholder and face_feature_valid=0",
+    "silent_audio": "preserve extracted LLD values; audio_speech_valid=0 only for confirmed silence",
+    "unasserted_text_audio_link": "clip-level text association; no word timestamps"
+  },
+  "runtime": {
+    "device": "CPU",
+    "model_inference_batch_size": 1,
+    "media_processing": "serial by sample_key",
+    "stable_ts_transcribe": false,
+    "new_alignment_run": false
+  },
+  "config_sha256": "ff357861a0053b817523940844e8d285a915e3aa22051b26a102cf5be7ecfef6"
+}

@@ -1,0 +1,85 @@
+{
+  "reference_root": "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\outputs\\q1\\v1_delivery",
+  "reproduction_root": "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\outputs\\q1\\v1_delivery\\repro_check",
+  "sample_count": 9,
+  "rtol": 1e-06,
+  "atol": 1e-06,
+  "passed_sample_count": 9,
+  "failed_sample_count": 0,
+  "all_pass": true,
+  "samples": [
+    {
+      "sample_key": "-3g5yACwYnA$_$13",
+      "reference_file": "features/-3g5yACwYnA___13.npz",
+      "reproduction_file": "features/-3g5yACwYnA___13.npz",
+      "field_count": 71,
+      "passed": true,
+      "field_differences": []
+    },
+    {
+      "sample_key": "-571d8cVauQ$_$0",
+      "reference_file": "features/-571d8cVauQ___0.npz",
+      "reproduction_file": "features/-571d8cVauQ___0.npz",
+      "field_count": 71,
+      "passed": true,
+      "field_differences": []
+    },
+    {
+      "sample_key": "-a55Q6RWvTA$_$3",
+      "reference_file": "features/-a55Q6RWvTA___3.npz",
+      "reproduction_file": "features/-a55Q6RWvTA___3.npz",
+      "field_count": 71,
+      "passed": true,
+      "field_differences": []
+    },
+    {
+      "sample_key": "-mJ2ud6oKI8$_$1",
+      "reference_file": "features/-mJ2ud6oKI8___1.npz",
+      "reproduction_file": "features/-mJ2ud6oKI8___1.npz",
+      "field_count": 71,
+      "passed": true,
+      "field_differences": []
+    },
+    {
+      "sample_key": "-mJ2ud6oKI8$_$2",
+      "reference_file": "features/-mJ2ud6oKI8___2.npz",
+      "reproduction_file": "features/-mJ2ud6oKI8___2.npz",
+      "field_count": 71,
+      "passed": true,
+      "field_differences": []
+    },
+    {
+      "sample_key": "-mJ2ud6oKI8$_$6",
+      "reference_file": "features/-mJ2ud6oKI8___6.npz",
+      "reproduction_file": "features/-mJ2ud6oKI8___6.npz",
+      "field_count": 71,
+      "passed": true,
+      "field_differences": []
+    },
+    {
+      "sample_key": "-s9qJ7ATP7w$_$0",
+      "reference_file": "features/-s9qJ7ATP7w___0.npz",
+      "reproduction_file": "features/-s9qJ7ATP7w___0.npz",
+      "field_count": 71,
+      "passed": true,
+      "field_differences": []
+    },
+    {
+      "sample_key": "-s9qJ7ATP7w$_$6",
+      "reference_file": "features/-s9qJ7ATP7w___6.npz",
+      "reproduction_file": "features/-s9qJ7ATP7w___6.npz",
+      "field_count": 71,
+      "passed": true,
+      "field_differences": []
+    },
+    {
+      "sample_key": "-yRb-Jum7EQ$_$1",
+      "reference_file": "features/-yRb-Jum7EQ___1.npz",
+      "reproduction_file": "features/-yRb-Jum7EQ___1.npz",
+      "field_count": 71,
+      "passed": true,
+      "field_differences": []
+    }
+  ],
+  "comparison_scope": "NPZ field set, dtype, shape, identifiers, metadata, masks, indices, times, and feature arrays. Integer/string/mask arrays are exact; floating arrays use np.allclose with the recorded tolerance."
+}

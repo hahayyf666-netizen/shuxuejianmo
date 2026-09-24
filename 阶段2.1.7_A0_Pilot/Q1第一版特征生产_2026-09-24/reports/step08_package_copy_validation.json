@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-09-24T08:11:12.317685+00:00",
+  "scope": "Independent re-validation of the copied candidate package tree (not the original production output tree).",
+  "python_executable": "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\work\\.venv_q1\\Scripts\\python.exe",
+  "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "cwd": "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo",
+  "validator_command": [
+    "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\work\\.venv_q1\\Scripts\\python.exe",
+    "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\outputs\\q1\\v1_delivery\\package\\candidate\\outputs\\q1\\v1_delivery\\code\\validate_q1_v1.py",
+    "--output-root",
+    "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\outputs\\q1\\v1_delivery\\package\\candidate\\outputs\\q1\\v1_delivery",
+    "--input-root",
+    "D:\\Workspace\\数学建模\\E题数据\\附件1-数据集原始多模态样本\\MOSEI数据集部分原始视频-100条",
+    "--audit-root",
+    "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\outputs\\q1\\v1_delivery\\package\\candidate\\outputs\\q1\\diagnostics\\full100_correspondence_audit",
+    "--asset-root",
+    "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\work\\model_assets_a0",
+    "--expected-count",
+    "100"
+  ],
+  "validator_exit_code": 0,
+  "validator_stdout": "PASS: 100 samples; modes={'UNCERTAIN_REVIEW': 88, 'TRI_MODAL_WORD_VALID': 5, 'AV_VALID_TEXT_UNALIGNED': 5, 'TRI_MODAL_WITH_AUDIO_CONTENT_INVALID': 2}; feature_bytes=17295166",
+  "validator_stderr": "",
+  "validator_pass": true,
+  "zip_archive": "outputs\\q1\\v1_delivery\\package\\q1_v1_candidate.zip",
+  "zip_bytes": 23623432,
+  "zip_sha256": "d1b3bb587bd96b4094b555eeab1add4eed048c316ee84fbb6d8a3456fa39d7a2",
+  "zip_crc_test": "PASS",
+  "zip_feature_npz_count": 100,
+  "reader_command": [
+    "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\work\\.venv_q1\\Scripts\\python.exe",
+    "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\outputs\\q1\\v1_delivery\\package\\candidate\\outputs\\q1\\v1_delivery\\code\\read_q1_sample.py",
+    "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\outputs\\q1\\v1_delivery\\package\\candidate\\outputs\\q1\\v1_delivery\\features\\-s9qJ7ATP7w___6.npz"
+  ],
+  "reader_exit_code": 0,
+  "reader_stdout": "{\n  \"schema_version\": \"q1-feature-v1.0\",\n  \"sample_key\": \"-s9qJ7ATP7w$_$6\",\n  \"official_text\": \"But I just kept going\",\n  \"alignment_mode\": \"TRI_MODAL_WORD_VALID\",\n  \"alignment_granularity\": \"word\",\n  \"text_audio_correspondence\": \"confirmed_match\",\n  \"text_av_time_mapping_status\": \"word_valid\",\n  \"text_present\": 1,\n  \"audio_present\": 1,\n  \"video_present\": 1,\n  \"audio_speech_valid\": 1,\n  \"face_feature_valid\": 1,\n  \"text_sequence_shape\": [\n    5,\n    768\n  ],\n  \"text_valid_words\": 5,\n  \"audio_native_shape\": [\n    227,\n    25\n  ],\n  \"audio_valid_windows\": 227,\n  \"video_native_shape\": [\n    71,\n    52\n  ],\n  \"video_frames_with_face_features\": 59,\n  \"word_audio_shape\": [\n    5,\n    50\n  ],\n  \"word_audio_valid\": 5,\n  \"word_vision_shape\": [\n    5,\n    104\n  ],\n  \"word_vision_valid\": 5,\n  \"audio_presentation_coverage_sec\": [\n    0.0,\n    2.3148125\n  ],\n  \"video_presentation_coverage_sec\": [\n    0.0,\n    2.4666666666666663\n  ],\n  \"shared_t0_sec\": 0.0\n}",
+  "reader_stderr": "",
+  "reader_pass": true,
+  "overall_pass": true
+}

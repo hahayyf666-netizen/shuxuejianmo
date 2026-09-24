@@ -1,0 +1,26 @@
+{
+  "source_type": "user-provided screenshots of the official answer",
+  "files": [
+    {
+      "file": "metadata/official_answer_evidence/codex-clipboard-1324df78-d00f-4b46-ac57-dcd27c918aa2.png",
+      "sha256": "34c1581979ca1d7098182904733297e0fe965e836a8479060fff252269eead7c",
+      "bytes": 106472
+    },
+    {
+      "file": "metadata/official_answer_evidence/codex-clipboard-78cad0e8-4312-4284-94e1-e5286a47c79c.png",
+      "sha256": "63ac93c7c67fe5e3cc2aceec9ad53ac021994b6e15ad6c6626821ced165ff319",
+      "bytes": 346916
+    },
+    {
+      "file": "metadata/official_answer_evidence/codex-clipboard-f69193c5-6f6c-47dc-a992-331a3a3fee89.png",
+      "sha256": "967eda8b8652a71c9276cac488f47aed1fed74426d581ab9073bc13e946d7be1",
+      "bytes": 125099
+    }
+  ],
+  "decision_rules": [
+    "retain all 100 original samples; do not rewrite official text or replace it with ASR",
+    "use the original MP4 audio and video; extract real acoustic features for silent/low-energy audio",
+    "retain video frames when no face is detected and mark face feature validity separately",
+    "for confirmed text/audio mismatch, keep official text and source A/V while withholding fabricated word timestamps"
+  ]
+}

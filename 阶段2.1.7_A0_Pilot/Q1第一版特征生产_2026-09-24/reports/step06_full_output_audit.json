@@ -1,0 +1,64 @@
+{
+  "step": "06_full_output_audit",
+  "schema_version": "q1-feature-v1.0",
+  "checks": {
+    "manifest_rows_100": true,
+    "input_rows_100": true,
+    "results_rows_100": true,
+    "unique_manifest_keys": true,
+    "input_manifest_keyset_matches": true,
+    "results_identical_manifest": true,
+    "feature_files_100": true,
+    "no_missing_npz": true,
+    "all_npz_hash_and_readable": true,
+    "no_unregistered_npz": true,
+    "validator_100_pass": true,
+    "all_a0_baseline_hashes_match": true
+  },
+  "all_checks_pass": true,
+  "counts": {
+    "input_rows": 100,
+    "manifest_rows": 100,
+    "results_rows": 100,
+    "features": 100,
+    "feature_bytes": 17295166,
+    "alignment_modes": {
+      "UNCERTAIN_REVIEW": 88,
+      "TRI_MODAL_WORD_VALID": 5,
+      "AV_VALID_TEXT_UNALIGNED": 5,
+      "TRI_MODAL_WITH_AUDIO_CONTENT_INVALID": 2
+    },
+    "text_audio_correspondence": {
+      "not_asserted": 88,
+      "confirmed_match": 5,
+      "confirmed_mismatch": 5,
+      "no_speech": 2
+    },
+    "audio_speech_valid": {
+      "-1": 88,
+      "1": 10,
+      "0": 2
+    }
+  },
+  "validation_summary": {
+    "expected_count": 100,
+    "valid_count": 100,
+    "failure_count": 0,
+    "alignment_mode_counts_among_valid": {
+      "UNCERTAIN_REVIEW": 88,
+      "TRI_MODAL_WORD_VALID": 5,
+      "AV_VALID_TEXT_UNALIGNED": 5,
+      "TRI_MODAL_WITH_AUDIO_CONTENT_INVALID": 2
+    },
+    "feature_file_count": 100,
+    "feature_bytes": 17295166,
+    "failures": [],
+    "manifest_sha256": "04fd5d5e17b2c31e35916badbe65a64e539fd7a0ef11344474fe8511e7118091",
+    "results_sha256": "04fd5d5e17b2c31e35916badbe65a64e539fd7a0ef11344474fe8511e7118091"
+  },
+  "missing_npz": [],
+  "corrupt_or_unreadable_npz": [],
+  "unregistered_npz": [],
+  "protected_a0_count": 48,
+  "protected_a0_failures": []
+}

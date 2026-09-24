@@ -1,0 +1,13 @@
+{
+  "archive": "package/q1_v1_candidate.zip",
+  "archive_bytes": 23623432,
+  "archive_decimal_MB": 23.623432,
+  "archive_MiB": 22.52906036376953,
+  "candidate_uncompressed_bytes": 28912921,
+  "candidate_file_count": 1501,
+  "budget_bytes": 50000000,
+  "remaining_budget_bytes": 26376568,
+  "remaining_budget_decimal_MB": 26.376568,
+  "q1_share_of_budget_pct": 47.246864,
+  "scope": "Q1 candidate package only; full competition package including Q2/Q3 must be measured separately."
+}

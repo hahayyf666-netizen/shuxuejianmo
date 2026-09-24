@@ -1,0 +1,12 @@
+{
+  "captured_utc": "2026-09-24T06:23:31.076195+00:00",
+  "ram_total_bytes": 16364589056,
+  "ram_available_bytes": 1230094336,
+  "cpu_count": 14,
+  "cuda_available": false,
+  "cuda_devices": [],
+  "recommended_available_ram_bytes": 4294967296,
+  "policy": "warn and use isolated serial stages below the 4 GiB reserve recommendation; stop before a sample if memory falls below 1 GiB",
+  "full_dataset_loaded_into_memory": false,
+  "selected_sample_count": 100
+}

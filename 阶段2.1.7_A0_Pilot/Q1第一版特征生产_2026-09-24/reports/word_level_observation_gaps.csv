@@ -1,0 +1,4 @@
+﻿sample_key,word_index,official_word,word_start_sec,word_end_sec,audio_word_valid,vision_word_valid,video_observation_count_in_word,handling
+-UuX1xuaiiE$_$0,6,and,1.84,2.34,1,0,0,word interval retained; video/face feature mask remains 0; no frame is fabricated
+-UuX1xuaiiE$_$0,7,their,2.34,2.46,1,0,0,word interval retained; video/face feature mask remains 0; no frame is fabricated
+-UuX1xuaiiE$_$0,8,passion,2.46,2.88,1,0,0,word interval retained; video/face feature mask remains 0; no frame is fabricated
