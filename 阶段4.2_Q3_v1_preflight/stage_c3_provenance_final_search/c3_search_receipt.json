@@ -1,0 +1,88 @@
+{
+  "stage": "C-3 provenance final search",
+  "date": "2026-09-25",
+  "baseline_commit": "f65d3f9d2f56372fc7c9ca82699ab7a2b8ae632c",
+  "branch": "q3-v1-preflight",
+  "search_scope": [
+    "local competition data directory D:/Workspace/数学建模/E题数据",
+    "all files in Attachment4 aligned and unaligned directories",
+    "repository tracked paths and local git history visible to q3-v1-preflight",
+    "competition DOCX",
+    "primary upstream MMSA, Self-MM and MMSA-FET repositories"
+  ],
+  "local_inventory": {
+    "competition_data_extensions": {
+      ".mp4": 140,
+      ".pkl": 102,
+      ".xlsx": 2,
+      ".DS_Store": 1,
+      "source_code_config_log_sidecars": 0
+    },
+    "attachment4": {
+      "aligned_pkl": 20,
+      "unaligned_pkl": 20,
+      "mp4": 40,
+      "feature_generation_scripts_or_configs": 0,
+      "per_row_audio_time_or_video_pts_records": 0
+    },
+    "competition_docx_sha256": "38cec978723bff36ab945fa98f6454558bb9084e2cd01d814dd6e38ab4b4c336",
+    "attachment2_hashes": {
+      "aligned_50.pkl": {
+        "sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+        "sha1": "7629ba9eb1492bb1a4e5ae96d25114c84769a564"
+      },
+      "unaligned_50.pkl": {
+        "sha256": "77eda14a06be9749a96c52ae45470c7cffcfa7219011eae391d231a0664c3762",
+        "sha1": "344d7b87f478fbbb2c1d344be560f9e2d7b105da"
+      }
+    }
+  },
+  "upstream_published_hashes": {
+    "thuiar/MMSA": {
+      "url": "https://github.com/thuiar/MMSA",
+      "mosei_aligned_sha256": "45eccfb748a87c80ecab9bfac29582e7b1466bf6605ff29d3b338a75120bf791",
+      "mosei_unaligned_sha256": "ad8b23d50557045e7d47959ce6c5b955d8d983f2979c7d9b7b9226f6dd6fec1f"
+    },
+    "thuiar/Self-MM": {
+      "url": "https://github.com/thuiar/Self-MM",
+      "mosei_aligned_sha1": "ef49589349bc1c2bc252ccc0d4657a755c92a056",
+      "mosei_unaligned_sha1": "db3e2cff4d706a88ee156981c2100975513d4610"
+    },
+    "thuiar/MMSA-FET": {
+      "url": "https://github.com/thuiar/MMSA-FET",
+      "exact_attachment2_or_attachment4_manifest_found": false
+    },
+    "CMU-MultimodalSDK": {
+      "url": "https://github.com/CMU-MultiComp-Lab/CMU-MultimodalSDK",
+      "process_mosei_example": "https://github.com/CMU-MultiComp-Lab/CMU-MultimodalSDK/blob/main/examples/mmdatasdk_examples/full_examples/process_mosei.py",
+      "official_csd_source_definition": "https://github.com/CMU-MultiComp-Lab/CMU-MultimodalSDK/blob/main/mmsdk/mmdatasdk/dataset/standard_datasets/CMU_MOSEI/cmu_mosei.py",
+      "generic_pipeline_and_interval_metadata_found": true,
+      "exact_competition_attachment_hash_or_row_match_found": false,
+      "direct_csd_url_browser_access": "unavailable through browser tool; this does not establish server outage",
+      "official_csd_downloaded_or_mirrored_data_used_as_proof": false
+    }
+  },
+  "mapping_boundary": {
+    "raw_text_to_text_bert_token_offsets": "replayed 20/20; 564 positions; does not prove continuous text feature row provenance",
+    "aligned_to_unaligned_audio_rows": "564/564 unique exact matches; no raw audio intervals",
+    "aligned_to_unaligned_vision_rows": "523/564 unique exact matches; 41 unmatched in sample 13 and 16; no raw video PTS/frame rows",
+    "raw_mp4_pts": "20/20 audio and video streams finite and nondecreasing; no feature-row attribution"
+  },
+  "official_generation_record_found_for_exact_attachment_hashes": false,
+  "mapping_status": {
+    "text": "BLOCKED",
+    "audio": "BLOCKED",
+    "vision": "BLOCKED"
+  },
+  "q3_decision": {
+    "current_protocol_allows_formal_training_or_attachment4_inference": false,
+    "ready_for_q3_4_3": false,
+    "allowed_now": "provenance search and index-only audit statements only",
+    "maximum_if_protocol_is_formally_revised": "model-input-space modality Shapley and feature/index attribution marked index_only",
+    "raw_text_audio_time_video_frame_claims": "not supported",
+    "q3_explanation_closure": "not achieved"
+  },
+  "training_run": false,
+  "test_evaluation": false,
+  "attachment4_inference": false
+}
