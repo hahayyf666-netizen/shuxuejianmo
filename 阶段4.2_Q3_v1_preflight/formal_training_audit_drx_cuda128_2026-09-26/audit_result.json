@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "checks": {
+    "zip_crc": true,
+    "exact_file_set": true,
+    "summary_complete": true,
+    "preflight_gate_identity": true,
+    "scope_identity": true,
+    "aligned_input_identity": true,
+    "scaler_identity": true,
+    "device": true,
+    "logs": true,
+    "split_flags": true,
+    "progress_snapshot": true,
+    "candidate_set": true,
+    "run_histories": true,
+    "checkpoints": true,
+    "selection": true
+  },
+  "archive_sha256": "a945699a1ab8308cf51a3c92e95ccf680e9312d050bd2ceb293278959a8141e7",
+  "archive_size": 2212924,
+  "file_sha256": {
+    "b0b1_v1_cuda128.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "b0b1_v1_cuda128.stdout.log": "852d4c82e9bbba382017b5efd18cfbb6f82cfa114314bf3b8c3e1d279114c506",
+    "b0b1_v1_cuda128/B0_seed2029.pt": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+    "b0b1_v1_cuda128/B0_seed2030.pt": "fbba9b793bde591966760cad088a94e8e384eaaa2376a7c99b3090526db33858",
+    "b0b1_v1_cuda128/B0_seed2031.pt": "4fdc49ebb88e93068a1c1cd50a434f486f05df718e9c8aed73762f94a444ff00",
+    "b0b1_v1_cuda128/B1_seed2029.pt": "368e6a38e82f1975e02e7ad918496da61de417ac67e08337aaf0496ddef02076",
+    "b0b1_v1_cuda128/B1_seed2030.pt": "8e7b3b40f399208fc1b65343fc3cc8910d7eaa742e29f433d662ceb8317b2431",
+    "b0b1_v1_cuda128/B1_seed2031.pt": "77569bffd39d45815480aee26dd47c87c972e52200f6c3e93d017c7bb9a84305",
+    "b0b1_v1_cuda128/train_scaler.pt": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424",
+    "b0b1_v1_cuda128/training_progress.json": "b3f9f1f912a6949f6e5761814781aadddcfa40feabb670443e24628d4378f9db",
+    "b0b1_v1_cuda128/training_summary.json": "4f90fd4cc01e8b91b21b3fe5f7077bd813aa631ab9c2085f9eb98062bcf71d07"
+  },
+  "mean_best_J": {
+    "B0": 0.25289537400576007,
+    "B1": 0.2579906922542608
+  },
+  "selected_architecture": "B0",
+  "selected_checkpoint": "B0_seed2029.pt",
+  "runs": [
+    {
+      "variant": "B0",
+      "seed": 2029,
+      "epochs_run": 10,
+      "best_epoch": 2,
+      "best_J": 0.24616314650511592,
+      "checkpoint_sha256": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+      "checkpoint_size": 281159,
+      "parameter_count": 68932,
+      "history_valid": true,
+      "checkpoint_valid": true
+    },
+    {
+      "variant": "B0",
+      "seed": 2030,
+      "epochs_run": 10,
+      "best_epoch": 2,
+      "best_J": 0.25983134070516045,
+      "checkpoint_sha256": "fbba9b793bde591966760cad088a94e8e384eaaa2376a7c99b3090526db33858",
+      "checkpoint_size": 281159,
+      "parameter_count": 68932,
+      "history_valid": true,
+      "checkpoint_valid": true
+    },
+    {
+      "variant": "B0",
+      "seed": 2031,
+      "epochs_run": 12,
+      "best_epoch": 4,
+      "best_J": 0.25269163480700385,
+      "checkpoint_sha256": "4fdc49ebb88e93068a1c1cd50a434f486f05df718e9c8aed73762f94a444ff00",
+      "checkpoint_size": 281159,
+      "parameter_count": 68932,
+      "history_valid": true,
+      "checkpoint_valid": true
+    },
+    {
+      "variant": "B1",
+      "seed": 2029,
+      "epochs_run": 10,
+      "best_epoch": 2,
+      "best_J": 0.26414885418210793,
+      "checkpoint_sha256": "368e6a38e82f1975e02e7ad918496da61de417ac67e08337aaf0496ddef02076",
+      "checkpoint_size": 510218,
+      "parameter_count": 125380,
+      "history_valid": true,
+      "checkpoint_valid": true
+    },
+    {
+      "variant": "B1",
+      "seed": 2030,
+      "epochs_run": 10,
+      "best_epoch": 2,
+      "best_J": 0.2516894482325428,
+      "checkpoint_sha256": "8e7b3b40f399208fc1b65343fc3cc8910d7eaa742e29f433d662ceb8317b2431",
+      "checkpoint_size": 510218,
+      "parameter_count": 125380,
+      "history_valid": true,
+      "checkpoint_valid": true
+    },
+    {
+      "variant": "B1",
+      "seed": 2031,
+      "epochs_run": 12,
+      "best_epoch": 4,
+      "best_J": 0.25813377434813173,
+      "checkpoint_sha256": "77569bffd39d45815480aee26dd47c87c972e52200f6c3e93d017c7bb9a84305",
+      "checkpoint_size": 510218,
+      "parameter_count": 125380,
+      "history_valid": true,
+      "checkpoint_valid": true
+    }
+  ],
+  "progress_status_note": "IN_PROGRESS is the last interim snapshot; final status is in training_summary.json",
+  "checkpoint_content_published": false
+}

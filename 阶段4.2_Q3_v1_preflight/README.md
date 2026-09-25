@@ -1,6 +1,6 @@
 # Q3 v1 preflight（服务器运行冻结包）
 
-状态：**Stage C-4 已审查；分模态解释范围已收口；DR-X 服务器资格门待运行，正式训练未开始。**以 `stage_d_explanation_scope_finalization/Q3_EXPLANATION_SCOPE_FINAL_REPORT.md` 和 `SERVER_HANDOFF.md` 为当前执行入口。本目录不是 Q3 最终模型、模型权重或附件4正式结果。
+状态（2026-09-26）：**Stage C-4 与分模态解释范围已审查；DR-X CUDA 服务器资格门 PASS；B0/B1 六候选训练已完成，训练产物审核 PASS，按冻结规则选择 B0_seed2029。**当前停在正式 XAI 验证前；尚未评价 test 或对附件4正式推理。服务器资格门证据见 `server_preflight_drx_cuda128_2026-09-26/`，训练审核与模型身份见 `formal_training_audit_drx_cuda128_2026-09-26/`。Stage D 文件保留当时的预训练历史状态。
 
 ## 冻结边界
 
@@ -25,7 +25,7 @@ python run_mapping_precheck.py --aligned-directory '/path/to/附件4-可解释�
 
 ## 当前分模态解释范围与训练继续条件
 
-正式解释范围采用 `TEXT_MAPPING_PASS_ATTACHMENT4_SCOPE`、`AUDIO_MAPPING_BLOCKED`、`VISION_MAPPING_BLOCKED`、`FEATURE_SPACE_ATTRIBUTION_ALLOWED`。附件4文本仅20条样本的内容行可回溯 WordPiece/字符跨度；音频和视觉只允许特征空间索引归因，不允许秒级、帧级、未经验证的通道物理语义或因果结论。正式长时间 B0/B1 训练须先由实际 DR-X 服务器运行 `run_server_preflight.py` 并取得可核验的 PASS 回执；当前未放行。
+正式解释范围采用 `TEXT_MAPPING_PASS_ATTACHMENT4_SCOPE`、`AUDIO_MAPPING_BLOCKED`、`VISION_MAPPING_BLOCKED`、`FEATURE_SPACE_ATTRIBUTION_ALLOWED`。附件4文本仅20条样本的内容行可回溯 WordPiece/字符跨度；音频和视觉只允许特征空间索引归因，不允许秒级、帧级、未经验证的通道物理语义或因果结论。实际 DR-X 资格门已 PASS，B0/B1 训练产物已审核；test 与附件4仍须等待冻结模型的正式解释验证和后续阶段门。
 
 ## 文件
 

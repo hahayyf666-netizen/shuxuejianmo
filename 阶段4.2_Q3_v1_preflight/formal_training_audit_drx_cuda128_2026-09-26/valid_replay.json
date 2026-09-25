@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "selected_checkpoint": "B0_seed2029.pt",
+  "checkpoint_epoch": 2,
+  "train_count": 3395,
+  "valid_count": 728,
+  "test_used_for_selection": false,
+  "replay_device": "cpu",
+  "replayed_valid_metrics": {
+    "accuracy": 0.6442307692307693,
+    "macro_f1": 0.6070737873693538,
+    "per_class_f1": {
+      "Negative": 0.6502463054187192,
+      "Neutral": 0.4444444444444444,
+      "Positive": 0.726530612244898
+    },
+    "mae": 0.5964004835107487,
+    "pearson": 0.6290740124688725,
+    "selection_J": 0.2461631466078855,
+    "direct_opposite_polarity_rate": 0.01510989010989011,
+    "neutral_predicted_abs_regression_mean": 0.11843332189725328
+  },
+  "reported_valid_metrics": {
+    "accuracy": 0.6442307692307693,
+    "macro_f1": 0.6070737873693538,
+    "per_class_f1": {
+      "Negative": 0.6502463054187192,
+      "Neutral": 0.4444444444444444,
+      "Positive": 0.726530612244898
+    },
+    "mae": 0.5964004822775139,
+    "pearson": 0.6290740140845968,
+    "selection_J": 0.24616314650511592,
+    "direct_opposite_polarity_rate": 0.01510989010989011,
+    "neutral_predicted_abs_regression_mean": 0.11843332747097006
+  },
+  "absolute_deltas": {
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "mae": 1.2332348475752042e-09,
+    "selection_J": 1.0276957063126702e-10
+  },
+  "comparison_tolerance": 0.005
+}
