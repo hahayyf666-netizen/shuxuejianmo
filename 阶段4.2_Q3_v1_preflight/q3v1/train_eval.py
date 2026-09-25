@@ -3,8 +3,6 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
-import hashlib
-import json
 import random
 
 import numpy as np
@@ -12,6 +10,7 @@ import torch
 
 from .data import AlignedSample, TrainScaler
 from .model import Q3Model
+from .scope_gate import verify_training_release
 
 
 @dataclass(frozen=True)
@@ -99,24 +98,10 @@ def evaluate(model: Q3Model, valid: list[AlignedSample], scaler: TrainScaler,
 def fit_candidate(*, train: list[AlignedSample], valid: list[AlignedSample], scaler: TrainScaler,
                   variant: str, seed: int, checkpoint: Path, device: torch.device,
                   config: TrainConfig = TrainConfig(), mapping_gate_report: Path | None = None) -> dict:
-    """Formal training entry, disabled until evidence mapping gate is independently closed."""
+    """Formal training entry; a passing server preflight and final scope are required."""
     if mapping_gate_report is None or not mapping_gate_report.is_file():
-        raise PermissionError("Q3 evidence mapping gate OPEN; formal training forbidden")
-    gate = json.loads(mapping_gate_report.read_text(encoding="utf-8"))
-    if (gate.get("mapping_gate") != "PASS" or
-            not gate.get("verified_text") or not gate.get("verified_audio_time") or
-            not gate.get("verified_vision_time") or not gate.get("review_signoff_sha256")):
-        raise PermissionError("Q3 evidence mapping proof incomplete; formal training forbidden")
-    if gate["review_signoff_sha256"] != gate.get("review_report_sha256"):
-        raise PermissionError("mapping review signoff hash mismatch")
-    for key in ("mapping_table", "mapping_config", "review_report"):
-        relative = gate.get(key + "_path")
-        expected = gate.get(key + "_sha256")
-        if not relative or not expected or len(expected) != 64:
-            raise PermissionError(f"Q3 mapping gate missing {key} hash/path")
-        source = (mapping_gate_report.parent / relative).resolve()
-        if not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest() != expected:
-            raise PermissionError(f"Q3 mapping gate {key} hash mismatch")
+        raise PermissionError("Q3 server preflight gate missing; formal training forbidden")
+    verify_training_release(mapping_gate_report)
     if not train or not valid or scaler.source_split != "train":
         raise ValueError("train/valid and train scaler required")
     if set(s.sample_id for s in train) & set(s.sample_id for s in valid):

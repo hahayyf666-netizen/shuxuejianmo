@@ -85,7 +85,7 @@ def main() -> None:
     (args.out / "valid_xai_subset_120.txt").write_bytes(subset_bytes + b"\n")
 
     report = {
-        "status": "preflight_implementation_smoke_pass_mapping_gate_open",
+        "status": "preflight_train_valid_smoke_pass_scope_gate_external",
         "aligned_pkl_sha256": actual_sha,
         "split_counts": {"train": len(train), "valid": len(valid), "test_accessed_for_selection": False},
         "train_valid_id_overlap": 0,

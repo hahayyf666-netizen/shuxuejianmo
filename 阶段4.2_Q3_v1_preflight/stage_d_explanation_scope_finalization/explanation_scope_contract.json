@@ -1,0 +1,35 @@
+{
+  "scope_version": "q3-modality-dependent-evidence-scope-v1",
+  "feature_version": "aligned_50",
+  "predictor_text_representation": "text",
+  "attachment4_verified_text_sample_ids": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+  "mapping_status_by_modality": {
+    "text": "verified_text",
+    "audio": "index_only",
+    "vision": "index_only"
+  },
+  "text_scope": "Attachment4 01-20 content positions only; WordPiece and original character spans; no automatic transfer to Attachment2",
+  "audio_scope": "official_seq_index and feature_channel_index only; no verified raw audio time window",
+  "vision_scope": "official_seq_index and feature_channel_index only; no verified raw video frame or PTS",
+  "explanation_name": "modality-dependent feature-space attribution",
+  "allowed_methods": ["exact_3_player_shapley", "conditional_integrated_gradients"],
+  "prohibited_claims": ["audio_seconds", "vision_frames", "unverified_channel_physical_semantics", "causal_emotion_contribution", "explanation_accuracy"],
+  "gates": {
+    "text": "TEXT_MAPPING_PASS_ATTACHMENT4_SCOPE",
+    "audio": "AUDIO_MAPPING_BLOCKED",
+    "vision": "VISION_MAPPING_BLOCKED",
+    "explanation": "FEATURE_SPACE_ATTRIBUTION_ALLOWED"
+  },
+  "c4_gate_relative_path": "stage_c4_feature_reconstruction/results/c4_gate.json",
+  "c4_gate_sha256": "e1bcf2717aba0c4501ffd84f083ee99be890e3018c0c8b7b732591252bada125",
+  "c4_text_trace_relative_path": "stage_c4_feature_reconstruction/results/text_row_trace_564.csv",
+  "c4_text_trace_sha256": "70e5e8a83d3d7a1d30a723bf61249e09d4267c5d75478f64f60529b539c50303",
+  "preserved_artifact_sha256": {
+    "q3v1/model.py": "a9a2d3d047a3920771eeecf411c8e679d6b5b5ed5295b3439023040330308963",
+    "q3v1/explain.py": "593ef464898909011b78a401b4eeee4b25fa25e3c5ea249d1abc35b2ea59a08f",
+    "frozen_config.json": "9e73a6d40641e29718eec7b859179790030fe1462c94a56bed0cc10468ec7ecc"
+  },
+  "formal_training_release": "PENDING_SERVER_PREFLIGHT",
+  "test_policy": "locked_until_architecture_checkpoint_scaler_and_explanation_protocol_frozen",
+  "attachment4_policy": "final_inference_only_after_model_selection; never tune on Attachment4"
+}

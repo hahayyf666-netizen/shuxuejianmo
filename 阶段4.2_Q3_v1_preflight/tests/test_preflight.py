@@ -1,4 +1,5 @@
 import unittest
+from pathlib import Path
 
 import numpy as np
 import torch
@@ -8,6 +9,7 @@ from q3v1.explain import conditional_ig, exact_shapley, local_attribution_status
 from q3v1.mapping import map_av_support, map_text_offsets, raw_text_hash
 from q3v1.model import Q3Model
 from q3v1.train_eval import TrainConfig, choose_architecture, fit_candidate, metrics
+from q3v1.scope_gate import verify_scope_contract, verify_training_release
 
 
 def tensors():
@@ -158,6 +160,15 @@ class Q3PreflightTests(unittest.TestCase):
         b0 = [{"seed": seed, "best_J": 0.30000} for seed in (2029, 2030, 2031)]
         b1 = [{"seed": seed, "best_J": 0.29995} for seed in (2029, 2030, 2031)]
         self.assertEqual(choose_architecture({"B0": b0, "B1": b1}), "B0")
+
+    def test_final_scope_and_separate_server_gate(self):
+        root = Path(__file__).resolve().parent.parent
+        contract = verify_scope_contract(root / "stage_d_explanation_scope_finalization" / "explanation_scope_contract.json")
+        self.assertEqual(contract["mapping_status_by_modality"],
+                         {"text": "verified_text", "audio": "index_only", "vision": "index_only"})
+        self.assertEqual(contract["formal_training_release"], "PENDING_SERVER_PREFLIGHT")
+        with self.assertRaises(PermissionError):
+            verify_training_release(root / "stage_c4_feature_reconstruction" / "results" / "c4_gate.json")
 
 
 if __name__ == "__main__":
