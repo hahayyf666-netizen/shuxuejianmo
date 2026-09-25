@@ -1,0 +1,13 @@
+test_content_mask_and_test_split_guard (test_preflight.Q3PreflightTests.test_content_mask_and_test_split_guard) ... ok
+test_mapping_fail_closed (test_preflight.Q3PreflightTests.test_mapping_fail_closed) ... ok
+test_metric_and_formal_training_guard (test_preflight.Q3PreflightTests.test_metric_and_formal_training_guard) ... ok
+test_model_forward_backward_and_padding_invariance (test_preflight.Q3PreflightTests.test_model_forward_backward_and_padding_invariance) ... ok
+test_prediction_metadata_is_not_forward_input (test_preflight.Q3PreflightTests.test_prediction_metadata_is_not_forward_input) ... ok
+test_primary_semantics (test_preflight.Q3PreflightTests.test_primary_semantics) ... ok
+test_scaler_is_train_only_and_keeps_natural_zero (test_preflight.Q3PreflightTests.test_scaler_is_train_only_and_keeps_natural_zero) ... ok
+test_shapley_additivity_and_unresolved_interaction (test_preflight.Q3PreflightTests.test_shapley_additivity_and_unresolved_interaction) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.074s
+
+OK

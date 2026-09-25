@@ -1,0 +1,47 @@
+{
+  "mapping_gate": "OPEN_HARD_STOP_FOR_RAW_AUDIO_AND_VISION_EVIDENCE",
+  "selection_rule": "predeclared Attachment4 IDs 01,13,20; 13 covers known all-zero aligned vision",
+  "samples": [
+    {
+      "sample_id": "01",
+      "aligned_pkl_sha256": "5a08410ee779863238edcf349556a2f8e10490a70e02fc95001a64f6c8d17452",
+      "video_sha256": "3057e24aee7a48fcf15bd618b663bd7f0d061fb8893286c458986a7e1c6d17cf",
+      "raw_text_sha256": "56d9daadbf8246d8e6bd904d99a5262f6d7b62720ac361d674a9adb4c16b2e9e",
+      "content_position_count": 22,
+      "content_position_min": 1,
+      "content_position_max": 22,
+      "vision_all_zero": false,
+      "model_prediction_computed": false
+    },
+    {
+      "sample_id": "13",
+      "aligned_pkl_sha256": "e2d3d3c55bc52e7178e6e7f9b28e677018f14c76966d9ec5ac486d8fbbfd8281",
+      "video_sha256": "8a64f1201e0299f79d915aa87b4a9be811e346525589d1f41060c2533599a7cb",
+      "raw_text_sha256": "0c6968f62e844e2b5aea79fe78dbb2831c1841f9404aeb2bb79bb81f4bb83f89",
+      "content_position_count": 30,
+      "content_position_min": 1,
+      "content_position_max": 30,
+      "vision_all_zero": true,
+      "model_prediction_computed": false
+    },
+    {
+      "sample_id": "20",
+      "aligned_pkl_sha256": "c9aed197e075fa99518e71cbb2ed17406178d9237d40c785409eacf1fa7f1a68",
+      "video_sha256": "0c75c37baddf51add457b20ad35e10166ff7baaa520f77bd6b2af2239c217a1c",
+      "raw_text_sha256": "57760975e46e452dbb488752e013f6c181846158c10e4b3624b71ea63a45c876",
+      "content_position_count": 43,
+      "content_position_min": 1,
+      "content_position_max": 43,
+      "vision_all_zero": false,
+      "model_prediction_computed": false
+    }
+  ],
+  "mapping_rows": 285,
+  "status_counts": {
+    "index_only": 285,
+    "verified_text": 0,
+    "verified_time": 0
+  },
+  "reason": "Neither an exact tokenizer revision with official text-row provenance nor official aligned audio/vision-row raw support has been verified. No seconds or keyframes were generated.",
+  "formal_inference_run": false
+}
