@@ -1,0 +1,28 @@
+{
+  "gate_version": "q3-server-preflight-v1",
+  "status": "PASS",
+  "gates": {
+    "text": "TEXT_MAPPING_PASS_ATTACHMENT4_SCOPE",
+    "audio": "AUDIO_MAPPING_BLOCKED",
+    "vision": "VISION_MAPPING_BLOCKED",
+    "explanation": "FEATURE_SPACE_ATTRIBUTION_ALLOWED",
+    "data": "PASS",
+    "interface": "PASS",
+    "xai": "PASS",
+    "environment": "PASS"
+  },
+  "scope_contract_path": "stage_d_explanation_scope_finalization/explanation_scope_contract.json",
+  "scope_contract_sha256": "303b4549f7954470e56c579a3befe8081ae3a670c5ef56f738e0606910e9f0bb",
+  "machine_report_path": "reports/server_preflight_cuda128/preflight_machine_report.json",
+  "machine_report_sha256": "4be2c225bad7fc6389706ef60f74f2151b632da37a0561adf142432aa4ad847b",
+  "environment_report_path": "reports/server_preflight_cuda128/environment.json",
+  "environment_report_sha256": "5363e110491290359b75178811766e7f966862a509c76b88b2cba411106130ab",
+  "unit_tests_exit_code": 0,
+  "unit_tests_exit_file_path": "reports/server_preflight_cuda128/unit_tests.exit_code.txt",
+  "unit_tests_exit_file_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+  "data_smoke_exit_file_path": "reports/server_preflight_cuda128/data_smoke.exit_code.txt",
+  "data_smoke_exit_file_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+  "test_used_for_model_selection": false,
+  "attachment4_model_inference_run": false,
+  "formal_training_run": false
+}

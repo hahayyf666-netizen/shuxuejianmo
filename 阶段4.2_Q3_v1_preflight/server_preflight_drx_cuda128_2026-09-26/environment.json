@@ -1,0 +1,20 @@
+{
+  "cuda_available": true,
+  "torch": "2.8.0+cu128",
+  "python": "3.12.14",
+  "python_executable": "D:\\students\\yunfei\\SXJM\\env\\Scripts\\python.exe",
+  "hostname": "DR-X",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "cuda_devices": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 3090",
+      "total_memory_bytes": 25769279488
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 3090",
+      "total_memory_bytes": 25769279488
+    }
+  ]
+}
