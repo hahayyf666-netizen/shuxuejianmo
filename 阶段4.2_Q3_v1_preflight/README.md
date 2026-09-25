@@ -36,5 +36,6 @@ python run_mapping_precheck.py --aligned-directory '/path/to/附件4-可解释�
 - `frozen_config.json`：原首轮模型与解释数学定义，Stage D 未修改。新的分模态可交付范围另见 `stage_d_explanation_scope_finalization/explanation_scope_contract.json`。
 - `SOURCE_COMMIT.txt`、`SOURCE_MANIFEST_SHA256.txt`、`source_manifest.json`：包对应的已提交源码快照及其 SHA-256。
 - `SHA256SUMS.json`、`q3_v1_preflight_server_bundle.zip`：历史 Stage A 包，保留用于审计；当前服务器使用 Stage D 的 `q3_scope_preflight_server_bundle.zip` 及其 manifest。
+- `formal_xai_validation_2026-09-26/`：冻结 B0_seed2029 的 valid120 解释验证运行入口、参数合同、准备报告、独立解包验收结论与运行包。包 SHA-256 为 `0d085aa7cc87f4c8210ba3972e3d45034313231015dfcac19e3df067e45c797b`；目前只完成首条烟测，正式120条结果仍待服务器运行与人工审核。
 
 本包代码与报告供参赛队审核；使用前须按实际服务器环境重跑并核对原题、协议和映射证据。

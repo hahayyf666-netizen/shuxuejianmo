@@ -28,6 +28,8 @@
 - 本地 Python3.12、numpy2.5.0、torch2.8.0+cpu，8项针对性单元测试通过。
 - 冻结列表首样本 `PyQrAYl1bFs$_$4` 完整烟测成功：34项数值检查通过、0失败；epsilon 重复检查通过；状态 `SMOKE_COMPLETE / REVIEW_GATE`。
 - 独立 P1 审查 PASS：核对固定类别目标、真实模型前向、全部扰动位置与响应、分组 bootstrap、未定位交互和输入身份；P0/P1 无。独立审查的源码 SHA 和证据位于本地 `outputs/Q3_xai_validation_preparation_2026-09-26/independent_p1/`。
+- 独立 P2 解包复现 PASS：包内20个文件和清单校验通过，解包后8项测试与首条 valid 烟测通过；逐样本输出与P1一致，新增汇总独立重算一致。未发现 P0/P1/P2 问题。P2原始证据留在本地 `outputs/Q3_xai_validation_preparation_2026-09-26/independent_p2/`。
+- 冻结 ZIP 来源提交 `a6b6bb552613cd4c59ab23e99f15b5b8a920a082`，SHA-256 `0d085aa7cc87f4c8210ba3972e3d45034313231015dfcac19e3df067e45c797b`，含包内清单在内共21个文件；正式120条尚未运行。
 
 ## 交接与完成条件
 

@@ -1,0 +1,9 @@
+{
+  "source_commit": "a6b6bb552613cd4c59ab23e99f15b5b8a920a082",
+  "archive_sha256": "0d085aa7cc87f4c8210ba3972e3d45034313231015dfcac19e3df067e45c797b",
+  "bytes": 40817,
+  "file_count": 21,
+  "formal_xai_run": false,
+  "test_evaluated": false,
+  "attachment4_inference": false
+}

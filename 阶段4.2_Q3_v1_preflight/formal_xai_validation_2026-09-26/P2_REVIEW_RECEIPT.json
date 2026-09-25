@@ -1,0 +1,21 @@
+{
+  "stage": "Q3 formal XAI validation server preparation",
+  "source_commit": "a6b6bb552613cd4c59ab23e99f15b5b8a920a082",
+  "bundle_sha256": "0d085aa7cc87f4c8210ba3972e3d45034313231015dfcac19e3df067e45c797b",
+  "independent_p1": "PASS",
+  "independent_p2": "PASS",
+  "bundle_files_verified": 20,
+  "unit_tests_passed": 8,
+  "smoke_sample_id": "PyQrAYl1bFs$_$4",
+  "smoke_numerical_checks": 34,
+  "smoke_numerical_failures": 0,
+  "package_reproduced_in_fresh_directory": true,
+  "output_manifest_verified": true,
+  "final_gate": "REVIEW_GATE",
+  "formal_valid120_run": false,
+  "test_evaluated": false,
+  "attachment4_inference": false,
+  "p0_issues": 0,
+  "p1_issues": 0,
+  "p2_issues": 0
+}
