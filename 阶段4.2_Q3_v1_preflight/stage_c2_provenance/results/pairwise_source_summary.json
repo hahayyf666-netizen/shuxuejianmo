@@ -1,0 +1,40 @@
+{
+  "samples": 20,
+  "problem_docx_sha256": "38cec978723bff36ab945fa98f6454558bb9084e2cd01d814dd6e38ab4b4c336",
+  "attachment4_file_extension_counts": {
+    ".pkl": 40,
+    ".mp4": 40
+  },
+  "attachment4_code_or_config_files": [],
+  "aligned_unaligned_video_bytes_equal": 20,
+  "raw_text_equal": 20,
+  "text_feature_matrix_equal": 20,
+  "text_bert_equal": 20,
+  "samples_with_nonzero_text_padding_rows": 18,
+  "vision_unmatched_rows_by_sample": {
+    "13": 30,
+    "16": 11
+  },
+  "by_modality": {
+    "audio": {
+      "content_rows": 564,
+      "rows_with_exact_unaligned_index": 564,
+      "rows_with_unique_unaligned_index": 564,
+      "rows_without_unaligned_index": 0,
+      "samples_with_all_unique_matches_form_valid_suffix": 18,
+      "raw_time_or_pts_verified": 0
+    },
+    "vision": {
+      "content_rows": 564,
+      "rows_with_exact_unaligned_index": 523,
+      "rows_with_unique_unaligned_index": 523,
+      "rows_without_unaligned_index": 41,
+      "samples_with_all_unique_matches_form_valid_suffix": 16,
+      "raw_time_or_pts_verified": 0
+    }
+  },
+  "scope": "exact aligned-to-unaligned feature-row matching; no raw media time or frame provenance inferred",
+  "model_loaded": false,
+  "training_run": false,
+  "predictions_computed": false
+}

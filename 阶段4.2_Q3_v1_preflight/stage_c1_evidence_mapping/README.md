@@ -2,6 +2,8 @@
 
 本专项只审计证据映射，不修改模型、训练参数、预测接口或 Shapley/IG 定义，也不运行 Attachment4 预测。
 
+2026-09-25 C-2 前置加固：probe 现先验证原始 text_bert 的 shape、数值有限性、整数值、词表范围、attention 前缀、segment、CLS/SEP 和 padding，再转换成 int64；负例测试与真实 20 条重跑记录见 `probe_hardening_receipt.md`。原 C-1 逐行结果没有变化。
+
 诊断问题：原 preflight 中 285 条代表性映射为什么全部是 `index_only`？此状态是 fail-closed 输出，不应误读为 285 次实际映射失败。必须区分：
 
 - **B / 当前预检路径未执行映射**：`run_mapping_precheck.py` 对每个模态和内容位置直接调用 `index_only()`，并把 285 记为 `index_only`。它没有调用 tokenizer offset、forced aligner、PTS 映射或相应失败诊断。这是本次全部 285 行同状态的直接原因；不能据此说 285 次映射都失败。

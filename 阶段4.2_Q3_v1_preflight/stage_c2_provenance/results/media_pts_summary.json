@@ -1,0 +1,18 @@
+{
+  "samples": 20,
+  "ffprobe_version": "ffprobe version 9.0.2-essentials_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers",
+  "ffprobe_sha256": "f0d36ecbbdd3bcfac3efa078c96c7271c2e68b3810595552ac3b7f17e9a65c52",
+  "pair_inventory_sha256": "8e520f1c088b97d4e752c2ab0072c6af999fdc28405ebb6a9980254686d5852f",
+  "samples_with_both_streams_and_pts": 20,
+  "samples_with_finite_nondecreasing_audio_pts": 20,
+  "samples_with_finite_nondecreasing_video_pts": 20,
+  "samples_with_video_header_count_different_from_decoded_pts_count": 16,
+  "audio_feature_row_to_raw_pts_verified": 0,
+  "vision_feature_row_to_raw_pts_verified": 0,
+  "command_templates": [
+    "ffprobe -v error -show_entries stream=index,codec_type,avg_frame_rate,nb_frames,time_base,start_time,duration:format=duration -of json <MP4>",
+    "ffprobe -v error -select_streams v:0 -show_frames -show_entries frame=best_effort_timestamp_time -of json <MP4>",
+    "ffprobe -v error -select_streams a:0 -show_frames -show_entries frame=best_effort_timestamp_time -of json <MP4>"
+  ],
+  "note": "Decoded MP4 PTS are verified as raw-media metadata only; no official feature-row time or frame attribution is asserted."
+}

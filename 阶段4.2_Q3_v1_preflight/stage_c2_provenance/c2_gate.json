@@ -1,0 +1,25 @@
+{
+  "stage": "C-2 actual-attachment feature provenance",
+  "text_mapping": "BLOCKED",
+  "audio_mapping": "BLOCKED",
+  "vision_mapping": "BLOCKED",
+  "verified_subrelations": {
+    "raw_text_to_text_bert_token_offsets": "20/20 samples; 564 content positions",
+    "aligned_to_unaligned_text_matrix_identity": "20/20 samples",
+    "aligned_to_unaligned_audio_exact_rows": "564/564 unique matches",
+    "aligned_to_unaligned_vision_exact_rows": "523/564 unique matches",
+    "paired_mp4_byte_identity": "20/20 samples",
+    "raw_mp4_audio_and_video_pts": "20/20 samples; finite and nondecreasing"
+  },
+  "missing_proof": {
+    "text": "continuous 768-D feature row generated from corresponding token under the actual encoder and extraction configuration",
+    "audio": "official unaligned feature row source audio interval on the raw MP4 presentation timeline",
+    "vision": "official unaligned feature row source frame PTS and handling of samples 13 and 16"
+  },
+  "vision_unmatched_rows_by_sample": {"13": 30, "16": 11},
+  "root_cause": "current competition attachment package provides arrays and raw MP4s but no actual feature-row extraction provenance; upstream records were not established",
+  "ready_for_b0_b1_training": false,
+  "model_changed": false,
+  "training_run": false,
+  "attachment4_prediction_run": false
+}

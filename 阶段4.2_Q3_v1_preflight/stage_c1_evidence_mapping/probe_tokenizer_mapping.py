@@ -25,6 +25,39 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def validate_text_bert(value: object, *, sample_id: str, vocab_size: int) -> np.ndarray:
+    """Validate the original array before any conversion to integer token IDs."""
+    try:
+        raw = np.asarray(value)
+    except (TypeError, ValueError) as exc:
+        raise ValueError(f"{sample_id}: text_bert cannot be represented as an array") from exc
+    if raw.shape != (3, 50):
+        raise ValueError(f"{sample_id}: text_bert shape must be (3, 50), got {raw.shape}")
+    if raw.dtype.kind not in "iuf":
+        raise ValueError(f"{sample_id}: text_bert must have a real numeric dtype, got {raw.dtype}")
+    if not np.isfinite(raw).all():
+        raise ValueError(f"{sample_id}: text_bert contains nonfinite values")
+    if raw.dtype.kind == "f" and not np.array_equal(raw, np.trunc(raw)):
+        raise ValueError(f"{sample_id}: text_bert contains noninteger values")
+    if np.any(raw[0] < 0) or np.any(raw[0] >= vocab_size):
+        raise ValueError(f"{sample_id}: text_bert token ID outside tokenizer vocabulary")
+    if not np.all((raw[1] == 0) | (raw[1] == 1)):
+        raise ValueError(f"{sample_id}: text_bert attention mask must be binary")
+    if not np.all(raw[2] == 0):
+        raise ValueError(f"{sample_id}: text_bert segment IDs must be zero for one input text")
+    active_length = int(np.count_nonzero(raw[1]))
+    if (active_length < 3 or not np.all(raw[1, :active_length] == 1)
+            or not np.all(raw[1, active_length:] == 0)):
+        raise ValueError(f"{sample_id}: text_bert attention mask must contain an active content prefix")
+    if raw[0, 0] != 101 or raw[0, active_length - 1] != 102:
+        raise ValueError(f"{sample_id}: text_bert must start with CLS and end the active prefix with SEP")
+    if np.any(raw[0, 1:active_length - 1] == 102):
+        raise ValueError(f"{sample_id}: text_bert has an unexpected SEP inside content positions")
+    if not np.all(raw[0, active_length:] == 0):
+        raise ValueError(f"{sample_id}: text_bert padding token IDs must be zero")
+    return raw.astype(np.int64, copy=False)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--vocab", type=Path, required=True)
@@ -43,7 +76,8 @@ def main() -> None:
             item = pickle.load(stream)
         if str(item.get("id")) != sample_id:
             raise ValueError(f"sample ID mismatch: {sample_id}")
-        official = np.asarray(item["text_bert"], dtype=np.int64)
+        official = validate_text_bert(item["text_bert"], sample_id=sample_id,
+                                      vocab_size=tokenizer.vocab_size)
         raw_text = str(item["raw_text"])
         encoded = tokenizer(raw_text, truncation=True, max_length=50, padding="max_length",
                             return_offsets_mapping=True)

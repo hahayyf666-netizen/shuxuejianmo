@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "published_rows_rechecked_against_original_pkls": 1128,
+  "audio_unique": 564,
+  "vision_unique": 523,
+  "vision_unmatched": 41,
+  "media_rows_checked": 20,
+  "video_header_vs_decoded_count_differences": 16,
+  "raw_media_feature_row_time_verified": 0,
+  "model_loaded": false,
+  "training_run": false,
+  "predictions_computed": false
+}
