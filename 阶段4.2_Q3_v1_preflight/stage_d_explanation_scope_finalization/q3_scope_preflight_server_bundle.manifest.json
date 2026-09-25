@@ -1,0 +1,9 @@
+{
+  "source_commit": "cb66d39d30622f8649720312d0cc5146b7793ed7",
+  "archive_sha256": "79c07231aa08c7feb539956005e73ee5a2b60770f8dbdb7a6bed2375a34d3a4a",
+  "source_manifest_sha256": "1f5a112af760104d4d7e1a2e9666bef4e1b6dcb5723ee8de757231c4d450f56d",
+  "bytes": 97377,
+  "files": 23,
+  "training_performed": false,
+  "server_preflight_performed": false
+}
