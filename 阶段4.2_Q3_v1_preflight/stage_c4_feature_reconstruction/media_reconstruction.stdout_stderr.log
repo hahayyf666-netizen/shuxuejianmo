@@ -1,0 +1,141 @@
+W0000 00:00:1790315328.944823   12492 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1790315328.950454   40324 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315328.961883    7992 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315330.286311   29684 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 1, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+01 audio_CKA 0.4861814983670254 vision_CKA None face_valid 0
+W0000 00:00:1790315330.379690   47904 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315330.384267   26960 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315330.392649   42528 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315330.986783   38100 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 2, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+02 audio_CKA 0.4660544203258179 vision_CKA 0.43297356586666846 face_valid 50
+W0000 00:00:1790315331.180342   29300 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315331.184281   46868 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315331.192152   29736 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315333.629194   48684 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 3, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+03 audio_CKA 0.38987919051206876 vision_CKA 0.3930759457746542 face_valid 144
+W0000 00:00:1790315333.813310   29456 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315333.817908   49920 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315333.827039   28572 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315335.431421   39232 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 4, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+04 audio_CKA 0.2754428622364549 vision_CKA 0.5750242585791846 face_valid 103
+W0000 00:00:1790315335.564656   43488 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315335.568931   36544 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315335.578336   38608 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315336.905883   50956 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 5, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+05 audio_CKA 0.5050759896618027 vision_CKA 0.6565450685934516 face_valid 89
+W0000 00:00:1790315337.092457   43672 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315337.096210   44028 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315337.103572   24540 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315338.501197   51124 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 6, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+06 audio_CKA 0.2975630810743674 vision_CKA 0.3865360819303634 face_valid 123
+W0000 00:00:1790315338.870740   43412 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315338.875318   23152 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315338.886239   45360 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315343.752621   46432 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 7, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+07 audio_CKA 0.3192250258500406 vision_CKA 0.4851902598189612 face_valid 319
+W0000 00:00:1790315343.876134   46516 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315343.881019   50160 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315343.890811   50252 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315345.068430   48188 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 8, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+08 audio_CKA 0.4431332803760436 vision_CKA 0.5654043129747125 face_valid 73
+W0000 00:00:1790315345.181045   43588 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315345.185371   44680 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315345.193862   32184 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315346.080087   38636 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 9, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+09 audio_CKA 0.37438718297087203 vision_CKA 0.5449883174930936 face_valid 75
+W0000 00:00:1790315346.298522   36152 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315346.304440   31216 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315346.313815   31216 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315347.947179   30968 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 10, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+10 audio_CKA 0.3408537964265183 vision_CKA 0.5752498253075562 face_valid 147
+W0000 00:00:1790315348.067798   21456 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315348.072269   26332 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315348.080615   44208 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315349.049157   38268 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 11, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+11 audio_CKA 0.3405565852753862 vision_CKA 0.5018441225412454 face_valid 86
+W0000 00:00:1790315349.292939   49132 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315349.297185   40792 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315349.304636   36880 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315352.374176   45248 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 12, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+12 audio_CKA 0.32706266479476825 vision_CKA 0.5303809681454668 face_valid 193
+W0000 00:00:1790315352.541016   44136 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315352.546128   50816 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315352.555497   51164 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315352.654441   48824 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 13, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+13 audio_CKA 0.3197208634474878 vision_CKA None face_valid 0
+W0000 00:00:1790315352.861159   50452 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315352.865146   40064 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315352.873070   45052 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315355.678102    7972 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 14, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+14 audio_CKA 0.38810932840819923 vision_CKA 0.607693385768422 face_valid 153
+W0000 00:00:1790315355.845914   47244 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315355.850212   18768 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315355.858800   18768 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315357.618496   49020 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 15, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+15 audio_CKA 0.2850640098072684 vision_CKA 0.5950635248837285 face_valid 110
+W0000 00:00:1790315357.705572   20932 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315357.711956   26024 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315357.721219   26024 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315357.823314   44776 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 16, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+16 audio_CKA 0.6214874461445753 vision_CKA None face_valid 1
+W0000 00:00:1790315358.052651   45888 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315358.057371   35020 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315358.068542   37852 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315361.302146   49896 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 17, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+17 audio_CKA 0.34853087487754464 vision_CKA 0.4878447345806936 face_valid 143
+W0000 00:00:1790315361.747237   29676 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315361.753553   35308 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315361.764151   50736 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315367.153613   48488 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 18, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+18 audio_CKA 0.35843027929152044 vision_CKA 0.4569944831046092 face_valid 238
+W0000 00:00:1790315367.497850   50496 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315367.503025   42404 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315367.512579   33696 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315371.343586   13636 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 19, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+19 audio_CKA 0.31695909115119564 vision_CKA 0.5506386944090965 face_valid 204
+W0000 00:00:1790315371.659213   46156 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1790315371.664204   36964 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1790315371.676927   36964 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+E0000 00:00:1790315372.893086   48760 portable_clearcut_uploader.cc:90] Failed to send to clearcut: INTERNAL: ResponseInfo[id: 20, type: 0, code: 2, description: "Status_ConnectFailed: 12029", headers: ]
+=== Source Location Trace: ===
+wireless/android/play/playlog/cplusplus/ion_http_client.cc:44
+20 audio_CKA 0.20190214252771468 vision_CKA None face_valid 0

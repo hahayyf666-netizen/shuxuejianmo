@@ -1,0 +1,824 @@
+{
+  "purpose": "diagnostic source reconstruction, not feature provenance verification",
+  "samples": 20,
+  "audio": {
+    "official_rows": 3677,
+    "strict_full_row_verified": 0,
+    "candidate_schema": "25D eGeMAPSv02 versus 74D official",
+    "linear_CKA_fixed_20hz_sample_count": 20,
+    "linear_CKA_fixed_20hz_median": 0.3446923356520315,
+    "samples_with_extraction_error": []
+  },
+  "vision": {
+    "official_rows": 2593,
+    "strict_full_row_verified": 0,
+    "candidate_schema": "52D MediaPipe versus 35D official",
+    "linear_CKA_face_valid_sample_count": 16,
+    "linear_CKA_face_valid_median": 0.5376846428192802,
+    "samples_with_extraction_error": []
+  },
+  "per_sample": [
+    {
+      "sample_id": "01",
+      "official_audio_rows": 179,
+      "official_vision_rows": 135,
+      "pkl_sha256": "70e55e2709905d7ea9becf70d8dd91d83688e5902b6c5e601aa6d16e703e4659",
+      "video_sha256": "3057e24aee7a48fcf15bd618b663bd7f0d061fb8893286c458986a7e1c6d17cf",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 894,
+        "decoded_audio_duration_sec": 8.986125,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.994413407821229,
+        "linear_CKA_fixed_20hz": 0.4861814983670254,
+        "linear_CKA_duration_scaled": 0.4821427308327363,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 112,
+          "pearson": 0.6932226667676539,
+          "median_absolute_hz_error": 1.6661013051813
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 270,
+        "proxy_15hz_pts_assigned_rows": 135,
+        "proxy_15hz_face_valid_rows": 0,
+        "linear_CKA_on_face_valid_rows": null,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "4fc37eec0ec8a3b406c65874f5357833d64589eacd0c64227c85b02b2b8bd995"
+    },
+    {
+      "sample_id": "02",
+      "official_audio_rows": 66,
+      "official_vision_rows": 50,
+      "pkl_sha256": "17e1a7c74f20dd25ca240b289add7a3b632ff2d6fb73d71eb1e1c6006b1f3cb9",
+      "video_sha256": "6b651e908aefd86959f85b78f945f7d5a5d9e767eb4c095926e1df2ed9629ff9",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 328,
+        "decoded_audio_duration_sec": 3.328375,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9848484848484849,
+        "linear_CKA_fixed_20hz": 0.4660544203258179,
+        "linear_CKA_duration_scaled": 0.44993222705026503,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 28,
+          "pearson": 0.48186625865224325,
+          "median_absolute_hz_error": 6.949940078238498
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 101,
+        "proxy_15hz_pts_assigned_rows": 50,
+        "proxy_15hz_face_valid_rows": 50,
+        "linear_CKA_on_face_valid_rows": 0.43297356586666846,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "8ba0f7e6e9d1d7c909e3caf28c0abd58994dbc7d881b576815af509df6c30b26"
+    },
+    {
+      "sample_id": "03",
+      "official_audio_rows": 191,
+      "official_vision_rows": 144,
+      "pkl_sha256": "0d959289f51abebc34cb911895d7da4c70bb032d2fe281906b8f27ef6411cd8b",
+      "video_sha256": "556b83449ac17fd8cb99ed1dcd6f11c287dd6e0198885e88555579f9bcab84f3",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 954,
+        "decoded_audio_duration_sec": 9.5835,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9947643979057592,
+        "linear_CKA_fixed_20hz": 0.38987919051206876,
+        "linear_CKA_duration_scaled": 0.34846340479590926,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 126,
+          "pearson": 0.5373761612946165,
+          "median_absolute_hz_error": 3.206878294547522
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 289,
+        "proxy_15hz_pts_assigned_rows": 144,
+        "proxy_15hz_face_valid_rows": 144,
+        "linear_CKA_on_face_valid_rows": 0.3930759457746542,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "2e5cba40ffe209253d93008c545307cdd6788039d968b38cadc03702d49244e7"
+    },
+    {
+      "sample_id": "04",
+      "official_audio_rows": 137,
+      "official_vision_rows": 103,
+      "pkl_sha256": "f05343ac26cc037a6023a8e00ca1ffa7d5578db9bac6f2dad2e97bebf2ee188c",
+      "video_sha256": "766db8dc32508b8f7f8faaa47656e0eedc8d1707b809fe8235db1e74e15d3369",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 680,
+        "decoded_audio_duration_sec": 6.8475,
+        "fixed_20hz_grid_coverage": 0.9927007299270073,
+        "duration_scaled_grid_coverage": 0.9927007299270073,
+        "linear_CKA_fixed_20hz": 0.2754428622364549,
+        "linear_CKA_duration_scaled": 0.2783618498667397,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 76,
+          "pearson": 0.43262121335430537,
+          "median_absolute_hz_error": 41.71255313615177
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 207,
+        "proxy_15hz_pts_assigned_rows": 103,
+        "proxy_15hz_face_valid_rows": 103,
+        "linear_CKA_on_face_valid_rows": 0.5750242585791846,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "b45538bfa77790d9b4fad6785279daec10859d9f4d21e7c42b8e6c052cf5f06e"
+    },
+    {
+      "sample_id": "05",
+      "official_audio_rows": 120,
+      "official_vision_rows": 90,
+      "pkl_sha256": "cf0cd1b562e4516a25a04c23953f9baecaa0f42ce4044aa4eb9b1aba221e70a9",
+      "video_sha256": "715d7c1dd52a78eac6c0a10cd78ba1c4f632dc778839c86fcf7a510ea4184420",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 597,
+        "decoded_audio_duration_sec": 6.014,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9916666666666667,
+        "linear_CKA_fixed_20hz": 0.5050759896618027,
+        "linear_CKA_duration_scaled": 0.5005668174250021,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 57,
+          "pearson": 0.24677969629870475,
+          "median_absolute_hz_error": 11.582781461149636
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 183,
+        "proxy_15hz_pts_assigned_rows": 90,
+        "proxy_15hz_face_valid_rows": 89,
+        "linear_CKA_on_face_valid_rows": 0.6565450685934516,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "f2cfe1fa704b55b2764d8e5ec4fdb4e341148839331b2dab26ef9c7b236698da"
+    },
+    {
+      "sample_id": "06",
+      "official_audio_rows": 163,
+      "official_vision_rows": 123,
+      "pkl_sha256": "3a5e9de011531ec38d60430053a221bfde7e05b253cbbf414b6ec08c42b9eee4",
+      "video_sha256": "22e0a0e7c0880d3e92e4eb5e98070e5128884dd21eebc8367852570feb1b1d7f",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 811,
+        "decoded_audio_duration_sec": 8.1580625,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9938650306748467,
+        "linear_CKA_fixed_20hz": 0.2975630810743674,
+        "linear_CKA_duration_scaled": 0.2870034256379395,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 87,
+          "pearson": -0.11055406096323157,
+          "median_absolute_hz_error": 6.665274065871756
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 247,
+        "proxy_15hz_pts_assigned_rows": 123,
+        "proxy_15hz_face_valid_rows": 123,
+        "linear_CKA_on_face_valid_rows": 0.3865360819303634,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "f2c93bf18ead26aadfbe1dd8af1b221e417202d13b3f704fb58dd4394aacc0d5"
+    },
+    {
+      "sample_id": "07",
+      "official_audio_rows": 425,
+      "official_vision_rows": 319,
+      "pkl_sha256": "b6f9a61599a16d0dee901ec277cdb32bde3ab50a223b15823fd0368b61f32314",
+      "video_sha256": "f3b47ceaddf31d472c367259788cb68e93511b14ae117577836f196e22ecedc5",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 2122,
+        "decoded_audio_duration_sec": 21.2655625,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9976470588235294,
+        "linear_CKA_fixed_20hz": 0.3192250258500406,
+        "linear_CKA_duration_scaled": 0.3186164864514837,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 156,
+          "pearson": 0.3519628414116646,
+          "median_absolute_hz_error": 3.0489501490098974
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 639,
+        "proxy_15hz_pts_assigned_rows": 319,
+        "proxy_15hz_face_valid_rows": 319,
+        "linear_CKA_on_face_valid_rows": 0.4851902598189612,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "253c972b806070a76d75b0f728ebcb98a4682f953c64be3d851ad9bce4dafbf9"
+    },
+    {
+      "sample_id": "08",
+      "official_audio_rows": 98,
+      "official_vision_rows": 74,
+      "pkl_sha256": "842aa20b0b30bd8cdef2d1f2e3c458abf01caaacb416b23a4dc8b7129ca660f3",
+      "video_sha256": "962057312eb9b751ff907ba5799f455dedfc271cabb5d45abd40803e08f88d79",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 486,
+        "decoded_audio_duration_sec": 4.9084375,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9897959183673469,
+        "linear_CKA_fixed_20hz": 0.4431332803760436,
+        "linear_CKA_duration_scaled": 0.42478531015226334,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 63,
+          "pearson": 0.254668164117731,
+          "median_absolute_hz_error": 8.701771562750281
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 149,
+        "proxy_15hz_pts_assigned_rows": 74,
+        "proxy_15hz_face_valid_rows": 73,
+        "linear_CKA_on_face_valid_rows": 0.5654043129747125,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "1ccaeb5e893af5540f41c04d471f9bf383622ad563900337e5b9f81dbf196620"
+    },
+    {
+      "sample_id": "09",
+      "official_audio_rows": 99,
+      "official_vision_rows": 75,
+      "pkl_sha256": "f42d91d2c1b8e6cad707eccd029c57eb1cb9e9300544ad1ba10bf0a96627ce65",
+      "video_sha256": "7ecb03c24c8fc45b66bff4eb56bdf2adba033e96db52dd2d858abd93fae9d749",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 492,
+        "decoded_audio_duration_sec": 4.9643125,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.98989898989899,
+        "linear_CKA_fixed_20hz": 0.37438718297087203,
+        "linear_CKA_duration_scaled": 0.36492702872934896,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 64,
+          "pearson": 0.4655597318731062,
+          "median_absolute_hz_error": 9.30605692387256
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 151,
+        "proxy_15hz_pts_assigned_rows": 75,
+        "proxy_15hz_face_valid_rows": 75,
+        "linear_CKA_on_face_valid_rows": 0.5449883174930936,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "07b9e1d109b9029fa34c09873298559c9c8addeb946d4be6351b2e7141de3eab"
+    },
+    {
+      "sample_id": "10",
+      "official_audio_rows": 195,
+      "official_vision_rows": 147,
+      "pkl_sha256": "b12cb66e785c60faaa92d91be71bcae87dd4c0282bdd7e53241a7bb3e7413aa9",
+      "video_sha256": "21047991667edfdde0cb848dfd80aa41ccb871bc02742bd24f28d512a70f53db",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 973,
+        "decoded_audio_duration_sec": 9.7755625,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9948717948717949,
+        "linear_CKA_fixed_20hz": 0.3408537964265183,
+        "linear_CKA_duration_scaled": 0.28747093067208274,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 117,
+          "pearson": 0.39753372509040663,
+          "median_absolute_hz_error": 10.534494199062067
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 295,
+        "proxy_15hz_pts_assigned_rows": 147,
+        "proxy_15hz_face_valid_rows": 147,
+        "linear_CKA_on_face_valid_rows": 0.5752498253075562,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "dd5bf3cb991b19cae77be63ecd3e8cc43ab11432f8bb586818dd5d7e1031f451"
+    },
+    {
+      "sample_id": "11",
+      "official_audio_rows": 114,
+      "official_vision_rows": 86,
+      "pkl_sha256": "64b0b19f12977bb24684cbb874d88e3dde71ad7f93821f8a382d05d3047c3005",
+      "video_sha256": "972bbc9b3f3cd620b2e576672301be7ccba0f54dae3a22b42194a3e322fd7905",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 571,
+        "decoded_audio_duration_sec": 5.759,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9912280701754386,
+        "linear_CKA_fixed_20hz": 0.3405565852753862,
+        "linear_CKA_duration_scaled": 0.25105775790583906,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 8,
+          "pearson": 0.35568266635362744,
+          "median_absolute_hz_error": 12.99262871038935
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 174,
+        "proxy_15hz_pts_assigned_rows": 86,
+        "proxy_15hz_face_valid_rows": 86,
+        "linear_CKA_on_face_valid_rows": 0.5018441225412454,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "eef3da9ab66efeca3b3cfa5a942fad7cca6cd827407ea1f67151e34ae3dff868"
+    },
+    {
+      "sample_id": "12",
+      "official_audio_rows": 257,
+      "official_vision_rows": 193,
+      "pkl_sha256": "fd7cb86a2952ef384b0f1ce0dc58391332379e1d065d48100735b40ce991a624",
+      "video_sha256": "5d4da7ef7e6a4a344a2b9657fadfa2207c3565a9f7c1fb806e629c95b453aff3",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 1283,
+        "decoded_audio_duration_sec": 12.8745625,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9961089494163424,
+        "linear_CKA_fixed_20hz": 0.32706266479476825,
+        "linear_CKA_duration_scaled": 0.28642275709154524,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 149,
+          "pearson": 0.4645248355333273,
+          "median_absolute_hz_error": 4.441127139700697
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 388,
+        "proxy_15hz_pts_assigned_rows": 193,
+        "proxy_15hz_face_valid_rows": 193,
+        "linear_CKA_on_face_valid_rows": 0.5303809681454668,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "6304fa63a031436cd36cc8d179d982b0561f7eadb7050fd839586f9d16bbec56"
+    },
+    {
+      "sample_id": "13",
+      "official_audio_rows": 173,
+      "official_vision_rows": 1,
+      "pkl_sha256": "4d8b77cdc24eecaa5104f19eaff60bad12fbf1886f40f1d95491decc9b31f7e0",
+      "video_sha256": "8a64f1201e0299f79d915aa87b4a9be811e346525589d1f41060c2533599a7cb",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 864,
+        "decoded_audio_duration_sec": 8.68425,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9942196531791907,
+        "linear_CKA_fixed_20hz": 0.3197208634474878,
+        "linear_CKA_duration_scaled": 0.2732536022164565,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 69,
+          "pearson": 0.33845742122942957,
+          "median_absolute_hz_error": 1.3751941529536822
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 260,
+        "proxy_15hz_pts_assigned_rows": 1,
+        "proxy_15hz_face_valid_rows": 0,
+        "linear_CKA_on_face_valid_rows": null,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "71536dea4d9b3dd57a152b912dfbe3bea0571ba6fce482693826ea73764db8fd"
+    },
+    {
+      "sample_id": "14",
+      "official_audio_rows": 204,
+      "official_vision_rows": 153,
+      "pkl_sha256": "17b0576012b71cdbebddfd38375e19f21fbe8e1eefa4813ac945196c734c9f55",
+      "video_sha256": "8f1c4cb4b1c97b31cd065317faef41465cfcda403ef12d1defce4a5d23b8e18e",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 1018,
+        "decoded_audio_duration_sec": 10.226375,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9950980392156863,
+        "linear_CKA_fixed_20hz": 0.38810932840819923,
+        "linear_CKA_duration_scaled": 0.32064575748687413,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 122,
+          "pearson": 0.6373393406544456,
+          "median_absolute_hz_error": 9.37808393523126
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 308,
+        "proxy_15hz_pts_assigned_rows": 153,
+        "proxy_15hz_face_valid_rows": 153,
+        "linear_CKA_on_face_valid_rows": 0.607693385768422,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "a5b698f8f1ec7be708f1a52262d60180f47ba926617c936369574be768944e96"
+    },
+    {
+      "sample_id": "15",
+      "official_audio_rows": 145,
+      "official_vision_rows": 110,
+      "pkl_sha256": "e12cb1d0b69558c7f81eecb2063769b872e58718051c7ea6b2761c066763f594",
+      "video_sha256": "bdd4ea47f2dac729a445cdf34009b9dff6d66bdc8ca997b82814bd55dc7fc675",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 727,
+        "decoded_audio_duration_sec": 7.3143125,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.993103448275862,
+        "linear_CKA_fixed_20hz": 0.2850640098072684,
+        "linear_CKA_duration_scaled": 0.23610588323705656,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 108,
+          "pearson": 0.7385711036284028,
+          "median_absolute_hz_error": 1.514070105272026
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 220,
+        "proxy_15hz_pts_assigned_rows": 110,
+        "proxy_15hz_face_valid_rows": 110,
+        "linear_CKA_on_face_valid_rows": 0.5950635248837285,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "53d992c3e1b7f1f0fc45581aa45547e82bea72e10fc004c52596a45f031c0867"
+    },
+    {
+      "sample_id": "16",
+      "official_audio_rows": 60,
+      "official_vision_rows": 1,
+      "pkl_sha256": "359fae06a5df658729772eda07de43a12627a53574df95164942eb5f7a594153",
+      "video_sha256": "819a4c15dce5b85d8f7717087ea660551c3044daf3cecba1d45d342ae85365e5",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 300,
+        "decoded_audio_duration_sec": 3.0436875,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9833333333333333,
+        "linear_CKA_fixed_20hz": 0.6214874461445753,
+        "linear_CKA_duration_scaled": 0.5679502398412982,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 31,
+          "pearson": -0.1904434008048126,
+          "median_absolute_hz_error": 2.9311122384155937
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 93,
+        "proxy_15hz_pts_assigned_rows": 1,
+        "proxy_15hz_face_valid_rows": 1,
+        "linear_CKA_on_face_valid_rows": null,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "d79b8eee4bd3526d2338935ec4977b96a5e5d0cf052c8d81822da0aacaf619dd"
+    },
+    {
+      "sample_id": "17",
+      "official_audio_rows": 191,
+      "official_vision_rows": 143,
+      "pkl_sha256": "5d52d13cec0e716c6dab949e3296607d6f32bf320cb4029fde1d2b532101a41c",
+      "video_sha256": "8a2f9bad44684ae0ba22f4ad39e848020dbac6acf7e5fe9d974f2448e6902462",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 952,
+        "decoded_audio_duration_sec": 9.563375,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9947643979057592,
+        "linear_CKA_fixed_20hz": 0.34853087487754464,
+        "linear_CKA_duration_scaled": 0.32828421556886445,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 101,
+          "pearson": 0.6611264934461087,
+          "median_absolute_hz_error": 9.826625084014609
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 289,
+        "proxy_15hz_pts_assigned_rows": 143,
+        "proxy_15hz_face_valid_rows": 143,
+        "linear_CKA_on_face_valid_rows": 0.4878447345806936,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "3322146d532d8f054d994f2e7c540c6ae7430e0c469a46795daddb84c7d0cc67"
+    },
+    {
+      "sample_id": "18",
+      "official_audio_rows": 372,
+      "official_vision_rows": 280,
+      "pkl_sha256": "7991357145a879fa8d85a028f043a6835243b24a6454bf5ec89c485cbc6335cf",
+      "video_sha256": "0faf17accce9e58d81b2cc4ff6b150f8bc7f1d2f620ba420944f5732f41d6759",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 1859,
+        "decoded_audio_duration_sec": 18.6365625,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9973118279569892,
+        "linear_CKA_fixed_20hz": 0.35843027929152044,
+        "linear_CKA_duration_scaled": 0.3475275061464746,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 161,
+          "pearson": 0.5426739322647465,
+          "median_absolute_hz_error": 7.984403608898617
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 561,
+        "proxy_15hz_pts_assigned_rows": 280,
+        "proxy_15hz_face_valid_rows": 238,
+        "linear_CKA_on_face_valid_rows": 0.4569944831046092,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "060d8d415aa65c76f7f73f85f6296b05155d9f813121598cec56164cf0347639"
+    },
+    {
+      "sample_id": "19",
+      "official_audio_rows": 272,
+      "official_vision_rows": 204,
+      "pkl_sha256": "14041c0d6b2d351cd900603044f617d549e25821fa04b3f57d62c4a4e52fad4e",
+      "video_sha256": "26148d75d5b4c1ff6f69a36485cc02a771a74203d2c07d9d08f018bf88658217",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 1357,
+        "decoded_audio_duration_sec": 13.6108125,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9963235294117647,
+        "linear_CKA_fixed_20hz": 0.31695909115119564,
+        "linear_CKA_duration_scaled": 0.2910579387392964,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 150,
+          "pearson": 0.5671991286264235,
+          "median_absolute_hz_error": 8.470715414989556
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 409,
+        "proxy_15hz_pts_assigned_rows": 204,
+        "proxy_15hz_face_valid_rows": 204,
+        "linear_CKA_on_face_valid_rows": 0.5506386944090965,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "d6cbd8f1fb9154cfcb6850c10694527e036ff5f85e6f271afc016e712e4d0009"
+    },
+    {
+      "sample_id": "20",
+      "official_audio_rows": 216,
+      "official_vision_rows": 162,
+      "pkl_sha256": "2ed97e598f321dc82392e6b3d85963c629cea4ea8bc166705b697a7694ff7f44",
+      "video_sha256": "0c75c37baddf51add457b20ad35e10166ff7baaa520f77bd6b2af2239c217a1c",
+      "audio": {
+        "candidate": "openSMILE eGeMAPSv02 LowLevelDescriptors, Q1 validated implementation",
+        "candidate_channels": 25,
+        "official_channels": 74,
+        "candidate_frame_count": 1076,
+        "decoded_audio_duration_sec": 10.809875,
+        "fixed_20hz_grid_coverage": 1.0,
+        "duration_scaled_grid_coverage": 0.9953703703703703,
+        "linear_CKA_fixed_20hz": 0.20190214252771468,
+        "linear_CKA_duration_scaled": 0.18575096580259515,
+        "hypothetical_F0_fixed_20hz": {
+          "status": "hypothetical_F0_channel_comparison_only",
+          "joint_positive_positions": 139,
+          "pearson": 0.468666670905564,
+          "median_absolute_hz_error": 13.002421359511146
+        },
+        "strict_full_74D_verified_rows": 0,
+        "failure_reason": "25D eGeMAPS candidate is not a verified 74D official extractor; raw audio time grid is unproven",
+        "opensmile_config_sha256": "ef451953badced2ed112ba4ffb997f9d2a7e7c444a09e8092665eadd9f24109e"
+      },
+      "vision": {
+        "candidate": "MediaPipe FaceLandmarker 52 blendshapes, Q1 validated model asset",
+        "candidate_channels": 52,
+        "official_channels": 35,
+        "decoded_video_frame_count": 326,
+        "proxy_15hz_pts_assigned_rows": 162,
+        "proxy_15hz_face_valid_rows": 0,
+        "linear_CKA_on_face_valid_rows": null,
+        "strict_full_35D_verified_rows": 0,
+        "failure_reason": "52D MediaPipe blendshapes do not reproduce the unidentified 35D official visual channels; 15 Hz grid is diagnostic only",
+        "mediapipe_task_sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff"
+      },
+      "candidate_npz_sha256": "9cbf230da0c798de721fdadbb3699e7c299d48875db5eac7ddccc5b34bd03e87"
+    }
+  ],
+  "training_run": false,
+  "q3_predictor_loaded": false
+}

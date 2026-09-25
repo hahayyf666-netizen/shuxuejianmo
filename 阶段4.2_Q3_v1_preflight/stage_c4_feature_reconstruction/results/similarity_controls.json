@@ -1,0 +1,258 @@
+{
+  "summary": {
+    "audio": {
+      "comparable_samples": 20,
+      "median_observed_CKA": 0.3446923356520315,
+      "median_reversed_CKA": 0.10912522416396102,
+      "observed_above_reversed_samples": 20
+    },
+    "vision": {
+      "comparable_samples": 16,
+      "median_observed_CKA": 0.5376846428192802,
+      "median_reversed_CKA": 0.19544790252278457,
+      "observed_above_reversed_samples": 16
+    }
+  },
+  "per_sample": [
+    {
+      "sample_id": "01",
+      "audio": {
+        "observed_CKA": 0.4861814983670254,
+        "reversed_CKA": 0.09055231511416564
+      },
+      "vision": {
+        "observed_CKA": null,
+        "reversed_CKA": null,
+        "face_valid_rows": 0
+      }
+    },
+    {
+      "sample_id": "02",
+      "audio": {
+        "observed_CKA": 0.4660544203258179,
+        "reversed_CKA": 0.2897663538458046
+      },
+      "vision": {
+        "observed_CKA": 0.43297356586666846,
+        "reversed_CKA": 0.2843360799631216,
+        "face_valid_rows": 50
+      }
+    },
+    {
+      "sample_id": "03",
+      "audio": {
+        "observed_CKA": 0.38987919051206876,
+        "reversed_CKA": 0.14294299755845438
+      },
+      "vision": {
+        "observed_CKA": 0.3930759457746542,
+        "reversed_CKA": 0.15763239143324975,
+        "face_valid_rows": 144
+      }
+    },
+    {
+      "sample_id": "04",
+      "audio": {
+        "observed_CKA": 0.2754428622364549,
+        "reversed_CKA": 0.10174395595295646
+      },
+      "vision": {
+        "observed_CKA": 0.5750242585791846,
+        "reversed_CKA": 0.19068162332072075,
+        "face_valid_rows": 103
+      }
+    },
+    {
+      "sample_id": "05",
+      "audio": {
+        "observed_CKA": 0.5050759896618027,
+        "reversed_CKA": 0.192499867524652
+      },
+      "vision": {
+        "observed_CKA": 0.6565450685934516,
+        "reversed_CKA": 0.1987711669006219,
+        "face_valid_rows": 89
+      }
+    },
+    {
+      "sample_id": "06",
+      "audio": {
+        "observed_CKA": 0.2975630810743674,
+        "reversed_CKA": 0.1517595462840061
+      },
+      "vision": {
+        "observed_CKA": 0.3865360819303634,
+        "reversed_CKA": 0.27464726854456867,
+        "face_valid_rows": 123
+      }
+    },
+    {
+      "sample_id": "07",
+      "audio": {
+        "observed_CKA": 0.3192250258500406,
+        "reversed_CKA": 0.06562620650117607
+      },
+      "vision": {
+        "observed_CKA": 0.4851902598189612,
+        "reversed_CKA": 0.12142346611144227,
+        "face_valid_rows": 319
+      }
+    },
+    {
+      "sample_id": "08",
+      "audio": {
+        "observed_CKA": 0.4431332803760436,
+        "reversed_CKA": 0.29950756266594686
+      },
+      "vision": {
+        "observed_CKA": 0.5654043129747125,
+        "reversed_CKA": 0.19212463814494724,
+        "face_valid_rows": 73
+      }
+    },
+    {
+      "sample_id": "09",
+      "audio": {
+        "observed_CKA": 0.37438718297087203,
+        "reversed_CKA": 0.2214861318540114
+      },
+      "vision": {
+        "observed_CKA": 0.5449883174930936,
+        "reversed_CKA": 0.22533089080738017,
+        "face_valid_rows": 75
+      }
+    },
+    {
+      "sample_id": "10",
+      "audio": {
+        "observed_CKA": 0.3408537964265183,
+        "reversed_CKA": 0.07578104279302492
+      },
+      "vision": {
+        "observed_CKA": 0.5752498253075562,
+        "reversed_CKA": 0.21659949391403888,
+        "face_valid_rows": 147
+      }
+    },
+    {
+      "sample_id": "11",
+      "audio": {
+        "observed_CKA": 0.3405565852753862,
+        "reversed_CKA": 0.12701180789617583
+      },
+      "vision": {
+        "observed_CKA": 0.5018441225412454,
+        "reversed_CKA": 0.3075365583841616,
+        "face_valid_rows": 86
+      }
+    },
+    {
+      "sample_id": "12",
+      "audio": {
+        "observed_CKA": 0.32706266479476825,
+        "reversed_CKA": 0.07446702830250625
+      },
+      "vision": {
+        "observed_CKA": 0.5303809681454668,
+        "reversed_CKA": 0.1267875181637438,
+        "face_valid_rows": 193
+      }
+    },
+    {
+      "sample_id": "13",
+      "audio": {
+        "observed_CKA": 0.3197208634474878,
+        "reversed_CKA": 0.11430233093255293
+      },
+      "vision": {
+        "observed_CKA": null,
+        "reversed_CKA": null,
+        "face_valid_rows": 0
+      }
+    },
+    {
+      "sample_id": "14",
+      "audio": {
+        "observed_CKA": 0.38810932840819923,
+        "reversed_CKA": 0.17317617158564744
+      },
+      "vision": {
+        "observed_CKA": 0.607693385768422,
+        "reversed_CKA": 0.2228181623136621,
+        "face_valid_rows": 153
+      }
+    },
+    {
+      "sample_id": "15",
+      "audio": {
+        "observed_CKA": 0.2850640098072684,
+        "reversed_CKA": 0.1039481173953691
+      },
+      "vision": {
+        "observed_CKA": 0.5950635248837285,
+        "reversed_CKA": 0.22555914810189082,
+        "face_valid_rows": 110
+      }
+    },
+    {
+      "sample_id": "16",
+      "audio": {
+        "observed_CKA": 0.6214874461445753,
+        "reversed_CKA": 0.2386714899782005
+      },
+      "vision": {
+        "observed_CKA": null,
+        "reversed_CKA": null,
+        "face_valid_rows": 1
+      }
+    },
+    {
+      "sample_id": "17",
+      "audio": {
+        "observed_CKA": 0.34853087487754464,
+        "reversed_CKA": 0.08460897674246096
+      },
+      "vision": {
+        "observed_CKA": 0.4878447345806936,
+        "reversed_CKA": 0.13162381994471917,
+        "face_valid_rows": 143
+      }
+    },
+    {
+      "sample_id": "18",
+      "audio": {
+        "observed_CKA": 0.35843027929152044,
+        "reversed_CKA": 0.042904674442841476
+      },
+      "vision": {
+        "observed_CKA": 0.4569944831046092,
+        "reversed_CKA": 0.09546619827402907,
+        "face_valid_rows": 238
+      }
+    },
+    {
+      "sample_id": "19",
+      "audio": {
+        "observed_CKA": 0.31695909115119564,
+        "reversed_CKA": 0.0837983154875392
+      },
+      "vision": {
+        "observed_CKA": 0.5506386944090965,
+        "reversed_CKA": 0.11211485075069044,
+        "face_valid_rows": 204
+      }
+    },
+    {
+      "sample_id": "20",
+      "audio": {
+        "observed_CKA": 0.20190214252771468,
+        "reversed_CKA": 0.10040982365051092
+      },
+      "vision": {
+        "observed_CKA": null,
+        "reversed_CKA": null,
+        "face_valid_rows": 0
+      }
+    }
+  ]
+}

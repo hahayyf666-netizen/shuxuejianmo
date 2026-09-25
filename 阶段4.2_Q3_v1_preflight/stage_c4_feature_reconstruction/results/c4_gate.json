@@ -1,0 +1,49 @@
+{
+  "scope": "Attachment 4 sample 01–20 only",
+  "text": {
+    "strict_recovered_content_rows": 564,
+    "official_content_rows": 564,
+    "all_50_positions_reconstructed": 1000,
+    "mapping_status_for_tested_samples": "verified_text",
+    "similarity_metric": "full 768D content-row cosine and absolute error",
+    "maximum_absolute_error": 3.790855407714844e-05
+  },
+  "audio": {
+    "strict_recovered_74D_rows": 0,
+    "official_unaligned_rows": 3677,
+    "mapping_status": "index_only",
+    "diagnostic_similarity_metric": "linear CKA, candidate 25D eGeMAPS versus official 74D",
+    "diagnostic_median_CKA": 0.3446923356520315,
+    "reversed_order_median_CKA": 0.10912522416396102,
+    "failure_reason": "official 74D extractor and row time support not recovered"
+  },
+  "vision": {
+    "strict_recovered_35D_rows": 0,
+    "official_unaligned_rows": 2593,
+    "mapping_status": "index_only",
+    "diagnostic_similarity_metric": "linear CKA, candidate 52D MediaPipe versus official 35D",
+    "diagnostic_comparable_samples": 16,
+    "diagnostic_median_CKA": 0.5376846428192802,
+    "reversed_order_median_CKA": 0.19544790252278457,
+    "failure_reason": "official 35D extractor and frame/PTS support not recovered"
+  },
+  "technical_fallback_scope": "feature-space attribution only; no raw-media evidence claims",
+  "q3_protocol_modified": false,
+  "existing_raw_evidence_training_gate": "UNCHANGED_STOP",
+  "training_run": false,
+  "q3_predictor_loaded": false,
+  "environment": {
+    "sys_executable": "C:\\Users\\Fine\\Documents\\Codex\\2026-09-23\\https-github-com-hahayyf666-netizen-shuxuejianmo\\work\\.venv_q1\\Scripts\\python.exe",
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "package_versions": {
+      "numpy": "2.5.0",
+      "torch": "2.8.0",
+      "transformers": "4.57.6",
+      "opensmile": "2.6.0",
+      "mediapipe": "0.10.35",
+      "av": "18.0.0"
+    }
+  },
+  "source_pair_inventory_sha256": "8e520f1c088b97d4e752c2ab0072c6af999fdc28405ebb6a9980254686d5852f",
+  "summary_csv_sha256": "b359b7f1e27018d8a22bc73c7dc4a22fd74850d7c695256040a9de4b5becabcc"
+}
