@@ -1,0 +1,29 @@
+{
+  "sample_key": "-s9qJ7ATP7w$_$6",
+  "official_text": "But I just kept going",
+  "source_archive": "阶段2.1.7_A0_Pilot/Q1第一版特征生产_2026-09-24/package/q1_v1_candidate.zip",
+  "source_archive_sha256": "d1b3bb587bd96b4094b555eeab1add4eed048c316ee84fbb6d8a3456fa39d7a2",
+  "source_member_directory": "outputs/q1/v1_delivery/examples/",
+  "published_files": {
+    "typical_correspondence_s9qJ7ATP7w_clip6.png": {
+      "sha256": "d4dd9ddf58eaf95571aceb743f36d2229c0df5a2f27b84503d5c575f07ec7fb0",
+      "operation": "byte-identical extraction from source archive"
+    },
+    "typical_correspondence_s9qJ7ATP7w_clip6.json": {
+      "sha256": "521cbe142d35266b9feb7266e667ef7e2b99e1d150d71374fafb8723287e8aac",
+      "operation": "byte-identical extraction from source archive"
+    },
+    "figure_layout_check.json": {
+      "sha256": "bd2486687d1371b1c82b7ff9f13f715c5b426251c9ccb31841148880df161dc6",
+      "operation": "byte-identical extraction from source archive"
+    },
+    "typical_correspondence_s9qJ7ATP7w_clip6_standalone.svg": {
+      "sha256": "7efa0295947a90ac11a2060c48ff1c59b50073c13b09666d7d5187dd3831911a",
+      "operation": "embedded six original PNG raster layers as data URIs; no plotted coordinates or pixels changed",
+      "source_svg_sha256": "cbd2b54c82db49a941a03702443a54d50db22152aba4d5edba108f2c2ac1a596",
+      "embedded_raster_count": 6
+    }
+  },
+  "scope": "one confirmed word-level example; does not assert word-level alignment for all 100 samples",
+  "figure_layout_verdict": "PASS"
+}
