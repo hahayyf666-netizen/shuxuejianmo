@@ -23,7 +23,7 @@
 - 9项单元测试全部通过；`unit_tests.exit_code.txt=0`，`data_smoke.exit_code.txt=0`，两份 stderr 未报告错误。数据烟测实际在 CPU 上运行，CUDA 可见性另由环境报告和两张卡的张量运算证明。
 - 真实附件2载入后 `train=3395`、`valid=728`，样本 ID 交集为0；scaler仅用train拟合。B0/B1的参数量分别为68,932和125,380，输出为三类logits；损失有限、反向梯度存在、优化器步数均为0。
 - Shapley分类和回归加和残差绝对值分别约 `8.7e-19` 和 `1.4e-17`；64步 IG 完备性残差约 `4.3e-8`，数值状态 `pass`。这些是未训练模型的数值烟测，不是解释效果指标。
-- 回执中机器报告、环境报告和两个退出码文件的 SHA-256 均与下载文件一致；机器报告中 scaler、120条valid解释子集的 SHA-256 也均一致。公开文件的逐文件哈希另见 `SHA256SUMS.txt`。`train_scaler.npz` 已在本地核验，但二进制内容仅保留于本地服务器报告和本机下载目录，GitHub 同步包只记录其 SHA-256，不包含该文件。
+- 回执中机器报告、环境报告和两个退出码文件的 SHA-256 均与下载文件一致；机器报告中 scaler、120条valid解释子集的 SHA-256 也均一致。公开文件的逐文件哈希另见 `SHA256SUMS.txt`。参赛队已明确授权公开 `train_scaler.npz`；该文件现纳入 GitHub 审核目录，包含仅由训练集拟合的 text/audio/vision 均值与标准差数组，不包含原始样本记录。其 SHA-256 为 `e022690603f61d46c5f3ef63eb107272ada38f31240006396199d21fc9ef1440`，与机器报告一致。
 - `test_used_for_model_selection=false`、`attachment4_model_inference_run=false`、`formal_training_run=false`；核对冻结的 `run_formal_training.py` 后，正式训练入口只读取 train/valid，并强制检查资格门、数据哈希、split隔离与空输出目录。
 
 ## 放行范围和下一步
