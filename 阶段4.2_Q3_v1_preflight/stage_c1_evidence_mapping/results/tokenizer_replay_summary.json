@@ -1,0 +1,24 @@
+{
+  "tokenizer_repository": "google-bert/bert-base-uncased",
+  "tokenizer_revision": "b96743c503420c0858ad23fca994e670844c6c05",
+  "vocab_sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+  "transformers_version": "4.57.6",
+  "settings": {
+    "do_lower_case": true,
+    "max_length": 50,
+    "truncation": true,
+    "padding": "max_length",
+    "offset_mapping": true
+  },
+  "samples": 20,
+  "ids_attention_segments_exact": 20,
+  "text_bert_content_positions_with_offsets": 564,
+  "video_pairs_present": 20,
+  "vision_all_zero_samples": [
+    "13"
+  ],
+  "temporal_metadata_key_samples": 0,
+  "model_loaded": false,
+  "predictions_computed": false,
+  "interpretation": "Exact tokenizer replay supports candidate raw_text character spans for text_bert token positions. It does not establish continuous text embedding row provenance. PKLs have no obvious per-row temporal/PTS/frame fields; raw MP4 presence alone does not establish aligned audio/vision row support."
+}

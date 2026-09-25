@@ -1,0 +1,39 @@
+{
+  "text_mapping": "BLOCKED",
+  "audio_mapping": "BLOCKED",
+  "vision_mapping": "BLOCKED",
+  "root_cause_classification": {
+    "immediate_285_row_cause": "B_PRECHECK_PATH_UNCONDITIONALLY_EMITTED_INDEX_ONLY; NOT_285_OBSERVED_MAPPING_FAILURES",
+    "residual_evidence_limit": "A_CURRENT_PKLS_OMIT_EXPLICIT_PER_ROW_SOURCE_METADATA; UPSTREAM_RECOVERY_NOT_ASSESSED",
+    "global_data_impossibility_proven": false
+  },
+  "prior_285_rows": 285,
+  "by_modality": {
+    "text": {
+      "rows": 95,
+      "prior_index_only": 95,
+      "unconditional_implementation_fallback": 95,
+      "token_offset_candidate_exact": 95,
+      "verified_official_feature_row_mapping": 0
+    },
+    "audio": {
+      "rows": 95,
+      "prior_index_only": 95,
+      "unconditional_implementation_fallback": 95,
+      "token_offset_candidate_exact": 0,
+      "verified_official_feature_row_mapping": 0
+    },
+    "vision": {
+      "rows": 95,
+      "prior_index_only": 95,
+      "unconditional_implementation_fallback": 95,
+      "token_offset_candidate_exact": 0,
+      "verified_official_feature_row_mapping": 0
+    }
+  },
+  "text_subcheck": "raw_text_to_text_bert token offsets replay exactly for all 20 Attachment4 records; this does not verify continuous text feature row provenance",
+  "audio_vision_subcheck": "PKLs contain no obvious per-row time/PTS/frame fields; raw video pairs exist; the prior precheck did not attempt temporal reconstruction or official-row support verification",
+  "model_changed": false,
+  "training_run": false,
+  "attachment4_prediction_run": false
+}
