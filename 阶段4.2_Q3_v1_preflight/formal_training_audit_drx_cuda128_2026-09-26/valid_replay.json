@@ -40,5 +40,20 @@
     "mae": 1.2332348475752042e-09,
     "selection_J": 1.0276957063126702e-10
   },
-  "comparison_tolerance": 0.005
+  "comparison_tolerance": 0.005,
+  "saved_scaler_vs_refit_max_abs_deltas": {
+    "text": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "audio": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "vision": {
+      "mean": 0.0,
+      "std": 0.0
+    }
+  },
+  "scaler_comparison_tolerance": 1e-10
 }

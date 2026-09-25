@@ -13,7 +13,7 @@
 - 用户从 DR-X 下载的归档 `b0b1_v1_cuda128_audit.zip`：2,212,924 字节，SHA-256 `a945699a1ab8308cf51a3c92e95ccf680e9312d050bd2ceb293278959a8141e7`；ZIP CRC 校验通过，包含预期的 11 个文件，无多余文件。
 - 训练回执引用的服务器资格门、解释合同和附件2原件哈希，均与此前冻结和已公开的审核材料一致。回执设备为 `cuda:1`，stderr 为空，进程退出码由用户在服务器确认是 `0`。
 - `audit_training_bundle.py` 对六条历史、每条最优 (J)、检查点中的 variant/seed/epoch/valid 指标、状态字典形状、参数量及权重有限性逐项检查；`audit_result.json` 的 15 项检查全部通过。
-- `replay_selected_valid.py` 使用本机同一 SHA-256 的附件2原件，只访问 train/valid，重新从 train 拟合 scaler，载入所选检查点，并在 CPU 上重算 728 条 valid 指标。官方 PKL 容器反序列化时会装载全部 split 字节，但脚本不索引或评价 test。
+- `replay_selected_valid.py` 使用本机同一 SHA-256 的附件2原件，只访问 train/valid，重新从 train 拟合 scaler，使用受限 `weights_only` 载入服务器 scaler，并逐项比较三模态均值与标准差；六个数组最大绝对差均为 `0`。随后载入所选检查点，在 CPU 上重算 728 条 valid 指标。官方 PKL 容器反序列化时会装载全部 split 字节，但脚本不索引或评价 test。
 
 ## 六次候选
 
@@ -44,6 +44,6 @@
 
 `MODEL_FREEZE_MANIFEST.json` 锁定所选检查点、服务器训练 scaler、数据原件、资格门、解释合同和关键源码的 SHA-256。所选检查点 SHA-256 为 `723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce`；服务器 `train_scaler.pt` 为 `57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424`。本次公开审核包包含完整指标历史、审核脚本和哈希，不包含六个二进制检查点或 `train_scaler.pt`；原件保留于 DR-X 和本机下载目录。
 
-公开审核材料足以核对训练结果和文件身份，但不能单靠哈希重现模型输出；本机复算使用了下载的所选检查点。训练 scaler 二进制内容只做哈希身份核验，复算时使用 train 原件重新拟合的 scaler。归档哈希是本机下载后计算，未获得服务器独立生成的归档哈希；ZIP CRC、回执、检查点内容与 valid 复算提供了交叉核验。
+公开审核材料足以核对训练结果和文件身份，但不能单靠哈希重现模型输出；本机复算使用了下载的所选检查点和从 train 原件重新拟合的 scaler，并确认服务器保存的 scaler 数组与重新拟合结果完全相同。归档哈希是本机下载后计算，未获得服务器独立生成的归档哈希；ZIP CRC、回执、检查点内容与 valid 复算提供了交叉核验。
 
 下一步应在**单独阶段**核验冻结模型的 Shapley、conditional IG 和 XAI validation，再决定是否放行最终 test 评价与附件4正式推理。解释边界仍为附件4指定20条文本可回溯词片段；音频、视觉仅允许特征空间索引归因。

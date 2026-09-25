@@ -7,7 +7,9 @@ from pathlib import Path
 import pickle
 import sys
 
+import numpy as np
 import torch
+from numpy._core.multiarray import _reconstruct
 
 STAGE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(STAGE))
@@ -36,6 +38,17 @@ def main() -> None:
     if len(train) != 3395 or len(valid) != 728:
         raise ValueError("split counts changed")
     scaler = TrainScaler().fit(train, split="train")
+    # This checkpoint contains NumPy arrays, so allow only the required NumPy
+    # reconstruction classes while keeping PyTorch's weights-only loader.
+    safe_numpy = [_reconstruct, np.ndarray, np.dtype, type(np.dtype("float64"))]
+    with torch.serialization.safe_globals(safe_numpy):
+        saved_scaler = torch.load(args.run_dir / "train_scaler.pt", map_location="cpu", weights_only=True)
+    if saved_scaler["source_split"] != "train":
+        raise ValueError("saved scaler was not fitted on train")
+    scaler_deltas = {key: {
+        "mean": float(np.max(np.abs(saved_scaler["mean"][key] - scaler.mean[key]))),
+        "std": float(np.max(np.abs(saved_scaler["std"][key] - scaler.std[key]))),
+    } for key in ("text", "audio", "vision")}
     checkpoint = torch.load(args.run_dir / summary["selected_checkpoint"], map_location="cpu", weights_only=True)
     model = Q3Model("B0")
     model.load_state_dict(checkpoint["state_dict"], strict=True)
@@ -43,7 +56,8 @@ def main() -> None:
     reported = checkpoint["validation"]
     deltas = {key: abs(replay[key] - reported[key]) for key in ("accuracy", "macro_f1", "mae", "selection_J")}
     result = {
-        "status": "PASS" if max(deltas.values()) < 0.005 else "REVIEW",
+        "status": "PASS" if (max(deltas.values()) < 0.005 and
+                             max(value for row in scaler_deltas.values() for value in row.values()) < 1e-10) else "REVIEW",
         "selected_checkpoint": summary["selected_checkpoint"],
         "checkpoint_epoch": checkpoint["epoch"],
         "train_count": len(train),
@@ -54,8 +68,10 @@ def main() -> None:
         "reported_valid_metrics": reported,
         "absolute_deltas": deltas,
         "comparison_tolerance": 0.005,
+        "saved_scaler_vs_refit_max_abs_deltas": scaler_deltas,
+        "scaler_comparison_tolerance": 1e-10,
     }
-    args.out.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    args.out.write_bytes((json.dumps(result, indent=2, ensure_ascii=False) + "\n").encode("utf-8"))
     print(json.dumps({"status": result["status"], "absolute_deltas": deltas}, ensure_ascii=False))
     if result["status"] != "PASS":
         raise SystemExit(1)
