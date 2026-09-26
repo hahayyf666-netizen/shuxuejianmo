@@ -1,0 +1,1101 @@
+[
+  {
+    "sample_id": "01",
+    "source_video_id": "PexNiFbPTYM",
+    "candidate": {
+      "video_id": "PexNiFbPTYM",
+      "offset": 209,
+      "trigram_hits": 19,
+      "ordered_exact_tokens": 21,
+      "target_tokens": 21
+    },
+    "source_url": "https://www.youtube.com/watch?v=PexNiFbPTYM",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\01.mp4",
+      "bytes": 824021,
+      "sha256": "3057e24aee7a48fcf15bd618b663bd7f0d061fb8893286c458986a7e1c6d17cf"
+    },
+    "metadata": {
+      "id": "PexNiFbPTYM",
+      "title": "Timing Belts | ACDelco",
+      "duration": 183,
+      "webpage_url": "https://www.youtube.com/watch?v=PexNiFbPTYM",
+      "format_id": "136+140"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\01_PexNiFbPTYM.mp4",
+      "bytes": 5703265,
+      "sha256": "32f6dec4c3639c68142dd382eec7d9f496d443c9f0d292d8400c233b602b942c",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 182.97325,
+      "clip_audio_duration_sec": 8.982,
+      "full_peak_source_offset_sec": 85.2675625,
+      "full_peak_corr": 0.9988157764049581,
+      "best_other_corr_outside_one_second": 0.10414158488600345,
+      "peak_margin": 0.8946741915189547,
+      "first_half_peak_corr": 0.9987658210524242,
+      "first_half_offset_sec": 85.2675625,
+      "second_half_peak_corr": 0.9988849402344151,
+      "second_half_offset_sec": 85.2675625,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "PASS",
+      "source_frame_count": 5465,
+      "clip_frame_count": 270,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 1.7933333333333334,
+          "actual_clip_pts_sec": 1.8,
+          "matched_source_pts_sec": 87.087,
+          "offset_sec": 85.287,
+          "pixel_pearson": 0.9996545535860564
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 4.483333333333333,
+          "actual_clip_pts_sec": 4.466666666666667,
+          "matched_source_pts_sec": 89.723,
+          "offset_sec": 85.25633333333333,
+          "pixel_pearson": 0.9996218964652774
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 7.173333333333334,
+          "actual_clip_pts_sec": 7.166666666666667,
+          "matched_source_pts_sec": 92.459,
+          "offset_sec": 85.29233333333333,
+          "pixel_pearson": 0.9996431844266483
+        }
+      ],
+      "offset_median_sec": 85.287,
+      "offset_range_sec": 0.036000000000001364,
+      "pearson_min": 0.9996218964652774,
+      "pearson_median": 0.9996431844266483,
+      "audio_video_offset_difference_sec": 0.019437500000009322,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "PASS",
+    "local_time_gate": "PASS",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "02",
+    "source_video_id": "YCEllKyaCrc",
+    "candidate": {
+      "video_id": "YCEllKyaCrc",
+      "offset": 43,
+      "trigram_hits": 4,
+      "ordered_exact_tokens": 6,
+      "target_tokens": 15
+    },
+    "source_url": "https://www.youtube.com/watch?v=YCEllKyaCrc",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\02.mp4",
+      "bytes": 142336,
+      "sha256": "6b651e908aefd86959f85b78f945f7d5a5d9e767eb4c095926e1df2ed9629ff9"
+    },
+    "download": "REUSED_T1_VERIFIED_MEDIA",
+    "audio": {
+      "source_audio_duration_sec": 63.4026875,
+      "clip_audio_duration_sec": 3.328375,
+      "full_peak_source_offset_sec": 16.8366875,
+      "full_peak_corr": 0.9946960087568862,
+      "best_other_corr_outside_one_second": 0.15360749856903422,
+      "peak_margin": 0.841088510187852,
+      "first_half_peak_corr": 0.9956395778870637,
+      "first_half_offset_sec": 16.8366875,
+      "second_half_peak_corr": 0.9879257280379665,
+      "second_half_offset_sec": 16.8366875,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "PASS",
+      "source_frame_count": 1585,
+      "clip_frame_count": 101,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 0.6866666666666666,
+          "actual_clip_pts_sec": 0.7,
+          "matched_source_pts_sec": 17.6,
+          "offset_sec": 16.900000000000002,
+          "pixel_pearson": 0.9997710203970038
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 1.7166666666666666,
+          "actual_clip_pts_sec": 1.7,
+          "matched_source_pts_sec": 18.6,
+          "offset_sec": 16.900000000000002,
+          "pixel_pearson": 0.9997675404003232
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 2.7466666666666666,
+          "actual_clip_pts_sec": 2.7333333333333334,
+          "matched_source_pts_sec": 19.64,
+          "offset_sec": 16.906666666666666,
+          "pixel_pearson": 0.9997702817108393
+        }
+      ],
+      "offset_median_sec": 16.900000000000002,
+      "offset_range_sec": 0.006666666666664156,
+      "pearson_min": 0.9997675404003232,
+      "pearson_median": 0.9997702817108393,
+      "audio_video_offset_difference_sec": 0.0633125000000021,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "PASS",
+    "local_time_gate": "PASS",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "03",
+    "source_video_id": "GAVpYuhMZAw",
+    "candidate": {
+      "video_id": "GAVpYuhMZAw",
+      "offset": 136,
+      "trigram_hits": 12,
+      "ordered_exact_tokens": 14,
+      "target_tokens": 27
+    },
+    "source_url": "https://www.youtube.com/watch?v=GAVpYuhMZAw",
+    "status": "BLOCKED_SOURCE_METADATA",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\03.mp4",
+      "bytes": 2973584,
+      "sha256": "556b83449ac17fd8cb99ed1dcd6f11c287dd6e0198885e88555579f9bcab84f3"
+    },
+    "probe_error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] GAVpYuhMZAw: This video is unavailable\n"
+  },
+  {
+    "sample_id": "04",
+    "source_video_id": "unOeTDc2rlY",
+    "candidate": {
+      "video_id": "unOeTDc2rlY",
+      "offset": 604,
+      "trigram_hits": 15,
+      "ordered_exact_tokens": 17,
+      "target_tokens": 20
+    },
+    "source_url": "https://www.youtube.com/watch?v=unOeTDc2rlY",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\04.mp4",
+      "bytes": 1200845,
+      "sha256": "766db8dc32508b8f7f8faaa47656e0eedc8d1707b809fe8235db1e74e15d3369"
+    },
+    "metadata": {
+      "id": "unOeTDc2rlY",
+      "title": "Michigan Ross MBA Team Exercise FAQ",
+      "duration": 226,
+      "webpage_url": "https://www.youtube.com/watch?v=unOeTDc2rlY",
+      "format_id": "137+251"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\04_unOeTDc2rlY.mp4",
+      "bytes": 7364811,
+      "sha256": "e98448eeae19b3007d2f75a99be3793c8871c385ae42cd85f7b437fa7347ed97",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 225.913,
+      "clip_audio_duration_sec": 6.847,
+      "full_peak_source_offset_sec": 178.9681875,
+      "full_peak_corr": 0.9829367833973259,
+      "best_other_corr_outside_one_second": 0.15669263131694663,
+      "peak_margin": 0.8262441520803793,
+      "first_half_peak_corr": 0.9819963366365235,
+      "first_half_offset_sec": 178.9681875,
+      "second_half_peak_corr": 0.9835137374842318,
+      "second_half_offset_sec": 178.9681875,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "PASS",
+      "source_frame_count": 5416,
+      "clip_frame_count": 207,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 1.3866666666666667,
+          "actual_clip_pts_sec": 1.4,
+          "matched_source_pts_sec": 180.43,
+          "offset_sec": 179.03,
+          "pixel_pearson": 0.9995463642564667
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 3.466666666666667,
+          "actual_clip_pts_sec": 3.466666666666667,
+          "matched_source_pts_sec": 182.515,
+          "offset_sec": 179.04833333333332,
+          "pixel_pearson": 0.9995631970424179
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 5.546666666666667,
+          "actual_clip_pts_sec": 5.533333333333333,
+          "matched_source_pts_sec": 184.559,
+          "offset_sec": 179.02566666666667,
+          "pixel_pearson": 0.9995538660262406
+        }
+      ],
+      "offset_median_sec": 179.03,
+      "offset_range_sec": 0.022666666666651736,
+      "pearson_min": 0.9995463642564667,
+      "pearson_median": 0.9995538660262406,
+      "audio_video_offset_difference_sec": 0.061812500000002046,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "PASS",
+    "local_time_gate": "PASS",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "05",
+    "source_video_id": "an_GzG40hcE",
+    "candidate": {
+      "video_id": "an_GzG40hcE",
+      "offset": 0,
+      "trigram_hits": 9,
+      "ordered_exact_tokens": 11,
+      "target_tokens": 11
+    },
+    "source_url": "https://www.youtube.com/watch?v=an_GzG40hcE",
+    "status": "BLOCKED_SOURCE_METADATA",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\05.mp4",
+      "bytes": 836064,
+      "sha256": "715d7c1dd52a78eac6c0a10cd78ba1c4f632dc778839c86fcf7a510ea4184420"
+    },
+    "probe_error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] an_GzG40hcE: This video is unavailable\n"
+  },
+  {
+    "sample_id": "07",
+    "source_video_id": "ChhZna-aBK4",
+    "candidate": {
+      "video_id": "ChhZna-aBK4",
+      "offset": 95,
+      "trigram_hits": 18,
+      "ordered_exact_tokens": 20,
+      "target_tokens": 52
+    },
+    "source_url": "https://www.youtube.com/watch?v=ChhZna-aBK4",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\07.mp4",
+      "bytes": 3559307,
+      "sha256": "f3b47ceaddf31d472c367259788cb68e93511b14ae117577836f196e22ecedc5"
+    },
+    "metadata": {
+      "id": "ChhZna-aBK4",
+      "title": "Monday Morning Brief | Summit on the Future of Philately",
+      "duration": 151,
+      "webpage_url": "https://www.youtube.com/watch?v=ChhZna-aBK4",
+      "format_id": "248+251"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\07_ChhZna-aBK4.mp4",
+      "bytes": 8125623,
+      "sha256": "92b59391073b9baff93cb5b74816569337c54faf78f6eee8dede15cddd1ee4b7",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 150.873,
+      "clip_audio_duration_sec": 21.2655625,
+      "full_peak_source_offset_sec": 50.7491875,
+      "full_peak_corr": 0.9894125138153864,
+      "best_other_corr_outside_one_second": 0.03793663219504509,
+      "peak_margin": 0.9514758816203414,
+      "first_half_peak_corr": 0.9889883003490356,
+      "first_half_offset_sec": 50.7491875,
+      "second_half_peak_corr": 0.9900262260207506,
+      "second_half_offset_sec": 50.7491875,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "PASS",
+      "source_frame_count": 4526,
+      "clip_frame_count": 639,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 4.260000000000001,
+          "actual_clip_pts_sec": 4.266666666666667,
+          "matched_source_pts_sec": 55.067,
+          "offset_sec": 50.800333333333334,
+          "pixel_pearson": 0.9999272091999369
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 10.65,
+          "actual_clip_pts_sec": 10.666666666666666,
+          "matched_source_pts_sec": 61.467,
+          "offset_sec": 50.800333333333334,
+          "pixel_pearson": 0.9999273160291123
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 17.040000000000003,
+          "actual_clip_pts_sec": 17.033333333333335,
+          "matched_source_pts_sec": 67.833,
+          "offset_sec": 50.79966666666667,
+          "pixel_pearson": 0.9999260618367941
+        }
+      ],
+      "offset_median_sec": 50.800333333333334,
+      "offset_range_sec": 0.0006666666666674814,
+      "pearson_min": 0.9999260618367941,
+      "pearson_median": 0.9999272091999369,
+      "audio_video_offset_difference_sec": 0.051145833333336554,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "PASS",
+    "local_time_gate": "PASS",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "08",
+    "source_video_id": "2m58ShI1QSI",
+    "candidate": {
+      "video_id": "2m58ShI1QSI",
+      "offset": 82,
+      "trigram_hits": 8,
+      "ordered_exact_tokens": 10,
+      "target_tokens": 10
+    },
+    "source_url": "https://www.youtube.com/watch?v=2m58ShI1QSI",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\08.mp4",
+      "bytes": 1026677,
+      "sha256": "962057312eb9b751ff907ba5799f455dedfc271cabb5d45abd40803e08f88d79"
+    },
+    "metadata": {
+      "id": "2m58ShI1QSI",
+      "title": "Introduction to the Universal Design Grand Challenge Student Awards 2014",
+      "duration": 627,
+      "webpage_url": "https://www.youtube.com/watch?v=2m58ShI1QSI",
+      "format_id": "136+251"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\08_2m58ShI1QSI.mp4",
+      "bytes": 14644644,
+      "sha256": "a9a0047ca0b61d389e99228dcef2d906aaa51efb3533ff44d36de36e8b8bbf94",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 626.873,
+      "clip_audio_duration_sec": 4.908,
+      "full_peak_source_offset_sec": 410.15725,
+      "full_peak_corr": 0.9939361394030204,
+      "best_other_corr_outside_one_second": 0.10083900500290933,
+      "peak_margin": 0.8930971344001111,
+      "first_half_peak_corr": 0.9940214826365619,
+      "first_half_offset_sec": 410.15725,
+      "second_half_peak_corr": 0.9938775533246751,
+      "second_half_offset_sec": 410.15725,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "PASS",
+      "source_frame_count": 15670,
+      "clip_frame_count": 149,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 1.0066666666666666,
+          "actual_clip_pts_sec": 1.0,
+          "matched_source_pts_sec": 411.24,
+          "offset_sec": 410.24,
+          "pixel_pearson": 0.9997975258462914
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 2.5166666666666666,
+          "actual_clip_pts_sec": 2.5,
+          "matched_source_pts_sec": 412.72,
+          "offset_sec": 410.22,
+          "pixel_pearson": 0.9997773454912711
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 4.026666666666666,
+          "actual_clip_pts_sec": 4.033333333333333,
+          "matched_source_pts_sec": 414.24,
+          "offset_sec": 410.20666666666665,
+          "pixel_pearson": 0.9997862923548987
+        }
+      ],
+      "offset_median_sec": 410.22,
+      "offset_range_sec": 0.03333333333335986,
+      "pearson_min": 0.9997773454912711,
+      "pearson_median": 0.9997862923548987,
+      "audio_video_offset_difference_sec": 0.06275000000005093,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "PASS",
+    "local_time_gate": "PASS",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "12",
+    "source_video_id": "gE7kUqMqQ9g",
+    "candidate": {
+      "video_id": "gE7kUqMqQ9g",
+      "offset": 47,
+      "trigram_hits": 33,
+      "ordered_exact_tokens": 35,
+      "target_tokens": 35
+    },
+    "source_url": "https://www.youtube.com/watch?v=gE7kUqMqQ9g",
+    "status": "BLOCKED_SOURCE_METADATA",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\12.mp4",
+      "bytes": 2233107,
+      "sha256": "5d4da7ef7e6a4a344a2b9657fadfa2207c3565a9f7c1fb806e629c95b453aff3"
+    },
+    "probe_error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] gE7kUqMqQ9g: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n"
+  },
+  {
+    "sample_id": "13",
+    "source_video_id": "kg-W6-hP2Do",
+    "candidate": {
+      "video_id": "kg-W6-hP2Do",
+      "offset": 136,
+      "trigram_hits": 25,
+      "ordered_exact_tokens": 27,
+      "target_tokens": 27
+    },
+    "source_url": "https://www.youtube.com/watch?v=kg-W6-hP2Do",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\13.mp4",
+      "bytes": 262575,
+      "sha256": "8a64f1201e0299f79d915aa87b4a9be811e346525589d1f41060c2533599a7cb"
+    },
+    "metadata": {
+      "id": "kg-W6-hP2Do",
+      "title": "Elevator Speech",
+      "duration": 121,
+      "webpage_url": "https://www.youtube.com/watch?v=kg-W6-hP2Do",
+      "format_id": "243+251"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\13_kg-W6-hP2Do.mp4",
+      "bytes": 3258654,
+      "sha256": "65a8161ca5937d4ac7429c602b07ab4804ba246d487ccc0da484f62b24c96180",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 120.753,
+      "clip_audio_duration_sec": 8.679,
+      "full_peak_source_offset_sec": 46.8939375,
+      "full_peak_corr": 0.9975835393406698,
+      "best_other_corr_outside_one_second": 0.09690152608430216,
+      "peak_margin": 0.9006820132563677,
+      "first_half_peak_corr": 0.9979051965426244,
+      "first_half_offset_sec": 46.8939375,
+      "second_half_peak_corr": 0.9966816878717982,
+      "second_half_offset_sec": 46.8939375,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "FAIL_VISUAL_GATE",
+      "source_frame_count": 3260,
+      "clip_frame_count": 260,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 1.7266666666666666,
+          "actual_clip_pts_sec": 1.7333333333333334,
+          "matched_source_pts_sec": 49.259,
+          "offset_sec": 47.525666666666666,
+          "pixel_pearson": 0.9999485931926704
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 4.316666666666666,
+          "actual_clip_pts_sec": 4.3,
+          "matched_source_pts_sec": 52.815,
+          "offset_sec": 48.515,
+          "pixel_pearson": 0.9999522401465817
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 6.906666666666666,
+          "actual_clip_pts_sec": 6.9,
+          "matched_source_pts_sec": 54.259,
+          "offset_sec": 47.359,
+          "pixel_pearson": 0.9999537191824834
+        }
+      ],
+      "offset_median_sec": 47.525666666666666,
+      "offset_range_sec": 1.1559999999999988,
+      "pearson_min": 0.9999485931926704,
+      "pearson_median": 0.9999522401465817,
+      "audio_video_offset_difference_sec": 0.6317291666666662,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "FAIL_OR_PARTIAL",
+    "local_time_gate": "BLOCKED",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "14",
+    "source_video_id": "_0efYOjQYRc",
+    "candidate": {
+      "video_id": "_0efYOjQYRc",
+      "offset": 48,
+      "trigram_hits": 8,
+      "ordered_exact_tokens": 10,
+      "target_tokens": 26
+    },
+    "source_url": "https://www.youtube.com/watch?v=_0efYOjQYRc",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\14.mp4",
+      "bytes": 2257001,
+      "sha256": "8f1c4cb4b1c97b31cd065317faef41465cfcda403ef12d1defce4a5d23b8e18e"
+    },
+    "metadata": {
+      "id": "_0efYOjQYRc",
+      "title": "Accounting Firm and Consulting Firm News - Deloitte, Ernst & Young, KPMG, PricewaterhouseCoopers PwC",
+      "duration": 38,
+      "webpage_url": "https://www.youtube.com/watch?v=_0efYOjQYRc",
+      "format_id": "136+251"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\14__0efYOjQYRc.mp4",
+      "bytes": 1210997,
+      "sha256": "79c45240655d382c50c07a876222c07c05b777646f988812421b7695cba179d8",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 37.513,
+      "clip_audio_duration_sec": 10.226375,
+      "full_peak_source_offset_sec": 20.2025,
+      "full_peak_corr": 0.9970428612773511,
+      "best_other_corr_outside_one_second": 0.07209241129868411,
+      "peak_margin": 0.9249504499786669,
+      "first_half_peak_corr": 0.997039115850832,
+      "first_half_offset_sec": 20.2025,
+      "second_half_peak_corr": 0.9970930535072274,
+      "second_half_offset_sec": 20.2025,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "PASS",
+      "source_frame_count": 1122,
+      "clip_frame_count": 308,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 2.06,
+          "actual_clip_pts_sec": 2.066666666666667,
+          "matched_source_pts_sec": 22.356,
+          "offset_sec": 20.289333333333335,
+          "pixel_pearson": 0.9993817338904037
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 5.15,
+          "actual_clip_pts_sec": 5.133333333333334,
+          "matched_source_pts_sec": 25.426,
+          "offset_sec": 20.292666666666666,
+          "pixel_pearson": 0.999376830776026
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 8.24,
+          "actual_clip_pts_sec": 8.233333333333333,
+          "matched_source_pts_sec": 28.528,
+          "offset_sec": 20.294666666666664,
+          "pixel_pearson": 0.9993714883991278
+        }
+      ],
+      "offset_median_sec": 20.292666666666666,
+      "offset_range_sec": 0.005333333333329193,
+      "pearson_min": 0.9993714883991278,
+      "pearson_median": 0.999376830776026,
+      "audio_video_offset_difference_sec": 0.09016666666666495,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "PASS",
+    "local_time_gate": "PASS",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "15",
+    "source_video_id": "SKTyBOhDX6U",
+    "candidate": {
+      "video_id": "SKTyBOhDX6U",
+      "offset": 101,
+      "trigram_hits": 15,
+      "ordered_exact_tokens": 17,
+      "target_tokens": 17
+    },
+    "source_url": "https://www.youtube.com/watch?v=SKTyBOhDX6U",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\15.mp4",
+      "bytes": 705745,
+      "sha256": "bdd4ea47f2dac729a445cdf34009b9dff6d66bdc8ca997b82814bd55dc7fc675"
+    },
+    "metadata": {
+      "id": "SKTyBOhDX6U",
+      "title": "Fighting for the Rights of People with Disabilities",
+      "duration": 317,
+      "webpage_url": "https://www.youtube.com/watch?v=SKTyBOhDX6U",
+      "format_id": "137+251"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\15_SKTyBOhDX6U.mp4",
+      "bytes": 25250688,
+      "sha256": "164e29a1c6aaf1d94a39cd92bade6d8e9d66ef3628abe13e4c62b4026385f966",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 316.653,
+      "clip_audio_duration_sec": 7.298,
+      "full_peak_source_offset_sec": 33.7876875,
+      "full_peak_corr": 0.9899162842672973,
+      "best_other_corr_outside_one_second": 0.07078726080127273,
+      "peak_margin": 0.9191290234660245,
+      "first_half_peak_corr": 0.993250297946151,
+      "first_half_offset_sec": 33.7876875,
+      "second_half_peak_corr": 0.9853545861384525,
+      "second_half_offset_sec": 33.7876875,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "PASS",
+      "source_frame_count": 9490,
+      "clip_frame_count": 220,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 1.46,
+          "actual_clip_pts_sec": 1.4666666666666666,
+          "matched_source_pts_sec": 35.30193333333333,
+          "offset_sec": 33.83526666666666,
+          "pixel_pearson": 0.9999591315282395
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 3.65,
+          "actual_clip_pts_sec": 3.6333333333333333,
+          "matched_source_pts_sec": 37.47076666666667,
+          "offset_sec": 33.83743333333334,
+          "pixel_pearson": 0.9999558654089318
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 5.84,
+          "actual_clip_pts_sec": 5.833333333333333,
+          "matched_source_pts_sec": 39.67296666666667,
+          "offset_sec": 33.83963333333333,
+          "pixel_pearson": 0.9999557595617261
+        }
+      ],
+      "offset_median_sec": 33.83743333333334,
+      "offset_range_sec": 0.004366666666669516,
+      "pearson_min": 0.9999557595617261,
+      "pearson_median": 0.9999558654089318,
+      "audio_video_offset_difference_sec": 0.04974583333333982,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "PASS",
+    "local_time_gate": "PASS",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "17",
+    "source_video_id": "LtlL-03S79Q",
+    "candidate": {
+      "video_id": "LtlL-03S79Q",
+      "offset": 103,
+      "trigram_hits": 20,
+      "ordered_exact_tokens": 22,
+      "target_tokens": 22
+    },
+    "source_url": "https://www.youtube.com/watch?v=LtlL-03S79Q",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\17.mp4",
+      "bytes": 1951911,
+      "sha256": "8a2f9bad44684ae0ba22f4ad39e848020dbac6acf7e5fe9d974f2448e6902462"
+    },
+    "metadata": {
+      "id": "LtlL-03S79Q",
+      "title": "Presentation Design Quick Tips  You Need CRAP",
+      "duration": 75,
+      "webpage_url": "https://www.youtube.com/watch?v=LtlL-03S79Q",
+      "format_id": "137+251"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\17_LtlL-03S79Q.mp4",
+      "bytes": 18654717,
+      "sha256": "d4192054184685fce47a722a171063b67acc06d60e526b717cb026cc74e2d18b",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 74.993,
+      "clip_audio_duration_sec": 9.563,
+      "full_peak_source_offset_sec": 37.6291875,
+      "full_peak_corr": 0.9943178339957501,
+      "best_other_corr_outside_one_second": 0.05765541105877647,
+      "peak_margin": 0.9366624229369737,
+      "first_half_peak_corr": 0.9929221045153814,
+      "first_half_offset_sec": 37.6291875,
+      "second_half_peak_corr": 0.9953037051754438,
+      "second_half_offset_sec": 37.6291875,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "PASS",
+      "source_frame_count": 2175,
+      "clip_frame_count": 289,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 1.9266666666666667,
+          "actual_clip_pts_sec": 1.9333333333333333,
+          "matched_source_pts_sec": 39.606233333333336,
+          "offset_sec": 37.672900000000006,
+          "pixel_pearson": 0.9997302763384626
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 4.816666666666666,
+          "actual_clip_pts_sec": 4.8,
+          "matched_source_pts_sec": 42.475766666666665,
+          "offset_sec": 37.67576666666667,
+          "pixel_pearson": 0.9997207416567148
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 7.706666666666667,
+          "actual_clip_pts_sec": 7.7,
+          "matched_source_pts_sec": 45.37866666666667,
+          "offset_sec": 37.678666666666665,
+          "pixel_pearson": 0.9997480863160771
+        }
+      ],
+      "offset_median_sec": 37.67576666666667,
+      "offset_range_sec": 0.005766666666659148,
+      "pearson_min": 0.9997207416567148,
+      "pearson_median": 0.9997302763384626,
+      "audio_video_offset_difference_sec": 0.046579166666667504,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "PASS",
+    "local_time_gate": "PASS",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "18",
+    "source_video_id": "RVC8l5hf2Eg",
+    "candidate": {
+      "video_id": "RVC8l5hf2Eg",
+      "offset": 103,
+      "trigram_hits": 21,
+      "ordered_exact_tokens": 23,
+      "target_tokens": 44
+    },
+    "source_url": "https://www.youtube.com/watch?v=RVC8l5hf2Eg",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\18.mp4",
+      "bytes": 2262931,
+      "sha256": "0faf17accce9e58d81b2cc4ff6b150f8bc7f1d2f620ba420944f5732f41d6759"
+    },
+    "metadata": {
+      "id": "RVC8l5hf2Eg",
+      "title": "3-Minute Sustainability Recap EP02 - 5 Retailers Fail Greenpeace Ranking",
+      "duration": 184,
+      "webpage_url": "https://www.youtube.com/watch?v=RVC8l5hf2Eg",
+      "format_id": "136+140"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\18_RVC8l5hf2Eg.mp4",
+      "bytes": 3937883,
+      "sha256": "44e0e9fb9e00057b9716557a961edb2b277e89965dd5734fabb962f955d48dd0",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 184.018125,
+      "clip_audio_duration_sec": 18.636,
+      "full_peak_source_offset_sec": 54.19425,
+      "full_peak_corr": 0.9894029191375505,
+      "best_other_corr_outside_one_second": 0.040287672510393883,
+      "peak_margin": 0.9491152466271566,
+      "first_half_peak_corr": 0.9901859356904947,
+      "first_half_offset_sec": 54.19425,
+      "second_half_peak_corr": 0.988386005828819,
+      "second_half_offset_sec": 54.19425,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "FAIL_VISUAL_GATE",
+      "source_frame_count": 5515,
+      "clip_frame_count": 561,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 3.7533333333333334,
+          "actual_clip_pts_sec": 3.7666666666666666,
+          "matched_source_pts_sec": 61.46666666666667,
+          "offset_sec": 57.7,
+          "pixel_pearson": 0.9987562174393478
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 9.383333333333333,
+          "actual_clip_pts_sec": 9.366666666666667,
+          "matched_source_pts_sec": 63.9,
+          "offset_sec": 54.53333333333333,
+          "pixel_pearson": 0.9987189920688045
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 15.013333333333334,
+          "actual_clip_pts_sec": 15.0,
+          "matched_source_pts_sec": 77.86666666666666,
+          "offset_sec": 62.86666666666666,
+          "pixel_pearson": 0.9987158050683753
+        }
+      ],
+      "offset_median_sec": 57.7,
+      "offset_range_sec": 8.333333333333329,
+      "pearson_min": 0.9987158050683753,
+      "pearson_median": 0.9987189920688045,
+      "audio_video_offset_difference_sec": 3.505750000000006,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "FAIL_OR_PARTIAL",
+    "local_time_gate": "BLOCKED",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "19",
+    "source_video_id": "P0UHzR4CmYg",
+    "candidate": {
+      "video_id": "P0UHzR4CmYg",
+      "offset": 466,
+      "trigram_hits": 31,
+      "ordered_exact_tokens": 33,
+      "target_tokens": 33
+    },
+    "source_url": "https://www.youtube.com/watch?v=P0UHzR4CmYg",
+    "status": "COMPLETE",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\19.mp4",
+      "bytes": 1091162,
+      "sha256": "26148d75d5b4c1ff6f69a36485cc02a771a74203d2c07d9d08f018bf88658217"
+    },
+    "metadata": {
+      "id": "P0UHzR4CmYg",
+      "title": "The Blurred Lines between Automation and Human Interaction",
+      "duration": 203,
+      "webpage_url": "https://www.youtube.com/watch?v=P0UHzR4CmYg",
+      "format_id": "248+251"
+    },
+    "download": {
+      "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\19_P0UHzR4CmYg.mp4",
+      "bytes": 4992556,
+      "sha256": "ed878b467b40a963a42d92d644d3b839de56ecfc208410525fb1921dc09b74a9",
+      "command_exit_code": 0
+    },
+    "audio": {
+      "source_audio_duration_sec": 202.653,
+      "clip_audio_duration_sec": 13.6108125,
+      "full_peak_source_offset_sec": 170.347375,
+      "full_peak_corr": 0.9750876962561714,
+      "best_other_corr_outside_one_second": 0.06144687273598286,
+      "peak_margin": 0.9136408235201886,
+      "first_half_peak_corr": 0.9742724120306178,
+      "first_half_offset_sec": 170.347375,
+      "second_half_peak_corr": 0.9755827518373598,
+      "second_half_offset_sec": 170.347375,
+      "status": "PASS",
+      "thresholds": {
+        "peak_at_least": 0.6,
+        "peak_margin_at_least": 0.1,
+        "best_other_below": 0.5,
+        "half_peak_at_least": 0.5,
+        "half_offset_agreement_sec": 0.12
+      }
+    },
+    "video": {
+      "status": "PASS",
+      "source_frame_count": 6079,
+      "clip_frame_count": 409,
+      "checks": [
+        {
+          "fraction": 0.2,
+          "requested_clip_sec": 2.7266666666666666,
+          "actual_clip_pts_sec": 2.7333333333333334,
+          "matched_source_pts_sec": 173.134,
+          "offset_sec": 170.40066666666667,
+          "pixel_pearson": 0.9998127223334103
+        },
+        {
+          "fraction": 0.5,
+          "requested_clip_sec": 6.816666666666666,
+          "actual_clip_pts_sec": 6.8,
+          "matched_source_pts_sec": 177.2,
+          "offset_sec": 170.39999999999998,
+          "pixel_pearson": 0.9998264827608191
+        },
+        {
+          "fraction": 0.8,
+          "requested_clip_sec": 10.906666666666666,
+          "actual_clip_pts_sec": 10.9,
+          "matched_source_pts_sec": 181.3,
+          "offset_sec": 170.4,
+          "pixel_pearson": 0.9998264777728116
+        }
+      ],
+      "offset_median_sec": 170.4,
+      "offset_range_sec": 0.0006666666666887977,
+      "pearson_min": 0.9998127223334103,
+      "pearson_median": 0.9998264777728116,
+      "audio_video_offset_difference_sec": 0.05262500000000614,
+      "thresholds": {
+        "min_two_correlations": 0.55,
+        "max_offset_range_sec": 0.12
+      }
+    },
+    "media_identity": "PASS",
+    "local_time_gate": "PASS",
+    "formal_xai_mapping_status": "index_only"
+  },
+  {
+    "sample_id": "20",
+    "source_video_id": "absh1hsZeF0",
+    "candidate": {
+      "video_id": "absh1hsZeF0",
+      "offset": 203,
+      "trigram_hits": 34,
+      "ordered_exact_tokens": 36,
+      "target_tokens": 36
+    },
+    "source_url": "https://www.youtube.com/watch?v=absh1hsZeF0",
+    "status": "BLOCKED_SOURCE_METADATA",
+    "attachment_clip": {
+      "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\20.mp4",
+      "bytes": 971427,
+      "sha256": "0c75c37baddf51add457b20ad35e10166ff7baaa520f77bd6b2af2239c217a1c"
+    },
+    "probe_error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] absh1hsZeF0: This video is unavailable\n"
+  }
+]
+
