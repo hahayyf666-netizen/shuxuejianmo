@@ -9,14 +9,16 @@
     "formal_attachment4_2026-09-26/results/attachment4_predictions_explanations.json and per-sample outputs",
     "q3_xai_valid120_results.zip"
   ],
-  "p0_open": 0,
-  "p1_open": 0,
-  "p2_open": 0,
-  "read_only_review": true,
-  "training_or_inference_run": false,
-  "test_predictions_independently_recomputed": 727,
-  "attachment4_samples_reviewed": 20,
-  "c2_t2_join_rows_reviewed": 1128,
+  "internal_cross_check_findings": {
+    "p0_open": 0,
+    "p1_open": 0,
+    "p2_open": 0
+  },
+  "internal_cross_check_read_only": true,
+  "training_or_inference_run_in_this_preparation": false,
+  "internal_cross_check_test_rows_recomputed": 727,
+  "internal_cross_check_attachment4_samples_reviewed": 20,
+  "internal_cross_check_c2_t2_join_rows_reviewed": 1128,
   "formal_mapping_status": {
     "text": "verified_text",
     "audio": "index_only",
