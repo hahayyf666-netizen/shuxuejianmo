@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "archive_sha256": "33ef931cfacfee17ce36746b975e4d0440a7aec5371ddb616ad32193876b6645",
+  "source_commit": "a6b6bb552613cd4c59ab23e99f15b5b8a920a082",
+  "sample_count": 120,
+  "video_groups": 84,
+  "output_manifest_files": 129,
+  "numeric_checks": 4080,
+  "perturbation_comparisons": 18,
+  "perturbation_above_random_count": 18,
+  "bootstrap_max_abs_error": 0.0,
+  "local_status_counts": {
+    "localized_feature_position": 720
+  },
+  "primary_influential_counts": {
+    "classification": {
+      "text": 107,
+      "vision": 10,
+      "audio": 3
+    },
+    "regression": {
+      "text": 92,
+      "vision": 19,
+      "audio": 9
+    }
+  },
+  "classification_primary_supporting_counts": {
+    "text": 106,
+    "vision": 11,
+    "audio": 3
+  },
+  "positive_support_signed_drop": {
+    "text/0.1": {
+      "n": 120,
+      "mean": 0.08536689753333727,
+      "fraction_positive": 1.0
+    },
+    "text/0.2": {
+      "n": 120,
+      "mean": 0.1418363446990649,
+      "fraction_positive": 1.0
+    },
+    "text/0.3": {
+      "n": 120,
+      "mean": 0.1853135791917642,
+      "fraction_positive": 1.0
+    },
+    "audio/0.1": {
+      "n": 113,
+      "mean": 0.006898849938823059,
+      "fraction_positive": 0.9911504424778761
+    },
+    "audio/0.2": {
+      "n": 113,
+      "mean": 0.011000498469951934,
+      "fraction_positive": 0.9911504424778761
+    },
+    "audio/0.3": {
+      "n": 113,
+      "mean": 0.014223569262344225,
+      "fraction_positive": 0.9911504424778761
+    },
+    "vision/0.1": {
+      "n": 94,
+      "mean": 0.007850584831643612,
+      "fraction_positive": 1.0
+    },
+    "vision/0.2": {
+      "n": 94,
+      "mean": 0.013369878555865997,
+      "fraction_positive": 0.9893617021276596
+    },
+    "vision/0.3": {
+      "n": 94,
+      "mean": 0.018145251464336477,
+      "fraction_positive": 0.9893617021276596
+    }
+  },
+  "reference_sensitivity_rows": 240,
+  "sensitivity_rows": 2880,
+  "stderr_empty": true,
+  "formal_valid120_run": true,
+  "test_evaluated": false,
+  "attachment4_inference": false,
+  "final_gate": "REVIEW_GATE",
+  "failures": []
+}
