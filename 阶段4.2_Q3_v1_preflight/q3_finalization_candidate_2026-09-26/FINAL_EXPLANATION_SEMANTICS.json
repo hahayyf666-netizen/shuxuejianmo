@@ -36,7 +36,10 @@
       "text": "verified_text only where C4 verified a WordPiece-to-character span",
       "audio": "index_only unless T4 verifies a speech interval for that same official sequence position",
       "vision": "index_only unless T4 verifies a reconstructed keyframe for that same official sequence position"
-    }
+    },
+    "sample_level_status": "partial_verified_time or partial_verified_key_positions means only some listed top positions have verified raw evidence; inspect verified/listed position counts and per-position evidence",
+    "listed_position_count": "Unique union of classification and regression top_seq positions for the modality",
+    "raw_evidence_coverage": "At least one verified raw-evidence position among the referenced modality's listed top positions for the relevant target; not complete mapping of every top position"
   },
   "prohibited_claims": [
     "causal emotion contribution",
@@ -48,7 +51,7 @@
   "decision_boundary": {
     "historical_mapping_status_fields_changed": false,
     "historical_predictions_or_attributions_changed": false,
-    "external_4_6_review_completed": false,
+    "external_4_6_first_review": "PASS_WITH_LIMITATIONS; delivery-semantics recheck pending",
     "4_7_entered": false
   }
 }

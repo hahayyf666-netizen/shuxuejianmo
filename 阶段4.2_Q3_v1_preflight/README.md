@@ -8,7 +8,7 @@
 - valid120 数值验证及预定扰动检查已完成，结论限于特征空间解释范围。
 - test 727 条已评价；附件4 20 条正式预测/解释已生成，附件4没有标签，未报告其准确率。
 - T4-aware finalization candidate 位于 `q3_finalization_candidate_2026-09-26/`：valid728、test冲突分析、Attachment4最终派生CSV、7张论文图和冻结结果复现均已完成。
-- 当前 candidate 状态为 `READY_FOR_EXTERNAL_REVIEW`；这是待外部审核的候选状态，不是外部4.6 PASS。历史4.6 Gate 未改，4.7 未进入。
+- 首轮外部4.6审核报告为 `PASS_WITH_LIMITATIONS`，要求完成交付语义修订后再核对；当前4.7仍为 HOLD。候选包原有 `READY_FOR_EXTERNAL_REVIEW` 是提交时状态，历史4.6 Gate 未改。
 - T4 保持 `T4_COMPLETE_WITH_LIMITATIONS`；样本05视觉仍为 `feature_position_only`，历史预测/Shapley/IG未改。
 
 DR-X资格门和训练证据见 `server_preflight_drx_cuda128_2026-09-26/` 与 `formal_training_audit_drx_cuda128_2026-09-26/`。冻结 test CSV、Attachment4逐样本结果、checkpoint与scaler可在 `external_review_handoff_2026-09-26/artifacts_extracted/` 阅读；原始约1 GB aligned PKL未放入公共仓库，重跑推理需访问赛题原件。
@@ -20,7 +20,7 @@ DR-X资格门和训练证据见 `server_preflight_drx_cuda128_2026-09-26/` 与 `
 - B0/B1、双头、训练配置、参考与解释规则见 `frozen_config.json`。Stage D 新增受服务器资格门保护的训练入口；模型、Shapley、conditional IG 仍保持原实现。
 - 附件2 train 可拟合 scaler，valid 只用于结构预检；附件2 test 保持模型选择锁定。官方 PKL 是单一 pickle 容器，反序列化会装载 test 字节，但脚本不索引 test 分组或计算任何 test 指标。
 - 附件4的 01、13、20 仅用于输入/证据映射预检，绝不加载 Q3 模型对其推理。`13` 全零视觉真实保留。
-- 历史 preflight 的285个代表性索引当时均为 `index_only`。随后 C-4 仅对附件4 `01–20` 的文本内容行实证恢复 `564/564` 个 WordPiece/字符跨度；音频和视觉仍为 `index_only`。不得把其位置号换算为秒数、语音时段或关键帧。
+- 历史 preflight 的285个代表性索引当时均为 `index_only`。随后 C-4 对附件4 `01–20` 的文本内容行实证恢复 `564/564` 个 WordPiece/字符跨度；T4 又仅对通过来源链与媒体定位核验的具体音频/视觉位置提供局部原素材证据。其余位置仍为 `feature_position_only` / `index_only`，不能按索引比例推算秒数或帧。
 
 ## 服务器重跑（仅预检）
 
@@ -34,9 +34,9 @@ python run_mapping_precheck.py --aligned-directory '/path/to/附件4-可解释�
 
 输入文件应为赛题原件；附件2 aligned SHA-256 必须为 `66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd`。`run_preflight.py` 会计算真实哈希并 fail closed。服务器须另记录 `hostname`、Python/Torch/CUDA、RAM、设备占用和命令退出码；本地 CPU 结果不能替代服务器资格门。
 
-## 当前分模态解释范围与训练继续条件
+## 当前分模态解释范围与交付边界
 
-正式解释范围采用 `TEXT_MAPPING_PASS_ATTACHMENT4_SCOPE`、`AUDIO_MAPPING_BLOCKED`、`VISION_MAPPING_BLOCKED`、`FEATURE_SPACE_ATTRIBUTION_ALLOWED`。附件4文本仅20条样本的内容行可回溯 WordPiece/字符跨度；音频和视觉只允许特征空间索引归因，不允许秒级、帧级、未经验证的通道物理语义或因果结论。实际 DR-X 资格门已 PASS，B0/B1 训练产物已审核；test 与附件4仍须等待冻结模型的正式解释验证和后续阶段门。
+附件4文本20条样本的内容行可回溯 WordPiece/字符跨度。音频和视觉默认仅报告特征空间位置；T4 对通过核验的特定重要位置分别提供语音时段或视频关键帧，其余位置不作原素材映射。`20/20`、`20/20`、`19/20` 的证据覆盖指相关模态所列重要位置中**至少一处**有可回看的证据，不表示该模态所有重要位置均已映射。不得声称未经验证的通道物理语义或真实情绪因果贡献。DR-X资格门、B0/B1训练、test评价和附件4正式预测/解释已完成；4.7须等待本次语义修订的外部复核。
 
 ## 文件
 

@@ -16,7 +16,7 @@ ANOMALIES = {
     "06": "T2 vision row nonunique",
     "13": "aligned vision all-zero / C2 visual chain unavailable",
     "16": "aligned vision all-zero-like / C2 visual chain unavailable",
-    "18": "T2 vision row nonunique",
+    "18": "T2 visual provenance ambiguity / source-row nonunique",
 }
 
 
@@ -136,6 +136,7 @@ def main() -> None:
 
         mod_status = {}
         mod_records = {}
+        position_coverage = {}
         for modality in MODALITIES:
             positions = set(top_indices(row, "classification", modality) + top_indices(row, "regression", modality))
             if modality == "text":
@@ -144,11 +145,18 @@ def main() -> None:
                 mod_records[modality] = items
             else:
                 ok, items = mapped(sid, modality, sorted(positions))
-                mod_status[modality] = "verified_time" if ok and modality == "audio" else ("verified_time" if ok else "feature_position_only") if modality == "audio" else ("verified_time" if ok else "feature_position_only")
-                # Vision is a frame mapping, not a time-only assertion.
-                if modality == "vision" and ok:
-                    mod_status[modality] = "reconstructed_keyframe_from_verified_lineage"
+                kind = "audio" if modality == "audio" else "vision"
+                verified_count = sum(bool(evidence[(sid, idx)][kind]) for idx in positions)
+                position_coverage[modality] = (verified_count, len(positions))
+                if verified_count == 0:
+                    mod_status[modality] = "feature_position_only"
+                elif modality == "audio":
+                    mod_status[modality] = "verified_time_for_all_listed_positions" if verified_count == len(positions) else "partial_verified_time"
+                else:
+                    mod_status[modality] = "verified_key_positions_for_all_listed_positions" if verified_count == len(positions) else "partial_verified_key_positions"
                 mod_records[modality] = items
+
+        anomaly = ANOMALIES.get(sid) or row.get("known_input_anomaly", "")
 
         coverage_rows.append({
             "sample_id": sid,
@@ -161,7 +169,11 @@ def main() -> None:
             "text_evidence_status": mod_status["text"],
             "audio_evidence_status": mod_status["audio"],
             "vision_evidence_status": mod_status["vision"],
-            "known_input_anomaly": row.get("known_input_anomaly") or ANOMALIES.get(sid, ""),
+            "audio_verified_listed_position_count": position_coverage["audio"][0],
+            "audio_listed_position_count": position_coverage["audio"][1],
+            "vision_verified_listed_position_count": position_coverage["vision"][0],
+            "vision_listed_position_count": position_coverage["vision"][1],
+            "known_input_anomaly": anomaly,
         })
 
         target_texts = {}
@@ -188,10 +200,12 @@ def main() -> None:
             "dominant_reg_direction": "push_positive" if reg_phi[dominant_reg] > 1e-6 else "push_negative" if reg_phi[dominant_reg] < -1e-6 else "neutral_relative_to_reference",
             **{k: row[k] for k in ("top_seq_cls_text", "top_seq_cls_audio", "top_seq_cls_vision", "top_seq_reg_text", "top_seq_reg_audio", "top_seq_reg_vision", "top_char_spans_cls_text", "top_char_spans_reg_text")},
             "text_evidence_status": mod_status["text"], "audio_evidence_status": mod_status["audio"], "vision_evidence_status": mod_status["vision"],
+            "audio_verified_listed_position_count": position_coverage["audio"][0], "audio_listed_position_count": position_coverage["audio"][1],
+            "vision_verified_listed_position_count": position_coverage["vision"][0], "vision_listed_position_count": position_coverage["vision"][1],
             "key_text_evidence": text_evidence,
             "key_audio_evidence": compact_evidence(relevant_audio, "audio"),
             "key_visual_evidence": compact_evidence(relevant_vision, "vision"),
-            "known_input_anomaly": row.get("known_input_anomaly") or ANOMALIES.get(sid, ""),
+            "known_input_anomaly": anomaly,
             "interpretation_note": ("Vision attribution is feature-branch attribution only; raw visual evidence unavailable." if sid in ("13", "16") else "T2 visual provenance is ambiguous; do not claim raw visual evidence." if sid in ("06", "18") else "Signed Shapley/IG describe frozen-model feature-space response; raw media evidence is limited to verified mappings."),
         })
 
@@ -209,6 +223,8 @@ def main() -> None:
     write_csv(out / "attachment4_anomaly_summary.csv", anomaly_rows, list(anomaly_rows[0]))
     tallies = {
         "sample_count": len(coverage_rows),
+        "coverage_definition": "At least one verified raw-evidence position among the referenced modality's listed top positions for the relevant target; not all listed positions are necessarily mapped.",
+        "listed_position_definition": "Unique union of classification and regression top_seq positions for each modality in the final CSV.",
         "primary_reference_raw_evidence_coverage": sum(r["primary_reference_raw_evidence_available"] for r in coverage_rows),
         "dominant_cls_raw_evidence_coverage": sum(r["dominant_cls_raw_evidence_available"] for r in coverage_rows),
         "dominant_reg_raw_evidence_coverage": sum(r["dominant_reg_raw_evidence_available"] for r in coverage_rows),

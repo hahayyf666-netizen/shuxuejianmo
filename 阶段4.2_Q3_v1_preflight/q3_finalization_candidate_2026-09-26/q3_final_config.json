@@ -75,7 +75,8 @@
     ],
     "selection_split": "valid",
     "selected_variant": "B0",
-    "selected_seed": 2029,
+    "delivery_seed": 2029,
+    "delivery_seed_rule": "fixed by frozen protocol; not selected by valid",
     "selected_checkpoint_epoch": 2,
     "test_used_for_selection": false
   }
