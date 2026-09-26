@@ -1,0 +1,21 @@
+﻿sample_id,primary_reference_modality_cls,primary_reference_raw_evidence_available,dominant_influence_modality_cls,dominant_cls_raw_evidence_available,dominant_influence_modality_reg,dominant_reg_raw_evidence_available,text_evidence_status,audio_evidence_status,vision_evidence_status,known_input_anomaly
+01,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+02,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+03,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+04,vision,1,text,1,text,1,verified_text,verified_time,reconstructed_keyframe_from_verified_lineage,
+05,text,1,text,1,vision,0,verified_text,feature_position_only,feature_position_only,
+06,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,T2 vision row nonunique
+07,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+08,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+09,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+10,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+11,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+12,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+13,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,aligned vision all-zero / C2 visual chain unavailable
+14,vision,1,vision,1,vision,1,verified_text,verified_time,reconstructed_keyframe_from_verified_lineage,
+15,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+16,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,aligned vision all-zero-like / C2 visual chain unavailable
+17,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,
+18,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,T2 vision row nonunique
+19,vision,1,vision,1,text,1,verified_text,verified_time,reconstructed_keyframe_from_verified_lineage,
+20,text,1,text,1,text,1,verified_text,feature_position_only,feature_position_only,

@@ -1,0 +1,95 @@
+{
+  "status": "READY_FOR_EXTERNAL_REVIEW",
+  "candidate_type": "Q3 finalization candidate; not an external audit result",
+  "start_head": "16c69207628e669ad77b0a6e6ac81d5eb823e914",
+  "external_review_completed": false,
+  "historical_4_6_gate_modified": false,
+  "historical_4_6_gate_status": "BLOCKED_BY_MISSING_ARTIFACT",
+  "historical_gate_status_is_unchanged": true,
+  "4_7_entered": false,
+  "model_changed": false,
+  "retrained": false,
+  "test_used_for_tuning": false,
+  "test_used_for_selection": false,
+  "attachment4_labels_read": false,
+  "valid_analysis_complete": true,
+  "test_consistency_analysis_complete": true,
+  "attachment4_final_csv_complete": true,
+  "anomaly_checks_complete": true,
+  "paper_figures_generated": true,
+  "reproduction_gate": "PASS",
+  "reproduction": {
+    "valid_reproduced": true,
+    "test_reproduced": true,
+    "attachment4_reproduced": true,
+    "historical_exact_invocation_provenance_proven": false
+  },
+  "attachment4": {
+    "sample_count": 20,
+    "primary_reference_raw_evidence_coverage": "20/20",
+    "dominant_cls_raw_evidence_coverage": "20/20",
+    "dominant_reg_raw_evidence_coverage": "19/20",
+    "sample05_vision": "feature_position_only",
+    "anomaly_sample_ids": [
+      "06",
+      "13",
+      "16",
+      "18"
+    ],
+    "sample13_known_input_anomaly": "aligned vision all-zero / C2 visual chain unavailable"
+  },
+  "t4": "T4_COMPLETE_WITH_LIMITATIONS",
+  "t4_rerun": false,
+  "historical_runner_provenance": "PARTIAL",
+  "valid728": {
+    "status": "VALID_FROZEN_INFERENCE_COMPLETE",
+    "sample_count": 728,
+    "metrics": {
+      "accuracy": 0.6442307692307693,
+      "macro_f1": 0.6070737873693538,
+      "per_class_f1": {
+        "Negative": 0.6502463054187192,
+        "Neutral": 0.4444444444444444,
+        "Positive": 0.726530612244898
+      },
+      "mae": 0.5964004835107487,
+      "pearson": 0.6290740124688725,
+      "selection_J": 0.2461631466078855,
+      "direct_opposite_polarity_rate": 0.01510989010989011,
+      "neutral_predicted_abs_regression_mean": 0.11843332189725328,
+      "rmse": 0.8137669798847191
+    },
+    "direct_conflict_count": 11,
+    "direct_conflict_low_intensity_count": 11,
+    "direct_conflict_low_margin_count": 10,
+    "predicted_neutral_count": 131,
+    "predicted_neutral_abs_intensity_ge_0_2_count": 24
+  },
+  "test727": {
+    "sample_count": 727,
+    "direct_opposite_polarity_conflicts": 22,
+    "direct_conflicts_abs_intensity_lt_0_2": 21,
+    "direct_conflicts_margin_lt_0_2": 20,
+    "predicted_neutral_count": 91,
+    "predicted_neutral_abs_intensity_ge_0_2_count": 14
+  },
+  "generated_figures": [
+    "q3_card_sample03.png",
+    "q3_card_sample04.png",
+    "q3_card_sample15.png",
+    "q3_modality_contribution_summary.png",
+    "q3_sample13_anomaly.png",
+    "q3_valid_confusion_matrix.png",
+    "q3_valid_regression_scatter.png"
+  ],
+  "ready_checks": {
+    "attachment4_csv_20_unique_rows": true,
+    "anomaly_cases_06_13_16_18_preserved_as_feature_position_only": true,
+    "valid728_matches_frozen_checkpoint_metrics": true,
+    "test_conflict_analysis_matches_reference": true,
+    "seven_expected_figures_present": true,
+    "all_frozen_reproduction_checks_pass": true,
+    "t4_gate_preserved": true,
+    "coverage_counts_match_recomputed_values": true
+  }
+}

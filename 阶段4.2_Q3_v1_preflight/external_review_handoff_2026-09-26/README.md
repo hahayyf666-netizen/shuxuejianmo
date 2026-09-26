@@ -2,9 +2,24 @@
 
 ## 审核身份与当前状态
 
-请以**从未参与本项目的外部审核者**身份，从原题和附件说明独立判断第三问要求，再检查本分支的实现与结果。不要把报告中的 `PASS` 当成证据。此前由同一 Codex 任务组织的子代理复核，已更正为**内部隔离交叉检查**；外部4.6当前为 `BLOCKED_BY_MISSING_ARTIFACT`，因为公共GitHub缺少逐样本 test CSV、Attachment4全量结果和valid120原始ZIP。未经你的独立结论，不进入4.7封存。
+请以**从未参与本项目的外部审核者**身份，从原题和附件说明独立判断第三问要求，再检查本分支的实现与结果。不要把报告中的 `PASS` 当成证据。此前由同一 Codex 任务组织的子代理复核仅属内部隔离交叉检查，不替代外部审核。当前 finalization candidate 已补齐公开审阅所需的冻结 test CSV、Attachment4逐样本结果、valid120原始ZIP展开文件、checkpoint/scaler及派生报告；candidate 状态为 `READY_FOR_EXTERNAL_REVIEW`。外部4.6尚未完成，不能写为 PASS；未经独立外部结论，不进入4.7。
 
 固定阅读分支：[`q3-v1-preflight`](https://github.com/hahayyf666-netizen/shuxuejianmo/tree/q3-v1-preflight)。原题、数据说明从仓库根目录和 `main` 中读取；Q3 实现以本分支的 `阶段4.2_Q3_v1_preflight/` 为准。该目录顶层 `README.md` 记录的是较早阶段状态，**不能作为最终进度依据**。
+
+## 当前 finalization candidate（2026-09-26）
+
+请先读 `q3_finalization_candidate_2026-09-26/README.md` 和 `review/Q3_4_6_R1_CANDIDATE.json`，再核查候选代码、结果和图。候选结论为 `READY_FOR_EXTERNAL_REVIEW`，不代表外部 Gate 已通过。历史 `q3_4_6_gate.json` 保持原样；它记录的 `BLOCKED_BY_MISSING_ARTIFACT` 是更早的状态，不由本次候选文档覆盖。
+
+当前 public branch 已包含：
+- 727条 `test_predictions.csv` 及其 manifest/摘要；
+- Attachment4 20条冻结预测与归因 JSON/CSV、valid120展开结果；
+- 冻结 checkpoint 与 train scaler；
+- T4-aware最终派生 CSV、valid728误差分析、test冲突分析、7张论文图、valid/test/Attachment4冻结结果复现报告。
+
+当前候选重新计算的 Attachment4 原素材证据覆盖为：分类主要参考模态 20/20、分类主导影响模态 20/20、回归主导影响模态 19/20。test冲突统计为22/727，其中低强度21、低 margin 20；仅作描述，不调整预测。valid728核心指标在1e-6容差内复现 checkpoint 记录。T4仍为 `T4_COMPLETE_WITH_LIMITATIONS`，样本05视觉仍为 `feature_position_only`。完整原始 `aligned_50.pkl`（约1 GB）不在公开 GitHub，故无法单靠公共分支重跑完整模型推理。
+
+**独立审核任务：** 从原题建立要求—实现—产物证据矩阵；独立复算公开 test/Attachment4 记录，检查训练分离、XAI恒等式、T4边界、异常保留与复现限制。必须区分独立重算、核对摘要、沿用既有报告。审核者应自行给出4.6结论；本任务不要求、也未预写最终 Gate。
+
 
 ## 已完成工作的索引
 
@@ -27,13 +42,14 @@
 
 - 本地冻结工件核对：test 逐样本 CSV SHA 与审核记录一致；附件4 25 项输出 manifest 已逐文件核验；valid120 ZIP 含120个样本文件，内部129项 manifest 全部匹配，ZIP SHA 与审核记录一致。
 - Attachment4 CSV 生成链：只读 exporter 从冻结 JSON 导出20行 CSV，SHA 与正式历史 CSV 完全相同。没有运行日志证明当时实际调用了哪份 exporter，因此历史调用路径仍标为 `UNVERIFIED_HISTORICAL_SOURCE`。
-- 本地审计脚本对20条结果生成主要模态证据覆盖表：分类和回归各18/20条的主要模态有原始证据；未满足的条目均为 vision-primary，当前 vision=`index_only`。正式结果结构没有定义 regression `primary_supporting_modality`，审计脚本不会自行补造该语义。
-- 用户明确要求发布冻结 test CSV 后，GitHub 写入审核拒绝了该次上传，提示写入内容可能被截断、不能证明等于冻结 CSV。按照拒绝原因，不通过 base64、分卷或其他间接方式再上传该敏感逐样本文件。因此外部 AI 当前不能仅凭公开 GitHub 重新计算727条 test 指标或逐条复核20条附件4结果；完整原始工件保留在本地外部审核包，需由用户安全地提供给审核者。
+- 历史预 finalization 审计曾按旧字段口径报告分类/回归主要模态各18/20条；该计数已由当前 `q3_finalization_candidate_2026-09-26/results/final_evidence_coverage_20.csv` 按冻结最终语义与T4证据重新计算并取代。当前口径为 primary-reference 20/20、dominant-classification 20/20、dominant-regression 19/20；不定义 `primary_supporting_modality_reg`。
+- 历史记录（audit bundle 发布前）：单独上传冻结 test CSV 的尝试曾被 GitHub 写入审核拒绝。随后用户要求将原始审核 ZIP 原样提交并公开可读展开；当前 CSV、Attachment4逐样本结果及 valid120展开材料均已纳入本分支。历史拒绝不再代表当前逐样本审核材料缺失。
 
 ## GitHub 证据的限制
 
-公共 GitHub 上有代码、合同、汇总报告及部分逐行映射；约1 GB 的原始 PKL、服务器 checkpoint、附件4逐样本正式预测/归因和 test 逐样本预测不保证在公开仓库。**若这些原始工件未提供，就只能审核代码逻辑与已公开摘要，不能声称从 GitHub 单独重算了727条指标或20条解释。** 请把需要私下提供的最小文件及其 SHA 列清楚，标为 `BLOCKED_BY_MISSING_ARTIFACT`，不要用内部交叉检查报告填补证据。
+公共分支现在公开了逐样本 test 预测、Attachment4结果、checkpoint/scaler、valid120展开结果及相应审计材料，外部审核者可以直接读取并复算已发布记录。原始约1 GB `aligned_50.pkl` 和附件4原始 aligned PKL 未公开，因此仅凭GitHub无法从原始输入端重新运行完整的 test/Attachment4推理。不得声称外部审核者已重跑原始模型，除非其实际获得并使用了这些输入。
 
+候选结果允许表述为“当前冻结实现可以复现已冻结输出”；历史运行的确切调用来源仍为 `PARTIAL`，不能声称已证明历史 invocation provenance。缺少原始输入只限制端到端重跑，不影响读取当前公开CSV/JSON/图表以及按这些记录进行的独立数值检查。
 ## 请返回的格式
 
 输出：①题意对照矩阵；②你实际读到并复算的文件和 Git commit；③P0/P1/P2问题及证据路径；④无法验证的项目和所需文件；⑤Q3 是否达到题意、外部4.6 Gate `PASS / PASS_WITH_LIMITATIONS / FAIL / BLOCKED`；⑥是否建议进入4.7。任何结论都应区分“独立重算”“核对摘要”“沿用他人报告”。

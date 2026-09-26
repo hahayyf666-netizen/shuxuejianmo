@@ -1,0 +1,224 @@
+{
+  "status": "FROZEN_REPRODUCTION_COMPLETE",
+  "reproduction_gate": "PASS",
+  "interpretation": "current frozen implementation reproduces frozen outputs",
+  "historical_exact_invocation_provenance_proven": false,
+  "valid_reproduced": true,
+  "test_reproduced": true,
+  "attachment4_reproduced": true,
+  "valid": {
+    "metric_comparison": {
+      "accuracy": {
+        "observed": 0.6442307692307693,
+        "checkpoint_validation": 0.6442307692307693,
+        "expected_frozen_reference": 0.6442307692307693,
+        "reference_comparison_required": true,
+        "abs_diff_checkpoint": 0.0,
+        "abs_diff_reference": 0.0,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      },
+      "macro_f1": {
+        "observed": 0.6070737873693538,
+        "checkpoint_validation": 0.6070737873693538,
+        "expected_frozen_reference": 0.6070737873693538,
+        "reference_comparison_required": true,
+        "abs_diff_checkpoint": 0.0,
+        "abs_diff_reference": 0.0,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      },
+      "mae": {
+        "observed": 0.5964004835107487,
+        "checkpoint_validation": 0.5964004822775139,
+        "expected_frozen_reference": 0.5964004822775139,
+        "reference_comparison_required": true,
+        "abs_diff_checkpoint": 1.2332348475752042e-09,
+        "abs_diff_reference": 1.2332348475752042e-09,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      },
+      "pearson": {
+        "observed": 0.6290740124688725,
+        "checkpoint_validation": 0.6290740140845968,
+        "expected_frozen_reference": 0.6290740140845968,
+        "reference_comparison_required": true,
+        "abs_diff_checkpoint": 1.6157243321046622e-09,
+        "abs_diff_reference": 1.6157243321046622e-09,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      },
+      "selection_J": {
+        "observed": 0.2461631466078855,
+        "checkpoint_validation": 0.24616314650511592,
+        "expected_frozen_reference": 0.24616314650511592,
+        "reference_comparison_required": true,
+        "abs_diff_checkpoint": 1.0276957063126702e-10,
+        "abs_diff_reference": 1.0276957063126702e-10,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      },
+      "direct_opposite_polarity_rate": {
+        "observed": 0.01510989010989011,
+        "checkpoint_validation": 0.01510989010989011,
+        "expected_frozen_reference": null,
+        "reference_comparison_required": false,
+        "abs_diff_checkpoint": 0.0,
+        "abs_diff_reference": null,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      },
+      "neutral_predicted_abs_regression_mean": {
+        "observed": 0.11843332189725328,
+        "checkpoint_validation": 0.11843332747097006,
+        "expected_frozen_reference": null,
+        "reference_comparison_required": false,
+        "abs_diff_checkpoint": 5.573716779783133e-09,
+        "abs_diff_reference": null,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      },
+      "f1_Negative": {
+        "observed": 0.6502463054187192,
+        "checkpoint_validation": 0.6502463054187192,
+        "expected_frozen_reference": 0.6502463054187192,
+        "abs_diff_checkpoint": 0.0,
+        "abs_diff_reference": 0.0,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      },
+      "f1_Neutral": {
+        "observed": 0.4444444444444444,
+        "checkpoint_validation": 0.4444444444444444,
+        "expected_frozen_reference": 0.4444444444444444,
+        "abs_diff_checkpoint": 0.0,
+        "abs_diff_reference": 0.0,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      },
+      "f1_Positive": {
+        "observed": 0.726530612244898,
+        "checkpoint_validation": 0.726530612244898,
+        "expected_frozen_reference": 0.726530612244898,
+        "abs_diff_checkpoint": 0.0,
+        "abs_diff_reference": 0.0,
+        "pass_checkpoint": true,
+        "pass_reference": true,
+        "pass": true
+      }
+    },
+    "input_identity": {
+      "aligned_pkl_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+      "checkpoint_sha256": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+      "scaler_sha256": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424"
+    },
+    "current_input_identity": {
+      "aligned_pkl_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+      "checkpoint_sha256": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+      "scaler_sha256": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424"
+    },
+    "identity_pass": true,
+    "valid_artifact_pass": true,
+    "valid_csv_sha256": "17797028587243e4b7c86b3abe27ce039cee994002308ae2c460e2787663f4e8",
+    "recorded_valid_csv_sha256": "17797028587243e4b7c86b3abe27ce039cee994002308ae2c460e2787663f4e8",
+    "recomputed_from_valid_csv": {
+      "sample_count": 728,
+      "sample_id_unique_count": 728,
+      "metrics": {
+        "accuracy": 0.6442307692307693,
+        "macro_f1": 0.6070737873693538,
+        "per_class_f1": {
+          "Negative": 0.6502463054187192,
+          "Neutral": 0.4444444444444444,
+          "Positive": 0.726530612244898
+        },
+        "mae": 0.5964004835107487,
+        "rmse": 0.8137669798847191,
+        "pearson": 0.6290740124688725,
+        "selection_J": 0.2461631466078855
+      },
+      "confusion_matrix": [
+        [
+          132,
+          26,
+          48
+        ],
+        [
+          32,
+          70,
+          82
+        ],
+        [
+          36,
+          35,
+          267
+        ]
+      ]
+    },
+    "valid_csv_metrics_match_record": true,
+    "tolerance_abs": 1e-06
+  },
+  "test": {
+    "pass": true,
+    "sample_count": 727,
+    "numeric_values_compared": 2908,
+    "tolerance_abs": 1e-06,
+    "row_mismatch_count": 0,
+    "row_mismatches_first20": [],
+    "metric_comparison": {
+      "accuracy": {
+        "new": 0.6588720770288858,
+        "historical": 0.6588720770288858,
+        "pass": true
+      },
+      "macro_f1": {
+        "new": 0.5824303167359604,
+        "historical": 0.5824303167359604,
+        "pass": true
+      },
+      "mae": {
+        "new": 0.6475765521503906,
+        "historical": 0.6475765521503906,
+        "pass": true
+      },
+      "rmse": {
+        "new": 0.8727662372624403,
+        "historical": 0.8727662372624403,
+        "pass": true
+      },
+      "pearson": {
+        "new": 0.6603898509560031,
+        "historical": 0.6603898509560031,
+        "pass": true
+      }
+    }
+  },
+  "attachment4": {
+    "pass": true,
+    "sample_count": 20,
+    "top_position_sets_compared": 120,
+    "tolerance_abs": 1e-06,
+    "mismatch_count": 0,
+    "mismatches_first30": []
+  },
+  "training_run": false,
+  "optimizer_steps": 0,
+  "valid120_xai_rerun": false,
+  "t4_rerun": false,
+  "checkpoint_identity": {
+    "variant": "B0",
+    "seed": 2029,
+    "epoch": 2
+  },
+  "test_used_for_tuning": false,
+  "historical_results_overwritten": false
+}

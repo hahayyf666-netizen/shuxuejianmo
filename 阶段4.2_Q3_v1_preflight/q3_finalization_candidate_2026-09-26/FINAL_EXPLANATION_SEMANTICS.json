@@ -1,0 +1,54 @@
+{
+  "version": "q3-final-explanation-semantics-v1",
+  "classification": {
+    "primary_reference_modality_cls": {
+      "source_field": "primary_supporting_modality_cls",
+      "definition": "Modality with the largest positive Shapley contribution to the full-input predicted-class probability.",
+      "is_max_absolute_shapley": false,
+      "positive_contribution_epsilon": 1e-06
+    },
+    "dominant_influence_modality_cls": {
+      "source_field": "primary_influential_modality_cls",
+      "definition": "Modality with the largest absolute classification Shapley contribution; its sign may support or oppose the prediction.",
+      "is_max_absolute_shapley": true,
+      "tie_epsilon": 1e-06
+    }
+  },
+  "regression": {
+    "dominant_influence_modality_reg": {
+      "source_field": "primary_influential_modality_reg",
+      "definition": "Modality with the largest absolute regression Shapley contribution.",
+      "direction_labels": {
+        "positive": "push_positive",
+        "negative": "push_negative",
+        "zero_within_epsilon": "neutral_relative_to_reference"
+      },
+      "tie_epsilon": 1e-06
+    },
+    "primary_supporting_modality_reg": "not_defined_by_frozen_results; do not infer or emit",
+    "direction_epsilon": 1e-06
+  },
+  "local_positions": {
+    "method": "conditional IG",
+    "selection": "Top positions ranked by absolute importance; retain signed importance.",
+    "interpretation": "A positive signed importance may be called positive local support for the fixed target. A high absolute value alone must not be called support.",
+    "mapping_scope": {
+      "text": "verified_text only where C4 verified a WordPiece-to-character span",
+      "audio": "index_only unless T4 verifies a speech interval for that same official sequence position",
+      "vision": "index_only unless T4 verifies a reconstructed keyframe for that same official sequence position"
+    }
+  },
+  "prohibited_claims": [
+    "causal emotion contribution",
+    "explanation accuracy",
+    "official exact extractor frame",
+    "audio seconds or key speech evidence without verified T4 mapping",
+    "raw visual evidence for sample 13 or 16"
+  ],
+  "decision_boundary": {
+    "historical_mapping_status_fields_changed": false,
+    "historical_predictions_or_attributions_changed": false,
+    "external_4_6_review_completed": false,
+    "4_7_entered": false
+  }
+}

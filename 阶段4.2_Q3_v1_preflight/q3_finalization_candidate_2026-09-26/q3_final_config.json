@@ -1,0 +1,82 @@
+{
+  "version": "q3-finalization-candidate-v1",
+  "input_version": "aligned_50",
+  "prediction_text_input": "text",
+  "text_bert_role": "mapping/structure only; not a model feature input",
+  "feature_dimensions": {
+    "text": 768,
+    "audio": 74,
+    "vision": 35
+  },
+  "maximum_positions": 50,
+  "valid_content_positions": "attention prefix excluding verified CLS 101 and SEP 102",
+  "model": "B0",
+  "delivery_seed": 2029,
+  "projection_dimension": 64,
+  "dropout": 0.2,
+  "classification_head": "3-class logits; argmax of softmax probabilities",
+  "regression_head": "3*tanh(linear output)",
+  "training": {
+    "loss": "cross_entropy + 1.0 * mean_absolute_error",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 32,
+    "max_epochs": 60,
+    "gradient_clip_norm": 1.0,
+    "early_stopping_patience": 8,
+    "early_stopping_reset_delta": 0.0001,
+    "selection_metric": "0.5*(1-MacroF1_valid)+0.5*(MAE_valid/6)",
+    "selection_split": "valid",
+    "current_finalization_training_run": false
+  },
+  "scaler": {
+    "fit_split": "train",
+    "position_wise_content_only": true
+  },
+  "explanation": {
+    "modality_players": [
+      "text",
+      "audio",
+      "vision"
+    ],
+    "shapley": "exact 3-player Shapley; all 8 coalitions",
+    "classification_target": "full-input predicted-class probability fixed across all coalitions",
+    "regression_target": "predicted intensity",
+    "conditional_ig": "single-modality path with all other modalities fixed at full input",
+    "ig_steps_schedule": [
+      64,
+      128,
+      256
+    ],
+    "ig_quadrature": "Gauss-Legendre",
+    "ig_atol": 0.001,
+    "ig_rtol": 0.01,
+    "primary_reference_modality_cls": "largest positive classification Shapley contribution",
+    "dominant_influence_modality": "maximum absolute Shapley contribution",
+    "raw_evidence": "available only for verified text spans or T4-verified media mappings"
+  },
+  "frozen_delivery": {
+    "checkpoint": "B0_seed2029.pt",
+    "model_changed": false,
+    "retrained_in_this_finalization": false,
+    "test_used_for_tuning": false,
+    "attachment4_labels_read": false
+  },
+  "selection_history": {
+    "candidate_variants": [
+      "B0",
+      "B1"
+    ],
+    "candidate_seeds": [
+      2029,
+      2030,
+      2031
+    ],
+    "selection_split": "valid",
+    "selected_variant": "B0",
+    "selected_seed": 2029,
+    "selected_checkpoint_epoch": 2,
+    "test_used_for_selection": false
+  }
+}

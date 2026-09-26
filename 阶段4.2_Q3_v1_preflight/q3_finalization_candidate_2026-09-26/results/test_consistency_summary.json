@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "source": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/formal_test_evaluation_2026-09-26/test_predictions.csv",
+  "source_manifest": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/formal_test_evaluation_2026-09-26/output_manifest.json",
+  "source_manifest_sha256_for_test_predictions": "454e62de2c3704823f65bb13bb92ae04bff9d8a205e28e0428ee4d7a0f11b3b5",
+  "source_manifest_match": true,
+  "observed": {
+    "sample_count": 727,
+    "direct_opposite_polarity_conflicts": 22,
+    "direct_conflicts_abs_intensity_lt_0_2": 21,
+    "direct_conflicts_margin_lt_0_2": 20,
+    "predicted_neutral_count": 91,
+    "predicted_neutral_abs_intensity_ge_0_2_count": 14
+  },
+  "expected_reference_counts_not_used_for_tuning": {
+    "sample_count": 727,
+    "direct_opposite_polarity_conflicts": 22,
+    "direct_conflicts_abs_intensity_lt_0_2": 21,
+    "direct_conflicts_margin_lt_0_2": 20,
+    "predicted_neutral_count": 91,
+    "predicted_neutral_abs_intensity_ge_0_2_count": 14
+  },
+  "matches_expected_reference_counts": true,
+  "classification_margin_distribution": {
+    "count": 727,
+    "mean": 0.47222205841818704,
+    "median": 0.4480622261762619,
+    "p10": 0.05598037838935852,
+    "p25": 0.16922463476657867,
+    "p75": 0.7813254781067371,
+    "p90": 0.9274774018675088
+  },
+  "analysis_only": true,
+  "test_used_for_tuning": false,
+  "prediction_changed": false
+}

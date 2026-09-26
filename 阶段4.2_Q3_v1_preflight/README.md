@@ -1,6 +1,17 @@
 # Q3 v1 preflight（服务器运行冻结包）
 
-状态（2026-09-26）：**Stage C-4 与分模态解释范围已审查；DR-X CUDA 服务器资格门 PASS；B0/B1 六候选训练已完成，训练产物审核 PASS，按冻结规则选择 B0_seed2029。**当前停在正式 XAI 验证前；尚未评价 test 或对附件4正式推理。服务器资格门证据见 `server_preflight_drx_cuda128_2026-09-26/`，训练审核与模型身份见 `formal_training_audit_drx_cuda128_2026-09-26/`。Stage D 文件保留当时的预训练历史状态。
+历史 Stage C/D 状态（2026-09-26）：Stage C-4 与分模态解释范围已审查；DR-X CUDA 服务器资格门 PASS；B0/B1 六候选训练完成并按冻结规则选择 B0_seed2029。Stage D 中保留的文件记录的是该历史阶段状态。
+
+## 当前状态（2026-09-26）
+
+- B0_seed2029 已冻结；没有重新训练或修改模型。
+- valid120 数值验证及预定扰动检查已完成，结论限于特征空间解释范围。
+- test 727 条已评价；附件4 20 条正式预测/解释已生成，附件4没有标签，未报告其准确率。
+- T4-aware finalization candidate 位于 `q3_finalization_candidate_2026-09-26/`：valid728、test冲突分析、Attachment4最终派生CSV、7张论文图和冻结结果复现均已完成。
+- 当前 candidate 状态为 `READY_FOR_EXTERNAL_REVIEW`；这是待外部审核的候选状态，不是外部4.6 PASS。历史4.6 Gate 未改，4.7 未进入。
+- T4 保持 `T4_COMPLETE_WITH_LIMITATIONS`；样本05视觉仍为 `feature_position_only`，历史预测/Shapley/IG未改。
+
+DR-X资格门和训练证据见 `server_preflight_drx_cuda128_2026-09-26/` 与 `formal_training_audit_drx_cuda128_2026-09-26/`。冻结 test CSV、Attachment4逐样本结果、checkpoint与scaler可在 `external_review_handoff_2026-09-26/artifacts_extracted/` 阅读；原始约1 GB aligned PKL未放入公共仓库，重跑推理需访问赛题原件。
 
 ## 冻结边界
 
