@@ -1,0 +1,95 @@
+{
+  "sample_id": "07",
+  "source_video_id": "ChhZna-aBK4",
+  "candidate": {
+    "video_id": "ChhZna-aBK4",
+    "offset": 95,
+    "trigram_hits": 18,
+    "ordered_exact_tokens": 20,
+    "target_tokens": 52
+  },
+  "source_url": "https://www.youtube.com/watch?v=ChhZna-aBK4",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\07.mp4",
+    "bytes": 3559307,
+    "sha256": "f3b47ceaddf31d472c367259788cb68e93511b14ae117577836f196e22ecedc5"
+  },
+  "metadata": {
+    "id": "ChhZna-aBK4",
+    "title": "Monday Morning Brief | Summit on the Future of Philately",
+    "duration": 151,
+    "webpage_url": "https://www.youtube.com/watch?v=ChhZna-aBK4",
+    "format_id": "248+251"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\07_ChhZna-aBK4.mp4",
+    "bytes": 8125623,
+    "sha256": "92b59391073b9baff93cb5b74816569337c54faf78f6eee8dede15cddd1ee4b7",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 150.873,
+    "clip_audio_duration_sec": 21.2655625,
+    "full_peak_source_offset_sec": 50.7491875,
+    "full_peak_corr": 0.9894125138153864,
+    "best_other_corr_outside_one_second": 0.03793663219504509,
+    "peak_margin": 0.9514758816203414,
+    "first_half_peak_corr": 0.9889883003490356,
+    "first_half_offset_sec": 50.7491875,
+    "second_half_peak_corr": 0.9900262260207506,
+    "second_half_offset_sec": 50.7491875,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "PASS",
+    "source_frame_count": 4526,
+    "clip_frame_count": 639,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 4.260000000000001,
+        "actual_clip_pts_sec": 4.266666666666667,
+        "matched_source_pts_sec": 55.067,
+        "offset_sec": 50.800333333333334,
+        "pixel_pearson": 0.9999272091999369
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 10.65,
+        "actual_clip_pts_sec": 10.666666666666666,
+        "matched_source_pts_sec": 61.467,
+        "offset_sec": 50.800333333333334,
+        "pixel_pearson": 0.9999273160291123
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 17.040000000000003,
+        "actual_clip_pts_sec": 17.033333333333335,
+        "matched_source_pts_sec": 67.833,
+        "offset_sec": 50.79966666666667,
+        "pixel_pearson": 0.9999260618367941
+      }
+    ],
+    "offset_median_sec": 50.800333333333334,
+    "offset_range_sec": 0.0006666666666674814,
+    "pearson_min": 0.9999260618367941,
+    "pearson_median": 0.9999272091999369,
+    "audio_video_offset_difference_sec": 0.051145833333336554,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "PASS",
+  "local_time_gate": "PASS",
+  "formal_xai_mapping_status": "index_only"
+}
+
