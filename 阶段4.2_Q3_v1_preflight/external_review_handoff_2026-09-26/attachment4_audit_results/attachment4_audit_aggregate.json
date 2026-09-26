@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "sample_ids_exact_01_20": true,
+  "sample_count": 20,
+  "manifest_entries": 25,
+  "manifest_sha_verified": true,
+  "probability_simplex_pass_count": 20,
+  "intensity_range_pass_count": 20,
+  "shapley_additivity_checks": 40,
+  "shapley_additivity_pass_count": 40,
+  "conditional_ig_checks": 120,
+  "conditional_ig_pass_count": 120,
+  "padding_top_positions_pass_count": 20,
+  "audio_vision_time_claim_checks_pass_count": 20,
+  "mapping_status_counts": {
+    "text": {
+      "verified_text": 20
+    },
+    "audio": {
+      "index_only": 20
+    },
+    "vision": {
+      "index_only": 20
+    }
+  },
+  "known_anomaly_samples_present": [
+    "06",
+    "13",
+    "16",
+    "18"
+  ],
+  "classification_primary_influential_counts": {
+    "text": 18,
+    "vision": 2
+  },
+  "classification_primary_supporting_counts": {
+    "text": 17,
+    "vision": 3
+  },
+  "regression_primary_influential_counts": {
+    "text": 18,
+    "vision": 2
+  },
+  "regression_primary_supporting": "not_defined_in_frozen_result_schema; not inferred",
+  "evidence_coverage": {
+    "classification_satisfied_count": 18,
+    "regression_satisfied_count": 18
+  }
+}
+
