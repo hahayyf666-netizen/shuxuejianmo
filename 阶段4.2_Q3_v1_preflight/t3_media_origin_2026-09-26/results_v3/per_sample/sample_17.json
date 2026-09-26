@@ -1,0 +1,95 @@
+{
+  "sample_id": "17",
+  "source_video_id": "LtlL-03S79Q",
+  "candidate": {
+    "video_id": "LtlL-03S79Q",
+    "offset": 103,
+    "trigram_hits": 20,
+    "ordered_exact_tokens": 22,
+    "target_tokens": 22
+  },
+  "source_url": "https://www.youtube.com/watch?v=LtlL-03S79Q",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\17.mp4",
+    "bytes": 1951911,
+    "sha256": "8a2f9bad44684ae0ba22f4ad39e848020dbac6acf7e5fe9d974f2448e6902462"
+  },
+  "metadata": {
+    "id": "LtlL-03S79Q",
+    "title": "Presentation Design Quick Tips  You Need CRAP",
+    "duration": 75,
+    "webpage_url": "https://www.youtube.com/watch?v=LtlL-03S79Q",
+    "format_id": "137+251"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\17_LtlL-03S79Q.mp4",
+    "bytes": 18654717,
+    "sha256": "d4192054184685fce47a722a171063b67acc06d60e526b717cb026cc74e2d18b",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 74.993,
+    "clip_audio_duration_sec": 9.563,
+    "full_peak_source_offset_sec": 37.6291875,
+    "full_peak_corr": 0.9943178339957501,
+    "best_other_corr_outside_one_second": 0.05765541105877647,
+    "peak_margin": 0.9366624229369737,
+    "first_half_peak_corr": 0.9929221045153814,
+    "first_half_offset_sec": 37.6291875,
+    "second_half_peak_corr": 0.9953037051754438,
+    "second_half_offset_sec": 37.6291875,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "PASS",
+    "source_frame_count": 2175,
+    "clip_frame_count": 289,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 1.9266666666666667,
+        "actual_clip_pts_sec": 1.9333333333333333,
+        "matched_source_pts_sec": 39.606233333333336,
+        "offset_sec": 37.672900000000006,
+        "pixel_pearson": 0.9997302763384626
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 4.816666666666666,
+        "actual_clip_pts_sec": 4.8,
+        "matched_source_pts_sec": 42.475766666666665,
+        "offset_sec": 37.67576666666667,
+        "pixel_pearson": 0.9997207416567148
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 7.706666666666667,
+        "actual_clip_pts_sec": 7.7,
+        "matched_source_pts_sec": 45.37866666666667,
+        "offset_sec": 37.678666666666665,
+        "pixel_pearson": 0.9997480863160771
+      }
+    ],
+    "offset_median_sec": 37.67576666666667,
+    "offset_range_sec": 0.005766666666659148,
+    "pearson_min": 0.9997207416567148,
+    "pearson_median": 0.9997302763384626,
+    "audio_video_offset_difference_sec": 0.046579166666667504,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "PASS",
+  "local_time_gate": "PASS",
+  "formal_xai_mapping_status": "index_only"
+}
+
