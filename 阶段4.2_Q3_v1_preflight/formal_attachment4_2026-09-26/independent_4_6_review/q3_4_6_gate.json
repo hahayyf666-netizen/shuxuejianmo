@@ -1,6 +1,9 @@
 {
-  "gate": "Q3_4_6_INDEPENDENT_RED_TEAM_REVIEW",
-  "status": "PASS_WITH_LIMITATIONS",
+  "gate": "Q3_4_6_EXTERNAL_INDEPENDENT_REVIEW",
+  "status": "PENDING_EXTERNAL_REVIEW",
+  "internal_cross_check_status": "PASS_WITH_LIMITATIONS",
+  "internal_cross_check_by_same_codex_task": true,
+  "external_reviewer_has_reviewed": false,
   "p0_open": 0,
   "p1_open": 0,
   "p2_open": 0,
@@ -16,7 +19,7 @@
   },
   "source_4_5_gate_sha256": "727eac35527bed12b9de2c3464c38bb659ee21f15ace72985a552e9283c11010",
   "metadata_erratum_sha256": "a803c4e07c96de434926766aa117acd8ddc4dcbe592e69a604c100fe10d095ae",
-  "next_gate": "4.7 separate freeze decision",
+  "next_gate": "4.6 external review before 4.7 freeze decision",
   "next_gate_executed": false
 }
 
