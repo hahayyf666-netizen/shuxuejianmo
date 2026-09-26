@@ -22,7 +22,7 @@
 
 本轮复算的是已经输出的727条 test 预测与标签，没有重新加载约1 GB 的 PKL 做第二次模型推理。现有代码、训练摘要和产物时间顺序未显示 test 选模；仓库外的历史行为无法据此作绝对证明。附件4没有标签，因此不报告附件4预测准确率或“解释准确率”。
 
-**外部 4.6 Gate：PENDING。** 此记录可供外部审核者参考，但不得代替其核查或作为进入4.7封存的放行依据。本轮没有执行4.7。
+**外部 4.6 Gate：BLOCKED_BY_MISSING_ARTIFACT。** 公开 GitHub 缺少可独立重算的逐样本 test CSV、Attachment4 全量结果和 valid120 原始 ZIP；本记录可供审核者参考，但不得代替外部核查或作为进入4.7封存的放行依据。本轮没有执行4.7。
 
 关联文件：`../final_4_5_review/q3_4_5_final_review.json`、`../final_4_5_review/metadata_erratum.json`、`../final_4_5_review/Q3_4_5_FINAL_REVIEW_REPORT.md`。
 
