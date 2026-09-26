@@ -54,17 +54,9 @@ def load_sample(path: Path) -> dict:
     expected = {"text": (50, 768), "audio": (50, 74), "vision": (50, 35)}
     if any(values[k].shape != expected[k] for k in MODALITIES):
         raise ValueError(f"{path.name}: feature shape mismatch")
-    if any(not v.flags["C_CONTIGUOUS"] and False for v in values.values()):
-        raise ValueError(f"{path.name}: unexpected feature storage")
     if any(not np.isfinite(v).all() for v in values.values()):
         raise ValueError(f"{path.name}: nonfinite feature")
-    return {
-        "sample_id": str(path.stem),
-        "official_id": str(row["id"]),
-        "raw_text": str(row["raw_text"]),
-        "content_indices": content,
-        **values,
-    }
+    return {"sample_id": str(path.stem), "official_id": str(row["id"]), "raw_text": str(row["raw_text"]), "content_indices": content, **values}
 
 
 def prepare(sample: dict, scaler: dict, device: torch.device):
@@ -101,12 +93,7 @@ def top_positions(scores: np.ndarray, content_indices: np.ndarray, mapping: str,
     ranked = sorted((int(i) for i in content_indices), key=lambda i: (-abs(float(scores[i])), i))[:top_k]
     result = []
     for idx in ranked:
-        rec = {
-            "official_seq_index": idx,
-            "signed_importance": float(scores[idx]),
-            "absolute_importance": float(abs(scores[idx])),
-            "mapping_status": mapping,
-        }
+        rec = {"official_seq_index": idx, "signed_importance": float(scores[idx]), "absolute_importance": float(abs(scores[idx])), "mapping_status": mapping}
         if mapping == "verified_text" and (sid, idx) in trace:
             rec.update(trace[(sid, idx)])
         result.append(rec)
@@ -131,8 +118,13 @@ def main() -> None:
     args.out.mkdir(parents=True, exist_ok=True)
 
     contract = json.loads(args.contract.read_text(encoding="utf-8"))
-    if contract["model"] != "B0_seed2029" or contract["prediction_contract"]["labels_read"]:
+    if contract.get("model") != "B0_seed2029" or contract["prediction_contract"].get("labels_read") is not False:
         raise ValueError("Attachment4 contract drift")
+
+    if sha256_file(args.checkpoint) != contract["frozen_artifact_sha256"]["checkpoint"]:
+        raise ValueError("checkpoint SHA-256 mismatch")
+    if sha256_file(args.scaler) != contract["frozen_artifact_sha256"]["scaler"]:
+        raise ValueError("scaler SHA-256 mismatch")
 
     device = torch.device(args.device)
     if device.type == "cuda" and not torch.cuda.is_available():
@@ -149,20 +141,21 @@ def main() -> None:
 
     trace = read_text_trace(args.text_trace)
     t3 = {str(r["sample_id"]): r for r in json.loads(args.t3_records.read_text(encoding="utf-8"))}
-
     sample_paths = sorted(args.attachment_dir.glob("[0-9][0-9].pkl"))
     if [p.stem for p in sample_paths] != [f"{i:02d}" for i in range(1, 21)]:
         raise ValueError("Attachment4 must contain exactly 01-20")
 
-    records = []
-    local_rows = []
-    numeric_checks = []
+    expected_hashes = contract.get("input_hashes", {}).get("aligned_pkls", {})
+    for p in sample_paths:
+        if expected_hashes.get(p.stem) and sha256_file(p) != expected_hashes[p.stem]:
+            raise ValueError(f"{p.name}: input SHA-256 mismatch")
+
+    records, local_rows, numeric_checks = [], [], []
     (args.out / "samples").mkdir(exist_ok=True)
 
     for ordinal, path in enumerate(sample_paths, 1):
         sample = load_sample(path)
         xs, mask, refs, mask_np = prepare(sample, scaler, device)
-
         with torch.no_grad():
             logits, intensity = model(*xs, mask)
             probs = torch.softmax(logits, dim=-1)[0].detach().cpu().numpy()
@@ -190,93 +183,29 @@ def main() -> None:
 
         for target in ("classification", "regression"):
             shap = exact_shapley(model, xs, refs, mask, target=target, target_class=target_class)
-            shap_pass = abs(float(shap["additivity_residual"])) <= 1e-6
-            numeric_checks.append({
-                "sample_id": sid,
-                "target": target,
-                "method": "shapley",
-                "pass": shap_pass,
-                "residual": shap["additivity_residual"],
-            })
-
-            target_record = {
-                "shapley": shap,
-                "semantics": summarize_contributions(shap["phi"], target=target, epsilon=1e-6),
-                "modalities": {},
-            }
+            numeric_checks.append({"sample_id": sid, "target": target, "method": "shapley", "pass": abs(float(shap["additivity_residual"])) <= 1e-6, "residual": shap["additivity_residual"]})
+            target_record = {"shapley": shap, "semantics": summarize_contributions(shap["phi"], target=target, epsilon=1e-6), "modalities": {}}
 
             for modality in MODALITIES:
-                ig = conditional_ig(
-                    model, xs, refs, mask,
-                    modality=modality,
-                    target=target,
-                    target_class=target_class,
-                    steps_schedule=(64, 128, 256),
-                    atol=1e-3,
-                    rtol=0.01,
-                )
-                numeric_checks.append({
-                    "sample_id": sid,
-                    "target": target,
-                    "modality": modality,
-                    "method": "conditional_ig",
-                    "pass": ig["numerical_status"] == "pass",
-                    "residual": ig["completeness_residual"],
-                    "steps": ig["steps"],
-                })
-
+                ig = conditional_ig(model, xs, refs, mask, modality=modality, target=target, target_class=target_class, steps_schedule=(64, 128, 256), atol=1e-3, rtol=0.01)
+                numeric_checks.append({"sample_id": sid, "target": target, "modality": modality, "method": "conditional_ig", "pass": ig["numerical_status"] == "pass", "residual": ig["completeness_residual"], "steps": ig["steps"]})
                 mapping = "verified_text" if modality == "text" else "index_only"
-                positions = top_positions(
-                    ig["position_scores"],
-                    sample["content_indices"],
-                    mapping,
-                    trace,
-                    sid,
-                    int(contract["prediction_contract"]["local_top_k"]),
-                )
-
+                positions = top_positions(ig["position_scores"], sample["content_indices"], mapping, trace, sid, int(contract["prediction_contract"]["local_top_k"]))
                 for p in positions:
-                    local_rows.append({
-                        "sample_id": sid,
-                        "target": target,
-                        "modality": modality,
-                        "official_seq_index": p["official_seq_index"],
-                        "signed_importance": p["signed_importance"],
-                        "absolute_importance": p["absolute_importance"],
-                        "mapping_status": p["mapping_status"],
-                        "token_id": p.get("token_id"),
-                        "char_start": p.get("char_start"),
-                        "char_end": p.get("char_end"),
-                        "raw_text_substring": p.get("raw_text_substring"),
-                    })
-
+                    local_rows.append({"sample_id": sid, "target": target, "modality": modality, "official_seq_index": p["official_seq_index"], "signed_importance": p["signed_importance"], "absolute_importance": p["absolute_importance"], "mapping_status": p["mapping_status"], "token_id": p.get("token_id"), "char_start": p.get("char_start"), "char_end": p.get("char_end"), "raw_text_substring": p.get("raw_text_substring")})
                 target_record["modalities"][modality] = {
                     "conditional_ig": {k: v for k, v in ig.items() if k != "position_scores"},
-                    "local_attribution_status": local_attribution_status(
-                        shap["phi"][modality], ig, mask_np, epsilon=1e-6
-                    ),
+                    "local_attribution_status": local_attribution_status(shap["phi"][modality], ig, mask_np, epsilon=1e-6),
                     "top_positions": positions,
                 }
-
             record["targets"][target] = target_record
 
         records.append(record)
-        (args.out / "samples" / f"sample_{sid}.json").write_text(
-            json.dumps(record, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-        )
+        (args.out / "samples" / f"sample_{sid}.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"[{ordinal}/20] {sid} class={CLASS_NAMES[target_class]} intensity={pred_intensity:.6f}", flush=True)
 
-    (args.out / "attachment4_predictions_explanations.json").write_text(
-        json.dumps(records, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
-    fields = [
-        "sample_id", "target", "modality", "official_seq_index",
-        "signed_importance", "absolute_importance", "mapping_status",
-        "token_id", "char_start", "char_end", "raw_text_substring",
-    ]
+    (args.out / "attachment4_predictions_explanations.json").write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    fields = ["sample_id", "target", "modality", "official_seq_index", "signed_importance", "absolute_importance", "mapping_status", "token_id", "char_start", "char_end", "raw_text_substring"]
     with (args.out / "local_importance_top5.csv").open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
         writer.writeheader()
@@ -299,12 +228,8 @@ def main() -> None:
         "scaler_sha256": sha256_file(args.scaler),
         "elapsed_sec": time.monotonic() - started,
     }
-    (args.out / "numeric_checks.json").write_text(
-        json.dumps(numeric_checks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
-    (args.out / "summary.json").write_text(
-        json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
+    (args.out / "numeric_checks.json").write_text(json.dumps(numeric_checks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (args.out / "summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(summary, ensure_ascii=False), flush=True)
 
 

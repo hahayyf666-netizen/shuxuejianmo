@@ -20,8 +20,7 @@ Q3_submission/
 │  │  ├─ data.py
 │  │  ├─ model.py
 │  │  ├─ train_eval.py
-│  │  ├─ explain.py
-│  │  └─ scope_gate.py
+│  │  └─ explain.py
 │  ├─ run_training.py
 │  ├─ run_attachment4_inference.py
 │  ├─ run_valid_evaluation.py
@@ -81,7 +80,7 @@ python code/run_training.py \
 
 脚本只使用官方 train/valid；test 与附件4不参与模型选择。训练协议与冻结版本保持一致：B0/B1、三个固定 seed、CE+MAE、AdamW、early stopping、三 seed 平均 valid J 选架构。交付 seed 2029 按冻结协议固定。
 
-内部开发阶段的服务器 Gate 不属于科学模型本身，因此不放入竞赛提交包；本脚本是提交用的便携训练入口。
+内部开发阶段的服务器 Gate 不属于科学模型本身，因此不放入竞赛提交包；本脚本是提交用的便携训练入口。`code/q3v1/train_eval.py` 仅保留训练/评估所需公共函数，不包含内部 Gate 依赖。
 
 ## 5. Valid 指标复现
 
@@ -123,7 +122,7 @@ python code/run_attachment4_inference.py \
   --device cpu
 ```
 
-脚本生成20条样本的极性、概率、强度、Shapley、conditional IG、top位置以及数值检查。模型推理阶段 Audio/Vision 局部位置默认仍为 `index_only`；经过独立证据链核验的语音时段与视觉关键帧保存在 `evidence/` 中，并已经整合进最终提交 CSV。
+脚本生成20条样本的极性、概率、强度、Shapley、conditional IG、top位置以及数值检查，并会核对冻结 checkpoint/scaler 与20个附件4 aligned PKL 的输入哈希。模型推理阶段 Audio/Vision 局部位置默认仍为 `index_only`；经过独立证据链核验的语音时段与视觉关键帧保存在 `evidence/` 中，并已经整合进最终提交 CSV。
 
 ## 7. 与最终 CSV 核对
 
