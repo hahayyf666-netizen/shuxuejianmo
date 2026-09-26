@@ -1,0 +1,227 @@
+{
+  "task": "T4_RAW_EVIDENCE_CLOSURE",
+  "scope_frozen_before_media_decode": true,
+  "source_ref": "origin/q3-v1-preflight",
+  "source_branch_head": "5454444328a08e3d5b59212478b33f20b694c221",
+  "origin_branch_head": "5454444328a08e3d5b59212478b33f20b694c221",
+  "samples": {
+    "04": {
+      "formal_sample_json_path": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/formal_attachment4_2026-09-26/results/samples/sample_04.json",
+      "formal_sample_json_sha256": "7a570c11bae51e07a6ad41ed64be464be9cbccd5c9617ea5290cb5f6d4d85eb5",
+      "vision_positions": [
+        {
+          "official_seq_index": 15,
+          "signed_importance": 0.011122848838567734,
+          "absolute_importance": 0.011122848838567734
+        },
+        {
+          "official_seq_index": 14,
+          "signed_importance": 0.010619373992085457,
+          "absolute_importance": 0.010619373992085457
+        },
+        {
+          "official_seq_index": 13,
+          "signed_importance": 0.009539926424622536,
+          "absolute_importance": 0.009539926424622536
+        }
+      ],
+      "audio_top3_classification": [
+        {
+          "official_seq_index": 25,
+          "signed_importance": 0.008120068348944187
+        },
+        {
+          "official_seq_index": 26,
+          "signed_importance": 0.008120068348944187
+        },
+        {
+          "official_seq_index": 1,
+          "signed_importance": 0.0076111843809485435
+        }
+      ],
+      "audio_top3_regression": [
+        {
+          "official_seq_index": 15,
+          "signed_importance": 0.01155952550470829
+        },
+        {
+          "official_seq_index": 25,
+          "signed_importance": 0.011505383998155594
+        },
+        {
+          "official_seq_index": 26,
+          "signed_importance": 0.011505383998155594
+        }
+      ],
+      "audio_union_positions": [
+        25,
+        26,
+        1,
+        15
+      ],
+      "t3_sample_record_path": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/t3_media_origin_2026-09-26/results_v3/per_sample/sample_04.json",
+      "t3_sample_record_sha256": "f8aee3ba99980d71fbe1895cf8de9f971d4e8ad4020125c2e36144464bc5acdd"
+    },
+    "14": {
+      "formal_sample_json_path": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/formal_attachment4_2026-09-26/results/samples/sample_14.json",
+      "formal_sample_json_sha256": "deba34968372089d97facae9783cdc4fc4be3f9f88873508ae525436349c4367",
+      "vision_positions": [
+        {
+          "official_seq_index": 34,
+          "signed_importance": 0.013268489390611649,
+          "absolute_importance": 0.013268489390611649
+        },
+        {
+          "official_seq_index": 35,
+          "signed_importance": 0.013268489390611649,
+          "absolute_importance": 0.013268489390611649
+        },
+        {
+          "official_seq_index": 33,
+          "signed_importance": 0.013234797865152359,
+          "absolute_importance": 0.013234797865152359
+        }
+      ],
+      "audio_top3_classification": [
+        {
+          "official_seq_index": 11,
+          "signed_importance": 0.004142790101468563
+        },
+        {
+          "official_seq_index": 12,
+          "signed_importance": 0.004142790101468563
+        },
+        {
+          "official_seq_index": 13,
+          "signed_importance": 0.004142790101468563
+        }
+      ],
+      "audio_top3_regression": [
+        {
+          "official_seq_index": 10,
+          "signed_importance": 0.004707308951765299
+        },
+        {
+          "official_seq_index": 11,
+          "signed_importance": 0.0025590292643755674
+        },
+        {
+          "official_seq_index": 12,
+          "signed_importance": 0.0025590292643755674
+        }
+      ],
+      "audio_union_positions": [
+        11,
+        12,
+        13,
+        10
+      ],
+      "t3_sample_record_path": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/t3_media_origin_2026-09-26/results_v3/per_sample/sample_14.json",
+      "t3_sample_record_sha256": "9a9b95d64347c1422c65a3eb65e0b05cab632334c1187f8328f442c827fd2d3e"
+    },
+    "19": {
+      "formal_sample_json_path": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/formal_attachment4_2026-09-26/results/samples/sample_19.json",
+      "formal_sample_json_sha256": "901f12d7c75de7a01406d7807f37626dff615787fbba0f7c6480362163ca153b",
+      "vision_positions": [
+        {
+          "official_seq_index": 22,
+          "signed_importance": 0.00573238218203187,
+          "absolute_importance": 0.00573238218203187
+        },
+        {
+          "official_seq_index": 21,
+          "signed_importance": 0.005489755887538195,
+          "absolute_importance": 0.005489755887538195
+        },
+        {
+          "official_seq_index": 23,
+          "signed_importance": 0.005072193685919046,
+          "absolute_importance": 0.005072193685919046
+        }
+      ],
+      "audio_top3_classification": [
+        {
+          "official_seq_index": 22,
+          "signed_importance": 0.003881672630086541
+        },
+        {
+          "official_seq_index": 7,
+          "signed_importance": 0.003707860829308629
+        },
+        {
+          "official_seq_index": 25,
+          "signed_importance": 0.003401933703571558
+        }
+      ],
+      "audio_top3_regression": [
+        {
+          "official_seq_index": 21,
+          "signed_importance": 0.005805409979075193
+        },
+        {
+          "official_seq_index": 25,
+          "signed_importance": 0.005758482962846756
+        },
+        {
+          "official_seq_index": 12,
+          "signed_importance": 0.005481872241944075
+        }
+      ],
+      "audio_union_positions": [
+        22,
+        7,
+        25,
+        21,
+        12
+      ],
+      "t3_sample_record_path": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/t3_media_origin_2026-09-26/results_v3/per_sample/sample_19.json",
+      "t3_sample_record_sha256": "6deba420d7b8a5ff3746ef57b4e6ad09655d6f89f4e42b9a47cd0ab422dbecc6"
+    }
+  },
+  "t2_lineage_path": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/t2_row_boundary_and_source_inventory_2026-09-26/results/aligned_position_lineage_20.csv",
+  "t2_lineage_sha256": "4b6647a976d8787b46e786811ba217d2f601feb00abd1996ccfdcdc530f55d4c",
+  "t2_native_rows_path": "阶段4.2_Q3_v1_preflight/t2_row_boundary_and_source_inventory_2026-09-26/results/native20_row_results.json.gz",
+  "t2_native_rows_sha256": "8c22e6539a4910f348030e6ffd52e61222eca9b2228c73be83d7e49e64de6c8f",
+  "t3_contract_path": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/t3_media_origin_2026-09-26/results_v3/t3_frozen_contract.json",
+  "t3_contract_sha256": "a4bda77a9a8996740834ffc4b1cbeee05ef42a8c5c83c3b8e12c82b68e6a2d75",
+  "t3_aggregate_gate_path": "阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts_extracted/t3_media_origin_2026-09-26/results_v3/t3_aggregate_gate.json",
+  "t3_aggregate_gate_sha256": "7663ed1fba5af24e5cefc101e0b1d88804d7d3a2691b369c8cd655bc4ea82896",
+  "prohibited_mutations": [
+    "training",
+    "model selection",
+    "inference",
+    "test evaluation",
+    "Shapley recomputation",
+    "IG recomputation",
+    "formal prediction changes",
+    "historical 4.6 Gate edits",
+    "4.7 transition"
+  ],
+  "media_inputs": {
+    "04": {
+      "attachment_clip_expected_sha256": "766db8dc32508b8f7f8faaa47656e0eedc8d1707b809fe8235db1e74e15d3369",
+      "attachment_clip_actual_sha256": "766db8dc32508b8f7f8faaa47656e0eedc8d1707b809fe8235db1e74e15d3369",
+      "source_video_expected_sha256": "e98448eeae19b3007d2f75a99be3793c8871c385ae42cd85f7b437fa7347ed97",
+      "source_video_actual_sha256": "e98448eeae19b3007d2f75a99be3793c8871c385ae42cd85f7b437fa7347ed97",
+      "t3_attachment_clip_relative_path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\04.mp4"
+    },
+    "14": {
+      "attachment_clip_expected_sha256": "8f1c4cb4b1c97b31cd065317faef41465cfcda403ef12d1defce4a5d23b8e18e",
+      "attachment_clip_actual_sha256": "8f1c4cb4b1c97b31cd065317faef41465cfcda403ef12d1defce4a5d23b8e18e",
+      "source_video_expected_sha256": "79c45240655d382c50c07a876222c07c05b777646f988812421b7695cba179d8",
+      "source_video_actual_sha256": "79c45240655d382c50c07a876222c07c05b777646f988812421b7695cba179d8",
+      "t3_attachment_clip_relative_path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\14.mp4"
+    },
+    "19": {
+      "attachment_clip_expected_sha256": "26148d75d5b4c1ff6f69a36485cc02a771a74203d2c07d9d08f018bf88658217",
+      "attachment_clip_actual_sha256": "26148d75d5b4c1ff6f69a36485cc02a771a74203d2c07d9d08f018bf88658217",
+      "source_video_expected_sha256": "ed878b467b40a963a42d92d644d3b839de56ecfc208410525fb1921dc09b74a9",
+      "source_video_actual_sha256": "ed878b467b40a963a42d92d644d3b839de56ecfc208410525fb1921dc09b74a9",
+      "t3_attachment_clip_relative_path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\19.mp4"
+    }
+  },
+  "sample05": {
+    "vision_mapping_status": "index_only",
+    "t4_status": "T4_NOT_ATTEMPTED_BY_FROZEN_SCOPE"
+  }
+}

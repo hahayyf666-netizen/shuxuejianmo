@@ -1,0 +1,41 @@
+{
+  "gate": "T4_COMPLETE_WITH_LIMITATIONS",
+  "scope": "frozen Attachment4 evidence positions for samples 04/14/19 only",
+  "model_loaded": false,
+  "training": false,
+  "inference": false,
+  "formal_predictions_or_attributions_modified": false,
+  "sample_gates": {
+    "04": {
+      "vision": "PASS",
+      "vision_success_evidence_units": 3,
+      "vision_total_evidence_units": 3,
+      "audio": "PARTIAL",
+      "audio_success_union_positions": 2,
+      "audio_total_union_positions": 4,
+      "stop_reason": null
+    },
+    "14": {
+      "vision": "PASS",
+      "vision_success_evidence_units": 2,
+      "vision_total_evidence_units": 2,
+      "audio": "PASS",
+      "audio_success_union_positions": 4,
+      "audio_total_union_positions": 4,
+      "stop_reason": null
+    },
+    "19": {
+      "vision": "PASS",
+      "vision_success_evidence_units": 3,
+      "vision_total_evidence_units": 3,
+      "audio": "PASS",
+      "audio_success_union_positions": 5,
+      "audio_total_union_positions": 5,
+      "stop_reason": null
+    }
+  },
+  "sample05_vision": "index_only; T4_NOT_ATTEMPTED_BY_FROZEN_SCOPE",
+  "all_raw_media_mapping_complete": false,
+  "historical_4_6_gate_modified": false,
+  "4_7_entered": false
+}

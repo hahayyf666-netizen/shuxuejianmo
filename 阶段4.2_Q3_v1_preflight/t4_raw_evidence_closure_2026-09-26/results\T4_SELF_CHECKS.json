@@ -1,0 +1,25 @@
+{
+  "pass": true,
+  "checks": {
+    "sample_scope_only_04_14_19": true,
+    "vision_position_scope_exact": {
+      "04": true,
+      "14": true,
+      "19": true
+    },
+    "audio_rows_from_frozen_top3_union": true,
+    "media_sha_all_pass": true,
+    "sample14_34_35_shared_row": true,
+    "vision_local_time_uses_video_offset": true,
+    "audio_local_time_uses_audio_offset": true,
+    "only_success_frames_saved": true,
+    "all_visual_pts_are_decoded_pts": true,
+    "sample05_not_attempted": true,
+    "all_mapping_statuses_allowlisted": true,
+    "model_checkpoint_not_loaded": true,
+    "historical_results_not_modified": true,
+    "frame_files_exist_only_for_successful_evidence_units": true,
+    "no_duplicate_frame_files_for_shared_evidence": true
+  },
+  "note": "Script reads no checkpoint and calls no model. Any failed media identity or T3 media-origin gate sets the global gate to T4_STOPPED."
+}

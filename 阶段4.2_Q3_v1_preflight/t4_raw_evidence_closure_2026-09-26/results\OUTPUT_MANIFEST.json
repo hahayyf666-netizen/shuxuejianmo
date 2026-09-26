@@ -1,0 +1,96 @@
+{
+  "manifest_scope": "all T4 files other than this manifest itself; self-hash is excluded to avoid recursion",
+  "file_count": 18,
+  "files": [
+    {
+      "relative_path": "frames/sample04_cls_vision_seq13_pts_6.266667.png",
+      "size_bytes": 556319,
+      "sha256": "f355f96c5f0c5b328cb6b7cf83b33797b977adfac4729891fbee06bbaa166d71"
+    },
+    {
+      "relative_path": "frames/sample04_cls_vision_seq14_pts_6.333333.png",
+      "size_bytes": 559462,
+      "sha256": "7a2f38b268fab57b6e1c5677a2e81d7b046e6d88b62023620456f695a956e667"
+    },
+    {
+      "relative_path": "frames/sample04_cls_vision_seq15_pts_6.400000.png",
+      "size_bytes": 561633,
+      "sha256": "8c97d0ab8133606ff948b34550cc6c77ce37065617c465ee5c5807eb74ccf4a5"
+    },
+    {
+      "relative_path": "frames/sample14_cls_vision_seq33_pts_10.033333.png",
+      "size_bytes": 505911,
+      "sha256": "e179805846b7025e78fcbeaa8820ae55635bd23efbbbe378dd9bc2d613315dd2"
+    },
+    {
+      "relative_path": "frames/sample14_cls_vision_seq34-35_pts_10.100000.png",
+      "size_bytes": 506903,
+      "sha256": "3df1ebe5d287f866233a957e7b0a7e7e49df9c47867f15317945dc1e5e132d7e"
+    },
+    {
+      "relative_path": "frames/sample19_cls_vision_seq21_pts_12.533333.png",
+      "size_bytes": 259572,
+      "sha256": "a07fb4c7fba5eabae70cf5dfc70c59e2689819776f083fc610ed2771c448395c"
+    },
+    {
+      "relative_path": "frames/sample19_cls_vision_seq22_pts_12.600000.png",
+      "size_bytes": 259447,
+      "sha256": "0f557204ac193cdbbf6f0ca5f5a155106999a15e82a47d9c8d4b65fc6d1499e5"
+    },
+    {
+      "relative_path": "frames/sample19_cls_vision_seq23_pts_12.700000.png",
+      "size_bytes": 262127,
+      "sha256": "2bce5cb3c90c977b8ddd232d4eaa55ed84b3e4891bb8b211aaaa0d7678358b6a"
+    },
+    {
+      "relative_path": "results/per_sample/sample_04.json",
+      "size_bytes": 17122,
+      "sha256": "88cd6c0591ee0fee41ec77b265ce9fd67158a7d57f7db6f0f93b796f5ae57354"
+    },
+    {
+      "relative_path": "results/per_sample/sample_14.json",
+      "size_bytes": 16866,
+      "sha256": "6cdfca461bc9d4f99b963d4092b8eedc8ea2a1f33ca90394c42f4e62d857509c"
+    },
+    {
+      "relative_path": "results/per_sample/sample_19.json",
+      "size_bytes": 18038,
+      "sha256": "52f33c5879ec875f3fd9f0c67a2ae747f57aa5ba01f970c8f64a48cf8ab0f0ec"
+    },
+    {
+      "relative_path": "results/t4_audio_evidence.csv",
+      "size_bytes": 4693,
+      "sha256": "df8e1dccb767488ce6033d2ec7eda1a89830a5bd1841ae30d9df0fcd20a68a30"
+    },
+    {
+      "relative_path": "results/T4_GATE.json",
+      "size_bytes": 1219,
+      "sha256": "49111470e4a89b87f22c78bfb2699bbe888e9dcc6869c3174d397a935e4a4440"
+    },
+    {
+      "relative_path": "results/T4_SELF_CHECKS.json",
+      "size_bytes": 910,
+      "sha256": "623c2e4831ce7e329d8faa966b4a96cd765ed8e3ee195bc8408c570c8fe27f35"
+    },
+    {
+      "relative_path": "results/t4_visual_evidence.csv",
+      "size_bytes": 4637,
+      "sha256": "91c28eb2c71203b0127154a5aac66994114944da467aaeea576dcfdf2c563ee5"
+    },
+    {
+      "relative_path": "run_t4_raw_evidence_closure.py",
+      "size_bytes": 41137,
+      "sha256": "f8e9c699ea43ad506c999342f9d31c29c559eb463289e9338d7844f1548297aa"
+    },
+    {
+      "relative_path": "T4_FROZEN_SCOPE.json",
+      "size_bytes": 9284,
+      "sha256": "452cfdfce55b5b10b0532d82962a7287c04992ff43553930f9f2e3f6f34a3c01"
+    },
+    {
+      "relative_path": "T4_RAW_EVIDENCE_CLOSURE_REPORT.md",
+      "size_bytes": 7380,
+      "sha256": "47fbba46b55134cd244d4a86785a5419a4210464224492b46d1f4603cd25aa21"
+    }
+  ]
+}
