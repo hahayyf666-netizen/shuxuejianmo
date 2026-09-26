@@ -1,0 +1,95 @@
+{
+  "sample_id": "19",
+  "source_video_id": "P0UHzR4CmYg",
+  "candidate": {
+    "video_id": "P0UHzR4CmYg",
+    "offset": 466,
+    "trigram_hits": 31,
+    "ordered_exact_tokens": 33,
+    "target_tokens": 33
+  },
+  "source_url": "https://www.youtube.com/watch?v=P0UHzR4CmYg",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\19.mp4",
+    "bytes": 1091162,
+    "sha256": "26148d75d5b4c1ff6f69a36485cc02a771a74203d2c07d9d08f018bf88658217"
+  },
+  "metadata": {
+    "id": "P0UHzR4CmYg",
+    "title": "The Blurred Lines between Automation and Human Interaction",
+    "duration": 203,
+    "webpage_url": "https://www.youtube.com/watch?v=P0UHzR4CmYg",
+    "format_id": "248+251"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\19_P0UHzR4CmYg.mp4",
+    "bytes": 4992556,
+    "sha256": "ed878b467b40a963a42d92d644d3b839de56ecfc208410525fb1921dc09b74a9",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 202.653,
+    "clip_audio_duration_sec": 13.6108125,
+    "full_peak_source_offset_sec": 170.347375,
+    "full_peak_corr": 0.9750876962561714,
+    "best_other_corr_outside_one_second": 0.06144687273598286,
+    "peak_margin": 0.9136408235201886,
+    "first_half_peak_corr": 0.9742724120306178,
+    "first_half_offset_sec": 170.347375,
+    "second_half_peak_corr": 0.9755827518373598,
+    "second_half_offset_sec": 170.347375,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "PASS",
+    "source_frame_count": 6079,
+    "clip_frame_count": 409,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 2.7266666666666666,
+        "actual_clip_pts_sec": 2.7333333333333334,
+        "matched_source_pts_sec": 173.134,
+        "offset_sec": 170.40066666666667,
+        "pixel_pearson": 0.9998127223334103
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 6.816666666666666,
+        "actual_clip_pts_sec": 6.8,
+        "matched_source_pts_sec": 177.2,
+        "offset_sec": 170.39999999999998,
+        "pixel_pearson": 0.9998264827608191
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 10.906666666666666,
+        "actual_clip_pts_sec": 10.9,
+        "matched_source_pts_sec": 181.3,
+        "offset_sec": 170.4,
+        "pixel_pearson": 0.9998264777728116
+      }
+    ],
+    "offset_median_sec": 170.4,
+    "offset_range_sec": 0.0006666666666887977,
+    "pearson_min": 0.9998127223334103,
+    "pearson_median": 0.9998264777728116,
+    "audio_video_offset_difference_sec": 0.05262500000000614,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "PASS",
+  "local_time_gate": "PASS",
+  "formal_xai_mapping_status": "index_only"
+}
+
