@@ -1,0 +1,95 @@
+{
+  "sample_id": "01",
+  "source_video_id": "PexNiFbPTYM",
+  "candidate": {
+    "video_id": "PexNiFbPTYM",
+    "offset": 209,
+    "trigram_hits": 19,
+    "ordered_exact_tokens": 21,
+    "target_tokens": 21
+  },
+  "source_url": "https://www.youtube.com/watch?v=PexNiFbPTYM",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\01.mp4",
+    "bytes": 824021,
+    "sha256": "3057e24aee7a48fcf15bd618b663bd7f0d061fb8893286c458986a7e1c6d17cf"
+  },
+  "metadata": {
+    "id": "PexNiFbPTYM",
+    "title": "Timing Belts | ACDelco",
+    "duration": 183,
+    "webpage_url": "https://www.youtube.com/watch?v=PexNiFbPTYM",
+    "format_id": "136+140"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\01_PexNiFbPTYM.mp4",
+    "bytes": 5703265,
+    "sha256": "32f6dec4c3639c68142dd382eec7d9f496d443c9f0d292d8400c233b602b942c",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 182.97325,
+    "clip_audio_duration_sec": 8.982,
+    "full_peak_source_offset_sec": 85.2675625,
+    "full_peak_corr": 0.9988157764049581,
+    "best_other_corr_outside_one_second": 0.10414158488600345,
+    "peak_margin": 0.8946741915189547,
+    "first_half_peak_corr": 0.9987658210524242,
+    "first_half_offset_sec": 85.2675625,
+    "second_half_peak_corr": 0.9988849402344151,
+    "second_half_offset_sec": 85.2675625,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "PASS",
+    "source_frame_count": 5465,
+    "clip_frame_count": 270,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 1.7933333333333334,
+        "actual_clip_pts_sec": 1.8,
+        "matched_source_pts_sec": 87.087,
+        "offset_sec": 85.287,
+        "pixel_pearson": 0.9996545535860564
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 4.483333333333333,
+        "actual_clip_pts_sec": 4.466666666666667,
+        "matched_source_pts_sec": 89.723,
+        "offset_sec": 85.25633333333333,
+        "pixel_pearson": 0.9996218964652774
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 7.173333333333334,
+        "actual_clip_pts_sec": 7.166666666666667,
+        "matched_source_pts_sec": 92.459,
+        "offset_sec": 85.29233333333333,
+        "pixel_pearson": 0.9996431844266483
+      }
+    ],
+    "offset_median_sec": 85.287,
+    "offset_range_sec": 0.036000000000001364,
+    "pearson_min": 0.9996218964652774,
+    "pearson_median": 0.9996431844266483,
+    "audio_video_offset_difference_sec": 0.019437500000009322,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "PASS",
+  "local_time_gate": "PASS",
+  "formal_xai_mapping_status": "index_only"
+}
+
