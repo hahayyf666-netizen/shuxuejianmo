@@ -1,0 +1,21 @@
+{
+  "status": "METADATA_ONLY_ERRATUM",
+  "sample_id": "18",
+  "field": "known_input_anomaly",
+  "original_value": "T2 vision row nonunique",
+  "corrected_interpretation": "One unaligned native vision row has nonunique source lineage; all 48 aligned vision content rows used by the model have unique source rows.",
+  "original_artifacts": {
+    "results/samples/sample_18.json": "144ceb813b12ee5069cf7da6a867a2614c3eee82b4d7cc070510764a9dc966ac",
+    "results/predictions_explanations.csv": "e219309f0c8460ef34e2ae597e421df00ab9579220b8fa5066422a78acea414c"
+  },
+  "formal_vision_mapping_status": "index_only",
+  "formal_vision_mapping_reason": "Attachment4 local media time/frame mapping is not contract-verified",
+  "unchanged": [
+    "frozen selection contract",
+    "predictions",
+    "Shapley",
+    "conditional IG",
+    "output manifest"
+  ]
+}
+
