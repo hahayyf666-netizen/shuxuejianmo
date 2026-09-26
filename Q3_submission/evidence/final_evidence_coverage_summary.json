@@ -1,0 +1,17 @@
+{
+  "sample_count": 20,
+  "coverage_definition": "At least one verified raw-evidence position among the referenced modality's listed top positions for the relevant target; not all listed positions are necessarily mapped.",
+  "listed_position_definition": "Unique union of classification and regression top_seq positions for each modality in the final CSV.",
+  "primary_reference_raw_evidence_coverage": 20,
+  "dominant_cls_raw_evidence_coverage": 20,
+  "dominant_reg_raw_evidence_coverage": 19,
+  "expected_reference_counts": {
+    "primary_reference": 20,
+    "dominant_cls": 20,
+    "dominant_reg": 19
+  },
+  "matches_expected_reference_counts": true,
+  "sample05_vision": "feature_position_only",
+  "sample14_visual_same_evidence_unit_deduplicated": true,
+  "t4_gate": "T4_COMPLETE_WITH_LIMITATIONS"
+}

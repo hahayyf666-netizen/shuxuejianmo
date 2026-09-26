@@ -1,0 +1,27 @@
+{
+  "package": "Q3_submission",
+  "source_branch": "q3-v1-preflight",
+  "source_commit": "c1a5f8225073aff6a1b5ec52f80b233aa14e36f8",
+  "problem": "Q3 interpretable multimodal sentiment prediction",
+  "feature_version": "aligned_50",
+  "frozen_model": "B0_seed2029",
+  "delivery_seed": 2029,
+  "delivery_seed_rule": "fixed by frozen protocol; not selected by valid",
+  "expected_input_sha256": {
+    "attachment2_aligned_50.pkl": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+  },
+  "frozen_artifact_sha256": {
+    "model/B0_seed2029.pt": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+    "model/train_scaler.pt": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424"
+  },
+  "attachment4_result": "results/attachment4_predictions_explanations.csv",
+  "attachment4_sample_count": 20,
+  "raw_evidence_coverage_semantics": "at least one verified raw-evidence position among the referenced modality's listed important positions; not complete mapping of all positions",
+  "known_limits": [
+    "sample05 vision remains feature_position_only",
+    "audio and vision raw-media mapping is partial",
+    "sample13/16 visual anomalies are feature-branch attribution only",
+    "Shapley and conditional IG are feature-space attribution, not causal emotion contribution"
+  ],
+  "identity_information_in_package": false
+}

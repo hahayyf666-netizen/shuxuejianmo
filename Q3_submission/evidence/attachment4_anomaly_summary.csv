@@ -1,0 +1,5 @@
+﻿sample_id,known_input_anomaly,aligned_vision_all_zero,aligned_vision_all_zero_like,vision_evidence_level,raw_visual_evidence_available,interpretation_note
+06,T2 vision row nonunique,0,0,feature_position_only / index_only,0,Preserve prediction and attributions; T2 nonunique visual provenance does not establish a raw frame.
+13,aligned vision all-zero / C2 visual chain unavailable,1,0,feature_position_only / index_only,0,Preserve prediction and attributions; no visual keyframe is inferred from the anomaly.
+16,aligned vision all-zero-like / C2 visual chain unavailable,0,1,feature_position_only / index_only,0,Preserve prediction and attributions; no visual keyframe is inferred from the anomaly.
+18,T2 visual provenance ambiguity / source-row nonunique,0,0,feature_position_only / index_only,0,Preserve prediction and attributions; T2 nonunique visual provenance does not establish a raw frame.
