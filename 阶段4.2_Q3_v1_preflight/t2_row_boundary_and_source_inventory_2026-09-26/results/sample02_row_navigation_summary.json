@@ -1,0 +1,19 @@
+{
+  "sample_id": "02",
+  "total_c2_rows": 38,
+  "clip_audio_duration_sec": 3.328375,
+  "video_decoded_pts_count": 101,
+  "video_first_last_pts_sec": [
+    0.0,
+    3.433333333333333
+  ],
+  "by_modality": {
+    "audio": {
+      "C2_T0_T1_AUDIO_CHAIN_VALID": 19
+    },
+    "vision": {
+      "C2_T0_T1_VIDEO_NAVIGATION_ONLY": 19
+    }
+  },
+  "formal_xai_mapping_status": "index_only"
+}

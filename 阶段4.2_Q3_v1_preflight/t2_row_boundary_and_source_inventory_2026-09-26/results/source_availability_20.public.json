@@ -1,0 +1,9 @@
+{
+  "scope": "Attachment4 20 transcript-derived candidate groups; aggregate metadata reachability only",
+  "counts": {
+    "AVAILABLE_METADATA": 12,
+    "UNAVAILABLE_AT_PROBE": 3,
+    "NOT_YOUTUBE_ID_SHAPE": 5
+  },
+  "interpretation": "oEmbed status does not prove downloadable media or feature provenance; per-sample IDs/titles retained in local audit only"
+}

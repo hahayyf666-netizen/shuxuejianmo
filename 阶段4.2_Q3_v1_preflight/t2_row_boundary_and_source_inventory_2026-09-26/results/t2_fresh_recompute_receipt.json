@@ -1,0 +1,32 @@
+{
+  "run_mode": "fresh_15_new_samples_plus_5_published_T0",
+  "python": "3.12.10",
+  "file_sha256": {
+    "verify_native20.py": "e5c5a28a29bf6073aad85715ee97d303de76461a9d9e2800272050971ff8cfbd",
+    "results/native20_frozen_rules.json": "6b8950fba6ab05788e64eb31af703d575ed9c8a065d0ff2cad32eb46ab86e846",
+    "results/native20_row_results.json": "7210c065bac60037531b2e48efb914614f2902532b59d25d174e5a2ac874e172",
+    "results/t2_aggregate_gate.json": "6a49b00cbd956203df7c7bfb40c7a639a2fe708b73a86579b3b67931449375fc",
+    "results/native20_row_results.json.gz": "8c22e6539a4910f348030e6ffd52e61222eca9b2228c73be83d7e49e64de6c8f"
+  },
+  "numeric_summary": {
+    "audio": {
+      "matched": 3677,
+      "total": 3677
+    },
+    "vision": {
+      "matched": 2591,
+      "total": 2593
+    }
+  },
+  "source_kind_counts": {
+    "audio": {
+      "T0_reused": 5,
+      "T2_new": 15
+    },
+    "vision": {
+      "T0_reused": 5,
+      "T2_new": 15
+    }
+  },
+  "compressed_results_bytes": 78885
+}

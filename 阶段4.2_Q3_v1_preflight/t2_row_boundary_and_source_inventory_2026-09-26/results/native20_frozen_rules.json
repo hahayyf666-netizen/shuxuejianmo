@@ -1,0 +1,38 @@
+{
+  "status": "FROZEN_BEFORE_REMAINING_NATIVE_CANDIDATE_VALUES",
+  "candidate_rule": "Only the top transcript CSD video group per sample; no model outputs or labels; no per-sample offset tuning",
+  "source_mirror_commit": "ee52115996266573d2e3c2a3e04fd19e52af74c8",
+  "sample_to_candidate": {
+    "01": "PexNiFbPTYM",
+    "02": "YCEllKyaCrc",
+    "03": "GAVpYuhMZAw",
+    "04": "unOeTDc2rlY",
+    "05": "an_GzG40hcE",
+    "06": "257277",
+    "07": "ChhZna-aBK4",
+    "08": "2m58ShI1QSI",
+    "09": "121400",
+    "10": "286943",
+    "11": "224263",
+    "12": "gE7kUqMqQ9g",
+    "13": "kg-W6-hP2Do",
+    "14": "_0efYOjQYRc",
+    "15": "SKTyBOhDX6U",
+    "16": "63951",
+    "17": "LtlL-03S79Q",
+    "18": "RVC8l5hf2Eg",
+    "19": "P0UHzR4CmYg",
+    "20": "absh1hsZeF0"
+  },
+  "numeric_rule": {
+    "same_dimension": true,
+    "maxabs_at_most": 0.0001,
+    "relative_l2_at_most": 1e-06,
+    "second_best_maxabs_at_least": 0.001,
+    "all_valid_rows_required": true,
+    "strictly_increasing_source_rows": true,
+    "positive_source_intervals": true
+  },
+  "claim_boundary": "An exact CSD source row is not an Attachment4 local timestamp; media-origin and C2 chain remain separate gates",
+  "no_model_or_prediction_run": true
+}

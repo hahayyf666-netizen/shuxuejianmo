@@ -1,0 +1,92 @@
+{
+  "attachment4_sample_count": 20,
+  "aligned_position_count": 1128,
+  "native_unaligned_rows": {
+    "audio": {
+      "matched": 3677,
+      "total": 3677
+    },
+    "vision": {
+      "matched": 2591,
+      "total": 2593
+    }
+  },
+  "native_full_sample_gate": {
+    "audio": {
+      "pass_count": 20,
+      "pass_sample_ids": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "fail_count": 0,
+      "fail_sample_ids": []
+    },
+    "vision": {
+      "pass_count": 18,
+      "pass_sample_ids": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "19",
+        "20"
+      ],
+      "fail_count": 2,
+      "fail_sample_ids": [
+        "06",
+        "18"
+      ]
+    }
+  },
+  "aligned_lineage": {
+    "audio": {
+      "SOURCE_ROW_UNIQUE": 564
+    },
+    "vision": {
+      "SOURCE_ROW_UNIQUE": 522,
+      "NATIVE_ROW_NONUNIQUE": 1,
+      "C2_CHAIN_UNAVAILABLE": 41
+    }
+  },
+  "sample02_navigation_candidates": 38,
+  "source_candidate_availability": {
+    "AVAILABLE_METADATA": 12,
+    "UNAVAILABLE_AT_PROBE": 3,
+    "NOT_YOUTUBE_ID_SHAPE": 5
+  },
+  "media_origin_verified_samples": [
+    "02"
+  ],
+  "formal_xai_mapping_status": "index_only",
+  "review_gate": "REVIEW_GATE_NO_FORMAL_SCOPE_CHANGE"
+}

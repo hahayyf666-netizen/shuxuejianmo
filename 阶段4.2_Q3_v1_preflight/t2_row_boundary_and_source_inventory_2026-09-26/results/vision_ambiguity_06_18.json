@@ -1,0 +1,108 @@
+[
+  {
+    "sample_id": "06",
+    "official_unaligned_j": 95,
+    "candidate_video_id": "257277",
+    "first_five_nearest_source_rows": [
+      {
+        "native_r": 1734,
+        "maxabs": 0.0,
+        "l2": 0.0,
+        "source_time": [
+          57.8,
+          57.8333
+        ]
+      },
+      {
+        "native_r": 1735,
+        "maxabs": 0.0,
+        "l2": 0.0,
+        "source_time": [
+          57.8333,
+          57.8667
+        ]
+      },
+      {
+        "native_r": 1736,
+        "maxabs": 0.4591798782348633,
+        "l2": 1.0921159000769494,
+        "source_time": [
+          57.8667,
+          57.9
+        ]
+      },
+      {
+        "native_r": 2741,
+        "maxabs": 0.7159350514411926,
+        "l2": 1.6080133110049235,
+        "source_time": [
+          91.3667,
+          91.4
+        ]
+      },
+      {
+        "native_r": 3412,
+        "maxabs": 0.8297300338745117,
+        "l2": 1.7296748397970474,
+        "source_time": [
+          113.733,
+          113.767
+        ]
+      }
+    ],
+    "decision": "nonunique_source_row_no_timestamp_assignment"
+  },
+  {
+    "sample_id": "18",
+    "official_unaligned_j": 73,
+    "candidate_video_id": "RVC8l5hf2Eg",
+    "first_five_nearest_source_rows": [
+      {
+        "native_r": 1771,
+        "maxabs": 0.0,
+        "l2": 0.0,
+        "source_time": [
+          59.0333,
+          59.0667
+        ]
+      },
+      {
+        "native_r": 1770,
+        "maxabs": 0.0,
+        "l2": 0.0,
+        "source_time": [
+          59.0,
+          59.0333
+        ]
+      },
+      {
+        "native_r": 2070,
+        "maxabs": 0.21112000942230225,
+        "l2": 0.6115066601111714,
+        "source_time": [
+          69.0,
+          69.0333
+        ]
+      },
+      {
+        "native_r": 1772,
+        "maxabs": 0.21977996826171875,
+        "l2": 0.6158975308596086,
+        "source_time": [
+          59.0667,
+          59.1
+        ]
+      },
+      {
+        "native_r": 1346,
+        "maxabs": 0.34152698516845703,
+        "l2": 0.6734036813603093,
+        "source_time": [
+          44.8667,
+          44.9
+        ]
+      }
+    ],
+    "decision": "nonunique_source_row_no_timestamp_assignment"
+  }
+]

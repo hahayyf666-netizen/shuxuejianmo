@@ -1,0 +1,266 @@
+{
+  "scope": "Attachment4 20 unaligned raw_text",
+  "timestamped_words_sha256": "8cc97323b100d9147fbfb7de9d66114443668b652810c56337b17128117a678f",
+  "samples": [
+    {
+      "sample_id": "01",
+      "top_candidates": [
+        {
+          "video_id": "PexNiFbPTYM",
+          "offset": 209,
+          "trigram_hits": 19,
+          "ordered_exact_tokens": 21,
+          "target_tokens": 21
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "02",
+      "top_candidates": [
+        {
+          "video_id": "YCEllKyaCrc",
+          "offset": 43,
+          "trigram_hits": 4,
+          "ordered_exact_tokens": 6,
+          "target_tokens": 15
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "03",
+      "top_candidates": [
+        {
+          "video_id": "GAVpYuhMZAw",
+          "offset": 136,
+          "trigram_hits": 12,
+          "ordered_exact_tokens": 14,
+          "target_tokens": 27
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "04",
+      "top_candidates": [
+        {
+          "video_id": "unOeTDc2rlY",
+          "offset": 604,
+          "trigram_hits": 15,
+          "ordered_exact_tokens": 17,
+          "target_tokens": 20
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "05",
+      "top_candidates": [
+        {
+          "video_id": "an_GzG40hcE",
+          "offset": 0,
+          "trigram_hits": 9,
+          "ordered_exact_tokens": 11,
+          "target_tokens": 11
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "06",
+      "top_candidates": [
+        {
+          "video_id": "257277",
+          "offset": 131,
+          "trigram_hits": 30,
+          "ordered_exact_tokens": 32,
+          "target_tokens": 32
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "07",
+      "top_candidates": [
+        {
+          "video_id": "ChhZna-aBK4",
+          "offset": 95,
+          "trigram_hits": 18,
+          "ordered_exact_tokens": 20,
+          "target_tokens": 52
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "08",
+      "top_candidates": [
+        {
+          "video_id": "2m58ShI1QSI",
+          "offset": 82,
+          "trigram_hits": 8,
+          "ordered_exact_tokens": 10,
+          "target_tokens": 10
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "09",
+      "top_candidates": [
+        {
+          "video_id": "121400",
+          "offset": 15,
+          "trigram_hits": 12,
+          "ordered_exact_tokens": 14,
+          "target_tokens": 14
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "10",
+      "top_candidates": [
+        {
+          "video_id": "286943",
+          "offset": 169,
+          "trigram_hits": 24,
+          "ordered_exact_tokens": 26,
+          "target_tokens": 26
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "11",
+      "top_candidates": [
+        {
+          "video_id": "224263",
+          "offset": 210,
+          "trigram_hits": 12,
+          "ordered_exact_tokens": 14,
+          "target_tokens": 14
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "12",
+      "top_candidates": [
+        {
+          "video_id": "gE7kUqMqQ9g",
+          "offset": 47,
+          "trigram_hits": 33,
+          "ordered_exact_tokens": 35,
+          "target_tokens": 35
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "13",
+      "top_candidates": [
+        {
+          "video_id": "kg-W6-hP2Do",
+          "offset": 136,
+          "trigram_hits": 25,
+          "ordered_exact_tokens": 27,
+          "target_tokens": 27
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "14",
+      "top_candidates": [
+        {
+          "video_id": "_0efYOjQYRc",
+          "offset": 48,
+          "trigram_hits": 8,
+          "ordered_exact_tokens": 10,
+          "target_tokens": 26
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "15",
+      "top_candidates": [
+        {
+          "video_id": "SKTyBOhDX6U",
+          "offset": 101,
+          "trigram_hits": 15,
+          "ordered_exact_tokens": 17,
+          "target_tokens": 17
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "16",
+      "top_candidates": [
+        {
+          "video_id": "63951",
+          "offset": 142,
+          "trigram_hits": 7,
+          "ordered_exact_tokens": 9,
+          "target_tokens": 9
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "17",
+      "top_candidates": [
+        {
+          "video_id": "LtlL-03S79Q",
+          "offset": 103,
+          "trigram_hits": 20,
+          "ordered_exact_tokens": 22,
+          "target_tokens": 22
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "18",
+      "top_candidates": [
+        {
+          "video_id": "RVC8l5hf2Eg",
+          "offset": 103,
+          "trigram_hits": 21,
+          "ordered_exact_tokens": 23,
+          "target_tokens": 44
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "19",
+      "top_candidates": [
+        {
+          "video_id": "P0UHzR4CmYg",
+          "offset": 466,
+          "trigram_hits": 31,
+          "ordered_exact_tokens": 33,
+          "target_tokens": 33
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "20",
+      "top_candidates": [
+        {
+          "video_id": "absh1hsZeF0",
+          "offset": 203,
+          "trigram_hits": 34,
+          "ordered_exact_tokens": 36,
+          "target_tokens": 36
+        }
+      ],
+      "identity_status": "transcript_candidate_only_not_feature_verified"
+    }
+  ]
+}
