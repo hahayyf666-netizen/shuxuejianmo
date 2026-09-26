@@ -1,0 +1,188 @@
+{
+  "status": "T0_INPUT_AND_RULE_FROZEN_BEFORE_CANDIDATE_VALUES",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "sample_ids": [
+    "02",
+    "03",
+    "07",
+    "13",
+    "16"
+  ],
+  "selection_rule": "02/03 normal, 07 long-truncated, 13/16 C-2 vision anomalies; no model output or labels",
+  "source_c2_inventory_sha256": "94968bfc365b109c9ae01d319059cf9d568171adffe9df1ae4a5b49f23b6762f",
+  "sources": [
+    {
+      "sample_id": "02",
+      "files": {
+        "aligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/02.pkl",
+          "sha256": "88ed34a500bd7f11027ffc97205e23fdcde162b32bee9c447367b026b41608ac",
+          "bytes": 199111
+        },
+        "unaligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/02.pkl",
+          "sha256": "17e1a7c74f20dd25ca240b289add7a3b632ff2d6fb73d71eb1e1c6006b1f3cb9",
+          "bytes": 591568
+        },
+        "aligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/videos/02.mp4",
+          "sha256": "6b651e908aefd86959f85b78f945f7d5a5d9e767eb4c095926e1df2ed9629ff9",
+          "bytes": 142336
+        },
+        "unaligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/videos/02.mp4",
+          "sha256": "6b651e908aefd86959f85b78f945f7d5a5d9e767eb4c095926e1df2ed9629ff9",
+          "bytes": 142336
+        }
+      },
+      "content_positions": 19,
+      "audio_unaligned_length": 66,
+      "vision_unaligned_length": 50,
+      "vision_rows_with_unique_source_match": 19
+    },
+    {
+      "sample_id": "03",
+      "files": {
+        "aligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/03.pkl",
+          "sha256": "237a657ffb78b451b4e504ab8021e6072de404afd83d3b08be1560e98ca62860",
+          "bytes": 199400
+        },
+        "unaligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/03.pkl",
+          "sha256": "0d959289f51abebc34cb911895d7da4c70bb032d2fe281906b8f27ef6411cd8b",
+          "bytes": 591857
+        },
+        "aligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/videos/03.mp4",
+          "sha256": "556b83449ac17fd8cb99ed1dcd6f11c287dd6e0198885e88555579f9bcab84f3",
+          "bytes": 2973584
+        },
+        "unaligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/videos/03.mp4",
+          "sha256": "556b83449ac17fd8cb99ed1dcd6f11c287dd6e0198885e88555579f9bcab84f3",
+          "bytes": 2973584
+        }
+      },
+      "content_positions": 33,
+      "audio_unaligned_length": 191,
+      "vision_unaligned_length": 144,
+      "vision_rows_with_unique_source_match": 33
+    },
+    {
+      "sample_id": "07",
+      "files": {
+        "aligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/07.pkl",
+          "sha256": "f16e44523bd82862435489552910ef3b801dd5b7501d67b84b83ee1496b0c5a0",
+          "bytes": 200148
+        },
+        "unaligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/07.pkl",
+          "sha256": "b6f9a61599a16d0dee901ec277cdb32bde3ab50a223b15823fd0368b61f32314",
+          "bytes": 592607
+        },
+        "aligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/videos/07.mp4",
+          "sha256": "f3b47ceaddf31d472c367259788cb68e93511b14ae117577836f196e22ecedc5",
+          "bytes": 3559307
+        },
+        "unaligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/videos/07.mp4",
+          "sha256": "f3b47ceaddf31d472c367259788cb68e93511b14ae117577836f196e22ecedc5",
+          "bytes": 3559307
+        }
+      },
+      "content_positions": 48,
+      "audio_unaligned_length": 425,
+      "vision_unaligned_length": 319,
+      "vision_rows_with_unique_source_match": 48
+    },
+    {
+      "sample_id": "13",
+      "files": {
+        "aligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/13.pkl",
+          "sha256": "e2d3d3c55bc52e7178e6e7f9b28e677018f14c76966d9ec5ac486d8fbbfd8281",
+          "bytes": 199352
+        },
+        "unaligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/13.pkl",
+          "sha256": "4d8b77cdc24eecaa5104f19eaff60bad12fbf1886f40f1d95491decc9b31f7e0",
+          "bytes": 591809
+        },
+        "aligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/videos/13.mp4",
+          "sha256": "8a64f1201e0299f79d915aa87b4a9be811e346525589d1f41060c2533599a7cb",
+          "bytes": 262575
+        },
+        "unaligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/videos/13.mp4",
+          "sha256": "8a64f1201e0299f79d915aa87b4a9be811e346525589d1f41060c2533599a7cb",
+          "bytes": 262575
+        }
+      },
+      "content_positions": 30,
+      "audio_unaligned_length": 173,
+      "vision_unaligned_length": 1,
+      "vision_rows_with_unique_source_match": 0
+    },
+    {
+      "sample_id": "16",
+      "files": {
+        "aligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/16.pkl",
+          "sha256": "5528f121c021c3648f41e013e829c0a73870eafbbde73415147a074be81d722f",
+          "bytes": 198987
+        },
+        "unaligned_pkl": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/16.pkl",
+          "sha256": "359fae06a5df658729772eda07de43a12627a53574df95164942eb5f7a594153",
+          "bytes": 591444
+        },
+        "aligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/videos/16.mp4",
+          "sha256": "819a4c15dce5b85d8f7717087ea660551c3044daf3cecba1d45d342ae85365e5",
+          "bytes": 226884
+        },
+        "unaligned_mp4": {
+          "path": "E题数据/附件4-可解释专项视频样本与特征文件/未对齐版本/videos/16.mp4",
+          "sha256": "819a4c15dce5b85d8f7717087ea660551c3044daf3cecba1d45d342ae85365e5",
+          "bytes": 226884
+        }
+      },
+      "content_positions": 11,
+      "audio_unaligned_length": 60,
+      "vision_unaligned_length": 1,
+      "vision_rows_with_unique_source_match": 0
+    }
+  ],
+  "candidate_source": {
+    "kind": "unofficial mirror of CMU-MOSEI CSD; must match competition rows numerically",
+    "mirror_commit": "ee52115996266573d2e3c2a3e04fd19e52af74c8",
+    "timestamped_words_url": "https://huggingface.co/datasets/reeha-parkar/cmu-mosei-comp-seq/resolve/ee52115996266573d2e3c2a3e04fd19e52af74c8/data/CMU_MOSEI_TimestampedWords.csd",
+    "covarep_url": "https://huggingface.co/datasets/reeha-parkar/cmu-mosei-comp-seq/resolve/ee52115996266573d2e3c2a3e04fd19e52af74c8/data/CMU_MOSEI_COVAREP.csd",
+    "facet_url": "https://huggingface.co/datasets/reeha-parkar/cmu-mosei-comp-seq/resolve/ee52115996266573d2e3c2a3e04fd19e52af74c8/data/CMU_MOSEI_VisualFacet42.csd",
+    "original_source_urls": {
+      "covarep": "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/acoustic/CMU_MOSEI_COVAREP.csd",
+      "facet": "http://immortal.multicomp.cs.cmu.edu/CMU-MOSEI/visual/CMU_MOSEI_VisualFacet42.csd"
+    }
+  },
+  "strict_row_match_rule": {
+    "same_feature_dimension_required": true,
+    "coordinate_max_abs_error_at_most": 0.0001,
+    "relative_l2_error_at_most": 1e-06,
+    "unique_matching_candidate_row_required": true,
+    "second_best_max_abs_error_at_least": 0.001,
+    "ordered_matches_required": true,
+    "negative_controls": [
+      "wrong_sample",
+      "reversed_candidate_order"
+    ],
+    "no_offset_search_or_dtw_or_learned_projection": true,
+    "raw_time_requires_segment_offset_and_presentation_pts_check": true
+  },
+  "stop_rule": "If candidate source cannot be read or first two normal samples have zero strict unique row matches, stop that modality; do not expand to 20.",
+  "model_or_inference_run": false
+}

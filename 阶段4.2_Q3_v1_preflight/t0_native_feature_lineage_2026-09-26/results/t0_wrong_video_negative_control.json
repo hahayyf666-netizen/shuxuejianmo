@@ -1,0 +1,19 @@
+{
+  "sample_id": "02",
+  "wrong_video_sample_id": "03",
+  "wrong_video_id": "GAVpYuhMZAw",
+  "modalities": {
+    "audio": {
+      "strict_matches": 0,
+      "target_rows": 66,
+      "minimum_maxabs": 1.732258915901184,
+      "network_bytes": 10485776
+    },
+    "vision": {
+      "strict_matches": 0,
+      "target_rows": 50,
+      "minimum_maxabs": 1.7690680027008057,
+      "network_bytes": 6291472
+    }
+  }
+}

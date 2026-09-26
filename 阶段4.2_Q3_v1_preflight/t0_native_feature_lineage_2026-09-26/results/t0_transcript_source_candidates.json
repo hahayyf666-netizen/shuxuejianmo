@@ -1,0 +1,431 @@
+{
+  "timestamped_words_sha256": "8cc97323b100d9147fbfb7de9d66114443668b652810c56337b17128117a678f",
+  "source_group_count": 3837,
+  "samples": [
+    {
+      "sample_id": "02",
+      "raw_text": "We want to live by each other’s happiness - not by each other’s misery.",
+      "normalized_target_tokens": [
+        "we",
+        "want",
+        "to",
+        "live",
+        "by",
+        "each",
+        "other",
+        "s",
+        "happiness",
+        "not",
+        "by",
+        "each",
+        "other",
+        "s",
+        "misery"
+      ],
+      "top_candidates": [
+        {
+          "source_video_id": "YCEllKyaCrc",
+          "word_offset": 43,
+          "trigram_hits": 4,
+          "exact_ordered_token_hits": 6,
+          "target_token_count": 15,
+          "source_start_sec": 17.373015873,
+          "source_end_sec": 18.09138322,
+          "source_phrase_excerpt": "we want to live by each happiness not by each misery we want to hate"
+        },
+        {
+          "source_video_id": "ai7G98thPpk",
+          "word_offset": 298,
+          "trigram_hits": 2,
+          "exact_ordered_token_hits": 4,
+          "target_token_count": 15,
+          "source_start_sec": 87.9725623583,
+          "source_end_sec": 88.5412698413,
+          "source_phrase_excerpt": "teamwork we are always by each other s side and learn to grow on one"
+        },
+        {
+          "source_video_id": "YCEllKyaCrc",
+          "word_offset": 41,
+          "trigram_hits": 2,
+          "exact_ordered_token_hits": 4,
+          "target_token_count": 15,
+          "source_start_sec": 18.09138322,
+          "source_end_sec": 19.1090702948,
+          "source_phrase_excerpt": "like that we want to live by each happiness not by each misery we want"
+        },
+        {
+          "source_video_id": "ai7G98thPpk",
+          "word_offset": 292,
+          "trigram_hits": 2,
+          "exact_ordered_token_hits": 4,
+          "target_token_count": 15,
+          "source_start_sec": 87.9725623583,
+          "source_end_sec": 88.5412698413,
+          "source_phrase_excerpt": "the college and strong emphasis on teamwork we are always by each other s side"
+        },
+        {
+          "source_video_id": "-MeTTeMJBNc",
+          "word_offset": 172,
+          "trigram_hits": 1,
+          "exact_ordered_token_hits": 3,
+          "target_token_count": 15,
+          "source_start_sec": 63.1489795918,
+          "source_end_sec": 63.7875283447,
+          "source_phrase_excerpt": "we want to present it to you at this time just as a small token"
+        }
+      ],
+      "candidate_video_id_status": "candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "03",
+      "raw_text": "There's one lender at the moment which I think is just Bankwest who don't take rental income into account, they take rental yield into account.",
+      "normalized_target_tokens": [
+        "there",
+        "s",
+        "one",
+        "lender",
+        "at",
+        "the",
+        "moment",
+        "which",
+        "i",
+        "think",
+        "is",
+        "just",
+        "bankwest",
+        "who",
+        "don",
+        "t",
+        "take",
+        "rental",
+        "income",
+        "into",
+        "account",
+        "they",
+        "take",
+        "rental",
+        "yield",
+        "into",
+        "account"
+      ],
+      "top_candidates": [
+        {
+          "source_video_id": "GAVpYuhMZAw",
+          "word_offset": 136,
+          "trigram_hits": 12,
+          "exact_ordered_token_hits": 14,
+          "target_token_count": 27,
+          "source_start_sec": 52.0541950113,
+          "source_end_sec": 57.0827664399,
+          "source_phrase_excerpt": "account there s one lender at the moment which i think is just who don t take rental income into account they take rental yield into account"
+        },
+        {
+          "source_video_id": "GAVpYuhMZAw",
+          "word_offset": 137,
+          "trigram_hits": 10,
+          "exact_ordered_token_hits": 12,
+          "target_token_count": 27,
+          "source_start_sec": 48.5022675737,
+          "source_end_sec": 51.7349206349,
+          "source_phrase_excerpt": "there s one lender at the moment which i think is just who don t take rental income into account they take rental yield into account so"
+        },
+        {
+          "source_video_id": "GAVpYuhMZAw",
+          "word_offset": 8,
+          "trigram_hits": 3,
+          "exact_ordered_token_hits": 7,
+          "target_token_count": 27,
+          "source_start_sec": 6.6873015873,
+          "source_end_sec": 12.4442176871,
+          "source_phrase_excerpt": "you re looking for a mortgage it s important to know whether or not lenders will take rental income into account rental income if taking into account"
+        },
+        {
+          "source_video_id": "GAVpYuhMZAw",
+          "word_offset": 70,
+          "trigram_hits": 3,
+          "exact_ordered_token_hits": 5,
+          "target_token_count": 27,
+          "source_start_sec": 31.0519274376,
+          "source_end_sec": 33.2768707483,
+          "source_phrase_excerpt": "that you are adding in if the lender will take that into account so will lenders take rental income into account the answer is yes some lenders"
+        },
+        {
+          "source_video_id": "GAVpYuhMZAw",
+          "word_offset": 82,
+          "trigram_hits": 3,
+          "exact_ordered_token_hits": 5,
+          "target_token_count": 27,
+          "source_start_sec": 36.679138322,
+          "source_end_sec": 38.4750566893,
+          "source_phrase_excerpt": "account so will lenders take rental income into account the answer is yes some lenders will take rental income into account i m sure there are some"
+        }
+      ],
+      "candidate_video_id_status": "candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "07",
+      "raw_text": "As Linn’s associate editor Michael Baadke reports in our November 28 issue, attendees “enthusiastically discussed the topics of growing the hobby, the future of stamp shows, and dealers and philatelic partnerships, along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and grow",
+      "normalized_target_tokens": [
+        "as",
+        "linn",
+        "s",
+        "associate",
+        "editor",
+        "michael",
+        "baadke",
+        "reports",
+        "in",
+        "our",
+        "november",
+        "28",
+        "issue",
+        "attendees",
+        "enthusiastically",
+        "discussed",
+        "the",
+        "topics",
+        "of",
+        "growing",
+        "the",
+        "hobby",
+        "the",
+        "future",
+        "of",
+        "stamp",
+        "shows",
+        "and",
+        "dealers",
+        "and",
+        "philatelic",
+        "partnerships",
+        "along",
+        "with",
+        "ways",
+        "the",
+        "leading",
+        "organizations",
+        "involved",
+        "in",
+        "the",
+        "stamp",
+        "hobby",
+        "can",
+        "work",
+        "together",
+        "to",
+        "make",
+        "it",
+        "succeed",
+        "and",
+        "grow"
+      ],
+      "top_candidates": [
+        {
+          "source_video_id": "ChhZna-aBK4",
+          "word_offset": 95,
+          "trigram_hits": 18,
+          "exact_ordered_token_hits": 20,
+          "target_token_count": 52,
+          "source_start_sec": 63.1689342404,
+          "source_end_sec": 71.5498866213,
+          "source_phrase_excerpt": "the us postal service among others as associate editor michael reports in our november issue attendees discussed the topics of growing the hobby the future of stamp shows and dealers and partnerships along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and throughout"
+        },
+        {
+          "source_video_id": "ChhZna-aBK4",
+          "word_offset": 96,
+          "trigram_hits": 13,
+          "exact_ordered_token_hits": 15,
+          "target_token_count": 52,
+          "source_start_sec": 56.7036281179,
+          "source_end_sec": 63.1689342404,
+          "source_phrase_excerpt": "us postal service among others as associate editor michael reports in our november issue attendees discussed the topics of growing the hobby the future of stamp shows and dealers and partnerships along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and throughout the"
+        },
+        {
+          "source_video_id": "sFLTjqVS7AE",
+          "word_offset": 87,
+          "trigram_hits": 3,
+          "exact_ordered_token_hits": 6,
+          "target_token_count": 52,
+          "source_start_sec": 36.9684807256,
+          "source_end_sec": 45.6287981859,
+          "source_phrase_excerpt": "top priority when it comes to oil and gas exploration off america s precious coasts even as we push our economy and the world to ultimately transition off of fossil fuels so i m looking forward to talking with alaskans about how we can work together to make america the global leader"
+        },
+        {
+          "source_video_id": "ChhZna-aBK4",
+          "word_offset": 98,
+          "trigram_hits": 2,
+          "exact_ordered_token_hits": 6,
+          "target_token_count": 52,
+          "source_start_sec": 53.1916099773,
+          "source_end_sec": 63.1689342404,
+          "source_phrase_excerpt": "service among others as associate editor michael reports in our november issue attendees discussed the topics of growing the hobby the future of stamp shows and dealers and partnerships along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and throughout the discussion which"
+        },
+        {
+          "source_video_id": "flBtk736di4",
+          "word_offset": 43,
+          "trigram_hits": 2,
+          "exact_ordered_token_hits": 5,
+          "target_token_count": 52,
+          "source_start_sec": 29.5553287982,
+          "source_end_sec": 39.3530612245,
+          "source_phrase_excerpt": "are coming together this week at the united nations seeking solutions for some of the toughest challenges we all face and at the same time a revolution in social media is helping people everywhere take part in a global conversation about how we can work together to advance the common good we"
+        }
+      ],
+      "candidate_video_id_status": "candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "13",
+      "raw_text": "For example, I could take a set of data and from that data, I can find a relationship between any two of the given factors or more.",
+      "normalized_target_tokens": [
+        "for",
+        "example",
+        "i",
+        "could",
+        "take",
+        "a",
+        "set",
+        "of",
+        "data",
+        "and",
+        "from",
+        "that",
+        "data",
+        "i",
+        "can",
+        "find",
+        "a",
+        "relationship",
+        "between",
+        "any",
+        "two",
+        "of",
+        "the",
+        "given",
+        "factors",
+        "or",
+        "more"
+      ],
+      "top_candidates": [
+        {
+          "source_video_id": "kg-W6-hP2Do",
+          "word_offset": 136,
+          "trigram_hits": 25,
+          "exact_ordered_token_hits": 27,
+          "target_token_count": 27,
+          "source_start_sec": 46.9557823129,
+          "source_end_sec": 55.6260770975,
+          "source_phrase_excerpt": "for example i could take a set of data and from that data i can find a relationship between any two of the given factors or more"
+        },
+        {
+          "source_video_id": "kg-W6-hP2Do",
+          "word_offset": 215,
+          "trigram_hits": 2,
+          "exact_ordered_token_hits": 4,
+          "target_token_count": 27,
+          "source_start_sec": 79.2922902494,
+          "source_end_sec": 80.3698412698,
+          "source_phrase_excerpt": "budget i can make myself useful there too if that problem should arise i can find a way to calculate the company s budget and then from"
+        },
+        {
+          "source_video_id": "2YwgSmmLibs",
+          "word_offset": 338,
+          "trigram_hits": 1,
+          "exact_ordered_token_hits": 3,
+          "target_token_count": 27,
+          "source_start_sec": 119.460997732,
+          "source_end_sec": 120.159410431,
+          "source_phrase_excerpt": "for example i have a program called verbal which is clearly about negotiation and that has really nothing to do necessarily with professional speaking but yet i"
+        },
+        {
+          "source_video_id": "6UV6ktwbLoo",
+          "word_offset": 259,
+          "trigram_hits": 1,
+          "exact_ordered_token_hits": 4,
+          "target_token_count": 27,
+          "source_start_sec": 112.157596372,
+          "source_end_sec": 118.223809524,
+          "source_phrase_excerpt": "for example i m feeling very badly that taxes i will click taxes i will kick on it again so that the dots are just here i"
+        },
+        {
+          "source_video_id": "PJlDO21zl88",
+          "word_offset": 75,
+          "trigram_hits": 1,
+          "exact_ordered_token_hits": 3,
+          "target_token_count": 27,
+          "source_start_sec": 33.0673469388,
+          "source_end_sec": 34.6736961451,
+          "source_phrase_excerpt": "for example i try to explain and help them see that the technology didn t just sort of pop up organically there was an innate human need"
+        }
+      ],
+      "candidate_video_id_status": "candidate_only_not_feature_verified"
+    },
+    {
+      "sample_id": "16",
+      "raw_text": "It's a terrible, this is a terrible movie",
+      "normalized_target_tokens": [
+        "it",
+        "s",
+        "a",
+        "terrible",
+        "this",
+        "is",
+        "a",
+        "terrible",
+        "movie"
+      ],
+      "top_candidates": [
+        {
+          "source_video_id": "63951",
+          "word_offset": 142,
+          "trigram_hits": 7,
+          "exact_ordered_token_hits": 9,
+          "target_token_count": 9,
+          "source_start_sec": 52.952154195,
+          "source_end_sec": 54.9775510204,
+          "source_phrase_excerpt": "it s a terrible this is a terrible movie"
+        },
+        {
+          "source_video_id": "236696",
+          "word_offset": 16,
+          "trigram_hits": 3,
+          "exact_ordered_token_hits": 5,
+          "target_token_count": 9,
+          "source_start_sec": 7.99433106576,
+          "source_end_sec": 10.0396825397,
+          "source_phrase_excerpt": "t waste your time this is a terrible movie"
+        },
+        {
+          "source_video_id": "262165",
+          "word_offset": 6,
+          "trigram_hits": 3,
+          "exact_ordered_token_hits": 5,
+          "target_token_count": 9,
+          "source_start_sec": 5.879138322,
+          "source_end_sec": 7.18616780045,
+          "source_phrase_excerpt": "is this this is this is a terrible movie"
+        },
+        {
+          "source_video_id": "266938",
+          "word_offset": 140,
+          "trigram_hits": 3,
+          "exact_ordered_token_hits": 5,
+          "target_token_count": 9,
+          "source_start_sec": 38.3453514739,
+          "source_end_sec": 40.0714285714,
+          "source_phrase_excerpt": "to the twilight zone this is a terrible movie"
+        },
+        {
+          "source_video_id": "96350",
+          "word_offset": 41,
+          "trigram_hits": 3,
+          "exact_ordered_token_hits": 5,
+          "target_token_count": 9,
+          "source_start_sec": 15.7068027211,
+          "source_end_sec": 18.9693877551,
+          "source_phrase_excerpt": "paul walker and vin this is a terrible movie"
+        }
+      ],
+      "candidate_video_id_status": "candidate_only_not_feature_verified"
+    }
+  ]
+}

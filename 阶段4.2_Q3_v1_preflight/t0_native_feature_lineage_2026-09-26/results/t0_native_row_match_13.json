@@ -1,0 +1,1606 @@
+{
+  "sample_id": "13",
+  "candidate_video_id": "kg-W6-hP2Do",
+  "source_phrase": {
+    "source_video_id": "kg-W6-hP2Do",
+    "word_offset": 136,
+    "trigram_hits": 25,
+    "exact_ordered_token_hits": 27,
+    "target_token_count": 27,
+    "source_start_sec": 46.9557823129,
+    "source_end_sec": 55.6260770975,
+    "source_phrase_excerpt": "for example i could take a set of data and from that data i can find a relationship between any two of the given factors or more"
+  },
+  "candidate_source_commit": "ee52115996266573d2e3c2a3e04fd19e52af74c8",
+  "modalities": {
+    "audio": {
+      "status": "ROW_MATCH_DIAGNOSTIC",
+      "official_shape": [
+        173,
+        74
+      ],
+      "native_shape": [
+        11870,
+        74
+      ],
+      "native_root": "COVAREP",
+      "native_etag": "\"78548035665f83288f4171b0c5d7ebd5d52c9dd6dcd9863c1870f8b9b750b359\"",
+      "native_nonfinite_rows": 2,
+      "native_interval_minmax": [
+        0.0,
+        118.7
+      ],
+      "strict_unique_matches": 173,
+      "strict_coverage": 1.0,
+      "strict_ordered": true,
+      "nearest_maxabs_min_median_max": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nearest_rel_l2_min_median_max": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nearest_second_maxabs_min": 0.2576322555541992,
+      "first_ten": [
+        {
+          "official_j": 0,
+          "native_r": 4698,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            46.98,
+            46.989999999999995
+          ],
+          "strict": true
+        },
+        {
+          "official_j": 1,
+          "native_r": 4703,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            47.03,
+            47.04
+          ],
+          "strict": true
+        },
+        {
+          "official_j": 2,
+          "native_r": 4708,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            47.08,
+            47.089999999999996
+          ],
+          "strict": true
+        },
+        {
+          "official_j": 3,
+          "native_r": 4713,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            47.13,
+            47.14
+          ],
+          "strict": true
+        },
+        {
+          "official_j": 4,
+          "native_r": 4718,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            47.18,
+            47.19
+          ],
+          "strict": true
+        },
+        {
+          "official_j": 5,
+          "native_r": 4723,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            47.23,
+            47.239999999999995
+          ],
+          "strict": true
+        },
+        {
+          "official_j": 6,
+          "native_r": 4728,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            47.28,
+            47.29
+          ],
+          "strict": true
+        },
+        {
+          "official_j": 7,
+          "native_r": 4733,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            47.33,
+            47.339999999999996
+          ],
+          "strict": true
+        },
+        {
+          "official_j": 8,
+          "native_r": 4738,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            47.38,
+            47.39
+          ],
+          "strict": true
+        },
+        {
+          "official_j": 9,
+          "native_r": 4743,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            47.43,
+            47.44
+          ],
+          "strict": true
+        }
+      ],
+      "strict_rows": [
+        {
+          "official_j": 0,
+          "native_r": 4698,
+          "native_time": [
+            46.98,
+            46.989999999999995
+          ]
+        },
+        {
+          "official_j": 1,
+          "native_r": 4703,
+          "native_time": [
+            47.03,
+            47.04
+          ]
+        },
+        {
+          "official_j": 2,
+          "native_r": 4708,
+          "native_time": [
+            47.08,
+            47.089999999999996
+          ]
+        },
+        {
+          "official_j": 3,
+          "native_r": 4713,
+          "native_time": [
+            47.13,
+            47.14
+          ]
+        },
+        {
+          "official_j": 4,
+          "native_r": 4718,
+          "native_time": [
+            47.18,
+            47.19
+          ]
+        },
+        {
+          "official_j": 5,
+          "native_r": 4723,
+          "native_time": [
+            47.23,
+            47.239999999999995
+          ]
+        },
+        {
+          "official_j": 6,
+          "native_r": 4728,
+          "native_time": [
+            47.28,
+            47.29
+          ]
+        },
+        {
+          "official_j": 7,
+          "native_r": 4733,
+          "native_time": [
+            47.33,
+            47.339999999999996
+          ]
+        },
+        {
+          "official_j": 8,
+          "native_r": 4738,
+          "native_time": [
+            47.38,
+            47.39
+          ]
+        },
+        {
+          "official_j": 9,
+          "native_r": 4743,
+          "native_time": [
+            47.43,
+            47.44
+          ]
+        },
+        {
+          "official_j": 10,
+          "native_r": 4748,
+          "native_time": [
+            47.48,
+            47.489999999999995
+          ]
+        },
+        {
+          "official_j": 11,
+          "native_r": 4753,
+          "native_time": [
+            47.53,
+            47.54
+          ]
+        },
+        {
+          "official_j": 12,
+          "native_r": 4758,
+          "native_time": [
+            47.58,
+            47.589999999999996
+          ]
+        },
+        {
+          "official_j": 13,
+          "native_r": 4763,
+          "native_time": [
+            47.63,
+            47.64
+          ]
+        },
+        {
+          "official_j": 14,
+          "native_r": 4768,
+          "native_time": [
+            47.68,
+            47.69
+          ]
+        },
+        {
+          "official_j": 15,
+          "native_r": 4773,
+          "native_time": [
+            47.73,
+            47.739999999999995
+          ]
+        },
+        {
+          "official_j": 16,
+          "native_r": 4778,
+          "native_time": [
+            47.78,
+            47.79
+          ]
+        },
+        {
+          "official_j": 17,
+          "native_r": 4783,
+          "native_time": [
+            47.83,
+            47.839999999999996
+          ]
+        },
+        {
+          "official_j": 18,
+          "native_r": 4788,
+          "native_time": [
+            47.88,
+            47.89
+          ]
+        },
+        {
+          "official_j": 19,
+          "native_r": 4793,
+          "native_time": [
+            47.93,
+            47.94
+          ]
+        },
+        {
+          "official_j": 20,
+          "native_r": 4798,
+          "native_time": [
+            47.98,
+            47.989999999999995
+          ]
+        },
+        {
+          "official_j": 21,
+          "native_r": 4803,
+          "native_time": [
+            48.03,
+            48.04
+          ]
+        },
+        {
+          "official_j": 22,
+          "native_r": 4808,
+          "native_time": [
+            48.08,
+            48.089999999999996
+          ]
+        },
+        {
+          "official_j": 23,
+          "native_r": 4813,
+          "native_time": [
+            48.13,
+            48.14
+          ]
+        },
+        {
+          "official_j": 24,
+          "native_r": 4818,
+          "native_time": [
+            48.18,
+            48.19
+          ]
+        },
+        {
+          "official_j": 25,
+          "native_r": 4823,
+          "native_time": [
+            48.23,
+            48.239999999999995
+          ]
+        },
+        {
+          "official_j": 26,
+          "native_r": 4828,
+          "native_time": [
+            48.28,
+            48.29
+          ]
+        },
+        {
+          "official_j": 27,
+          "native_r": 4833,
+          "native_time": [
+            48.33,
+            48.339999999999996
+          ]
+        },
+        {
+          "official_j": 28,
+          "native_r": 4838,
+          "native_time": [
+            48.38,
+            48.39
+          ]
+        },
+        {
+          "official_j": 29,
+          "native_r": 4843,
+          "native_time": [
+            48.43,
+            48.44
+          ]
+        },
+        {
+          "official_j": 30,
+          "native_r": 4848,
+          "native_time": [
+            48.48,
+            48.489999999999995
+          ]
+        },
+        {
+          "official_j": 31,
+          "native_r": 4853,
+          "native_time": [
+            48.53,
+            48.54
+          ]
+        },
+        {
+          "official_j": 32,
+          "native_r": 4858,
+          "native_time": [
+            48.58,
+            48.589999999999996
+          ]
+        },
+        {
+          "official_j": 33,
+          "native_r": 4863,
+          "native_time": [
+            48.63,
+            48.64
+          ]
+        },
+        {
+          "official_j": 34,
+          "native_r": 4868,
+          "native_time": [
+            48.68,
+            48.69
+          ]
+        },
+        {
+          "official_j": 35,
+          "native_r": 4873,
+          "native_time": [
+            48.73,
+            48.739999999999995
+          ]
+        },
+        {
+          "official_j": 36,
+          "native_r": 4878,
+          "native_time": [
+            48.78,
+            48.79
+          ]
+        },
+        {
+          "official_j": 37,
+          "native_r": 4883,
+          "native_time": [
+            48.83,
+            48.839999999999996
+          ]
+        },
+        {
+          "official_j": 38,
+          "native_r": 4888,
+          "native_time": [
+            48.88,
+            48.89
+          ]
+        },
+        {
+          "official_j": 39,
+          "native_r": 4893,
+          "native_time": [
+            48.93,
+            48.94
+          ]
+        },
+        {
+          "official_j": 40,
+          "native_r": 4898,
+          "native_time": [
+            48.98,
+            48.989999999999995
+          ]
+        },
+        {
+          "official_j": 41,
+          "native_r": 4903,
+          "native_time": [
+            49.03,
+            49.04
+          ]
+        },
+        {
+          "official_j": 42,
+          "native_r": 4908,
+          "native_time": [
+            49.08,
+            49.089999999999996
+          ]
+        },
+        {
+          "official_j": 43,
+          "native_r": 4913,
+          "native_time": [
+            49.13,
+            49.14
+          ]
+        },
+        {
+          "official_j": 44,
+          "native_r": 4918,
+          "native_time": [
+            49.18,
+            49.19
+          ]
+        },
+        {
+          "official_j": 45,
+          "native_r": 4923,
+          "native_time": [
+            49.23,
+            49.239999999999995
+          ]
+        },
+        {
+          "official_j": 46,
+          "native_r": 4928,
+          "native_time": [
+            49.28,
+            49.29
+          ]
+        },
+        {
+          "official_j": 47,
+          "native_r": 4933,
+          "native_time": [
+            49.33,
+            49.339999999999996
+          ]
+        },
+        {
+          "official_j": 48,
+          "native_r": 4938,
+          "native_time": [
+            49.38,
+            49.39
+          ]
+        },
+        {
+          "official_j": 49,
+          "native_r": 4943,
+          "native_time": [
+            49.43,
+            49.44
+          ]
+        },
+        {
+          "official_j": 50,
+          "native_r": 4948,
+          "native_time": [
+            49.48,
+            49.489999999999995
+          ]
+        },
+        {
+          "official_j": 51,
+          "native_r": 4953,
+          "native_time": [
+            49.53,
+            49.54
+          ]
+        },
+        {
+          "official_j": 52,
+          "native_r": 4958,
+          "native_time": [
+            49.58,
+            49.589999999999996
+          ]
+        },
+        {
+          "official_j": 53,
+          "native_r": 4963,
+          "native_time": [
+            49.63,
+            49.64
+          ]
+        },
+        {
+          "official_j": 54,
+          "native_r": 4968,
+          "native_time": [
+            49.68,
+            49.69
+          ]
+        },
+        {
+          "official_j": 55,
+          "native_r": 4973,
+          "native_time": [
+            49.73,
+            49.739999999999995
+          ]
+        },
+        {
+          "official_j": 56,
+          "native_r": 4978,
+          "native_time": [
+            49.78,
+            49.79
+          ]
+        },
+        {
+          "official_j": 57,
+          "native_r": 4983,
+          "native_time": [
+            49.83,
+            49.839999999999996
+          ]
+        },
+        {
+          "official_j": 58,
+          "native_r": 4988,
+          "native_time": [
+            49.88,
+            49.89
+          ]
+        },
+        {
+          "official_j": 59,
+          "native_r": 4993,
+          "native_time": [
+            49.93,
+            49.94
+          ]
+        },
+        {
+          "official_j": 60,
+          "native_r": 4998,
+          "native_time": [
+            49.98,
+            49.989999999999995
+          ]
+        },
+        {
+          "official_j": 61,
+          "native_r": 5003,
+          "native_time": [
+            50.03,
+            50.04
+          ]
+        },
+        {
+          "official_j": 62,
+          "native_r": 5008,
+          "native_time": [
+            50.08,
+            50.089999999999996
+          ]
+        },
+        {
+          "official_j": 63,
+          "native_r": 5013,
+          "native_time": [
+            50.13,
+            50.14
+          ]
+        },
+        {
+          "official_j": 64,
+          "native_r": 5018,
+          "native_time": [
+            50.18,
+            50.19
+          ]
+        },
+        {
+          "official_j": 65,
+          "native_r": 5023,
+          "native_time": [
+            50.23,
+            50.239999999999995
+          ]
+        },
+        {
+          "official_j": 66,
+          "native_r": 5028,
+          "native_time": [
+            50.28,
+            50.29
+          ]
+        },
+        {
+          "official_j": 67,
+          "native_r": 5033,
+          "native_time": [
+            50.33,
+            50.339999999999996
+          ]
+        },
+        {
+          "official_j": 68,
+          "native_r": 5038,
+          "native_time": [
+            50.38,
+            50.39
+          ]
+        },
+        {
+          "official_j": 69,
+          "native_r": 5043,
+          "native_time": [
+            50.43,
+            50.44
+          ]
+        },
+        {
+          "official_j": 70,
+          "native_r": 5048,
+          "native_time": [
+            50.48,
+            50.489999999999995
+          ]
+        },
+        {
+          "official_j": 71,
+          "native_r": 5053,
+          "native_time": [
+            50.53,
+            50.54
+          ]
+        },
+        {
+          "official_j": 72,
+          "native_r": 5058,
+          "native_time": [
+            50.58,
+            50.589999999999996
+          ]
+        },
+        {
+          "official_j": 73,
+          "native_r": 5063,
+          "native_time": [
+            50.63,
+            50.64
+          ]
+        },
+        {
+          "official_j": 74,
+          "native_r": 5068,
+          "native_time": [
+            50.68,
+            50.69
+          ]
+        },
+        {
+          "official_j": 75,
+          "native_r": 5073,
+          "native_time": [
+            50.73,
+            50.739999999999995
+          ]
+        },
+        {
+          "official_j": 76,
+          "native_r": 5078,
+          "native_time": [
+            50.78,
+            50.79
+          ]
+        },
+        {
+          "official_j": 77,
+          "native_r": 5083,
+          "native_time": [
+            50.83,
+            50.839999999999996
+          ]
+        },
+        {
+          "official_j": 78,
+          "native_r": 5088,
+          "native_time": [
+            50.88,
+            50.89
+          ]
+        },
+        {
+          "official_j": 79,
+          "native_r": 5093,
+          "native_time": [
+            50.93,
+            50.94
+          ]
+        },
+        {
+          "official_j": 80,
+          "native_r": 5098,
+          "native_time": [
+            50.98,
+            50.989999999999995
+          ]
+        },
+        {
+          "official_j": 81,
+          "native_r": 5103,
+          "native_time": [
+            51.03,
+            51.04
+          ]
+        },
+        {
+          "official_j": 82,
+          "native_r": 5108,
+          "native_time": [
+            51.08,
+            51.089999999999996
+          ]
+        },
+        {
+          "official_j": 83,
+          "native_r": 5113,
+          "native_time": [
+            51.13,
+            51.14
+          ]
+        },
+        {
+          "official_j": 84,
+          "native_r": 5118,
+          "native_time": [
+            51.18,
+            51.19
+          ]
+        },
+        {
+          "official_j": 85,
+          "native_r": 5123,
+          "native_time": [
+            51.23,
+            51.239999999999995
+          ]
+        },
+        {
+          "official_j": 86,
+          "native_r": 5128,
+          "native_time": [
+            51.28,
+            51.29
+          ]
+        },
+        {
+          "official_j": 87,
+          "native_r": 5133,
+          "native_time": [
+            51.33,
+            51.339999999999996
+          ]
+        },
+        {
+          "official_j": 88,
+          "native_r": 5138,
+          "native_time": [
+            51.38,
+            51.39
+          ]
+        },
+        {
+          "official_j": 89,
+          "native_r": 5143,
+          "native_time": [
+            51.43,
+            51.44
+          ]
+        },
+        {
+          "official_j": 90,
+          "native_r": 5148,
+          "native_time": [
+            51.48,
+            51.489999999999995
+          ]
+        },
+        {
+          "official_j": 91,
+          "native_r": 5153,
+          "native_time": [
+            51.53,
+            51.54
+          ]
+        },
+        {
+          "official_j": 92,
+          "native_r": 5158,
+          "native_time": [
+            51.58,
+            51.589999999999996
+          ]
+        },
+        {
+          "official_j": 93,
+          "native_r": 5163,
+          "native_time": [
+            51.63,
+            51.64
+          ]
+        },
+        {
+          "official_j": 94,
+          "native_r": 5168,
+          "native_time": [
+            51.68,
+            51.69
+          ]
+        },
+        {
+          "official_j": 95,
+          "native_r": 5173,
+          "native_time": [
+            51.73,
+            51.739999999999995
+          ]
+        },
+        {
+          "official_j": 96,
+          "native_r": 5178,
+          "native_time": [
+            51.78,
+            51.79
+          ]
+        },
+        {
+          "official_j": 97,
+          "native_r": 5183,
+          "native_time": [
+            51.83,
+            51.839999999999996
+          ]
+        },
+        {
+          "official_j": 98,
+          "native_r": 5188,
+          "native_time": [
+            51.88,
+            51.89
+          ]
+        },
+        {
+          "official_j": 99,
+          "native_r": 5193,
+          "native_time": [
+            51.93,
+            51.94
+          ]
+        },
+        {
+          "official_j": 100,
+          "native_r": 5198,
+          "native_time": [
+            51.98,
+            51.989999999999995
+          ]
+        },
+        {
+          "official_j": 101,
+          "native_r": 5203,
+          "native_time": [
+            52.03,
+            52.04
+          ]
+        },
+        {
+          "official_j": 102,
+          "native_r": 5208,
+          "native_time": [
+            52.08,
+            52.089999999999996
+          ]
+        },
+        {
+          "official_j": 103,
+          "native_r": 5213,
+          "native_time": [
+            52.13,
+            52.14
+          ]
+        },
+        {
+          "official_j": 104,
+          "native_r": 5218,
+          "native_time": [
+            52.18,
+            52.19
+          ]
+        },
+        {
+          "official_j": 105,
+          "native_r": 5223,
+          "native_time": [
+            52.23,
+            52.239999999999995
+          ]
+        },
+        {
+          "official_j": 106,
+          "native_r": 5228,
+          "native_time": [
+            52.28,
+            52.29
+          ]
+        },
+        {
+          "official_j": 107,
+          "native_r": 5233,
+          "native_time": [
+            52.33,
+            52.339999999999996
+          ]
+        },
+        {
+          "official_j": 108,
+          "native_r": 5238,
+          "native_time": [
+            52.38,
+            52.39
+          ]
+        },
+        {
+          "official_j": 109,
+          "native_r": 5243,
+          "native_time": [
+            52.43,
+            52.44
+          ]
+        },
+        {
+          "official_j": 110,
+          "native_r": 5248,
+          "native_time": [
+            52.48,
+            52.489999999999995
+          ]
+        },
+        {
+          "official_j": 111,
+          "native_r": 5253,
+          "native_time": [
+            52.53,
+            52.54
+          ]
+        },
+        {
+          "official_j": 112,
+          "native_r": 5258,
+          "native_time": [
+            52.58,
+            52.589999999999996
+          ]
+        },
+        {
+          "official_j": 113,
+          "native_r": 5263,
+          "native_time": [
+            52.63,
+            52.64
+          ]
+        },
+        {
+          "official_j": 114,
+          "native_r": 5268,
+          "native_time": [
+            52.68,
+            52.69
+          ]
+        },
+        {
+          "official_j": 115,
+          "native_r": 5273,
+          "native_time": [
+            52.73,
+            52.739999999999995
+          ]
+        },
+        {
+          "official_j": 116,
+          "native_r": 5278,
+          "native_time": [
+            52.78,
+            52.79
+          ]
+        },
+        {
+          "official_j": 117,
+          "native_r": 5283,
+          "native_time": [
+            52.83,
+            52.839999999999996
+          ]
+        },
+        {
+          "official_j": 118,
+          "native_r": 5288,
+          "native_time": [
+            52.88,
+            52.89
+          ]
+        },
+        {
+          "official_j": 119,
+          "native_r": 5293,
+          "native_time": [
+            52.93,
+            52.94
+          ]
+        },
+        {
+          "official_j": 120,
+          "native_r": 5298,
+          "native_time": [
+            52.98,
+            52.989999999999995
+          ]
+        },
+        {
+          "official_j": 121,
+          "native_r": 5303,
+          "native_time": [
+            53.03,
+            53.04
+          ]
+        },
+        {
+          "official_j": 122,
+          "native_r": 5308,
+          "native_time": [
+            53.08,
+            53.089999999999996
+          ]
+        },
+        {
+          "official_j": 123,
+          "native_r": 5313,
+          "native_time": [
+            53.13,
+            53.14
+          ]
+        },
+        {
+          "official_j": 124,
+          "native_r": 5318,
+          "native_time": [
+            53.18,
+            53.19
+          ]
+        },
+        {
+          "official_j": 125,
+          "native_r": 5323,
+          "native_time": [
+            53.23,
+            53.239999999999995
+          ]
+        },
+        {
+          "official_j": 126,
+          "native_r": 5328,
+          "native_time": [
+            53.28,
+            53.29
+          ]
+        },
+        {
+          "official_j": 127,
+          "native_r": 5333,
+          "native_time": [
+            53.33,
+            53.339999999999996
+          ]
+        },
+        {
+          "official_j": 128,
+          "native_r": 5338,
+          "native_time": [
+            53.38,
+            53.39
+          ]
+        },
+        {
+          "official_j": 129,
+          "native_r": 5343,
+          "native_time": [
+            53.43,
+            53.44
+          ]
+        },
+        {
+          "official_j": 130,
+          "native_r": 5348,
+          "native_time": [
+            53.48,
+            53.489999999999995
+          ]
+        },
+        {
+          "official_j": 131,
+          "native_r": 5353,
+          "native_time": [
+            53.53,
+            53.54
+          ]
+        },
+        {
+          "official_j": 132,
+          "native_r": 5358,
+          "native_time": [
+            53.58,
+            53.589999999999996
+          ]
+        },
+        {
+          "official_j": 133,
+          "native_r": 5363,
+          "native_time": [
+            53.63,
+            53.64
+          ]
+        },
+        {
+          "official_j": 134,
+          "native_r": 5368,
+          "native_time": [
+            53.68,
+            53.69
+          ]
+        },
+        {
+          "official_j": 135,
+          "native_r": 5373,
+          "native_time": [
+            53.73,
+            53.739999999999995
+          ]
+        },
+        {
+          "official_j": 136,
+          "native_r": 5378,
+          "native_time": [
+            53.78,
+            53.79
+          ]
+        },
+        {
+          "official_j": 137,
+          "native_r": 5383,
+          "native_time": [
+            53.83,
+            53.839999999999996
+          ]
+        },
+        {
+          "official_j": 138,
+          "native_r": 5388,
+          "native_time": [
+            53.88,
+            53.89
+          ]
+        },
+        {
+          "official_j": 139,
+          "native_r": 5393,
+          "native_time": [
+            53.93,
+            53.94
+          ]
+        },
+        {
+          "official_j": 140,
+          "native_r": 5398,
+          "native_time": [
+            53.98,
+            53.989999999999995
+          ]
+        },
+        {
+          "official_j": 141,
+          "native_r": 5403,
+          "native_time": [
+            54.03,
+            54.04
+          ]
+        },
+        {
+          "official_j": 142,
+          "native_r": 5408,
+          "native_time": [
+            54.08,
+            54.089999999999996
+          ]
+        },
+        {
+          "official_j": 143,
+          "native_r": 5413,
+          "native_time": [
+            54.13,
+            54.14
+          ]
+        },
+        {
+          "official_j": 144,
+          "native_r": 5418,
+          "native_time": [
+            54.18,
+            54.19
+          ]
+        },
+        {
+          "official_j": 145,
+          "native_r": 5423,
+          "native_time": [
+            54.23,
+            54.239999999999995
+          ]
+        },
+        {
+          "official_j": 146,
+          "native_r": 5428,
+          "native_time": [
+            54.28,
+            54.29
+          ]
+        },
+        {
+          "official_j": 147,
+          "native_r": 5433,
+          "native_time": [
+            54.33,
+            54.339999999999996
+          ]
+        },
+        {
+          "official_j": 148,
+          "native_r": 5438,
+          "native_time": [
+            54.38,
+            54.39
+          ]
+        },
+        {
+          "official_j": 149,
+          "native_r": 5443,
+          "native_time": [
+            54.43,
+            54.44
+          ]
+        },
+        {
+          "official_j": 150,
+          "native_r": 5448,
+          "native_time": [
+            54.48,
+            54.489999999999995
+          ]
+        },
+        {
+          "official_j": 151,
+          "native_r": 5453,
+          "native_time": [
+            54.53,
+            54.54
+          ]
+        },
+        {
+          "official_j": 152,
+          "native_r": 5458,
+          "native_time": [
+            54.58,
+            54.589999999999996
+          ]
+        },
+        {
+          "official_j": 153,
+          "native_r": 5463,
+          "native_time": [
+            54.63,
+            54.64
+          ]
+        },
+        {
+          "official_j": 154,
+          "native_r": 5468,
+          "native_time": [
+            54.68,
+            54.69
+          ]
+        },
+        {
+          "official_j": 155,
+          "native_r": 5473,
+          "native_time": [
+            54.73,
+            54.739999999999995
+          ]
+        },
+        {
+          "official_j": 156,
+          "native_r": 5478,
+          "native_time": [
+            54.78,
+            54.79
+          ]
+        },
+        {
+          "official_j": 157,
+          "native_r": 5483,
+          "native_time": [
+            54.83,
+            54.839999999999996
+          ]
+        },
+        {
+          "official_j": 158,
+          "native_r": 5488,
+          "native_time": [
+            54.88,
+            54.89
+          ]
+        },
+        {
+          "official_j": 159,
+          "native_r": 5493,
+          "native_time": [
+            54.93,
+            54.94
+          ]
+        },
+        {
+          "official_j": 160,
+          "native_r": 5498,
+          "native_time": [
+            54.98,
+            54.989999999999995
+          ]
+        },
+        {
+          "official_j": 161,
+          "native_r": 5503,
+          "native_time": [
+            55.03,
+            55.04
+          ]
+        },
+        {
+          "official_j": 162,
+          "native_r": 5508,
+          "native_time": [
+            55.08,
+            55.089999999999996
+          ]
+        },
+        {
+          "official_j": 163,
+          "native_r": 5513,
+          "native_time": [
+            55.13,
+            55.14
+          ]
+        },
+        {
+          "official_j": 164,
+          "native_r": 5518,
+          "native_time": [
+            55.18,
+            55.19
+          ]
+        },
+        {
+          "official_j": 165,
+          "native_r": 5523,
+          "native_time": [
+            55.23,
+            55.239999999999995
+          ]
+        },
+        {
+          "official_j": 166,
+          "native_r": 5528,
+          "native_time": [
+            55.28,
+            55.29
+          ]
+        },
+        {
+          "official_j": 167,
+          "native_r": 5533,
+          "native_time": [
+            55.33,
+            55.339999999999996
+          ]
+        },
+        {
+          "official_j": 168,
+          "native_r": 5538,
+          "native_time": [
+            55.38,
+            55.39
+          ]
+        },
+        {
+          "official_j": 169,
+          "native_r": 5543,
+          "native_time": [
+            55.43,
+            55.44
+          ]
+        },
+        {
+          "official_j": 170,
+          "native_r": 5548,
+          "native_time": [
+            55.48,
+            55.489999999999995
+          ]
+        },
+        {
+          "official_j": 171,
+          "native_r": 5553,
+          "native_time": [
+            55.53,
+            55.54
+          ]
+        },
+        {
+          "official_j": 172,
+          "native_r": 5558,
+          "native_time": [
+            55.58,
+            55.589999999999996
+          ]
+        }
+      ],
+      "network_requests": 10,
+      "network_bytes": 9437200
+    },
+    "vision": {
+      "status": "ROW_MATCH_DIAGNOSTIC",
+      "official_shape": [
+        1,
+        35
+      ],
+      "native_shape": [
+        2432,
+        35
+      ],
+      "native_root": "FACET 4.2",
+      "native_etag": "\"38d9ccb2f15789aa1a5a56b268eb8c217a2850af9a6d526861a813e6d4162312\"",
+      "native_nonfinite_rows": 0,
+      "native_interval_minmax": [
+        0.0,
+        118.634
+      ],
+      "strict_unique_matches": 1,
+      "strict_coverage": 1.0,
+      "strict_ordered": null,
+      "nearest_maxabs_min_median_max": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nearest_rel_l2_min_median_max": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "nearest_second_maxabs_min": 0.1560201644897461,
+      "first_ten": [
+        {
+          "official_j": 0,
+          "native_r": 1015,
+          "maxabs": 0.0,
+          "rel_l2": 0.0,
+          "native_time": [
+            49.5122,
+            49.561
+          ],
+          "strict": true
+        }
+      ],
+      "strict_rows": [
+        {
+          "official_j": 0,
+          "native_r": 1015,
+          "native_time": [
+            49.5122,
+            49.561
+          ]
+        }
+      ],
+      "network_requests": 13,
+      "network_bytes": 12582928
+    }
+  }
+}
