@@ -1,0 +1,95 @@
+{
+  "sample_id": "13",
+  "source_video_id": "kg-W6-hP2Do",
+  "candidate": {
+    "video_id": "kg-W6-hP2Do",
+    "offset": 136,
+    "trigram_hits": 25,
+    "ordered_exact_tokens": 27,
+    "target_tokens": 27
+  },
+  "source_url": "https://www.youtube.com/watch?v=kg-W6-hP2Do",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\13.mp4",
+    "bytes": 262575,
+    "sha256": "8a64f1201e0299f79d915aa87b4a9be811e346525589d1f41060c2533599a7cb"
+  },
+  "metadata": {
+    "id": "kg-W6-hP2Do",
+    "title": "Elevator Speech",
+    "duration": 121,
+    "webpage_url": "https://www.youtube.com/watch?v=kg-W6-hP2Do",
+    "format_id": "243+251"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\13_kg-W6-hP2Do.mp4",
+    "bytes": 3258654,
+    "sha256": "65a8161ca5937d4ac7429c602b07ab4804ba246d487ccc0da484f62b24c96180",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 120.753,
+    "clip_audio_duration_sec": 8.679,
+    "full_peak_source_offset_sec": 46.8939375,
+    "full_peak_corr": 0.9975835393406698,
+    "best_other_corr_outside_one_second": 0.09690152608430216,
+    "peak_margin": 0.9006820132563677,
+    "first_half_peak_corr": 0.9979051965426244,
+    "first_half_offset_sec": 46.8939375,
+    "second_half_peak_corr": 0.9966816878717982,
+    "second_half_offset_sec": 46.8939375,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "FAIL_VISUAL_GATE",
+    "source_frame_count": 3260,
+    "clip_frame_count": 260,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 1.7266666666666666,
+        "actual_clip_pts_sec": 1.7333333333333334,
+        "matched_source_pts_sec": 49.259,
+        "offset_sec": 47.525666666666666,
+        "pixel_pearson": 0.9999485931926704
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 4.316666666666666,
+        "actual_clip_pts_sec": 4.3,
+        "matched_source_pts_sec": 52.815,
+        "offset_sec": 48.515,
+        "pixel_pearson": 0.9999522401465817
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 6.906666666666666,
+        "actual_clip_pts_sec": 6.9,
+        "matched_source_pts_sec": 54.259,
+        "offset_sec": 47.359,
+        "pixel_pearson": 0.9999537191824834
+      }
+    ],
+    "offset_median_sec": 47.525666666666666,
+    "offset_range_sec": 1.1559999999999988,
+    "pearson_min": 0.9999485931926704,
+    "pearson_median": 0.9999522401465817,
+    "audio_video_offset_difference_sec": 0.6317291666666662,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "FAIL_OR_PARTIAL",
+  "local_time_gate": "BLOCKED",
+  "formal_xai_mapping_status": "index_only"
+}
+
