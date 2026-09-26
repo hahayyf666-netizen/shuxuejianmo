@@ -1,0 +1,1559 @@
+{
+  "status": "PASS",
+  "sample_ids_exact_01_20": true,
+  "sample_count": 20,
+  "manifest_entries": 25,
+  "manifest_sha_verified": true,
+  "probability_simplex_pass_count": 20,
+  "intensity_range_pass_count": 20,
+  "shapley_additivity_checks": 40,
+  "shapley_additivity_pass_count": 40,
+  "conditional_ig_checks": 120,
+  "conditional_ig_pass_count": 120,
+  "padding_top_positions_pass_count": 20,
+  "audio_vision_time_claim_checks_pass_count": 20,
+  "mapping_status_counts": {
+    "text": {
+      "verified_text": 20
+    },
+    "audio": {
+      "index_only": 20
+    },
+    "vision": {
+      "index_only": 20
+    }
+  },
+  "known_anomaly_samples_present": [
+    "06",
+    "13",
+    "16",
+    "18"
+  ],
+  "classification_primary_influential_counts": {
+    "text": 18,
+    "vision": 2
+  },
+  "classification_primary_supporting_counts": {
+    "text": 17,
+    "vision": 3
+  },
+  "regression_primary_influential_counts": {
+    "text": 18,
+    "vision": 2
+  },
+  "regression_primary_supporting": "not_defined_in_frozen_result_schema; not inferred",
+  "classification_audio_or_vision_primary_samples": [
+    "14",
+    "19"
+  ],
+  "regression_audio_or_vision_primary_samples": [
+    "05",
+    "14"
+  ],
+  "evidence_coverage": {
+    "classification_satisfied_count": 18,
+    "regression_satisfied_count": 18
+  },
+  "row_audit": [
+    {
+      "sample_id": "01",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 1.0000000447034836,
+      "probability_pass": true,
+      "predicted_intensity": 0.18078841269016266,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -2.9802322387695312e-08,
+              "tolerance": 0.0021621570587158205,
+              "pass": true
+            },
+            "audio": {
+              "residual": -9.313225746154785e-09,
+              "tolerance": 0.0010681835412979126,
+              "pass": true
+            },
+            "vision": {
+              "residual": -3.608874976634979e-08,
+              "tolerance": 0.0010190085172653198,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 1.043081283569336e-07,
+              "tolerance": 0.001640947073698044,
+              "pass": true
+            },
+            "audio": {
+              "residual": 4.0745362639427185e-08,
+              "tolerance": 0.001031655877828598,
+              "pass": true
+            },
+            "vision": {
+              "residual": 6.798654794692993e-08,
+              "tolerance": 0.0010359670817852021,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "02",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 1.0000000298023224,
+      "probability_pass": true,
+      "predicted_intensity": 0.28669729828834534,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": -2.7755575615628914e-17,
+          "shapley_residual_stored": -2.7755575615628914e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -4.470348358154297e-08,
+              "tolerance": 0.003086974382400513,
+              "pass": true
+            },
+            "audio": {
+              "residual": -6.146728992462158e-08,
+              "tolerance": 0.0012493137121200562,
+              "pass": true
+            },
+            "vision": {
+              "residual": -5.4016709327697754e-08,
+              "tolerance": 0.0012391666173934936,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 4.470348358154297e-08,
+              "tolerance": 0.0022571987509727477,
+              "pass": true
+            },
+            "audio": {
+              "residual": 5.21540641784668e-08,
+              "tolerance": 0.0013541707992553711,
+              "pass": true
+            },
+            "vision": {
+              "residual": 5.587935447692871e-08,
+              "tolerance": 0.0015515021085739135,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "03",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 1.0000000447034836,
+      "probability_pass": true,
+      "predicted_intensity": -0.139744371175766,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -4.470348358154297e-08,
+              "tolerance": 0.002840386688709259,
+              "pass": true
+            },
+            "audio": {
+              "residual": -5.587935447692871e-09,
+              "tolerance": 0.0012205181121826172,
+              "pass": true
+            },
+            "vision": {
+              "residual": -4.284083843231201e-08,
+              "tolerance": 0.001290673077106476,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 2.9802322387695312e-08,
+              "tolerance": 0.0055506560802459715,
+              "pass": true
+            },
+            "audio": {
+              "residual": 7.450580596923828e-09,
+              "tolerance": 0.001731469988822937,
+              "pass": true
+            },
+            "vision": {
+              "residual": -3.3527612686157227e-08,
+              "tolerance": 0.0014830452799797058,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "04",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 0.9999999701976776,
+      "probability_pass": true,
+      "predicted_intensity": 0.2880612909793854,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": -1.3877787807814457e-17,
+          "shapley_residual_stored": -1.3877787807814457e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 0.0,
+              "tolerance": 0.0027358893156051636,
+              "pass": true
+            },
+            "audio": {
+              "residual": 1.4901161193847656e-08,
+              "tolerance": 0.002245938539505005,
+              "pass": true
+            },
+            "vision": {
+              "residual": 4.470348358154297e-08,
+              "tolerance": 0.002763316094875336,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "vision",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 2.7755575615628914e-17,
+          "shapley_residual_stored": 2.7755575615628914e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 0.0,
+              "tolerance": 0.005007267057895661,
+              "pass": true
+            },
+            "audio": {
+              "residual": -7.450580596923828e-09,
+              "tolerance": 0.00279619200527668,
+              "pass": true
+            },
+            "vision": {
+              "residual": 8.940696716308594e-08,
+              "tolerance": 0.004542600572109222,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "05",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "vision",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": false,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 0.9999999776482582,
+      "probability_pass": true,
+      "predicted_intensity": 0.3092142641544342,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 5.960464477539063e-08,
+              "tolerance": 0.0024993247389793393,
+              "pass": true
+            },
+            "audio": {
+              "residual": -1.4901161193847656e-08,
+              "tolerance": 0.001229233503341675,
+              "pass": true
+            },
+            "vision": {
+              "residual": 0.0,
+              "tolerance": 0.0023725733757019043,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": -2.7755575615628914e-17,
+          "shapley_residual_stored": -2.7755575615628914e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 7.450580596923828e-08,
+              "tolerance": 0.0018271339535713197,
+              "pass": true
+            },
+            "audio": {
+              "residual": 9.685754776000977e-08,
+              "tolerance": 0.0015641451478004456,
+              "pass": true
+            },
+            "vision": {
+              "residual": 4.470348358154297e-08,
+              "tolerance": 0.002572920382022858,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "vision",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "06",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "T2 vision row nonunique",
+      "probability_sum": 1.0000000149011612,
+      "probability_pass": true,
+      "predicted_intensity": 0.40329253673553467,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": -5.551115123125783e-17,
+          "shapley_residual_stored": -5.551115123125783e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 2.9802322387695312e-08,
+              "tolerance": 0.004684006035327912,
+              "pass": true
+            },
+            "audio": {
+              "residual": -3.725290298461914e-09,
+              "tolerance": 0.001535959005355835,
+              "pass": true
+            },
+            "vision": {
+              "residual": -2.2351741790771484e-08,
+              "tolerance": 0.0015160784721374512,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -4.470348358154297e-08,
+              "tolerance": 0.0021212027072906496,
+              "pass": true
+            },
+            "audio": {
+              "residual": -3.725290298461914e-08,
+              "tolerance": 0.0017811465859413147,
+              "pass": true
+            },
+            "vision": {
+              "residual": -6.705522537231445e-08,
+              "tolerance": 0.0020791587829589843,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "07",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 1.0000000037252903,
+      "probability_pass": true,
+      "predicted_intensity": 0.4320453107357025,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": -5.551115123125783e-17,
+          "shapley_residual_stored": -5.551115123125783e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 0.0,
+              "tolerance": 0.005185810983181,
+              "pass": true
+            },
+            "audio": {
+              "residual": 6.984919309616089e-09,
+              "tolerance": 0.0010312966108322144,
+              "pass": true
+            },
+            "vision": {
+              "residual": 0.0,
+              "tolerance": 0.0013366315364837645,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": -5.551115123125783e-17,
+          "shapley_residual_stored": -5.551115123125783e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 0.0,
+              "tolerance": 0.0030997354388237,
+              "pass": true
+            },
+            "audio": {
+              "residual": 2.561137080192566e-08,
+              "tolerance": 0.001023176372051239,
+              "pass": true
+            },
+            "vision": {
+              "residual": -5.21540641784668e-08,
+              "tolerance": 0.0015848273634910585,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "08",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 1.000000011175871,
+      "probability_pass": true,
+      "predicted_intensity": 0.30794185400009155,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": -5.551115123125783e-17,
+          "shapley_residual_stored": -5.551115123125783e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 2.9802322387695312e-08,
+              "tolerance": 0.005464022219181061,
+              "pass": true
+            },
+            "audio": {
+              "residual": -3.725290298461914e-09,
+              "tolerance": 0.0012447712421417238,
+              "pass": true
+            },
+            "vision": {
+              "residual": -7.636845111846924e-08,
+              "tolerance": 0.0012134442329406738,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 5.960464477539063e-08,
+              "tolerance": 0.0023654625415802004,
+              "pass": true
+            },
+            "audio": {
+              "residual": 1.862645149230957e-08,
+              "tolerance": 0.0013355491161346437,
+              "pass": true
+            },
+            "vision": {
+              "residual": -4.470348358154297e-08,
+              "tolerance": 0.0017824456691741945,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "09",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 1.0000001296866685,
+      "probability_pass": true,
+      "predicted_intensity": -2.2184841632843018,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -1.1920928955078125e-07,
+              "tolerance": 0.00837410306930542,
+              "pass": true
+            },
+            "audio": {
+              "residual": -1.2177042663097382e-07,
+              "tolerance": 0.0010073963403701783,
+              "pass": true
+            },
+            "vision": {
+              "residual": -9.883660823106766e-08,
+              "tolerance": 0.0010104093551635742,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 4.440892098500626e-16,
+          "shapley_residual_stored": 4.440892098500626e-16,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -2.682209014892578e-07,
+              "tolerance": 0.02569234198331833,
+              "pass": true
+            },
+            "audio": {
+              "residual": -2.60770320892334e-08,
+              "tolerance": 0.0013265118598937988,
+              "pass": true
+            },
+            "vision": {
+              "residual": -1.2153759598731995e-07,
+              "tolerance": 0.00105828857421875,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "10",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 0.9999999441206455,
+      "probability_pass": true,
+      "predicted_intensity": -1.1465693712234497,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 5.960464477539063e-08,
+              "tolerance": 0.00769664740562439,
+              "pass": true
+            },
+            "audio": {
+              "residual": 7.450580596923828e-09,
+              "tolerance": 0.0012813369035720825,
+              "pass": true
+            },
+            "vision": {
+              "residual": 1.601874828338623e-07,
+              "tolerance": 0.0012480024099349976,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 2.220446049250313e-16,
+          "shapley_residual_stored": 2.220446049250313e-16,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 3.2782554626464844e-07,
+              "tolerance": 0.015408015906810762,
+              "pass": true
+            },
+            "audio": {
+              "residual": 2.5704503059387207e-07,
+              "tolerance": 0.001566263198852539,
+              "pass": true
+            },
+            "vision": {
+              "residual": 1.564621925354004e-07,
+              "tolerance": 0.001963253974914551,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "11",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 0.9999999850988388,
+      "probability_pass": true,
+      "predicted_intensity": -0.6619403958320618,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -2.9802322387695312e-08,
+              "tolerance": 0.004042688071727753,
+              "pass": true
+            },
+            "audio": {
+              "residual": 4.0978193283081055e-08,
+              "tolerance": 0.0011907438039779664,
+              "pass": true
+            },
+            "vision": {
+              "residual": -3.3527612686157227e-08,
+              "tolerance": 0.0015159497261047364,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 1.1102230246251565e-16,
+          "shapley_residual_stored": 1.1102230246251565e-16,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 9.685754776000977e-08,
+              "tolerance": 0.007880745068192481,
+              "pass": true
+            },
+            "audio": {
+              "residual": -5.960464477539063e-08,
+              "tolerance": 0.0018002036809921266,
+              "pass": true
+            },
+            "vision": {
+              "residual": 5.960464477539063e-08,
+              "tolerance": 0.002487855315208435,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "12",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 0.9999999925494194,
+      "probability_pass": true,
+      "predicted_intensity": -0.48854267597198486,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": -5.551115123125783e-17,
+          "shapley_residual_stored": -5.551115123125783e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 5.960464477539063e-08,
+              "tolerance": 0.005373889863491059,
+              "pass": true
+            },
+            "audio": {
+              "residual": -1.30385160446167e-08,
+              "tolerance": 0.0012473372220993043,
+              "pass": true
+            },
+            "vision": {
+              "residual": 4.6566128730773926e-09,
+              "tolerance": 0.0010897234678268434,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 0.0,
+              "tolerance": 0.008347586154937744,
+              "pass": true
+            },
+            "audio": {
+              "residual": -3.725290298461914e-08,
+              "tolerance": 0.0016886166334152222,
+              "pass": true
+            },
+            "vision": {
+              "residual": -4.470348358154297e-08,
+              "tolerance": 0.0013513425588607788,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "13",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "aligned vision all-zero / C2 visual chain unavailable",
+      "probability_sum": 0.999999925494194,
+      "probability_pass": true,
+      "predicted_intensity": 0.18594250082969666,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 7.450580596923828e-09,
+              "tolerance": 0.0022402254343032836,
+              "pass": true
+            },
+            "audio": {
+              "residual": 3.725290298461914e-08,
+              "tolerance": 0.0012439022064208985,
+              "pass": true
+            },
+            "vision": {
+              "residual": 9.499490261077881e-08,
+              "tolerance": 0.0013055721521377565,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 6.938893903907228e-18,
+          "shapley_residual_stored": 6.938893903907228e-18,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 7.450580596923828e-08,
+              "tolerance": 0.0017041186094284059,
+              "pass": true
+            },
+            "audio": {
+              "residual": 2.3283064365386963e-08,
+              "tolerance": 0.0010015690922737122,
+              "pass": true
+            },
+            "vision": {
+              "residual": 2.421438694000244e-08,
+              "tolerance": 0.0012046501636505127,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "14",
+      "classification_primary_modality": "vision",
+      "regression_primary_modality": "vision",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": false,
+      "regression_key_evidence_requirement_satisfied": false,
+      "reason": "primary modality is audio/vision and remains index_only",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 1.000000037252903,
+      "probability_pass": true,
+      "predicted_intensity": 0.41274601221084595,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": -2.7755575615628914e-17,
+          "shapley_residual_stored": -2.7755575615628914e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -8.195638656616211e-08,
+              "tolerance": 0.0017346570491790772,
+              "pass": true
+            },
+            "audio": {
+              "residual": -3.725290298461914e-09,
+              "tolerance": 0.0013825253248214721,
+              "pass": true
+            },
+            "vision": {
+              "residual": 2.9802322387695312e-08,
+              "tolerance": 0.003620845139026642,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "vision",
+          "primary_supporting_modality": "vision",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 5.960464477539063e-08,
+              "tolerance": 0.003766798734664917,
+              "pass": true
+            },
+            "audio": {
+              "residual": 1.1175870895385742e-08,
+              "tolerance": 0.0011951777935028077,
+              "pass": true
+            },
+            "vision": {
+              "residual": 7.450580596923828e-08,
+              "tolerance": 0.0042018165290355685,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "vision",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "15",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 0.9999999459832907,
+      "probability_pass": true,
+      "predicted_intensity": 0.4748149514198303,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 5.960464477539063e-08,
+              "tolerance": 0.004791399598121643,
+              "pass": true
+            },
+            "audio": {
+              "residual": 2.9802322387695312e-08,
+              "tolerance": 0.0013757917881011962,
+              "pass": true
+            },
+            "vision": {
+              "residual": 3.5390257835388184e-08,
+              "tolerance": 0.0012421045303344727,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": -5.551115123125783e-17,
+          "shapley_residual_stored": -5.551115123125783e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -4.470348358154297e-08,
+              "tolerance": 0.0024728596806526185,
+              "pass": true
+            },
+            "audio": {
+              "residual": -4.0978193283081055e-08,
+              "tolerance": 0.0014413527250289916,
+              "pass": true
+            },
+            "vision": {
+              "residual": -5.960464477539063e-08,
+              "tolerance": 0.002074915528297424,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "16",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "aligned vision all-zero-like / C2 visual chain unavailable",
+      "probability_sum": 1.0000000520376489,
+      "probability_pass": true,
+      "predicted_intensity": -2.343435764312744,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -2.9802322387695312e-08,
+              "tolerance": 0.00796365624666214,
+              "pass": true
+            },
+            "audio": {
+              "residual": -1.0390067473053932e-07,
+              "tolerance": 0.0010023078918457032,
+              "pass": true
+            },
+            "vision": {
+              "residual": -4.1618477553129196e-08,
+              "tolerance": 0.001001988410949707,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 1.341104507446289e-07,
+              "tolerance": 0.026537825971841813,
+              "pass": true
+            },
+            "audio": {
+              "residual": 1.564621925354004e-07,
+              "tolerance": 0.0013363156318664552,
+              "pass": true
+            },
+            "vision": {
+              "residual": 2.2351741790771484e-07,
+              "tolerance": 0.0013869152069091797,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "17",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 1.0000000316649675,
+      "probability_pass": true,
+      "predicted_intensity": 0.9431664943695068,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -5.960464477539063e-08,
+              "tolerance": 0.007094837188720704,
+              "pass": true
+            },
+            "audio": {
+              "residual": -5.436595529317856e-08,
+              "tolerance": 0.0010089573860168457,
+              "pass": true
+            },
+            "vision": {
+              "residual": 4.132743924856186e-08,
+              "tolerance": 0.0010100666284561157,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": -1.1102230246251565e-16,
+          "shapley_residual_stored": -1.1102230246251565e-16,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -4.470348358154297e-08,
+              "tolerance": 0.009181328028440475,
+              "pass": true
+            },
+            "audio": {
+              "residual": 0.0,
+              "tolerance": 0.001413823127746582,
+              "pass": true
+            },
+            "vision": {
+              "residual": 1.4901161193847656e-08,
+              "tolerance": 0.0031053755283355715,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "18",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "T2 vision row nonunique",
+      "probability_sum": 0.9999999850988388,
+      "probability_pass": true,
+      "predicted_intensity": -0.2377287745475769,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 0.0,
+              "tolerance": 0.0022900909781455995,
+              "pass": true
+            },
+            "audio": {
+              "residual": -4.0046870708465576e-08,
+              "tolerance": 0.0010136181712150573,
+              "pass": true
+            },
+            "vision": {
+              "residual": 3.166496753692627e-08,
+              "tolerance": 0.0011730763912200929,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 5.551115123125783e-17,
+          "shapley_residual_stored": 5.551115123125783e-17,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -8.940696716308594e-08,
+              "tolerance": 0.00484976476430893,
+              "pass": true
+            },
+            "audio": {
+              "residual": -2.8870999813079834e-08,
+              "tolerance": 0.0011326850056648254,
+              "pass": true
+            },
+            "vision": {
+              "residual": -4.470348358154297e-08,
+              "tolerance": 0.0017618607580661774,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "19",
+      "classification_primary_modality": "vision",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": false,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 1.0000000447034836,
+      "probability_pass": true,
+      "predicted_intensity": 0.055435411632061005,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 2.7939677238464355e-08,
+              "tolerance": 0.0012350294589996338,
+              "pass": true
+            },
+            "audio": {
+              "residual": -2.60770320892334e-08,
+              "tolerance": 0.0014483261704444886,
+              "pass": true
+            },
+            "vision": {
+              "residual": -1.4901161193847656e-08,
+              "tolerance": 0.002500144600868225,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "vision",
+          "primary_supporting_modality": "vision",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": -2.2351741790771484e-08,
+              "tolerance": 0.003158937528729439,
+              "pass": true
+            },
+            "audio": {
+              "residual": -6.798654794692993e-08,
+              "tolerance": 0.0014112114105373622,
+              "pass": true
+            },
+            "vision": {
+              "residual": -2.0489096641540527e-08,
+              "tolerance": 0.0012957884222269058,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    },
+    {
+      "sample_id": "20",
+      "classification_primary_modality": "text",
+      "regression_primary_modality": "text",
+      "text_raw_evidence_available": true,
+      "audio_raw_evidence_available": false,
+      "vision_raw_evidence_available": false,
+      "classification_key_evidence_requirement_satisfied": true,
+      "regression_key_evidence_requirement_satisfied": true,
+      "reason": "text primary with verified raw span",
+      "mapping_status_text": "verified_text",
+      "mapping_status_audio": "index_only",
+      "mapping_status_vision": "index_only",
+      "known_input_anomaly": "",
+      "probability_sum": 0.9999999944120646,
+      "probability_pass": true,
+      "predicted_intensity": 0.6459167003631592,
+      "intensity_pass": true,
+      "padding_top_position_check_pass": true,
+      "audio_vision_temporal_claim_check_pass": true,
+      "targets": {
+        "classification": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 2.9802322387695312e-08,
+              "tolerance": 0.005578011631965638,
+              "pass": true
+            },
+            "audio": {
+              "residual": 1.955777406692505e-08,
+              "tolerance": 0.0010980538129806519,
+              "pass": true
+            },
+            "vision": {
+              "residual": 4.470348358154297e-08,
+              "tolerance": 0.001456392765045166,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": "text",
+          "text_top_evidence_valid": true
+        },
+        "regression": {
+          "shapley_residual_recomputed": 0.0,
+          "shapley_residual_stored": 0.0,
+          "shapley_pass": true,
+          "ig": {
+            "text": {
+              "residual": 0.0,
+              "tolerance": 0.004151156902313232,
+              "pass": true
+            },
+            "audio": {
+              "residual": -1.2095551937818527e-07,
+              "tolerance": 0.0010181853771209716,
+              "pass": true
+            },
+            "vision": {
+              "residual": -5.960464477539063e-08,
+              "tolerance": 0.0021201345920562747,
+              "pass": true
+            }
+          },
+          "ig_all_pass": true,
+          "primary_influential_modality": "text",
+          "primary_supporting_modality": null,
+          "text_top_evidence_valid": true
+        }
+      }
+    }
+  ]
+}

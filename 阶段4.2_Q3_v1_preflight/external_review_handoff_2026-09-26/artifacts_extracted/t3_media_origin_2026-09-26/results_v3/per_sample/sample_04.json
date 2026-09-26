@@ -1,0 +1,94 @@
+{
+  "sample_id": "04",
+  "source_video_id": "unOeTDc2rlY",
+  "candidate": {
+    "video_id": "unOeTDc2rlY",
+    "offset": 604,
+    "trigram_hits": 15,
+    "ordered_exact_tokens": 17,
+    "target_tokens": 20
+  },
+  "source_url": "https://www.youtube.com/watch?v=unOeTDc2rlY",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\04.mp4",
+    "bytes": 1200845,
+    "sha256": "766db8dc32508b8f7f8faaa47656e0eedc8d1707b809fe8235db1e74e15d3369"
+  },
+  "metadata": {
+    "id": "unOeTDc2rlY",
+    "title": "Michigan Ross MBA Team Exercise FAQ",
+    "duration": 226,
+    "webpage_url": "https://www.youtube.com/watch?v=unOeTDc2rlY",
+    "format_id": "137+251"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\04_unOeTDc2rlY.mp4",
+    "bytes": 7364811,
+    "sha256": "e98448eeae19b3007d2f75a99be3793c8871c385ae42cd85f7b437fa7347ed97",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 225.913,
+    "clip_audio_duration_sec": 6.847,
+    "full_peak_source_offset_sec": 178.9681875,
+    "full_peak_corr": 0.9829367833973259,
+    "best_other_corr_outside_one_second": 0.15669263131694663,
+    "peak_margin": 0.8262441520803793,
+    "first_half_peak_corr": 0.9819963366365235,
+    "first_half_offset_sec": 178.9681875,
+    "second_half_peak_corr": 0.9835137374842318,
+    "second_half_offset_sec": 178.9681875,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "PASS",
+    "source_frame_count": 5416,
+    "clip_frame_count": 207,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 1.3866666666666667,
+        "actual_clip_pts_sec": 1.4,
+        "matched_source_pts_sec": 180.43,
+        "offset_sec": 179.03,
+        "pixel_pearson": 0.9995463642564667
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 3.466666666666667,
+        "actual_clip_pts_sec": 3.466666666666667,
+        "matched_source_pts_sec": 182.515,
+        "offset_sec": 179.04833333333332,
+        "pixel_pearson": 0.9995631970424179
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 5.546666666666667,
+        "actual_clip_pts_sec": 5.533333333333333,
+        "matched_source_pts_sec": 184.559,
+        "offset_sec": 179.02566666666667,
+        "pixel_pearson": 0.9995538660262406
+      }
+    ],
+    "offset_median_sec": 179.03,
+    "offset_range_sec": 0.022666666666651736,
+    "pearson_min": 0.9995463642564667,
+    "pearson_median": 0.9995538660262406,
+    "audio_video_offset_difference_sec": 0.061812500000002046,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "PASS",
+  "local_time_gate": "PASS",
+  "formal_xai_mapping_status": "index_only"
+}

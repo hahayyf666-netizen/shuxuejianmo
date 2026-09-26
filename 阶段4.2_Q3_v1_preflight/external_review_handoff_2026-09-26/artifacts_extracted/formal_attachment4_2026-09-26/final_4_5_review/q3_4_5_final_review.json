@@ -1,0 +1,118 @@
+{
+  "gate": "Q3_4_5_FINAL_REVIEW",
+  "status": "PASS_WITH_LIMITATIONS",
+  "checks": [
+    {
+      "name": "historical_4_5_gate",
+      "pass": true,
+      "evidence": "Original 36 checks remain in their historical receipt"
+    },
+    {
+      "name": "c2_t2_row_counts",
+      "pass": true,
+      "evidence": "1128 modality rows / 564 content positions"
+    },
+    {
+      "name": "c2_t2_exact_key_join",
+      "pass": true,
+      "evidence": "1128 unique sample/modality/index keys and exact C2 source matches"
+    },
+    {
+      "name": "c2_t2_source_boundary",
+      "pass": true,
+      "evidence": "T2 audio 564 and vision 522 unique aligned source rows"
+    },
+    {
+      "name": "known_vision_anomalies",
+      "pass": true,
+      "evidence": "06 nonunique; 13/16 broken C2 vision chain; 18 ambiguity outside aligned content is retained in T2 audit"
+    },
+    {
+      "name": "t3_origin_boundary",
+      "pass": true,
+      "evidence": "9 complete media-origin samples; others do not inherit a pass"
+    },
+    {
+      "name": "formal_explanation_boundary",
+      "pass": true,
+      "evidence": "20 samples remain text verified; audio and vision index-only"
+    },
+    {
+      "name": "test_model_identity",
+      "pass": true,
+      "evidence": "Test uses exact Attachment4 delivery model and train scaler hashes"
+    },
+    {
+      "name": "test_split_isolation",
+      "pass": true,
+      "evidence": "One final test measurement; frozen selection and Attachment4 outputs unchanged"
+    },
+    {
+      "name": "test_sample_identity",
+      "pass": true,
+      "evidence": "727 unique test prediction rows"
+    },
+    {
+      "name": "test_metrics_independent_recalculation",
+      "pass": true,
+      "evidence": "accuracy=0.658872, macro_f1=0.582430, mae=0.647577, rmse=0.872766, pearson=0.660390"
+    },
+    {
+      "name": "test_output_manifest",
+      "pass": true,
+      "evidence": "4 output SHA entries verified"
+    },
+    {
+      "name": "attachment4_output_manifest",
+      "pass": true,
+      "evidence": "25 output SHA entries verified"
+    },
+    {
+      "name": "input_contract_hashes",
+      "pass": true,
+      "evidence": "Attachment2 and frozen B0 hashes match recorded contract"
+    },
+    {
+      "name": "sample18_annotation_erratum",
+      "pass": true,
+      "evidence": "Frozen annotation is corrected by a separately hashed, metadata-only erratum"
+    }
+  ],
+  "failed_checks": [],
+  "test_evaluation": {
+    "sample_count": 727,
+    "accuracy": 0.6588720770288858,
+    "macro_f1": 0.5824303167359604,
+    "mae": 0.6475765521503906,
+    "rmse": 0.8727662372624403,
+    "pearson": 0.6603898509560031,
+    "used_for_selection": false
+  },
+  "mapping": {
+    "samples": 20,
+    "content_positions": 564,
+    "audio_source_unique": 564,
+    "vision_source_unique": 522,
+    "vision_nonunique": 1,
+    "vision_c2_unavailable": 41,
+    "complete_media_origin_samples": 9,
+    "audio_vision_formal_mapping": "index_only"
+  },
+  "source_sha256": {
+    "t2_row_boundary_and_source_inventory_2026-09-26/results/aligned_position_lineage_20.csv": "4b6647a976d8787b46e786811ba217d2f601feb00abd1996ccfdcdc530f55d4c",
+    "stage_c2_provenance/results/aligned_to_unaligned_row_matches_20.csv": "700785ce0930b02ce5b567f78ce7e5a218d98ef650ee35ef8549e937dc9f1432",
+    "t2_row_boundary_and_source_inventory_2026-09-26/results/t2_aggregate_gate.json": "6a49b00cbd956203df7c7bfb40c7a639a2fe708b73a86579b3b67931449375fc",
+    "t3_media_origin_2026-09-26/results_v3/t3_media_origin_records.json": "00f27d43e9e2555543b5467d356b6cc372c55bf95b059f16138c5cbea7a1236f",
+    "t3_media_origin_2026-09-26/results_v3/t3_aggregate_gate.json": "7663ed1fba5af24e5cefc101e0b1d88804d7d3a2691b369c8cd655bc4ea82896",
+    "formal_attachment4_2026-09-26/internal_acceptance.json": "be30c28c9d2bf3d93e8411490863ca75f406179aa6fc91c809f83950bc60dde2",
+    "formal_attachment4_2026-09-26/assets/attachment4_explanation_contract.json": "f9a7e448771929e242e6c0b96d61bca053537fbf9c1f15b634b1316e5c47c794",
+    "formal_attachment4_2026-09-26/results/formal_attachment4_summary.json": "986a60df843e6bfe12d8145aa7d4eb597ee633cebdff58cc6c56aa3987df76b3",
+    "formal_attachment4_2026-09-26/results/output_manifest.json": "ba7902c2193ed53a677b043a8ec56d61a7c087ce76c9e1470a3c6a290d6bdc1a",
+    "formal_test_evaluation_2026-09-26/test_evaluation_summary.json": "562afa1f12dfc7e3d32daa67ae0a42786928c38c37a3a658b719d6208c8a8837",
+    "formal_test_evaluation_2026-09-26/test_predictions.csv": "454e62de2c3704823f65bb13bb92ae04bff9d8a205e28e0428ee4d7a0f11b3b5",
+    "formal_test_evaluation_2026-09-26/output_manifest.json": "40dd2b2ec6ded10d04f5cb8f616f8b5c5ce8af599816388007d3da1074223a61"
+  },
+  "mapping_table_sha256": "ebc8c27310d9c68a909e8a6136e1ee8c4955797406a461776a0ccef0f88ae715",
+  "metadata_erratum_sha256": "a803c4e07c96de434926766aa117acd8ddc4dcbe592e69a604c100fe10d095ae",
+  "decision_boundary": "4.5 final review complete; 4.6 independent review and 4.7 freeze are separate gates"
+}

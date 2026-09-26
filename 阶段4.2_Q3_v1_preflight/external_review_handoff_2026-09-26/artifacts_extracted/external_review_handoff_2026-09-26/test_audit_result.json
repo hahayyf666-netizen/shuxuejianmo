@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "inference_run": false,
+  "row_count": 727,
+  "unique_sample_ids": 727,
+  "sample_ids_unique": true,
+  "predictions_csv_sha256": "454e62de2c3704823f65bb13bb92ae04bff9d8a205e28e0428ee4d7a0f11b3b5",
+  "expected_predictions_csv_sha256": "454e62de2c3704823f65bb13bb92ae04bff9d8a205e28e0428ee4d7a0f11b3b5",
+  "output_manifest_entries": 4,
+  "output_manifest_verified": true,
+  "metrics_recomputed": {
+    "accuracy": 0.6588720770288858,
+    "macro_f1": 0.5824303167359604,
+    "per_class_f1": {
+      "Negative": 0.6535626535626535,
+      "Neutral": 0.3293172690763052,
+      "Positive": 0.7644110275689223
+    },
+    "mae": 0.6475765521503906,
+    "rmse": 0.8727662372624403,
+    "pearson": 0.6603898509560031
+  },
+  "metric_matches_summary": {
+    "accuracy": true,
+    "macro_f1": true,
+    "mae": true,
+    "rmse": true,
+    "pearson": true,
+    "per_class_f1": true
+  },
+  "confusion_matrix_recomputed": [
+    [
+      133,
+      25,
+      49
+    ],
+    [
+      35,
+      41,
+      82
+    ],
+    [
+      32,
+      25,
+      305
+    ]
+  ],
+  "probability_simplex_failures": 0,
+  "nonfinite_intensity_rows": 0,
+  "matches_summary_sample_count": true,
+  "matches_summary_confusion_matrix": true
+}

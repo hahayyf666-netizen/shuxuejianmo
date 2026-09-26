@@ -1,0 +1,1362 @@
+[
+  {
+    "sample_id": "01",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "01",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.9802322387695312e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "01",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -9.313225746154785e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "01",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -3.608874976634979e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "01",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "01",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.043081283569336e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "01",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 4.0745362639427185e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "01",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 6.798654794692993e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "02",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": -2.7755575615628914e-17
+  },
+  {
+    "sample_id": "02",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "02",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -6.146728992462158e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "02",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -5.4016709327697754e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "02",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "02",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "02",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 5.21540641784668e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "02",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 5.587935447692871e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "03",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "03",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "03",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -5.587935447692871e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "03",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.284083843231201e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "03",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "03",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.9802322387695312e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "03",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 7.450580596923828e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "03",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -3.3527612686157227e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "04",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": -1.3877787807814457e-17
+  },
+  {
+    "sample_id": "04",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "04",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.4901161193847656e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "04",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "04",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 2.7755575615628914e-17
+  },
+  {
+    "sample_id": "04",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "04",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -7.450580596923828e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "04",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 8.940696716308594e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "05",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "05",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "05",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -1.4901161193847656e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "05",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "05",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": -2.7755575615628914e-17
+  },
+  {
+    "sample_id": "05",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 7.450580596923828e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "05",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 9.685754776000977e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "05",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "06",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": -5.551115123125783e-17
+  },
+  {
+    "sample_id": "06",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.9802322387695312e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "06",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -3.725290298461914e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "06",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.2351741790771484e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "06",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "06",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "06",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -3.725290298461914e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "06",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -6.705522537231445e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "07",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": -5.551115123125783e-17
+  },
+  {
+    "sample_id": "07",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "07",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 6.984919309616089e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "07",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "07",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": -5.551115123125783e-17
+  },
+  {
+    "sample_id": "07",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "07",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.561137080192566e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "07",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -5.21540641784668e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "08",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": -5.551115123125783e-17
+  },
+  {
+    "sample_id": "08",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.9802322387695312e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "08",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -3.725290298461914e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "08",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -7.636845111846924e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "08",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "08",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "08",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.862645149230957e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "08",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "09",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "09",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -1.1920928955078125e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "09",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -1.2177042663097382e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "09",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -9.883660823106766e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "09",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 4.440892098500626e-16
+  },
+  {
+    "sample_id": "09",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.682209014892578e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "09",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.60770320892334e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "09",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -1.2153759598731995e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "10",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "10",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "10",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 7.450580596923828e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "10",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.601874828338623e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "10",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 2.220446049250313e-16
+  },
+  {
+    "sample_id": "10",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 3.2782554626464844e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "10",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.5704503059387207e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "10",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.564621925354004e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "11",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "11",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.9802322387695312e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "11",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 4.0978193283081055e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "11",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -3.3527612686157227e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "11",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 1.1102230246251565e-16
+  },
+  {
+    "sample_id": "11",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 9.685754776000977e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "11",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "11",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "12",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": -5.551115123125783e-17
+  },
+  {
+    "sample_id": "12",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "12",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -1.30385160446167e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "12",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 4.6566128730773926e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "12",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "12",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "12",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -3.725290298461914e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "12",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "13",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "13",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 7.450580596923828e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "13",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 3.725290298461914e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "13",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 9.499490261077881e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "13",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 6.938893903907228e-18
+  },
+  {
+    "sample_id": "13",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 7.450580596923828e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "13",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.3283064365386963e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "13",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.421438694000244e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "14",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": -2.7755575615628914e-17
+  },
+  {
+    "sample_id": "14",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -8.195638656616211e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "14",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -3.725290298461914e-09,
+    "steps": 64
+  },
+  {
+    "sample_id": "14",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.9802322387695312e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "14",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "14",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "14",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.1175870895385742e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "14",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 7.450580596923828e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "15",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "15",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "15",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.9802322387695312e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "15",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 3.5390257835388184e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "15",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": -5.551115123125783e-17
+  },
+  {
+    "sample_id": "15",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "15",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.0978193283081055e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "15",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "16",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "16",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.9802322387695312e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "16",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -1.0390067473053932e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "16",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.1618477553129196e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "16",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "16",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.341104507446289e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "16",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.564621925354004e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "16",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.2351741790771484e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "17",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "17",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -5.960464477539063e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "17",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -5.436595529317856e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "17",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 4.132743924856186e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "17",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": -1.1102230246251565e-16
+  },
+  {
+    "sample_id": "17",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "17",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "17",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.4901161193847656e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "18",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "18",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "18",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.0046870708465576e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "18",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 3.166496753692627e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "18",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 5.551115123125783e-17
+  },
+  {
+    "sample_id": "18",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -8.940696716308594e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "18",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.8870999813079834e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "18",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "19",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "19",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.7939677238464355e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "19",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.60770320892334e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "19",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -1.4901161193847656e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "19",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "19",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.2351741790771484e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "19",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -6.798654794692993e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "19",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -2.0489096641540527e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "20",
+    "target": "classification",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "20",
+    "target": "classification",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 2.9802322387695312e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "20",
+    "target": "classification",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 1.955777406692505e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "20",
+    "target": "classification",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 4.470348358154297e-08,
+    "steps": 64
+  },
+  {
+    "sample_id": "20",
+    "target": "regression",
+    "method": "shapley",
+    "pass": true,
+    "residual": 0.0
+  },
+  {
+    "sample_id": "20",
+    "target": "regression",
+    "modality": "text",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": 0.0,
+    "steps": 64
+  },
+  {
+    "sample_id": "20",
+    "target": "regression",
+    "modality": "audio",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -1.2095551937818527e-07,
+    "steps": 64
+  },
+  {
+    "sample_id": "20",
+    "target": "regression",
+    "modality": "vision",
+    "method": "conditional_ig",
+    "pass": true,
+    "residual": -5.960464477539063e-08,
+    "steps": 64
+  }
+]

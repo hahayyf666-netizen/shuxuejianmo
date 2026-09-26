@@ -1,0 +1,94 @@
+{
+  "sample_id": "14",
+  "source_video_id": "_0efYOjQYRc",
+  "candidate": {
+    "video_id": "_0efYOjQYRc",
+    "offset": 48,
+    "trigram_hits": 8,
+    "ordered_exact_tokens": 10,
+    "target_tokens": 26
+  },
+  "source_url": "https://www.youtube.com/watch?v=_0efYOjQYRc",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\14.mp4",
+    "bytes": 2257001,
+    "sha256": "8f1c4cb4b1c97b31cd065317faef41465cfcda403ef12d1defce4a5d23b8e18e"
+  },
+  "metadata": {
+    "id": "_0efYOjQYRc",
+    "title": "Accounting Firm and Consulting Firm News - Deloitte, Ernst & Young, KPMG, PricewaterhouseCoopers PwC",
+    "duration": 38,
+    "webpage_url": "https://www.youtube.com/watch?v=_0efYOjQYRc",
+    "format_id": "136+251"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\14__0efYOjQYRc.mp4",
+    "bytes": 1210997,
+    "sha256": "79c45240655d382c50c07a876222c07c05b777646f988812421b7695cba179d8",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 37.513,
+    "clip_audio_duration_sec": 10.226375,
+    "full_peak_source_offset_sec": 20.2025,
+    "full_peak_corr": 0.9970428612773511,
+    "best_other_corr_outside_one_second": 0.07209241129868411,
+    "peak_margin": 0.9249504499786669,
+    "first_half_peak_corr": 0.997039115850832,
+    "first_half_offset_sec": 20.2025,
+    "second_half_peak_corr": 0.9970930535072274,
+    "second_half_offset_sec": 20.2025,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "PASS",
+    "source_frame_count": 1122,
+    "clip_frame_count": 308,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 2.06,
+        "actual_clip_pts_sec": 2.066666666666667,
+        "matched_source_pts_sec": 22.356,
+        "offset_sec": 20.289333333333335,
+        "pixel_pearson": 0.9993817338904037
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 5.15,
+        "actual_clip_pts_sec": 5.133333333333334,
+        "matched_source_pts_sec": 25.426,
+        "offset_sec": 20.292666666666666,
+        "pixel_pearson": 0.999376830776026
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 8.24,
+        "actual_clip_pts_sec": 8.233333333333333,
+        "matched_source_pts_sec": 28.528,
+        "offset_sec": 20.294666666666664,
+        "pixel_pearson": 0.9993714883991278
+      }
+    ],
+    "offset_median_sec": 20.292666666666666,
+    "offset_range_sec": 0.005333333333329193,
+    "pearson_min": 0.9993714883991278,
+    "pearson_median": 0.999376830776026,
+    "audio_video_offset_difference_sec": 0.09016666666666495,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "PASS",
+  "local_time_gate": "PASS",
+  "formal_xai_mapping_status": "index_only"
+}

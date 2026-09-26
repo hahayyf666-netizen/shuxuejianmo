@@ -1,0 +1,22 @@
+{
+  "stage": "Q3_VALID120_FORMAL_XAI_REVIEW",
+  "result_archive_sha256": "33ef931cfacfee17ce36746b975e4d0440a7aec5371ddb616ad32193876b6645",
+  "runner_source_commit": "a6b6bb552613cd4c59ab23e99f15b5b8a920a082",
+  "sample_count": 120,
+  "video_id_group_count": 84,
+  "output_manifest_files_verified": 129,
+  "numerical_checks_passed": 4080,
+  "numerical_checks_failed": 0,
+  "perturbation_comparisons": 18,
+  "comparisons_with_positive_cluster_bootstrap_lower_bound": 18,
+  "multiple_comparison_correction": false,
+  "local_attribution_status_count": {"localized_feature_position": 720},
+  "seed_stability": "mixed; audio and vision weaker than text",
+  "raw_evidence_mapping_valid120": {"text": "index_only", "audio": "index_only", "vision": "index_only"},
+  "machine_result_gate": "REVIEW_GATE",
+  "human_audit_decision": "VALID120_FEATURE_SPACE_REVIEW_PASS_WITH_LIMITATIONS",
+  "independent_agent_review_of_formal120": "not_completed_workspace_credits_exhausted",
+  "formal_test_evaluation": false,
+  "attachment4_formal_inference": false,
+  "q3_frozen": false
+}

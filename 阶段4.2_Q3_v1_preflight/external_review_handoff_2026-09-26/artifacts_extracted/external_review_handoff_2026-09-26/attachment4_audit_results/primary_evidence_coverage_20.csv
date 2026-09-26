@@ -1,0 +1,21 @@
+sample_id,classification_primary_modality,regression_primary_modality,text_raw_evidence_available,audio_raw_evidence_available,vision_raw_evidence_available,classification_key_evidence_requirement_satisfied,regression_key_evidence_requirement_satisfied,reason,mapping_status_text,mapping_status_audio,mapping_status_vision,known_input_anomaly,probability_sum,probability_pass,predicted_intensity,intensity_pass,padding_top_position_check_pass,audio_vision_temporal_claim_check_pass
+01,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,1.0000000447034836,True,0.18078841269016266,True,True,True
+02,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,1.0000000298023224,True,0.28669729828834534,True,True,True
+03,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,1.0000000447034836,True,-0.139744371175766,True,True,True
+04,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,0.9999999701976776,True,0.2880612909793854,True,True,True
+05,text,vision,True,False,False,True,False,text primary with verified raw span,verified_text,index_only,index_only,,0.9999999776482582,True,0.3092142641544342,True,True,True
+06,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,T2 vision row nonunique,1.0000000149011612,True,0.40329253673553467,True,True,True
+07,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,1.0000000037252903,True,0.4320453107357025,True,True,True
+08,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,1.000000011175871,True,0.30794185400009155,True,True,True
+09,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,1.0000001296866685,True,-2.2184841632843018,True,True,True
+10,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,0.9999999441206455,True,-1.1465693712234497,True,True,True
+11,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,0.9999999850988388,True,-0.6619403958320618,True,True,True
+12,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,0.9999999925494194,True,-0.48854267597198486,True,True,True
+13,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,aligned vision all-zero / C2 visual chain unavailable,0.999999925494194,True,0.18594250082969666,True,True,True
+14,vision,vision,True,False,False,False,False,primary modality is audio/vision and remains index_only,verified_text,index_only,index_only,,1.000000037252903,True,0.41274601221084595,True,True,True
+15,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,0.9999999459832907,True,0.4748149514198303,True,True,True
+16,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,aligned vision all-zero-like / C2 visual chain unavailable,1.0000000520376489,True,-2.343435764312744,True,True,True
+17,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,1.0000000316649675,True,0.9431664943695068,True,True,True
+18,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,T2 vision row nonunique,0.9999999850988388,True,-0.2377287745475769,True,True,True
+19,vision,text,True,False,False,False,True,text primary with verified raw span,verified_text,index_only,index_only,,1.0000000447034836,True,0.055435411632061005,True,True,True
+20,text,text,True,False,False,True,True,text primary with verified raw span,verified_text,index_only,index_only,,0.9999999944120646,True,0.6459167003631592,True,True,True

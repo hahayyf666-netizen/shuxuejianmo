@@ -1,0 +1,428 @@
+{
+  "sample_id": "09",
+  "official_id": "09",
+  "raw_text": "(uhh) I did not like this movie at all, I would not recommend it",
+  "valid_content_length": 18,
+  "official_seq_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "prediction": {
+    "class_index": 0,
+    "class_name": "Negative",
+    "probabilities": {
+      "Negative": 0.9939311742782593,
+      "Neutral": 0.00325248995795846,
+      "Positive": 0.002816465450450778
+    },
+    "intensity": -2.2184841632843018
+  },
+  "mapping_status": {
+    "text": "verified_text",
+    "audio": "index_only",
+    "vision": "index_only"
+  },
+  "media_origin_audit": "NOT_TESTED",
+  "known_input_anomaly": null,
+  "targets": {
+    "classification": {
+      "shapley": {
+        "target": "classification",
+        "target_class": 0,
+        "phi": {
+          "text": 0.7071886211633682,
+          "audio": -0.017297104001045224,
+          "vision": -0.016098648309707638
+        },
+        "coalition_values": {
+          "0": 0.3201383054256439,
+          "1": 0.9956075549125671,
+          "2": 0.28478604555130005,
+          "3": 0.9949721097946167,
+          "4": 0.2874842584133148,
+          "5": 0.9946708083152771,
+          "6": 0.2565208673477173,
+          "7": 0.9939311742782593
+        },
+        "additivity_residual": 0.0
+      },
+      "semantics": {
+        "primary_influential_modality": "text",
+        "influential_ties": [
+          "text"
+        ],
+        "relative_magnitude": {
+          "text": 0.9549062152714732,
+          "audio": 0.02335602075953018,
+          "vision": 0.021737763968996557
+        },
+        "primary_supporting_modality": "text",
+        "supporting_ties": [
+          "text"
+        ]
+      },
+      "modalities": {
+        "text": {
+          "conditional_ig": {
+            "modality": "text",
+            "target": "classification",
+            "target_class": 0,
+            "conditional_output_difference": 0.737410306930542,
+            "completeness_residual": -1.1920928955078125e-07,
+            "steps": 64,
+            "numerical_status": "pass"
+          },
+          "local_attribution_status": "localized_feature_position",
+          "top_positions": [
+            {
+              "official_seq_index": 7,
+              "signed_importance": 0.07957073301076889,
+              "absolute_importance": 0.07957073301076889,
+              "mapping_status": "verified_text",
+              "token_id": 2025,
+              "char_start": 12,
+              "char_end": 15,
+              "raw_text_substring": "not"
+            },
+            {
+              "official_seq_index": 6,
+              "signed_importance": 0.07568947970867157,
+              "absolute_importance": 0.07568947970867157,
+              "mapping_status": "verified_text",
+              "token_id": 2106,
+              "char_start": 8,
+              "char_end": 11,
+              "raw_text_substring": "did"
+            },
+            {
+              "official_seq_index": 16,
+              "signed_importance": 0.05933019891381264,
+              "absolute_importance": 0.05933019891381264,
+              "mapping_status": "verified_text",
+              "token_id": 2025,
+              "char_start": 48,
+              "char_end": 51,
+              "raw_text_substring": "not"
+            },
+            {
+              "official_seq_index": 17,
+              "signed_importance": 0.05749300867319107,
+              "absolute_importance": 0.05749300867319107,
+              "mapping_status": "verified_text",
+              "token_id": 16755,
+              "char_start": 52,
+              "char_end": 61,
+              "raw_text_substring": "recommend"
+            },
+            {
+              "official_seq_index": 14,
+              "signed_importance": 0.0528753399848938,
+              "absolute_importance": 0.0528753399848938,
+              "mapping_status": "verified_text",
+              "token_id": 1045,
+              "char_start": 40,
+              "char_end": 41,
+              "raw_text_substring": "I"
+            }
+          ]
+        },
+        "audio": {
+          "conditional_ig": {
+            "modality": "audio",
+            "target": "classification",
+            "target_class": 0,
+            "conditional_output_difference": -0.0007396340370178223,
+            "completeness_residual": -1.2177042663097382e-07,
+            "steps": 64,
+            "numerical_status": "pass"
+          },
+          "local_attribution_status": "localized_feature_position",
+          "top_positions": [
+            {
+              "official_seq_index": 5,
+              "signed_importance": -0.00010832242696778849,
+              "absolute_importance": 0.00010832242696778849,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 1,
+              "signed_importance": -7.400768663501367e-05,
+              "absolute_importance": 7.400768663501367e-05,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 2,
+              "signed_importance": -7.400768663501367e-05,
+              "absolute_importance": 7.400768663501367e-05,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 3,
+              "signed_importance": -7.400768663501367e-05,
+              "absolute_importance": 7.400768663501367e-05,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 4,
+              "signed_importance": -7.400768663501367e-05,
+              "absolute_importance": 7.400768663501367e-05,
+              "mapping_status": "index_only"
+            }
+          ]
+        },
+        "vision": {
+          "conditional_ig": {
+            "modality": "vision",
+            "target": "classification",
+            "target_class": 0,
+            "conditional_output_difference": -0.0010409355163574219,
+            "completeness_residual": -9.883660823106766e-08,
+            "steps": 64,
+            "numerical_status": "pass"
+          },
+          "local_attribution_status": "localized_feature_position",
+          "top_positions": [
+            {
+              "official_seq_index": 6,
+              "signed_importance": -0.00010509400453884155,
+              "absolute_importance": 0.00010509400453884155,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 5,
+              "signed_importance": -0.00010324431059416384,
+              "absolute_importance": 0.00010324431059416384,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 1,
+              "signed_importance": -9.741148824105039e-05,
+              "absolute_importance": 9.741148824105039e-05,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 2,
+              "signed_importance": -9.741148824105039e-05,
+              "absolute_importance": 9.741148824105039e-05,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 3,
+              "signed_importance": -9.741148824105039e-05,
+              "absolute_importance": 9.741148824105039e-05,
+              "mapping_status": "index_only"
+            }
+          ]
+        }
+      }
+    },
+    "regression": {
+      "shapley": {
+        "target": "regression",
+        "target_class": null,
+        "phi": {
+          "text": -2.4811985840400057,
+          "audio": 0.044659400979677834,
+          "vision": -0.018767987688382465
+        },
+        "coalition_values": {
+          "0": 0.23682300746440887,
+          "1": -2.256375789642334,
+          "2": 0.2934547960758209,
+          "3": -2.2243130207061768,
+          "4": 0.1934223473072052,
+          "5": -2.2511353492736816,
+          "6": 0.25075003504753113,
+          "7": -2.2184841632843018
+        },
+        "additivity_residual": 4.440892098500626e-16
+      },
+      "semantics": {
+        "primary_influential_modality": "text",
+        "influential_ties": [
+          "text"
+        ],
+        "relative_magnitude": {
+          "text": 0.9750739836233931,
+          "audio": 0.01755047753919999,
+          "vision": 0.007375538837406827
+        },
+        "direction_labels": {
+          "text": "push_negative",
+          "audio": "push_positive",
+          "vision": "push_negative"
+        }
+      },
+      "modalities": {
+        "text": {
+          "conditional_ig": {
+            "modality": "text",
+            "target": "regression",
+            "target_class": null,
+            "conditional_output_difference": -2.469234198331833,
+            "completeness_residual": -2.682209014892578e-07,
+            "steps": 64,
+            "numerical_status": "pass"
+          },
+          "local_attribution_status": "localized_feature_position",
+          "top_positions": [
+            {
+              "official_seq_index": 7,
+              "signed_importance": -0.2616245150566101,
+              "absolute_importance": 0.2616245150566101,
+              "mapping_status": "verified_text",
+              "token_id": 2025,
+              "char_start": 12,
+              "char_end": 15,
+              "raw_text_substring": "not"
+            },
+            {
+              "official_seq_index": 6,
+              "signed_importance": -0.24566584825515747,
+              "absolute_importance": 0.24566584825515747,
+              "mapping_status": "verified_text",
+              "token_id": 2106,
+              "char_start": 8,
+              "char_end": 11,
+              "raw_text_substring": "did"
+            },
+            {
+              "official_seq_index": 16,
+              "signed_importance": -0.18932901322841644,
+              "absolute_importance": 0.18932901322841644,
+              "mapping_status": "verified_text",
+              "token_id": 2025,
+              "char_start": 48,
+              "char_end": 51,
+              "raw_text_substring": "not"
+            },
+            {
+              "official_seq_index": 17,
+              "signed_importance": -0.18606257438659668,
+              "absolute_importance": 0.18606257438659668,
+              "mapping_status": "verified_text",
+              "token_id": 16755,
+              "char_start": 52,
+              "char_end": 61,
+              "raw_text_substring": "recommend"
+            },
+            {
+              "official_seq_index": 14,
+              "signed_importance": -0.1793065220117569,
+              "absolute_importance": 0.1793065220117569,
+              "mapping_status": "verified_text",
+              "token_id": 1045,
+              "char_start": 40,
+              "char_end": 41,
+              "raw_text_substring": "I"
+            }
+          ]
+        },
+        "audio": {
+          "conditional_ig": {
+            "modality": "audio",
+            "target": "regression",
+            "target_class": null,
+            "conditional_output_difference": 0.03265118598937988,
+            "completeness_residual": -2.60770320892334e-08,
+            "steps": 64,
+            "numerical_status": "pass"
+          },
+          "local_attribution_status": "localized_feature_position",
+          "top_positions": [
+            {
+              "official_seq_index": 1,
+              "signed_importance": 0.0037066927179694176,
+              "absolute_importance": 0.0037066927179694176,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 2,
+              "signed_importance": 0.0037066927179694176,
+              "absolute_importance": 0.0037066927179694176,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 3,
+              "signed_importance": 0.0037066927179694176,
+              "absolute_importance": 0.0037066927179694176,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 4,
+              "signed_importance": 0.0037066927179694176,
+              "absolute_importance": 0.0037066927179694176,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 5,
+              "signed_importance": 0.0036721318028867245,
+              "absolute_importance": 0.0036721318028867245,
+              "mapping_status": "index_only"
+            }
+          ]
+        },
+        "vision": {
+          "conditional_ig": {
+            "modality": "vision",
+            "target": "regression",
+            "target_class": null,
+            "conditional_output_difference": 0.005828857421875,
+            "completeness_residual": -1.2153759598731995e-07,
+            "steps": 64,
+            "numerical_status": "pass"
+          },
+          "local_attribution_status": "localized_feature_position",
+          "top_positions": [
+            {
+              "official_seq_index": 15,
+              "signed_importance": -0.0031914841383695602,
+              "absolute_importance": 0.0031914841383695602,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 6,
+              "signed_importance": 0.002641630358994007,
+              "absolute_importance": 0.002641630358994007,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 5,
+              "signed_importance": 0.002430240623652935,
+              "absolute_importance": 0.002430240623652935,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 1,
+              "signed_importance": 0.0023946715518832207,
+              "absolute_importance": 0.0023946715518832207,
+              "mapping_status": "index_only"
+            },
+            {
+              "official_seq_index": 2,
+              "signed_importance": 0.0023946715518832207,
+              "absolute_importance": 0.0023946715518832207,
+              "mapping_status": "index_only"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "sample_id": "15",
+  "source_video_id": "SKTyBOhDX6U",
+  "candidate": {
+    "video_id": "SKTyBOhDX6U",
+    "offset": 101,
+    "trigram_hits": 15,
+    "ordered_exact_tokens": 17,
+    "target_tokens": 17
+  },
+  "source_url": "https://www.youtube.com/watch?v=SKTyBOhDX6U",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\15.mp4",
+    "bytes": 705745,
+    "sha256": "bdd4ea47f2dac729a445cdf34009b9dff6d66bdc8ca997b82814bd55dc7fc675"
+  },
+  "metadata": {
+    "id": "SKTyBOhDX6U",
+    "title": "Fighting for the Rights of People with Disabilities",
+    "duration": 317,
+    "webpage_url": "https://www.youtube.com/watch?v=SKTyBOhDX6U",
+    "format_id": "137+251"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\15_SKTyBOhDX6U.mp4",
+    "bytes": 25250688,
+    "sha256": "164e29a1c6aaf1d94a39cd92bade6d8e9d66ef3628abe13e4c62b4026385f966",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 316.653,
+    "clip_audio_duration_sec": 7.298,
+    "full_peak_source_offset_sec": 33.7876875,
+    "full_peak_corr": 0.9899162842672973,
+    "best_other_corr_outside_one_second": 0.07078726080127273,
+    "peak_margin": 0.9191290234660245,
+    "first_half_peak_corr": 0.993250297946151,
+    "first_half_offset_sec": 33.7876875,
+    "second_half_peak_corr": 0.9853545861384525,
+    "second_half_offset_sec": 33.7876875,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "PASS",
+    "source_frame_count": 9490,
+    "clip_frame_count": 220,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 1.46,
+        "actual_clip_pts_sec": 1.4666666666666666,
+        "matched_source_pts_sec": 35.30193333333333,
+        "offset_sec": 33.83526666666666,
+        "pixel_pearson": 0.9999591315282395
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 3.65,
+        "actual_clip_pts_sec": 3.6333333333333333,
+        "matched_source_pts_sec": 37.47076666666667,
+        "offset_sec": 33.83743333333334,
+        "pixel_pearson": 0.9999558654089318
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 5.84,
+        "actual_clip_pts_sec": 5.833333333333333,
+        "matched_source_pts_sec": 39.67296666666667,
+        "offset_sec": 33.83963333333333,
+        "pixel_pearson": 0.9999557595617261
+      }
+    ],
+    "offset_median_sec": 33.83743333333334,
+    "offset_range_sec": 0.004366666666669516,
+    "pearson_min": 0.9999557595617261,
+    "pearson_median": 0.9999558654089318,
+    "audio_video_offset_difference_sec": 0.04974583333333982,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "PASS",
+  "local_time_gate": "PASS",
+  "formal_xai_mapping_status": "index_only"
+}

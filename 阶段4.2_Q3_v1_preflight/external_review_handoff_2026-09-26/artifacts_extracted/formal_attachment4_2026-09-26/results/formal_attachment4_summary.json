@@ -1,0 +1,30 @@
+{
+  "status": "ATTACHMENT4_FORMAL_COMPLETE",
+  "sample_count": 20,
+  "prediction_count": 20,
+  "numeric_check_count": 160,
+  "numeric_failures": [],
+  "numerical_status": "PASS",
+  "mapping_status": {
+    "text": "verified_text",
+    "audio": "index_only",
+    "vision": "index_only"
+  },
+  "feature_space_attribution": true,
+  "test_evaluated": false,
+  "labels_read": false,
+  "attachment4_inference": true,
+  "device": "cpu",
+  "hostname": "Finesse",
+  "python": "3.12.10",
+  "sys_executable": "C:\\Users\\Fine\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "torch": "2.8.0+cpu",
+  "numpy": "2.5.0",
+  "checkpoint_sha256": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+  "scaler_sha256": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424",
+  "contract_sha256": "a2f763d51c515c6ddf0d3a6caf4a8764394fbf14f3f83b52b7d6532eb3ccc6d4",
+  "text_trace_sha256": "70e5e8a83d3d7a1d30a723bf61249e09d4267c5d75478f64f60529b539c50303",
+  "t3_records_sha256": "00f27d43e9e2555543b5467d356b6cc372c55bf95b059f16138c5cbea7a1236f",
+  "elapsed_sec": 16.030999999959022,
+  "final_gate": "REVIEW_GATE"
+}

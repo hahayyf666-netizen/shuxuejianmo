@@ -1,0 +1,210 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "gate": "Q3_4_5_INTERNAL_ACCEPTANCE",
+  "generated_utc": "2026-09-26T06:22:04.995589+00:00",
+  "check_count": 36,
+  "failed_checks": [],
+  "checks": [
+    {
+      "name": "attachment4_input_sample_scope",
+      "pass": true,
+      "detail": "contract has exactly 01-20 video and aligned PKL hashes"
+    },
+    {
+      "name": "attachment4_video_hashes",
+      "pass": true,
+      "detail": "present=20, hash_mismatch=0"
+    },
+    {
+      "name": "attachment4_aligned_pkl_hashes",
+      "pass": true,
+      "detail": "present=20, hash_mismatch=0"
+    },
+    {
+      "name": "card_selection_before_inference",
+      "pass": true,
+      "detail": "deterministic card selection recorded before inference"
+    },
+    {
+      "name": "card_selection_rule",
+      "pass": true,
+      "detail": "selected cards match frozen SHA256 ranking"
+    },
+    {
+      "name": "contract_mapping_scope",
+      "pass": true,
+      "detail": "contract mapping statuses unchanged"
+    },
+    {
+      "name": "contract_test_policy",
+      "pass": true,
+      "detail": "contract excludes test and labels"
+    },
+    {
+      "name": "t3_candidate_scope",
+      "pass": true,
+      "detail": "records=15 candidate IDs match frozen shape filter"
+    },
+    {
+      "name": "t3_exclusion_scope",
+      "pass": true,
+      "detail": "five excluded IDs match frozen non-YouTube-shape rule"
+    },
+    {
+      "name": "t3_aggregate_counts",
+      "pass": true,
+      "detail": "T3 aggregate counts are internally consistent"
+    },
+    {
+      "name": "t3_pass_ids",
+      "pass": true,
+      "detail": "full media-origin PASS IDs=['01', '02', '04', '07', '08', '14', '15', '17', '19']"
+    },
+    {
+      "name": "t3_blocked_ids",
+      "pass": true,
+      "detail": "blocked/partial IDs=['03', '05', '12', '13', '18', '20']"
+    },
+    {
+      "name": "t3_no_model_run",
+      "pass": true,
+      "detail": "T3 did not run model or prediction"
+    },
+    {
+      "name": "t3_mapping_boundary",
+      "pass": true,
+      "detail": "T3 did not upgrade formal mapping"
+    },
+    {
+      "name": "t3_records_hash",
+      "pass": true,
+      "detail": "T3 record hash matches aggregate"
+    },
+    {
+      "name": "formal_prediction_row_count",
+      "pass": true,
+      "detail": "rows=20, unique IDs=20"
+    },
+    {
+      "name": "formal_per_sample_files",
+      "pass": true,
+      "detail": "per_sample_files=20"
+    },
+    {
+      "name": "formal_numeric_check_count",
+      "pass": true,
+      "detail": "numeric_checks=160"
+    },
+    {
+      "name": "formal_numeric_checks",
+      "pass": true,
+      "detail": "methods={'shapley': 40, 'conditional_ig': 120}"
+    },
+    {
+      "name": "formal_numeric_residual",
+      "pass": true,
+      "detail": "max_abs_residual=3.28e-07"
+    },
+    {
+      "name": "formal_summary_gate",
+      "pass": true,
+      "detail": "formal summary status and review gate"
+    },
+    {
+      "name": "formal_no_test_or_labels",
+      "pass": true,
+      "detail": "Attachment4-only inference; no test or labels"
+    },
+    {
+      "name": "formal_mapping_contract",
+      "pass": true,
+      "detail": "text verified_text; audio/vision index_only; no unverified temporal mapping"
+    },
+    {
+      "name": "formal_local_attribution_status",
+      "pass": true,
+      "detail": "all 120 target-modality blocks expose feature-position attribution"
+    },
+    {
+      "name": "formal_media_origin_audit_fields",
+      "pass": true,
+      "detail": "T3 status carried as audit field only"
+    },
+    {
+      "name": "known_input_anomaly_preservation",
+      "pass": true,
+      "detail": "06/13/16/18 anomaly records retained"
+    },
+    {
+      "name": "no_temporal_claim_in_formal_positions",
+      "pass": true,
+      "detail": "formal positions contain no seconds/PTS/frame fields"
+    },
+    {
+      "name": "prediction_finiteness",
+      "pass": true,
+      "detail": "20 probability simplexes and intensities finite and bounded"
+    },
+    {
+      "name": "formal_output_manifest",
+      "pass": true,
+      "detail": "manifest_entries=25, expected=25"
+    },
+    {
+      "name": "public_csv_no_raw_text",
+      "pass": true,
+      "detail": "public CSV omits raw transcript text"
+    },
+    {
+      "name": "public_csv_no_forbidden_claims",
+      "pass": true,
+      "detail": "public CSV contains no prohibited evidence claims"
+    },
+    {
+      "name": "public_csv_rows",
+      "pass": true,
+      "detail": "public CSV has one row for each Attachment4 sample"
+    },
+    {
+      "name": "hash_checkpoint_sha256",
+      "pass": true,
+      "detail": "checkpoint_sha256 matches formal summary"
+    },
+    {
+      "name": "hash_scaler_sha256",
+      "pass": true,
+      "detail": "scaler_sha256 matches formal summary"
+    },
+    {
+      "name": "hash_contract_sha256",
+      "pass": true,
+      "detail": "contract_sha256 matches formal summary"
+    },
+    {
+      "name": "hash_t3_records_sha256",
+      "pass": true,
+      "detail": "t3_records_sha256 matches formal summary"
+    }
+  ],
+  "t3": {
+    "candidate_count": 15,
+    "full_media_origin_pass_count": 9,
+    "audio_pass_count": 11,
+    "video_pass_count": 9,
+    "formal_mapping": "index_only"
+  },
+  "formal_attachment4": {
+    "sample_count": 20,
+    "numeric_checks": 160,
+    "numeric_failures": [],
+    "mapping_status": {
+      "text": "verified_text",
+      "audio": "index_only",
+      "vision": "index_only"
+    },
+    "test_evaluated": false,
+    "labels_read": false,
+    "final_gate": "REVIEW_GATE"
+  },
+  "next_stage": "STOP_AFTER_4_5; do not enter 4.6 in this run"
+}

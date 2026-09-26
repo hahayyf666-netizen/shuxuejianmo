@@ -1,0 +1,19 @@
+{
+  "version": "q3-t3-media-origin-v1-2026-09-26",
+  "sample_count": 15,
+  "candidate_count": 15,
+  "source_media_pass_count": 9,
+  "audio_pass_count": 11,
+  "video_pass_count": 9,
+  "blocked_or_failed": [
+    "03",
+    "05",
+    "12",
+    "13",
+    "18",
+    "20"
+  ],
+  "formal_xai_mapping_status": "index_only",
+  "model_or_prediction_run": false,
+  "records_sha256": "00f27d43e9e2555543b5467d356b6cc372c55bf95b059f16138c5cbea7a1236f"
+}

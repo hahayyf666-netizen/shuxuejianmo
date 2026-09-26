@@ -1,0 +1,94 @@
+{
+  "sample_id": "18",
+  "source_video_id": "RVC8l5hf2Eg",
+  "candidate": {
+    "video_id": "RVC8l5hf2Eg",
+    "offset": 103,
+    "trigram_hits": 21,
+    "ordered_exact_tokens": 23,
+    "target_tokens": 44
+  },
+  "source_url": "https://www.youtube.com/watch?v=RVC8l5hf2Eg",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\18.mp4",
+    "bytes": 2262931,
+    "sha256": "0faf17accce9e58d81b2cc4ff6b150f8bc7f1d2f620ba420944f5732f41d6759"
+  },
+  "metadata": {
+    "id": "RVC8l5hf2Eg",
+    "title": "3-Minute Sustainability Recap EP02 - 5 Retailers Fail Greenpeace Ranking",
+    "duration": 184,
+    "webpage_url": "https://www.youtube.com/watch?v=RVC8l5hf2Eg",
+    "format_id": "136+140"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\18_RVC8l5hf2Eg.mp4",
+    "bytes": 3937883,
+    "sha256": "44e0e9fb9e00057b9716557a961edb2b277e89965dd5734fabb962f955d48dd0",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 184.018125,
+    "clip_audio_duration_sec": 18.636,
+    "full_peak_source_offset_sec": 54.19425,
+    "full_peak_corr": 0.9894029191375505,
+    "best_other_corr_outside_one_second": 0.040287672510393883,
+    "peak_margin": 0.9491152466271566,
+    "first_half_peak_corr": 0.9901859356904947,
+    "first_half_offset_sec": 54.19425,
+    "second_half_peak_corr": 0.988386005828819,
+    "second_half_offset_sec": 54.19425,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "FAIL_VISUAL_GATE",
+    "source_frame_count": 5515,
+    "clip_frame_count": 561,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 3.7533333333333334,
+        "actual_clip_pts_sec": 3.7666666666666666,
+        "matched_source_pts_sec": 61.46666666666667,
+        "offset_sec": 57.7,
+        "pixel_pearson": 0.9987562174393478
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 9.383333333333333,
+        "actual_clip_pts_sec": 9.366666666666667,
+        "matched_source_pts_sec": 63.9,
+        "offset_sec": 54.53333333333333,
+        "pixel_pearson": 0.9987189920688045
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 15.013333333333334,
+        "actual_clip_pts_sec": 15.0,
+        "matched_source_pts_sec": 77.86666666666666,
+        "offset_sec": 62.86666666666666,
+        "pixel_pearson": 0.9987158050683753
+      }
+    ],
+    "offset_median_sec": 57.7,
+    "offset_range_sec": 8.333333333333329,
+    "pearson_min": 0.9987158050683753,
+    "pearson_median": 0.9987189920688045,
+    "audio_video_offset_difference_sec": 3.505750000000006,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "FAIL_OR_PARTIAL",
+  "local_time_gate": "BLOCKED",
+  "formal_xai_mapping_status": "index_only"
+}

@@ -1,0 +1,94 @@
+{
+  "sample_id": "08",
+  "source_video_id": "2m58ShI1QSI",
+  "candidate": {
+    "video_id": "2m58ShI1QSI",
+    "offset": 82,
+    "trigram_hits": 8,
+    "ordered_exact_tokens": 10,
+    "target_tokens": 10
+  },
+  "source_url": "https://www.youtube.com/watch?v=2m58ShI1QSI",
+  "status": "COMPLETE",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\08.mp4",
+    "bytes": 1026677,
+    "sha256": "962057312eb9b751ff907ba5799f455dedfc271cabb5d45abd40803e08f88d79"
+  },
+  "metadata": {
+    "id": "2m58ShI1QSI",
+    "title": "Introduction to the Universal Design Grand Challenge Student Awards 2014",
+    "duration": 627,
+    "webpage_url": "https://www.youtube.com/watch?v=2m58ShI1QSI",
+    "format_id": "136+251"
+  },
+  "download": {
+    "path": "阶段4.2_Q3_v1_preflight\\t3_media_origin_2026-09-26\\private_media_v3\\08_2m58ShI1QSI.mp4",
+    "bytes": 14644644,
+    "sha256": "a9a0047ca0b61d389e99228dcef2d906aaa51efb3533ff44d36de36e8b8bbf94",
+    "command_exit_code": 0
+  },
+  "audio": {
+    "source_audio_duration_sec": 626.873,
+    "clip_audio_duration_sec": 4.908,
+    "full_peak_source_offset_sec": 410.15725,
+    "full_peak_corr": 0.9939361394030204,
+    "best_other_corr_outside_one_second": 0.10083900500290933,
+    "peak_margin": 0.8930971344001111,
+    "first_half_peak_corr": 0.9940214826365619,
+    "first_half_offset_sec": 410.15725,
+    "second_half_peak_corr": 0.9938775533246751,
+    "second_half_offset_sec": 410.15725,
+    "status": "PASS",
+    "thresholds": {
+      "peak_at_least": 0.6,
+      "peak_margin_at_least": 0.1,
+      "best_other_below": 0.5,
+      "half_peak_at_least": 0.5,
+      "half_offset_agreement_sec": 0.12
+    }
+  },
+  "video": {
+    "status": "PASS",
+    "source_frame_count": 15670,
+    "clip_frame_count": 149,
+    "checks": [
+      {
+        "fraction": 0.2,
+        "requested_clip_sec": 1.0066666666666666,
+        "actual_clip_pts_sec": 1.0,
+        "matched_source_pts_sec": 411.24,
+        "offset_sec": 410.24,
+        "pixel_pearson": 0.9997975258462914
+      },
+      {
+        "fraction": 0.5,
+        "requested_clip_sec": 2.5166666666666666,
+        "actual_clip_pts_sec": 2.5,
+        "matched_source_pts_sec": 412.72,
+        "offset_sec": 410.22,
+        "pixel_pearson": 0.9997773454912711
+      },
+      {
+        "fraction": 0.8,
+        "requested_clip_sec": 4.026666666666666,
+        "actual_clip_pts_sec": 4.033333333333333,
+        "matched_source_pts_sec": 414.24,
+        "offset_sec": 410.20666666666665,
+        "pixel_pearson": 0.9997862923548987
+      }
+    ],
+    "offset_median_sec": 410.22,
+    "offset_range_sec": 0.03333333333335986,
+    "pearson_min": 0.9997773454912711,
+    "pearson_median": 0.9997862923548987,
+    "audio_video_offset_difference_sec": 0.06275000000005093,
+    "thresholds": {
+      "min_two_correlations": 0.55,
+      "max_offset_range_sec": 0.12
+    }
+  },
+  "media_identity": "PASS",
+  "local_time_gate": "PASS",
+  "formal_xai_mapping_status": "index_only"
+}

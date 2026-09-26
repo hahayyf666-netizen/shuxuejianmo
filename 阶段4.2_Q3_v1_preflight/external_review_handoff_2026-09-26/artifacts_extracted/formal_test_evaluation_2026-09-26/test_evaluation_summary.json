@@ -1,0 +1,61 @@
+{
+  "status": "FINAL_TEST_EVALUATION_COMPLETE",
+  "evaluated_split": "test",
+  "sample_count": 727,
+  "train_count_checked": 3395,
+  "valid_count_checked": 728,
+  "metrics": {
+    "accuracy": 0.6588720770288858,
+    "macro_f1": 0.5824303167359604,
+    "per_class_f1": {
+      "Negative": 0.6535626535626535,
+      "Neutral": 0.3293172690763052,
+      "Positive": 0.7644110275689223
+    },
+    "mae": 0.6475765521503906,
+    "pearson": 0.6603898509560031,
+    "selection_J": 0.26274955431121905,
+    "direct_opposite_polarity_rate": 0.030261348005502064,
+    "neutral_predicted_abs_regression_mean": 0.11510841753129121,
+    "rmse": 0.8727662372624403,
+    "max_abs_error": 3.657138168811798
+  },
+  "confusion_matrix": {
+    "class_order": [
+      "Negative",
+      "Neutral",
+      "Positive"
+    ],
+    "rows_true_cols_pred": [
+      [
+        133,
+        25,
+        49
+      ],
+      [
+        35,
+        41,
+        82
+      ],
+      [
+        32,
+        25,
+        305
+      ]
+    ]
+  },
+  "selected_architecture": "B0",
+  "selected_checkpoint": "B0_seed2029.pt",
+  "checkpoint_sha256": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+  "scaler_sha256": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424",
+  "aligned_pkl_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+  "test_evaluated": true,
+  "test_used_for_selection": false,
+  "model_or_threshold_changed": false,
+  "attachment4_results_modified": false,
+  "labels_read": true,
+  "device": "cpu",
+  "python": "3.12.10",
+  "torch": "2.8.0+cpu",
+  "generated_utc": "2026-09-26T06:36:31.265148+00:00"
+}

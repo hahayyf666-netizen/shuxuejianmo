@@ -1,0 +1,1 @@
+Q3 external audit package. Start with: 阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/README.md. The ZIP contains historical frozen outputs and read-only audit scripts; it does not contain the source aligned_50.pkl or MP4 media. No model training or inference was performed while building this package.

@@ -1,0 +1,19 @@
+{
+  "sample_id": "03",
+  "source_video_id": "GAVpYuhMZAw",
+  "candidate": {
+    "video_id": "GAVpYuhMZAw",
+    "offset": 136,
+    "trigram_hits": 12,
+    "ordered_exact_tokens": 14,
+    "target_tokens": 27
+  },
+  "source_url": "https://www.youtube.com/watch?v=GAVpYuhMZAw",
+  "status": "BLOCKED_SOURCE_METADATA",
+  "attachment_clip": {
+    "path": "E题数据\\附件4-可解释专项视频样本与特征文件\\对齐版本\\videos\\03.mp4",
+    "bytes": 2973584,
+    "sha256": "556b83449ac17fd8cb99ed1dcd6f11c287dd6e0198885e88555579f9bcab84f3"
+  },
+  "probe_error": "WARNING: [youtube] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nERROR: [youtube] GAVpYuhMZAw: This video is unavailable\n"
+}

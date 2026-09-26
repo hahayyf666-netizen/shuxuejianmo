@@ -1,0 +1,555 @@
+{
+  "status": "FORMAL_XAI_COMPLETE",
+  "final_gate": "REVIEW_GATE",
+  "sample_count": 120,
+  "numerical_status": "PASS",
+  "numerical_checks": 4080,
+  "numerical_failures": [],
+  "local_status_counts": {
+    "localized_feature_position": 720
+  },
+  "sensitivity_summary": {
+    "classification/text/median_reference": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.9917068313105503,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.9833333333333333,
+        "0.2": 0.9901851851851852,
+        "0.3": 0.9820177045177046
+      }
+    },
+    "classification/text/seed2030": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.7204307491211049,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.6588888888888889,
+        "0.2": 0.7289087301587303,
+        "0.3": 0.7648917748917748
+      }
+    },
+    "classification/text/seed2031": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.6243648367296636,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.5463888888888888,
+        "0.2": 0.6501521164021163,
+        "0.3": 0.7223835423835424
+      }
+    },
+    "classification/text/randomized_model": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.06283513948726509,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.1323611111111111,
+        "0.2": 0.25359457671957675,
+        "0.3": 0.3710345441595442
+      }
+    },
+    "classification/audio/median_reference": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.9621304010120687,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.9494444444444443,
+        "0.2": 0.9637996031746032,
+        "0.3": 0.9438835007585008
+      }
+    },
+    "classification/audio/seed2030": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.4238934441067554,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.3794444444444444,
+        "0.2": 0.49801256613756617,
+        "0.3": 0.5633513477263478
+      }
+    },
+    "classification/audio/seed2031": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.4805947316508269,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.45791666666666664,
+        "0.2": 0.5521924603174604,
+        "0.3": 0.5993632062382062
+      }
+    },
+    "classification/audio/randomized_model": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.12790688180306564,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.22805555555555557,
+        "0.2": 0.32682539682539685,
+        "0.3": 0.4111998186998187
+      }
+    },
+    "classification/vision/median_reference": {
+      "n_total": 120,
+      "n_eligible": 115,
+      "status_counts": {
+        "ok": 115,
+        "constant_ranks": 5
+      },
+      "mean_spearman_eligible": 0.9711964980393606,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.9704347826086956,
+        "0.2": 0.964313319530711,
+        "0.3": 0.9675627271279446
+      }
+    },
+    "classification/vision/seed2030": {
+      "n_total": 120,
+      "n_eligible": 115,
+      "status_counts": {
+        "ok": 115,
+        "constant_ranks": 5
+      },
+      "mean_spearman_eligible": 0.5327596818861973,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.5544927536231884,
+        "0.2": 0.6072636300897172,
+        "0.3": 0.6502658452658451
+      }
+    },
+    "classification/vision/seed2031": {
+      "n_total": 120,
+      "n_eligible": 115,
+      "status_counts": {
+        "ok": 115,
+        "constant_ranks": 5
+      },
+      "mean_spearman_eligible": 0.380934925972499,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.4615942028985507,
+        "0.2": 0.5244030365769496,
+        "0.3": 0.5669293025814766
+      }
+    },
+    "classification/vision/randomized_model": {
+      "n_total": 120,
+      "n_eligible": 115,
+      "status_counts": {
+        "ok": 115,
+        "constant_ranks": 5
+      },
+      "mean_spearman_eligible": 0.03712322136689296,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.2005797101449275,
+        "0.2": 0.29429951690821254,
+        "0.3": 0.353626807974634
+      }
+    },
+    "regression/text/median_reference": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.9858814642543978,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.9909722222222221,
+        "0.2": 0.9776752645502645,
+        "0.3": 0.9794176887926888
+      }
+    },
+    "regression/text/seed2030": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.6716100304383921,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.6061111111111112,
+        "0.2": 0.6806878306878306,
+        "0.3": 0.738496572871573
+      }
+    },
+    "regression/text/seed2031": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.45853647751094223,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.4765277777777778,
+        "0.2": 0.5567824074074075,
+        "0.3": 0.6210680754430754
+      }
+    },
+    "regression/text/randomized_model": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": -0.015483883023676582,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.10208333333333333,
+        "0.2": 0.21244708994708994,
+        "0.3": 0.32064967439967434
+      }
+    },
+    "regression/audio/median_reference": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.969946171516908,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.9780555555555556,
+        "0.2": 0.9513128306878308,
+        "0.3": 0.9620634458134458
+      }
+    },
+    "regression/audio/seed2030": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.38606578363598915,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.3705555555555556,
+        "0.2": 0.43909060846560855,
+        "0.3": 0.5182720982720983
+      }
+    },
+    "regression/audio/seed2031": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.27445267820536234,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.34055555555555556,
+        "0.2": 0.40639550264550267,
+        "0.3": 0.46471782846782844
+      }
+    },
+    "regression/audio/randomized_model": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "status_counts": {
+        "ok": 120
+      },
+      "mean_spearman_eligible": 0.013768994089121,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.14416666666666664,
+        "0.2": 0.24205687830687828,
+        "0.3": 0.33095635845635846
+      }
+    },
+    "regression/vision/median_reference": {
+      "n_total": 120,
+      "n_eligible": 115,
+      "status_counts": {
+        "ok": 115,
+        "constant_ranks": 5
+      },
+      "mean_spearman_eligible": 0.9656455465276471,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.9357971014492754,
+        "0.2": 0.9500759144237405,
+        "0.3": 0.9519715067541155
+      }
+    },
+    "regression/vision/seed2030": {
+      "n_total": 120,
+      "n_eligible": 115,
+      "status_counts": {
+        "ok": 115,
+        "constant_ranks": 5
+      },
+      "mean_spearman_eligible": 0.31669352104190124,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.3679710144927536,
+        "0.2": 0.4679744651483782,
+        "0.3": 0.5207944953597128
+      }
+    },
+    "regression/vision/seed2031": {
+      "n_total": 120,
+      "n_eligible": 115,
+      "status_counts": {
+        "ok": 115,
+        "constant_ranks": 5
+      },
+      "mean_spearman_eligible": 0.17943039568865302,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.2966666666666667,
+        "0.2": 0.35604209799861974,
+        "0.3": 0.44562239692674477
+      }
+    },
+    "regression/vision/randomized_model": {
+      "n_total": 120,
+      "n_eligible": 115,
+      "status_counts": {
+        "ok": 115,
+        "constant_ranks": 5
+      },
+      "mean_spearman_eligible": 0.050798751145175694,
+      "mean_topk_overlap_eligible": {
+        "0.1": 0.19913043478260872,
+        "0.2": 0.28314354727398205,
+        "0.3": 0.38774744579092413
+      }
+    }
+  },
+  "perturbation_comparisons": {
+    "classification/text/0.1": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.05311509156987692,
+      "ci95": [
+        0.04571251585983858,
+        0.060150078003279775
+      ],
+      "evidence": "above_random"
+    },
+    "classification/text/0.2": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.08265934144922843,
+      "ci95": [
+        0.07158228956660184,
+        0.09421257026936554
+      ],
+      "evidence": "above_random"
+    },
+    "classification/text/0.3": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.0980593265965581,
+      "ci95": [
+        0.08484532881033581,
+        0.11090706157594585
+      ],
+      "evidence": "above_random"
+    },
+    "classification/audio/0.1": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.00456087655305358,
+      "ci95": [
+        0.003891246952272469,
+        0.005240739834982739
+      ],
+      "evidence": "above_random"
+    },
+    "classification/audio/0.2": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.006766720753148547,
+      "ci95": [
+        0.00576109359162174,
+        0.007823889378958195
+      ],
+      "evidence": "above_random"
+    },
+    "classification/audio/0.3": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.0077459552530854126,
+      "ci95": [
+        0.0064890201364350255,
+        0.009112246280818423
+      ],
+      "evidence": "above_random"
+    },
+    "classification/vision/0.1": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.0034501865640777394,
+      "ci95": [
+        0.002599592598331347,
+        0.004394729134198043
+      ],
+      "evidence": "above_random"
+    },
+    "classification/vision/0.2": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.005230844745225719,
+      "ci95": [
+        0.004017480974791728,
+        0.00664763115388509
+      ],
+      "evidence": "above_random"
+    },
+    "classification/vision/0.3": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.006315387783009403,
+      "ci95": [
+        0.004851675485711059,
+        0.00794040447070976
+      ],
+      "evidence": "above_random"
+    },
+    "regression/text/0.1": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.08576447509306794,
+      "ci95": [
+        0.07013916641639369,
+        0.10052867134896055
+      ],
+      "evidence": "above_random"
+    },
+    "regression/text/0.2": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.11500379179293911,
+      "ci95": [
+        0.09395033623074014,
+        0.1366252540708331
+      ],
+      "evidence": "above_random"
+    },
+    "regression/text/0.3": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.12978034461072335,
+      "ci95": [
+        0.10718550773728178,
+        0.15437019581745803
+      ],
+      "evidence": "above_random"
+    },
+    "regression/audio/0.1": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.012427308169814447,
+      "ci95": [
+        0.010400129201737409,
+        0.014877561775622963
+      ],
+      "evidence": "above_random"
+    },
+    "regression/audio/0.2": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.017548556379430615,
+      "ci95": [
+        0.015084005570356919,
+        0.02040609459367674
+      ],
+      "evidence": "above_random"
+    },
+    "regression/audio/0.3": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.01946152524712185,
+      "ci95": [
+        0.016532017101435773,
+        0.022826245250507773
+      ],
+      "evidence": "above_random"
+    },
+    "regression/vision/0.1": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.007914639063528739,
+      "ci95": [
+        0.006277918835516301,
+        0.0096235138159769
+      ],
+      "evidence": "above_random"
+    },
+    "regression/vision/0.2": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.012604094994215605,
+      "ci95": [
+        0.009988694963065122,
+        0.015595835050123094
+      ],
+      "evidence": "above_random"
+    },
+    "regression/vision/0.3": {
+      "n_total": 120,
+      "n_eligible": 120,
+      "n_skipped": 0,
+      "n_video_groups": 84,
+      "mean_paired_difference": 0.014603919503861107,
+      "ci95": [
+        0.01169455969385882,
+        0.018058680660955076
+      ],
+      "evidence": "above_random"
+    }
+  },
+  "effectiveness_gate": "REQUIRES_EVIDENCE_REVIEW",
+  "test_evaluated": false,
+  "attachment4_inference": false,
+  "elapsed_sec": 677.0
+}

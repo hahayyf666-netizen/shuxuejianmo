@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "purpose": "Bind the existing frozen Q3 outputs to source and input hashes without rerunning any model.",
+  "status": "PARTIAL_SOURCE_BINDING_HISTORICAL_RUN_GAPS_EXPLICIT",
+  "no_training_or_inference_performed": true,
+  "training": {
+    "historical_run_source_status": "VERIFIED_FROM_FROZEN_TRAINING_BUNDLE_MANIFEST",
+    "source_commit": "cb66d39d30622f8649720312d0cc5146b7793ed7",
+    "run_script_path": "阶段4.2_Q3_v1_preflight/run_formal_training.py",
+    "run_script_sha256": "ac55915c04560855b931526c2676b7692f7dd8e1683211a3fb1f889746f045a7",
+    "model_py_sha256": "a9a2d3d047a3920771eeecf411c8e679d6b5b5ed5295b3439023040330308963",
+    "data_py_sha256": "88c4451e4b9c27f4296409c049e1b6f38c33718b9c4b3c48ad368bb4896268b2",
+    "train_eval_py_sha256": "f08fd52c1c195dc2a644091ab4a392892f24d1ca2e1ed84d1a003daeace7a0bf",
+    "explain_py_sha256": "593ef464898909011b78a401b4eeee4b25fa25e3c5ea249d1abc35b2ea59a08f",
+    "checkpoint_sha256": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+    "scaler_sha256": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424",
+    "aligned_50_pkl_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd"
+  },
+  "valid120": {
+    "historical_run_source_status": "SOURCE_COMMIT_AND_SCRIPT_HASH_VERIFIED; EXECUTION_IDENTITY_STORED_IN_RESULT_ZIP",
+    "source_commit": "a6b6bb552613cd4c59ab23e99f15b5b8a920a082",
+    "training_bundle_commit": "cb66d39d30622f8649720312d0cc5146b7793ed7",
+    "run_script_path": "階段4.2_Q3_v1_preflight/formal_xai_validation_2026-09-26/run_formal_xai_validation.py",
+    "run_script_sha256": "71936378471183eef98fd65b0141f125e531f4e237593c2786ad7fed0b4a5cfe",
+    "validation_contract_sha256": "639806da1547a49d8ab361a661558fd09a25ec301a1209544b5e39e656792e05",
+    "checkpoint_sha256": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+    "scaler_sha256": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424",
+    "result_zip_path_local": "outputs/Q3_xai_validation_preparation_2026-09-26/q3_xai_valid120_results.zip",
+    "result_zip_sha256": "33ef931cfacfee17ce36746b975e4d0440a7aec5371ddb616ad32193876b6645",
+    "result_zip_manifest_entries": 129,
+    "result_zip_samples": 120,
+    "result_zip_manifest_verified": true
+  },
+  "attachment4": {
+    "historical_run_source_status": "UNVERIFIED_HISTORICAL_SOURCE; CURRENT_RUNNER_IS_A_CANDIDATE_ONLY",
+    "actual_historical_run_script_path": "UNVERIFIED_HISTORICAL_SOURCE",
+    "candidate_run_script_path": "阶段4.2_Q3_v1_preflight/formal_attachment4_2026-09-26/run_attachment4_formal.py",
+    "candidate_run_script_sha256": "3481decad3839b5918126d3e1b45c7060d8a6ccccc3e07ed5b3308d2c95f974a",
+    "csv_historical_execution_source_status": "UNVERIFIED_HISTORICAL_SOURCE; DETERMINISTIC_EXPORT_REPRODUCED_BYTE_IDENTICALLY",
+    "csv_exporter_path": "阶段4.2_Q3_v1_preflight/formal_attachment4_2026-09-26/export_attachment4_csv_from_frozen_json.py",
+    "csv_exporter_sha256": "c372273685ac05623c3a48dfbc3e05943a16f1e368f6e640451dfa2b508579db",
+    "csv_frozen_json_source_path": "formal_attachment4_2026-09-26/results/attachment4_predictions_explanations.json",
+    "csv_source_json_sha256": "7202db52f42922d013d5369e58fcc018570619a95db8ea05ae11440dcf8a4b11",
+    "csv_reconstructed_sha256": "e219309f0c8460ef34e2ae597e421df00ab9579220b8fa5066422a78acea414c",
+    "csv_byte_identical_to_historical_artifact": true,
+    "explanation_contract_sha256": "f9a7e448771929e242e6c0b96d61bca053537fbf9c1f15b634b1316e5c47c794",
+    "checkpoint_sha256": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+    "scaler_sha256": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424",
+    "text_trace_sha256": "70e5e8a83d3d7a1d30a723bf61249e09d4267c5d75478f64f60529b539c50303",
+    "result_manifest_sha256": "ba7902c2193ed53a677b043a8ec56d61a7c087ce76c9e1470a3c6a290d6bdc1a"
+  },
+  "test": {
+    "historical_run_source_status": "UNVERIFIED_HISTORICAL_SOURCE; OUTPUTS_HASH_AND_METRICS_REPRODUCED",
+    "actual_historical_run_script_path": "UNVERIFIED_HISTORICAL_SOURCE",
+    "candidate_run_script_path": "阶段4.2_Q3_v1_preflight/run_final_test_evaluation.py",
+    "candidate_run_script_sha256": "1821ace494e9ea872f9baddeca5fae66d99cf7800cb52c13e2049cf317ae568c",
+    "checkpoint_sha256": "723a9ddef831f35c25d95b325a51c194a8e7326460812ab5435c0b24fc8ad6ce",
+    "scaler_sha256": "57d93f8d17fce56b928fadb1039bbe382a456386e39477980d44b43a2afd1424",
+    "aligned_50_pkl_sha256": "66e867aa74bc70a844e806e5571e371c9abb4a35f9e2887ce9b4d97ff2cb8fcd",
+    "output_manifest_sha256": "40dd2b2ec6ded10d04f5cb8f616f8b5c5ce8af599816388007d3da1074223a61",
+    "predictions_csv_sha256": "454e62de2c3704823f65bb13bb92ae04bff9d8a205e28e0428ee4d7a0f11b3b5"
+  },
+  "historical_source_gaps": [
+    "No contemporaneous source archive/commit was found binding the Attachment4 formal runner to its result files.",
+    "No contemporaneous source archive/commit was found binding the final test runner to its result files.",
+    "The current Attachment4 and test scripts are candidate reproducibility code, not proof of the exact historical invocation."
+  ]
+}
