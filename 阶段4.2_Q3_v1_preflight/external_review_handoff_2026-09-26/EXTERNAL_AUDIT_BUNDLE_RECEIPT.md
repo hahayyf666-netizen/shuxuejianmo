@@ -11,3 +11,6 @@
 
 本包供用户交给指定外部审核者，不已公开上传到 GitHub。外部4.6 Gate 仍等待另一位AI审核。
 
+
+- GitHub 相对路径：阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/artifacts/q3_external_audit_bundle.zip
+- ZIP 上传提交 SHA：e143069ef820ecb17924344c413beb1338946f7f
