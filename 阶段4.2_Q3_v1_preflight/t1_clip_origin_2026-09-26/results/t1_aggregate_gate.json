@@ -1,0 +1,22 @@
+{
+  "status": "PARTIAL_PASS_MEDIA_ORIGIN",
+  "t0_reversed_order_control": "PASS_CONTROL_REJECTED_BY_ORDER_GATE",
+  "sample_02": {
+    "media_identity": "PASS",
+    "audio_clip_origin": "PASS",
+    "video_clip_origin": "PASS",
+    "audio_offset_sec": 16.8366875,
+    "video_pts_offset_three_preselected_frames_sec": 16.9,
+    "video_pts_offset_all_frame_median_sec": 16.893333333333334,
+    "csd_row_to_local_audio_window": "PENDING_ROW_BOUNDARY_REVIEW",
+    "csd_row_to_local_video_frame": "PENDING_ROW_BOUNDARY_AND_PTS_REVIEW"
+  },
+  "sample_03": {
+    "media_identity": "BLOCKED_CURRENT_SOURCE_URL_UNAVAILABLE",
+    "audio_clip_origin": "UNVERIFIED",
+    "video_clip_origin": "UNVERIFIED"
+  },
+  "sample_13_16_vision": "BLOCKED_C2_ALIGNED_TO_UNALIGNED_CHAIN",
+  "formal_xai_audio_vision_mapping_status": "index_only",
+  "model_or_prediction_run": false
+}

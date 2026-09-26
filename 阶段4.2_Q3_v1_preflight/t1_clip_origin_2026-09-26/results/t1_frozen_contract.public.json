@@ -1,0 +1,55 @@
+{
+  "status": "FROZEN_BEFORE_WAVEFORM_VALUES",
+  "sample_ids": [
+    "02",
+    "03"
+  ],
+  "02_source_video_id": "YCEllKyaCrc",
+  "03_source_video_id": "GAVpYuhMZAw",
+  "03_source_media_status": "YouTube metadata unavailable (oEmbed 404, yt-dlp video unavailable); do not infer offset",
+  "source_media_for_02": {
+    "attachment4_clip": {
+      "path": "E题数据/附件4-可解释专项视频样本与特征文件/对齐版本/videos/02.mp4",
+      "bytes": 142336,
+      "sha256": "6b651e908aefd86959f85b78f945f7d5a5d9e767eb4c095926e1df2ed9629ff9"
+    },
+    "source_audio": {
+      "path": "local_private/YCEllKyaCrc_source_audio.webm",
+      "bytes": 797307,
+      "sha256": "941e5d4446cfe528dd32651651d99cd4038caa78614544d364f00a2c5b771342"
+    },
+    "source_video": {
+      "path": "local_private/YCEllKyaCrc_source_video.mp4",
+      "bytes": 1157106,
+      "sha256": "816de439a495fc8324504aa97ef9768b09d789b7c5b805b76e9dd6369729264e"
+    }
+  },
+  "source_download": {
+    "url": "https://www.youtube.com/watch?v=YCEllKyaCrc",
+    "yt_dlp_version": "2026.08.19",
+    "audio_format_id": "251-7",
+    "video_format_id": "134",
+    "oembed_title": "Charlie Chaplin - Final Speech from The Great Dictator (Clip)"
+  },
+  "audio_rule": {
+    "decode": "ffmpeg first audio stream to mono 16000-Hz float32 PCM; use entire clip; no text/feature time in search",
+    "search": "normalized Pearson sliding correlation over whole 63-second source",
+    "peak_at_least": 0.6,
+    "peak_minus_best_outside_one_second_at_least": 0.1,
+    "half_clip_peak_at_least": 0.5,
+    "half_clip_offsets_agree_with_full_within_sec": 0.12,
+    "source_negative_outside_one_second_below": 0.5
+  },
+  "vision_rule": {
+    "clip_sample_times_sec": [
+      0.5,
+      1.5,
+      2.5
+    ],
+    "decode": "ffmpeg selected frames to 64x64 gray using presentation timestamps",
+    "compare": "Pearson pixel correlation at audio-derived source offset + clip sample time; allow nearest source frame within 0.08 s only",
+    "at_least_two_frame_correlations_above": 0.55,
+    "do_not_fit_offset_to_visual_or_CSD_feature_times": true
+  },
+  "gate_rule": "PASS_LOCAL only if source identity and audio and vision rules pass; otherwise BLOCKED; source CSD time converted only after PASS_LOCAL"
+}

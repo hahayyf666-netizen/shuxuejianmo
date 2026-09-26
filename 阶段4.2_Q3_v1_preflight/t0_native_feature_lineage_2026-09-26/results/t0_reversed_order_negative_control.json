@@ -1,0 +1,98 @@
+{
+  "control": "reversed_candidate_order",
+  "samples": [
+    {
+      "sample_id": "02",
+      "source_video_id": "YCEllKyaCrc",
+      "modalities": {
+        "audio": {
+          "official_rows": 66,
+          "strict_value_matches": 66,
+          "nearest_maxabs_max": 0.0,
+          "reversed_indices": true,
+          "chronological_indices": false,
+          "first_indices": [
+            4654,
+            4649,
+            4644
+          ],
+          "last_indices": [
+            4339,
+            4334,
+            4329
+          ],
+          "full_gate_pass": false,
+          "network_bytes": 8388624,
+          "candidate_etag": "\"78548035665f83288f4171b0c5d7ebd5d52c9dd6dcd9863c1870f8b9b750b359\""
+        },
+        "vision": {
+          "official_rows": 50,
+          "strict_value_matches": 50,
+          "nearest_maxabs_max": 0.0,
+          "reversed_indices": true,
+          "chronological_indices": false,
+          "first_indices": [
+            1394,
+            1392,
+            1390
+          ],
+          "last_indices": [
+            1300,
+            1298,
+            1296
+          ],
+          "full_gate_pass": false,
+          "network_bytes": 5242896,
+          "candidate_etag": "\"38d9ccb2f15789aa1a5a56b268eb8c217a2850af9a6d526861a813e6d4162312\""
+        }
+      }
+    },
+    {
+      "sample_id": "03",
+      "source_video_id": "GAVpYuhMZAw",
+      "modalities": {
+        "audio": {
+          "official_rows": 191,
+          "strict_value_matches": 191,
+          "nearest_maxabs_max": 0.0,
+          "reversed_indices": true,
+          "chronological_indices": false,
+          "first_indices": [
+            9805,
+            9800,
+            9795
+          ],
+          "last_indices": [
+            8865,
+            8860,
+            8855
+          ],
+          "full_gate_pass": false,
+          "network_bytes": 10485776,
+          "candidate_etag": "\"78548035665f83288f4171b0c5d7ebd5d52c9dd6dcd9863c1870f8b9b750b359\""
+        },
+        "vision": {
+          "official_rows": 144,
+          "strict_value_matches": 144,
+          "nearest_maxabs_max": 0.0,
+          "reversed_indices": true,
+          "chronological_indices": false,
+          "first_indices": [
+            2940,
+            2938,
+            2936
+          ],
+          "last_indices": [
+            2658,
+            2656,
+            2654
+          ],
+          "full_gate_pass": false,
+          "network_bytes": 6291472,
+          "candidate_etag": "\"38d9ccb2f15789aa1a5a56b268eb8c217a2850af9a6d526861a813e6d4162312\""
+        }
+      }
+    }
+  ],
+  "all_full_gates_reject": true
+}

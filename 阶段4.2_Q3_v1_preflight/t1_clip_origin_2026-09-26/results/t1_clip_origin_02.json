@@ -1,0 +1,107 @@
+{
+  "sample_id": "02",
+  "source_id": "YCEllKyaCrc",
+  "sample_rate": 16000,
+  "source_audio_duration_sec": 63.4026875,
+  "clip_audio_duration_sec": 3.328375,
+  "full_peak_corr": 0.9946960087568862,
+  "best_other_corr_outside_one_sec": 0.1536074985690342,
+  "peak_margin": 0.841088510187852,
+  "full_peak_source_offset_sec": 16.8366875,
+  "first_half_peak_corr": 0.9956395778870638,
+  "first_half_offset_sec": 16.8366875,
+  "second_half_peak_corr": 0.9879257280379665,
+  "second_half_offset_sec": 16.8366875,
+  "audio_rule_pass": true,
+  "vision": [
+    {
+      "clip_time_sec": 0.5,
+      "best": {
+        "source_time_sec": 17.3766875,
+        "pixel_pearson": 0.9997494823342092
+      },
+      "candidates": [
+        {
+          "source_time_sec": 17.2566875,
+          "pixel_pearson": 0.9955979282941833
+        },
+        {
+          "source_time_sec": 17.2966875,
+          "pixel_pearson": 0.9979039683743188
+        },
+        {
+          "source_time_sec": 17.3366875,
+          "pixel_pearson": 0.9993634799366485
+        },
+        {
+          "source_time_sec": 17.3766875,
+          "pixel_pearson": 0.9997494823342092
+        },
+        {
+          "source_time_sec": 17.4166875,
+          "pixel_pearson": 0.9994769549316931
+        }
+      ]
+    },
+    {
+      "clip_time_sec": 1.5,
+      "best": {
+        "source_time_sec": 18.3766875,
+        "pixel_pearson": 0.9996979888843275
+      },
+      "candidates": [
+        {
+          "source_time_sec": 18.2566875,
+          "pixel_pearson": 0.998976594452153
+        },
+        {
+          "source_time_sec": 18.2966875,
+          "pixel_pearson": 0.9987049486592819
+        },
+        {
+          "source_time_sec": 18.3366875,
+          "pixel_pearson": 0.9987212426902301
+        },
+        {
+          "source_time_sec": 18.3766875,
+          "pixel_pearson": 0.9996979888843275
+        },
+        {
+          "source_time_sec": 18.4166875,
+          "pixel_pearson": 0.9994943293460382
+        }
+      ]
+    },
+    {
+      "clip_time_sec": 2.5,
+      "best": {
+        "source_time_sec": 19.3766875,
+        "pixel_pearson": 0.9997275689265793
+      },
+      "candidates": [
+        {
+          "source_time_sec": 19.2566875,
+          "pixel_pearson": 0.9994341169078441
+        },
+        {
+          "source_time_sec": 19.2966875,
+          "pixel_pearson": 0.9995941642082111
+        },
+        {
+          "source_time_sec": 19.3366875,
+          "pixel_pearson": 0.9997092172747033
+        },
+        {
+          "source_time_sec": 19.3766875,
+          "pixel_pearson": 0.9997275689265793
+        },
+        {
+          "source_time_sec": 19.4166875,
+          "pixel_pearson": 0.9996681832149665
+        }
+      ]
+    }
+  ],
+  "vision_rule_pass": true,
+  "local_time_gate": "PASS_SAMPLE_02"
+}
