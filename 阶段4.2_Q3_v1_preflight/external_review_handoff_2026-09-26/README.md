@@ -23,6 +23,13 @@
 4. 审查 C2/T2/T3 是否真的支持原素材证据。C2/T2 汇总为1128条模态行、564个内容位置，T2 音频564唯一、视觉522唯一+1非唯一+41断链；T3 15个候选中9个媒体起点完整通过。检查18号勘误及06/13/16边界。禁止由局部通过推断所有音视频位置可对应秒数或关键帧。
 5. 审查可复现性：源数据版本、代码、参数、环境、日志、manifest/SHA、样本覆盖和失败分支。指出任何只凭摘要无法独立重算的项目。
 
+## 当前准备进展与公开分支限制
+
+- 本地冻结工件核对：test 逐样本 CSV SHA 与审核记录一致；附件4 25 项输出 manifest 已逐文件核验；valid120 ZIP 含120个样本文件，内部129项 manifest 全部匹配，ZIP SHA 与审核记录一致。
+- Attachment4 CSV 生成链：只读 exporter 从冻结 JSON 导出20行 CSV，SHA 与正式历史 CSV 完全相同。没有运行日志证明当时实际调用了哪份 exporter，因此历史调用路径仍标为 `UNVERIFIED_HISTORICAL_SOURCE`。
+- 本地审计脚本对20条结果生成主要模态证据覆盖表：分类和回归各18/20条的主要模态有原始证据；未满足的条目均为 vision-primary，当前 vision=`index_only`。正式结果结构没有定义 regression `primary_supporting_modality`，审计脚本不会自行补造该语义。
+- 用户明确要求发布冻结 test CSV 后，GitHub 写入审核拒绝了该次上传，提示写入内容可能被截断、不能证明等于冻结 CSV。按照拒绝原因，不通过 base64、分卷或其他间接方式再上传该敏感逐样本文件。因此外部 AI 当前不能仅凭公开 GitHub 重新计算727条 test 指标或逐条复核20条附件4结果；完整原始工件保留在本地外部审核包，需由用户安全地提供给审核者。
+
 ## GitHub 证据的限制
 
 公共 GitHub 上有代码、合同、汇总报告及部分逐行映射；约1 GB 的原始 PKL、服务器 checkpoint、附件4逐样本正式预测/归因和 test 逐样本预测不保证在公开仓库。**若这些原始工件未提供，就只能审核代码逻辑与已公开摘要，不能声称从 GitHub 单独重算了727条指标或20条解释。** 请把需要私下提供的最小文件及其 SHA 列清楚，标为 `BLOCKED_BY_MISSING_ARTIFACT`，不要用内部交叉检查报告填补证据。
@@ -30,4 +37,16 @@
 ## 请返回的格式
 
 输出：①题意对照矩阵；②你实际读到并复算的文件和 Git commit；③P0/P1/P2问题及证据路径；④无法验证的项目和所需文件；⑤Q3 是否达到题意、外部4.6 Gate `PASS / PASS_WITH_LIMITATIONS / FAIL / BLOCKED`；⑥是否建议进入4.7。任何结论都应区分“独立重算”“核对摘要”“沿用他人报告”。
+
+## 本地审核包的只读复核入口
+
+若用户提供 `q3_external_audit_bundle.zip`，解压后可运行：
+
+```bash
+python 阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/external_4_6_test_audit.py --predictions 阶段4.2_Q3_v1_preflight/formal_test_evaluation_2026-09-26/test_predictions.csv --summary 阶段4.2_Q3_v1_preflight/formal_test_evaluation_2026-09-26/test_evaluation_summary.json --manifest 阶段4.2_Q3_v1_preflight/formal_test_evaluation_2026-09-26/output_manifest.json --out test_audit.json
+
+python 阶段4.2_Q3_v1_preflight/external_review_handoff_2026-09-26/external_4_6_attachment4_audit.py --results 阶段4.2_Q3_v1_preflight/formal_attachment4_2026-09-26/results --out attachment4_audit
+```
+
+两个入口仅读取已冻结 CSV/JSON 和 SHA manifest，不加载 checkpoint，也不运行模型。不要把本地审核包里的历史内部交叉检查记录当作外部审核结论。
 
