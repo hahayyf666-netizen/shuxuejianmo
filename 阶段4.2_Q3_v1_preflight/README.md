@@ -38,5 +38,6 @@ python run_mapping_precheck.py --aligned-directory '/path/to/附件4-可解释�
 - `SHA256SUMS.json`、`q3_v1_preflight_server_bundle.zip`：历史 Stage A 包，保留用于审计；当前服务器使用 Stage D 的 `q3_scope_preflight_server_bundle.zip` 及其 manifest。
 - `formal_xai_validation_2026-09-26/`：冻结 B0_seed2029 的 valid120 解释验证运行入口、参数合同、准备报告、独立解包验收结论与运行包。包 SHA-256 为 `0d085aa7cc87f4c8210ba3972e3d45034313231015dfcac19e3df067e45c797b`；目录内准备报告记录的是正式运行前状态。
 - `formal_xai_review_2026-09-26/`：正式 valid120 结果的结构与统计审核。120条、4080项数值检查和18组预定扰动对照已完成；本轮审查结论为仅限特征空间的 `PASS_WITH_LIMITATIONS`，Q3尚未冻结。
+- `temporal_mapping_decision_2026-09-26/`：从原题和C-2/C-3/C-4实测重新审查“forced alignment + 视频PTS升级官方音视频特征行时间”的建议；结论是缺少独立行级锚点，当前不运行新的时间映射实验，也不把候选时间伪称为已验证的官方特征来源。
 
 本包代码与报告供参赛队审核；使用前须按实际服务器环境重跑并核对原题、协议和映射证据。
